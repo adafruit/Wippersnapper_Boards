@@ -9,41 +9,25 @@
             "propertyName": "value",
             "displayName": "A1",
             "name": "A1",
-            "type": "int16",
-            "unit": "",
-            "value": "",
-            "period": "-1",
-            "writable": "true"
+            "type": "int16"
         },
         {
             "propertyName": "value",
             "displayName": "A4",
             "name": "A4",
-            "type": "int16",
-            "unit": "",
-            "value": "",
-            "period": "-1",
-            "writable": "true"
+            "type": "int16"
         },
         {
             "propertyName": "value",
             "displayName": "D3",
             "name": "D3",
-            "type": "bool",
-            "unit": "",
-            "value": "",
-            "period": "-1",
-            "writable": "true"
+            "type": "bool"
         },
         {
             "propertyName": "value",
             "displayName": "D4",
             "name": "D4",
-            "type": "bool",
-            "unit": "",
-            "value": "",
-            "period": "-1",
-            "writable": "true"
+            "type": "bool"
         },
         {
             "propertyName": "light",
@@ -51,26 +35,19 @@
             "name": "A2",
             "type": "float",
             "unit": "light level",
-            "value": "",
-            "period": "-1",
             "writable": "false"
         },
         {
             "propertyName": "pixel",
             "displayName": "NeoPixel",
             "name": "NEOPIXEL",
-            "type": "0",
-            "value": "",
-            "writable": "true"
+            "type": "0"
         },
         {
             "propertyName": "value",
-            "displayName": "Built-in LED",
+            "displayName": "D13 LED",
             "name": "D13",
-            "type": "bool",
-            "unit": "",
-            "value": "",
-            "writable": "true"
+            "type": "bool"
         }
     ]
 }

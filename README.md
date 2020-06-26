@@ -35,10 +35,10 @@ Each component uses the following structure:
 | displayName  | no       | String    | Human-readable display name for Adafruit IO                                       |
 | name         | yes      | String    | Internal pin name                                                                 |
 | type         | yes      | String    | Expected data type from component                                                 |
-| writable    | yes       | boolean     | Whether the component is writable. Default is False, read-only. |
+| writable    | yes       | boolean     | Whether the component is writable. Default is True, read/write. |
 | unit         | no       | String    | Standardized SI unit                                                              |
 | value        | no       | String    | Stores the sensor's value or state                                                |
-| period    | no       | int32     | Number of milliseconds between measurements |
+| period    | no       | int32     | Number of milliseconds between measurements. Defaults to -1, no active measurements. |
 
 #### Properties and Units
 The component's `propertyName`, `type`, and `unit` describe component's the data type and SI unit. The table below mirrors the [Sensor Properties and Units defined in the CircuitPython API documentation.](https://circuitpython.readthedocs.io/en/latest/docs/design_guide.html#sensor-properties-and-units).
