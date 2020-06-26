@@ -6,7 +6,10 @@ This repository, its contents, and the BlinkaConnect hardware specification is a
 # Introduction
 This README.md specifies the hardware description model for internet-of-things hardware compatible with BlinkaConnect. 
 
-# Hardware Information
+# Hardware Description
+
+TODO! Describe this information
+
 | Property    | Required | Data Type | Description             |
 |-------------|----------|-----------|-------------------------|
 | boardName   | Yes      | String    | Hardware name           |
@@ -16,10 +19,10 @@ This README.md specifies the hardware description model for internet-of-things h
 | displayName | Yes      | String    | Adafruit IO Device name |
 
 
+
 # Hardware Components
 
 Hardware components are digital pins, ADC pins, sensors or outputs. These components are defined within the `components` array. 
-
 
 Each component uses the following structure:
 
@@ -31,7 +34,7 @@ Each component uses the following structure:
 | type         | yes      | String    | Expected data type from component                                                 |
 | unit         | no       | String    | Standardized SI unit                                                              |
 | value        | no       | String    | Stores the sensor's value or state                                                |
-| period    | no       | int32     | Stores the number of milliseconds between measurements as a signed 32-bit integer |
+| period    | no       | int32     | Number of milliseconds between measurements |
 
 ### Properties and Units
 The component's `propertyName`, `type`, and `unit` describe component's the data type and SI unit. The table below mirrors the [Sensor Properties and Units defined in the CircuitPython API documentation.](https://circuitpython.readthedocs.io/en/latest/docs/design_guide.html#sensor-properties-and-units).
@@ -63,14 +66,86 @@ The component's `propertyName`, `type`, and `unit` describe component's the data
 
 ### Measurement Period
 
-Notes:
-* Setting the `frequency` property to `-1` stops measurements and setting this property to `0` indicates 
+Stores the number of milliseconds between measurements as a signed 32-bit int. -1 stops a measurement and 0 indicates as fast as possible. Both readable and writable.
 
-# Example
-TODO!
+# Example Hardware Description
+
+The following hardware description shows an [Adafruit PyPortal](https://www.adafruit.com/product/4116). 
+
+```
+{
+    "boardName": "PyPortal",
+    "mcuName": "samd51j20",
+    "VID": "0x239A",
+    "PID": "0x8036",
+    "displayName": "",
+    "components": [
+        {
+            "propertyName": "value",
+            "displayName": "A1",
+            "name": "A1",
+            "type": "int16",
+            "unit": "",
+            "value": "",
+            "period": "-1"
+        },
+        {
+            "propertyName": "value",
+            "displayName": "A4",
+            "name": "A4",
+            "type": "int16",
+            "unit": "",
+            "value": "",
+            "period": "-1"
+        },
+        {
+            "propertyName": "value",
+            "displayName": "D3",
+            "name": "D3",
+            "type": "bool",
+            "unit": "",
+            "value": "",
+            "period": "-1"
+        },
+        {
+            "propertyName": "value",
+            "displayName": "D4",
+            "name": "D4",
+            "type": "bool",
+            "unit": "",
+            "value": "",
+            "period": "-1"
+        },
+        {
+            "propertyName": "light",
+            "displayName": "Light sensor",
+            "name": "A2",
+            "type": "float",
+            "unit": "light level",
+            "value": "",
+            "period": "-1"
+        },
+        {
+            "propertyName": "pixel",
+            "displayName": "NeoPixel",
+            "name": "NEOPIXEL",
+            "type": "0",
+            "value": ""
+        },
+        {
+            "propertyName": "value",
+            "displayName": "Built-in LED",
+            "name": "D13",
+            "type": "bool",
+            "unit": "",
+            "value": ""
+        }
+    ]
+}
+```
 
 # Limitations
-BlinkaConnect currently only supports WiFi, Cellular and Ethernet connectivity.
+* BlinkaConnect currently only supports WiFi, Cellular and Ethernet connectivity.
 
 # Contributing
 If you do not see the board you're using with BlinkaConnect
