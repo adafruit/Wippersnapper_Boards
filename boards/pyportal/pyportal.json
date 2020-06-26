@@ -4,45 +4,45 @@
     "VID": "0x239A",
     "PID": "0x8036",
     "displayName": "",
-    "pins": [
+    "components": [
         {
-            "property": "value",
+            "propertyName": "value",
             "displayName": "A1",
             "name": "A1",
             "type": "int16",
-            "unit": "16-bit Analog value, unit-less",
+            "unit": "",
             "value": "",
             "frequency": "-1"
         },
         {
-            "property": "value",
+            "propertyName": "value",
             "displayName": "A4",
             "name": "A4",
             "type": "int16",
-            "unit": "16-bit Analog value, unit-less",
+            "unit": "",
             "value": "",
             "frequency": "-1"
         },
         {
-            "property": "value",
+            "propertyName": "value",
             "displayName": "D3",
             "name": "D3",
             "type": "bool",
-            "unit": "Digital logic",
+            "unit": "",
             "value": "",
             "frequency": "-1"
         },
         {
-            "property": "value",
+            "propertyName": "value",
             "displayName": "D4",
             "name": "D4",
             "type": "bool",
-            "unit": "Digital logic",
+            "unit": "",
             "value": "",
             "frequency": "-1"
         },
         {
-            "property": "light",
+            "propertyName": "light",
             "displayName": "Light sensor",
             "name": "A2",
             "type": "float",
@@ -51,18 +51,18 @@
             "frequency": "-1"
         },
         {
-            "property": "pixel",
+            "propertyName": "pixel",
             "displayName": "NeoPixel",
             "name": "NEOPIXEL",
             "type": "0",
             "value": ""
         },
         {
-            "property": "value",
+            "propertyName": "value",
             "displayName": "Built-in LED",
             "name": "D13",
             "type": "bool",
-            "unit": "Digital Logic",
+            "unit": "",
             "value": ""
         }
     ]
