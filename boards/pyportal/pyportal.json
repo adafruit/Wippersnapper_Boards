@@ -1,0 +1,8 @@
+{
+    "boardName": "PyPortal",
+    "mcuName": "samd51j20",
+    "VID": "0x239A",
+    "PID": "0x8036",
+    "displayName": "$USER_DEFINED",
+    "pins": {}
+  }
