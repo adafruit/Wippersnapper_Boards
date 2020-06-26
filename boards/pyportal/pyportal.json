@@ -12,7 +12,7 @@
             "type": "int16",
             "unit": "",
             "value": "",
-            "frequency": "-1"
+            "period": "-1"
         },
         {
             "propertyName": "value",
@@ -21,7 +21,7 @@
             "type": "int16",
             "unit": "",
             "value": "",
-            "frequency": "-1"
+            "period": "-1"
         },
         {
             "propertyName": "value",
@@ -30,7 +30,7 @@
             "type": "bool",
             "unit": "",
             "value": "",
-            "frequency": "-1"
+            "period": "-1"
         },
         {
             "propertyName": "value",
@@ -39,7 +39,7 @@
             "type": "bool",
             "unit": "",
             "value": "",
-            "frequency": "-1"
+            "period": "-1"
         },
         {
             "propertyName": "light",
@@ -48,7 +48,7 @@
             "type": "float",
             "unit": "light level",
             "value": "",
-            "frequency": "-1"
+            "period": "-1"
         },
         {
             "propertyName": "pixel",
