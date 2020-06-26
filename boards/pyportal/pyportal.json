@@ -10,35 +10,45 @@
         "displayName": "A1",
         "name": "A1",
         "type": "int16",
-        "unit": "16-bit Analog value, unit-less"
+        "unit": "16-bit Analog value, unit-less",
+        "value": "",
+        "frequency": ""
       },
       {
         "property": "value",
         "displayName": "A4",
         "name": "A4",
         "type": "int16",
-        "unit": "16-bit Analog value, unit-less"
+        "unit": "16-bit Analog value, unit-less",
+        "value": "",
+        "frequency": ""
       },
       {
         "property": "value",
         "displayName": "D3",
         "name": "D3",
         "type": "bool",
-        "unit": "Digital logic"
+        "unit": "Digital logic",
+        "value": "",
+        "frequency": ""
       },
       {
         "property": "value",
         "displayName": "D4",
         "name": "D4",
         "type": "bool",
-        "unit": "Digital logic"
+        "unit": "Digital logic",
+        "value": "",
+        "frequency": ""
       },
       {
         "property": "light",
         "displayName": "Light sensor",
         "name": "A2",
         "type": "float",
-        "unit": "light level"
+        "unit": "light level",
+        "value": "",
+        "frequency": ""
       },
       {
         "property": "pixel",
