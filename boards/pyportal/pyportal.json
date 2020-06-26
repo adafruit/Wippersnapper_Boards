@@ -12,7 +12,8 @@
             "type": "int16",
             "unit": "",
             "value": "",
-            "period": "-1"
+            "period": "-1",
+            "writable": "true"
         },
         {
             "propertyName": "value",
@@ -21,7 +22,8 @@
             "type": "int16",
             "unit": "",
             "value": "",
-            "period": "-1"
+            "period": "-1",
+            "writable": "true"
         },
         {
             "propertyName": "value",
@@ -30,7 +32,8 @@
             "type": "bool",
             "unit": "",
             "value": "",
-            "period": "-1"
+            "period": "-1",
+            "writable": "true"
         },
         {
             "propertyName": "value",
@@ -39,7 +42,8 @@
             "type": "bool",
             "unit": "",
             "value": "",
-            "period": "-1"
+            "period": "-1",
+            "writable": "true"
         },
         {
             "propertyName": "light",
@@ -48,14 +52,16 @@
             "type": "float",
             "unit": "light level",
             "value": "",
-            "period": "-1"
+            "period": "-1",
+            "writable": "false"
         },
         {
             "propertyName": "pixel",
             "displayName": "NeoPixel",
             "name": "NEOPIXEL",
             "type": "0",
-            "value": ""
+            "value": "",
+            "writable": "true"
         },
         {
             "propertyName": "value",
@@ -63,7 +69,8 @@
             "name": "D13",
             "type": "bool",
             "unit": "",
-            "value": ""
+            "value": "",
+            "writable": "true"
         }
     ]
 }

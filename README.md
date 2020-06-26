@@ -8,7 +8,11 @@ This README.md specifies the hardware description model for internet-of-things h
 
 # Hardware Description
 
-TODO! Describe this information
+The hardware description describes the contents (hardware information, components) of a physical piece of hardware or project.
+
+### Information
+
+Information related to the hardware including the hardware's name, description and unique identifiers.
 
 | Property    | Required | Data Type | Description             |
 |-------------|----------|-----------|-------------------------|
@@ -19,8 +23,7 @@ TODO! Describe this information
 | displayName | Yes      | String    | Adafruit IO Device name |
 
 
-
-# Hardware Components
+### Components
 
 Hardware components are digital pins, ADC pins, sensors or outputs. These components are defined within the `components` array. 
 
@@ -32,11 +35,12 @@ Each component uses the following structure:
 | displayName  | no       | String    | Human-readable display name for Adafruit IO                                       |
 | name         | yes      | String    | Internal pin name                                                                 |
 | type         | yes      | String    | Expected data type from component                                                 |
+| writable    | yes       | boolean     | Whether the component is writable. Default is False, read-only. |
 | unit         | no       | String    | Standardized SI unit                                                              |
 | value        | no       | String    | Stores the sensor's value or state                                                |
 | period    | no       | int32     | Number of milliseconds between measurements |
 
-### Properties and Units
+#### Properties and Units
 The component's `propertyName`, `type`, and `unit` describe component's the data type and SI unit. The table below mirrors the [Sensor Properties and Units defined in the CircuitPython API documentation.](https://circuitpython.readthedocs.io/en/latest/docs/design_guide.html#sensor-properties-and-units).
 
 | Property name         | Python type           | Units                                                                   |
@@ -64,9 +68,9 @@ The component's `propertyName`, `type`, and `unit` describe component's the data
 | ``value``             | int                   | 16-bit Analog value, unit-less                                          |
 | ``weight``            | float                 | grams (g)                                                               |
 
-### Measurement Period
+#### Measurement Period
 
-Stores the number of milliseconds between measurements as a signed 32-bit int. -1 stops a measurement and 0 indicates as fast as possible. Both readable and writable.
+Stores the number of milliseconds between measurements as a signed 32-bit int. Defining a value of `-1` stops a measurement and `0` indicates as fast as possible. This field is empty by default, configuring a component using an Adafruit IO Dashboard block sets the measurement period.
 
 # Example Hardware Description
 
