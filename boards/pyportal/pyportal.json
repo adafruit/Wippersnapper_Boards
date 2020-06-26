@@ -4,5 +4,34 @@
     "VID": "0x239A",
     "PID": "0x8036",
     "displayName": "$USER_DEFINED",
-    "pins": {}
+    "pins": [
+      {
+        "property": "value",
+        "displayName": "A1",
+        "name": "A1",
+        "type": "int16",
+        "unit": "16-bit Analog value, unit-less"
+      },
+      {
+        "property": "value",
+        "displayName": "A4",
+        "name": "A4",
+        "type": "int16",
+        "unit": "16-bit Analog value, unit-less"
+      },
+      {
+        "property": "value",
+        "displayName": "D3",
+        "name": "D3",
+        "type": "bool",
+        "unit": "Digital logic"
+      },
+      {
+        "property": "value",
+        "displayName": "D4",
+        "name": "D4",
+        "type": "bool",
+        "unit": "Digital logic"
+      }
+    ]
   }
