@@ -3,7 +3,7 @@
     "mcuName": "samd51j20",
     "VID": "0x239A",
     "PID": "0x8036",
-    "displayName": "$USER_DEFINED",
+    "displayName": "",
     "pins": [
       {
         "property": "value",
@@ -32,6 +32,26 @@
         "name": "D4",
         "type": "bool",
         "unit": "Digital logic"
+      },
+      {
+        "property": "light",
+        "displayName": "Light sensor",
+        "name": "A2",
+        "type": "float",
+        "unit": "light level"
+      },
+      {
+        "property": "pixel",
+        "displayName": "NeoPixel",
+        "name": "NEOPIXEL",
+        "type": "0"
+      },
+      {
+        "property": "value",
+        "displayName": "Built-in LED",
+        "name": "D13",
+        "type": "bool",
+        "unit": "Digital Logic"
       }
     ]
   }
