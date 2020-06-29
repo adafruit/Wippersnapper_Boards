@@ -6,6 +6,11 @@ This repository, its contents, and the BlinkaConnect hardware specification is a
 # Introduction
 This README.md specifies the hardware description model for internet-of-things hardware compatible with BlinkaConnect. 
 
+# Repository Contents
+
+`definition`: Contains hardware description models.
+`boards.json`: Index of hardware within `definitions/` containing hardware USB vendor ID (vid) and product ID (pid).
+
 # Hardware Description
 
 The hardware description describes the contents (hardware information, components) of a physical piece of hardware or project.
