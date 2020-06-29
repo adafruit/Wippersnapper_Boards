@@ -38,7 +38,7 @@ Each component uses the following structure:
 |--------------|----------|-----------|-----------------------------------------------------------------------------------|
 | propertyName | yes      | String    | Property type                                                                     |
 | displayName  | no       | String    | Human-readable display name for Adafruit IO                                       |
-| name         | yes      | String    | Internal pin name                                                                 |
+| name         | yes      | String    | Component type. Components connected to hardware externally are prefixed by `external_`           |
 | type         | yes      | String    | Expected data type from component                                                 |
 | writable    | yes       | boolean     | Whether the component is writable. Default is True, read/write. |
 | unit         | no       | String    | Standardized SI unit                                                              |

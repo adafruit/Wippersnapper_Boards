@@ -32,10 +32,17 @@
         {
             "propertyName": "light",
             "displayName": "Light sensor",
-            "name": "A2",
+            "name": "internal_A2",
             "type": "float",
             "unit": "light level",
             "writable": "false"
+        },
+        {
+            "propertyName": "temperature",
+            "displayName": "Analog Devices ADT7410 Temperature Sensor",
+            "name": "external_temperature_sensor",
+            "type": "float",
+            "unit": "degrees centigrade"
         },
         {
             "propertyName": "pixel",
