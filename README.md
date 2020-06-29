@@ -156,6 +156,7 @@ If you do not see the board you're using with BlinkaConnect
 
 To add support for new hardware:
 * Fork this repository and checkout a new branch.
-* Make a new directory in `boards/YOUR_BOARD_NAME`
-* Add your hardware description, `YOUR_BOARD_NAME.json`, to `boards/YOUR_BOARD_NAME`.
+* Make a new directory in `definitions/YOUR_BOARD_NAME`
+* Add your hardware description, `YOUR_BOARD_NAME.json`, to `definitions/YOUR_BOARD_NAME`.
+* Add a new board name, vid, and pid to `boards.json`.
 * Create a pull request on this repository

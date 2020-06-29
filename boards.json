@@ -1,0 +1,14 @@
+{
+    "boards": {
+        "adafruit_pyportal_m4": {
+            "vid": "0x239A",
+            "pid": "0x8035",
+            "name": "adafruit_pyportal_m4"
+        },
+        "adafruit_feather_m4": {
+            "vid": "0x239A",
+            "pid": "0x8026",
+            "name": "adafruit_feather_m4"
+        }
+    }
+}
