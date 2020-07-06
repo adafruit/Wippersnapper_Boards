@@ -26,6 +26,7 @@ Information related to the hardware including the hardware's name, description a
 | VID         | Yes      | int16     | USB Vendor ID           |
 | PID         | Yes      | int16     | USB Product ID          |
 | displayName | Yes      | String    | Adafruit IO Device name |
+| description | Yes      | String    | Device description      |
 
 
 ### Components
@@ -38,9 +39,9 @@ Each component uses the following structure:
 |--------------|----------|-----------|-----------------------------------------------------------------------------------|
 | propertyName | yes      | String    | Property type                                                                     |
 | displayName  | no       | String    | Human-readable display name for Adafruit IO                                       |
-| name         | yes      | String    | Component type. Components connected to hardware externally are prefixed by `external_`           |
+| name         | yes      | String    | Component type. Components connected to hardware externally are prefixed by `external_`|
 | type         | yes      | String    | Expected data type from component                                                 |
-| writable    | yes       | boolean     | Whether the component is writable. Default is True, read/write. |
+| writable     | yes       | boolean   | Whether the component is writable. Default is True, read/write.                  |
 | unit         | no       | String    | Standardized SI unit                                                              |
 | value        | no       | String    | Stores the sensor's value or state                                                |
 | period    | no       | int32     | Number of milliseconds between measurements. Defaults to -1, no active measurements. |

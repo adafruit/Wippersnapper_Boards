@@ -4,6 +4,7 @@
     "VID": "0x239A",
     "PID": "0x8036",
     "displayName": "",
+    "description": "320x240 IoT display.",
     "components": [
         {
             "propertyName": "value",
