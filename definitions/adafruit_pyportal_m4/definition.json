@@ -5,6 +5,7 @@
     "PID": "0x8036",
     "displayName": "",
     "description": "320x240 IoT display.",
+    "lastUpdate": "",
     "components": [
         {
             "propertyName": "value",

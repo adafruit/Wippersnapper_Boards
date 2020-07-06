@@ -19,7 +19,7 @@ The hardware definition describes the contents (hardware information, components
 
 Information related to the hardware including the hardware's name, definition and unique identifiers.
 
-| Property    | Required | Data Type | definition             |
+| Property    | Required | Data Type | description             |
 |-------------|----------|-----------|-------------------------|
 | boardName   | Yes      | String    | Hardware name           |
 | mcuName     | Yes      | String    | Microcontroller name    |
@@ -27,6 +27,7 @@ Information related to the hardware including the hardware's name, definition an
 | PID         | Yes      | int16     | USB Product ID          |
 | displayName | Yes      | String    | Adafruit IO Device name |
 | definition | Yes      | String    | Device definition      |
+| lastUpdated | Yes      | Time    | Last time the board definition was updated, in ISO-8601      |
 
 
 ### Components
@@ -35,7 +36,7 @@ Hardware components are digital pins, ADC pins, sensors or outputs. These compon
 
 Each component uses the following structure:
 
-| Property         | Required | Data Type | definition                                                                       |
+| Property         | Required | Data Type | description                                                                       |
 |--------------|----------|-----------|-----------------------------------------------------------------------------------|
 | propertyName | yes      | String    | Property type                                                                     |
 | displayName  | no       | String    | Human-readable display name for Adafruit IO                                       |
