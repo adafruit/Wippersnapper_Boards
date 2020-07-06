@@ -4,29 +4,29 @@ Hardware specification and boards for BlinkaConnect.
 This repository, its contents, and the BlinkaConnect hardware specification is a ***work in progress and subject to change***.
 
 # Introduction
-This README.md specifies the hardware description model for internet-of-things hardware compatible with BlinkaConnect. 
+This README.md specifies the hardware definition model for internet-of-things hardware compatible with BlinkaConnect. 
 
 # Repository Contents
 
-`definition`: Contains hardware description models.
+`definition`: Contains hardware definition models.
 `boards.json`: Index of hardware within `definitions/` containing hardware USB vendor ID (vid) and product ID (pid).
 
-# Hardware Description
+# Hardware definition
 
-The hardware description describes the contents (hardware information, components) of a physical piece of hardware or project.
+The hardware definition describes the contents (hardware information, components) of a physical piece of hardware or project.
 
 ### Information
 
-Information related to the hardware including the hardware's name, description and unique identifiers.
+Information related to the hardware including the hardware's name, definition and unique identifiers.
 
-| Property    | Required | Data Type | Description             |
+| Property    | Required | Data Type | definition             |
 |-------------|----------|-----------|-------------------------|
 | boardName   | Yes      | String    | Hardware name           |
 | mcuName     | Yes      | String    | Microcontroller name    |
 | VID         | Yes      | int16     | USB Vendor ID           |
 | PID         | Yes      | int16     | USB Product ID          |
 | displayName | Yes      | String    | Adafruit IO Device name |
-| description | Yes      | String    | Device description      |
+| definition | Yes      | String    | Device definition      |
 
 
 ### Components
@@ -35,7 +35,7 @@ Hardware components are digital pins, ADC pins, sensors or outputs. These compon
 
 Each component uses the following structure:
 
-| Property         | Required | Data Type | Description                                                                       |
+| Property         | Required | Data Type | definition                                                                       |
 |--------------|----------|-----------|-----------------------------------------------------------------------------------|
 | propertyName | yes      | String    | Property type                                                                     |
 | displayName  | no       | String    | Human-readable display name for Adafruit IO                                       |
@@ -78,9 +78,9 @@ The component's `propertyName`, `type`, and `unit` describe component's the data
 
 Stores the number of milliseconds between measurements as a signed 32-bit int. Defining a value of `-1` stops a measurement and `0` indicates as fast as possible. This field is empty by default, configuring a component using an Adafruit IO Dashboard block sets the measurement period.
 
-# Example Hardware Description
+# Example Hardware definition
 
-The following hardware description shows an [Adafruit PyPortal](https://www.adafruit.com/product/4116). 
+The following hardware definition shows an [Adafruit PyPortal](https://www.adafruit.com/product/4116). 
 
 ```
 {
@@ -163,6 +163,6 @@ If you do not see the board you're using with BlinkaConnect
 To add support for new hardware:
 * Fork this repository and checkout a new branch.
 * Make a new directory in `definitions/YOUR_BOARD_NAME`
-* Add your hardware description, `YOUR_BOARD_NAME.json`, to `definitions/YOUR_BOARD_NAME`.
+* Add your hardware definition, `YOUR_BOARD_NAME.json`, to `definitions/YOUR_BOARD_NAME`.
 * Add a new board name, vid, and pid to `boards.json`.
 * Create a pull request on this repository
