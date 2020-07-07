@@ -32,20 +32,31 @@ Information related to the hardware including the hardware's name, definition an
 
 ### Components
 
-Hardware components are digital pins, ADC pins, sensors or outputs. These components are defined within the `components` array. 
+Hardware components are digital pins, ADC pins, sensors, servos, or motors. These components are defined within the `components` array. 
 
-Each component uses the following structure:
+Each general component uses the following structure:
 
-| Property         | Required | Data Type | description                                                                       |
+| Property      | Required | Data Type | description                                                                       |
 |--------------|----------|-----------|-----------------------------------------------------------------------------------|
-| propertyName | yes      | String    | Property type                                                                     |
-| displayName  | no       | String    | Human-readable display name for Adafruit IO                                       |
 | name         | yes      | String    | Component type. Components connected to hardware externally are prefixed by `external_`|
-| type         | yes      | String    | Expected data type from component                                                 |
-| writable     | yes       | boolean   | Whether the component is writable. Default is True, read/write.                  |
-| unit         | no       | String    | Standardized SI unit                                                              |
-| value        | no       | String    | Stores the sensor's value or state                                                |
-| period    | no       | int32     | Number of milliseconds between measurements. Defaults to -1, no active measurements. |
+| displayName  | no       | String    | Human-readable display name for Adafruit IO                                            |
+| property     | yes      | String    | Property type                                                                          |
+| dataType     | yes      | String    | Expected data type from component                                                      |
+| value        | no       | String    | Stores the sensor's value or state                                                     |
+| period       | no      | int32     | Number of milliseconds between measurements. Defaults to -1, no active measurements.   |
+| writable     | yes      | boolean   | Whether the component is writable. Default is True, read/write.                        |
+
+**Sensor Components**
+
+Sensors are special component types which are defined by attaching a component to the device in user-code. These components should append the following properties onto the component structure above:
+
+| Property     | Required | Data Type | description                                                                       |
+|--------------|----------|-----------|-----------------------------------------------------------------------------------|
+| sensorID     | Yes      |   int32   | Sensor instance number. Must be unique (no two conflicting sensorIDs per definition) |
+| max_val      | No       |   float   |  Maximum value of this sensor's value in SI units.                                   |
+| min_val      | No       |   float   |  Minimum value of this sensor's value in SI units.                                   |
+
+
 
 #### Properties and Units
 The component's `propertyName`, `type`, and `unit` describe component's the data type and SI unit. The table below mirrors the [Sensor Properties and Units defined in the CircuitPython API documentation.](https://circuitpython.readthedocs.io/en/latest/docs/design_guide.html#sensor-properties-and-units).

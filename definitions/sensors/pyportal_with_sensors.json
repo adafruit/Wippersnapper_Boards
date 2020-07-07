@@ -45,6 +45,26 @@
             "dataType": "bool",
             "value": "0",
             "period": "-1"
+        },
+        {
+            "name": "LIGHT",
+            "displayName": "Light sensor",
+            "sensorID": "0x01",
+            "writable": "False",
+            "property": "light",
+            "dataType": "float",
+            "value": "0",
+            "period": "100"
+        },
+        {
+            "name": "temperature",
+            "displayName": "ADT7410 temperature sensor",
+            "sensorID": "0x02",
+            "writable": "False",
+            "property": "temperature",
+            "dataType": "float",
+            "value": "0",
+            "period": "100"
         }
     ]
 }
