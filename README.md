@@ -88,7 +88,7 @@ The component's `propertyName`, `type`, and `unit` describe component's the data
 
 #### Measurement Period
 
-Stores the number of milliseconds between measurements as a signed 32-bit int. Defining a value of `-1` stops a measurement and `0` indicates as fast as possible. This field is empty by default, configuring a component using an Adafruit IO Dashboard block sets the measurement period.
+Stores the number of milliseconds between measurements as a signed 32-bit int. Defining a value of `-1` stops a measurement. This field is **zero** by default.
 
 # Example Hardware definition
 
