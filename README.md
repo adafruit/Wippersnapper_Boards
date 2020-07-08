@@ -176,5 +176,8 @@ To add support for new hardware:
 * Fork this repository and checkout a new branch.
 * Make a new directory in `definitions/YOUR_BOARD_NAME`
 * Add your hardware definition, `YOUR_BOARD_NAME.json`, to `definitions/YOUR_BOARD_NAME`.
-* Add a new board name, vid, and pid to `boards.json`.
+* Add a new board to `index.json`. 
+  * The `board` key value should match the name of the directory and definition file you created.
+  * This file is sorted by Vendor ID (VID) first.
+    * If you are contributing hardware not designed by Adafruit - you will need to create a new Array and append an object containing the Product ID (`PID`) and `board`.
 * Create a pull request on this repository
