@@ -6,45 +6,84 @@
     "displayName": "",
     "description": "320x240 IoT display.",
     "components": [
-        {
-            "name": "A1",
-            "displayName": "A1",
-            "property": "value",
-            "dataType": "int16",
-            "value": "0",
-            "period": "-1"
+      {
+        "name": "A1",
+        "displayName": "A1",
+        "property": "value",
+        "dataType": "int16",
+        "period": "-1",
+        "device": {
+          "value": "",
+          "lastUpdateTime": ""
         },
-        {
-            "name": "A4",
-            "displayName": "A4",
-            "property": "value",
-            "dataType": "int16",
-            "value": "0",
-            "period": "-1"
-        },
-        {
-            "name": "D3",
-            "displayName": "D3",
-            "property": "value",
-            "dataType": "bool",
-            "value": "0",
-            "period": "-1"
-        },
-        {
-            "name": "D4",
-            "displayName": "D4",
-            "property": "value",
-            "dataType": "bool",
-            "value": "0",
-            "period": "-1"
-        },
-        {
-            "name": "D13",
-            "displayName": "D13 LED",
-            "property": "value",
-            "dataType": "bool",
-            "value": "0",
-            "period": "-1"
+        "IO": {
+          "value" : "",
+          "lastUpdateTime" : ""
         }
+      },
+      {
+        "name": "A4",
+        "displayName": "A4",
+        "property": "value",
+        "dataType": "int16",
+        "value": "0",
+        "period": "-1",
+        "device": {
+          "value": "",
+          "lastUpdateTime": ""
+        },
+        "IO": {
+          "value" : "",
+          "lastUpdateTime" : ""
+        }
+      },
+      {
+        "name": "D3",
+        "displayName": "D3",
+        "property": "value",
+        "dataType": "bool",
+        "value": "0",
+        "period": "-1",
+        "device": {
+          "value": "",
+          "lastUpdateTime": ""
+        },
+        "IO": {
+          "value" : "",
+          "lastUpdateTime" : ""
+        }
+      },
+      {
+        "name": "D4",
+        "displayName": "D4",
+        "property": "value",
+        "dataType": "bool",
+        "value": "0",
+        "period": "-1",
+        "device": {
+          "value": "",
+          "lastUpdateTime": ""
+        },
+        "IO": {
+          "value" : "",
+          "lastUpdateTime" : ""
+        }
+      },
+      {
+        "name": "D13",
+        "displayName": "D13 LED",
+        "property": "value",
+        "dataType": "bool",
+        "value": "0",
+        "period": "-1",
+        "device": {
+          "value": "",
+          "lastUpdateTime": ""
+        },
+        "IO": {
+          "value" : "",
+          "lastUpdateTime" : ""
+        }
+      }
     ]
-}
+  }
