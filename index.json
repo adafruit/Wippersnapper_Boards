@@ -1,11 +1,13 @@
 {
-    "0x239a": [
+    "boards": [
         {
-            "pid": "0x8026",
+            "vid": "0x239a",
+            "pid": "0x8025",
             "board": "adafruit_feather_m4"
         },
         {
-            "pid": "0x239A",
+            "vid": "0x239a",
+            "pid": "0x8036",
             "board": "adafruit_pyportal_m4"
         }
     ]
