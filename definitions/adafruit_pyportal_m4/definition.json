@@ -1,9 +1,9 @@
 {
-    "boardName": "PyPortal",
+    "boardName": "adafruit_pyportal_m4",
     "mcuName": "samd51j20",
     "VID": "0x239A",
     "PID": "0x8036",
-    "displayName": "",
+    "displayName": "PyPortal",
     "description": "320x240 ioT display.",
     "components": [
         {
