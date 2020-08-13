@@ -4,7 +4,7 @@
     "VID": "0x239A",
     "PID": "0x8036",
     "displayName": "PyPortal",
-    "description": "320x240 ioT display.",
+    "description": "320x240 IoT display.",
     "components": [
         {
             "name": "A1",
@@ -12,6 +12,7 @@
             "property": "value",
             "dataType": "int16",
             "value": "0",
+            "direction": null,
             "period": "-1",
             "device": {
                 "value": "",
@@ -28,6 +29,7 @@
             "property": "value",
             "dataType": "int16",
             "value": "0",
+            "direction": null,
             "period": "-1",
             "device": {
                 "value": "",
@@ -44,6 +46,7 @@
             "property": "value",
             "dataType": "bool",
             "value": "0",
+            "direction": null,
             "period": "-1",
             "device": {
                 "value": "",
@@ -60,6 +63,7 @@
             "property": "value",
             "dataType": "bool",
             "value": "0",
+            "direction": null,
             "period": "-1",
             "device": {
                 "value": "",
@@ -76,6 +80,7 @@
             "property": "value",
             "dataType": "bool",
             "value": "0",
+            "direction": null,
             "period": "-1",
             "device": {
                 "value": "",
