@@ -11,6 +11,7 @@
             "displayName": "A1",
             "property": "value",
             "dataType": "int16",
+            "value": "0",
             "period": "-1",
             "device": {
                 "value": "",
