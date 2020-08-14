@@ -14,14 +14,7 @@
             "value": "0",
             "direction": null,
             "period": "-1",
-            "device": {
-                "value": "",
-                "lastUpdateTime": ""
-            },
-            "io": {
-                "value": "",
-                "lastUpdateTime": ""
-            }
+            "lastUpdated": null
         },
         {
             "name": "A4",
@@ -31,14 +24,7 @@
             "value": "0",
             "direction": null,
             "period": "-1",
-            "device": {
-                "value": "",
-                "lastUpdateTime": ""
-            },
-            "io": {
-                "value": "",
-                "lastUpdateTime": ""
-            }
+            "lastUpdated": null
         },
         {
             "name": "D3",
@@ -48,14 +34,7 @@
             "value": "0",
             "direction": null,
             "period": "-1",
-            "device": {
-                "value": "",
-                "lastUpdateTime": ""
-            },
-            "io": {
-                "value": "",
-                "lastUpdateTime": ""
-            }
+            "lastUpdated": null
         },
         {
             "name": "D4",
@@ -65,14 +44,7 @@
             "value": "0",
             "direction": null,
             "period": "-1",
-            "device": {
-                "value": "",
-                "lastUpdateTime": ""
-            },
-            "io": {
-                "value": "",
-                "lastUpdateTime": ""
-            }
+            "lastUpdated": null
         },
         {
             "name": "D13",
@@ -82,14 +54,7 @@
             "value": "0",
             "direction": null,
             "period": "-1",
-            "device": {
-                "value": "",
-                "lastUpdateTime": ""
-            },
-            "io": {
-                "value": "",
-                "lastUpdateTime": ""
-            }
+            "lastUpdated": null
         }
     ]
 }
