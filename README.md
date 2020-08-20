@@ -15,7 +15,7 @@ This README.md specifies the hardware definition model for internet-of-things ha
 
 The hardware definition describes the contents (hardware information, components) of a physical piece of hardware or project.
 
-### Information
+## Information
 
 Information related to the hardware including the hardware's name, definition and unique identifiers.
 
@@ -30,7 +30,7 @@ Information related to the hardware including the hardware's name, definition an
 | lastUpdated | Yes      | Time    | Last time the board definition was updated, in ISO-8601      |
 
 
-### Components
+## Components
 
 Hardware components are digital pins, ADC pins, sensors, servos, or motors. These components are defined within the `components` array. 
 
@@ -42,13 +42,29 @@ Each general component uses the following structure:
 | displayName  | no       | String    | Human-readable display name for Adafruit IO                                            |
 | property     | yes      | String    | Property type                                                                          |
 | dataType     | yes      | String    | Expected data type from component                                                      |
-| value        | no       | String    | Stores the sensor's value or state                                                     |
 | period       | no      | int32     | Number of milliseconds between measurements. Defaults to -1, no active measurements.   |
-| writable     | yes      | boolean   | Whether the component is writable. Default is True, read/write.                        |
+| readable     | yes      | boolean   | Whether the component is input only. Default is True, read/write.                        |
 
-**Sensor Components**
+## Component value objects
+Each component contains two objects which store data: `device` and `io`. The `device` object contains the value from the board and the time it was reported. The `io` object contains the value reported from the Adafruit IO service and the time it was reported, in ISO-8601 format.
 
-Sensors are special component types which are defined by attaching a component to the device in user-code. These components should append the following properties onto the component structure above:
+
+
+```
+"device": {
+    "value": "",
+    "lastUpdateTime": ""
+},
+"io": {
+    "value" : "",
+    "lastUpdateTime" : ""
+}
+```
+
+
+#### Sensor Component Types
+
+Sensors are special component types that are defined by attaching a component to the device in user-code. These components should append the following properties onto the component structure above:
 
 | Property     | Required | Data Type | description                                                                       |
 |--------------|----------|-----------|-----------------------------------------------------------------------------------|
@@ -90,81 +106,9 @@ The component's `propertyName`, `type`, and `unit` describe component's the data
 
 Stores the number of milliseconds between measurements as a signed 32-bit int. Defining a value of `-1` stops a measurement. This field is **zero** by default.
 
-# Example Hardware definition
+# Examples
 
-The following hardware definition shows an [Adafruit PyPortal](https://www.adafruit.com/product/4116). 
-
-```
-{
-    "boardName": "PyPortal",
-    "mcuName": "samd51j20",
-    "VID": "0x239A",
-    "PID": "0x8036",
-    "displayName": "",
-    "components": [
-        {
-            "propertyName": "value",
-            "displayName": "A1",
-            "name": "A1",
-            "type": "int16",
-            "unit": "",
-            "value": "",
-            "period": "-1"
-        },
-        {
-            "propertyName": "value",
-            "displayName": "A4",
-            "name": "A4",
-            "type": "int16",
-            "unit": "",
-            "value": "",
-            "period": "-1"
-        },
-        {
-            "propertyName": "value",
-            "displayName": "D3",
-            "name": "D3",
-            "type": "bool",
-            "unit": "",
-            "value": "",
-            "period": "-1"
-        },
-        {
-            "propertyName": "value",
-            "displayName": "D4",
-            "name": "D4",
-            "type": "bool",
-            "unit": "",
-            "value": "",
-            "period": "-1"
-        },
-        {
-            "propertyName": "light",
-            "displayName": "Light sensor",
-            "name": "A2",
-            "type": "float",
-            "unit": "light level",
-            "value": "",
-            "period": "-1"
-        },
-        {
-            "propertyName": "pixel",
-            "displayName": "NeoPixel",
-            "name": "NEOPIXEL",
-            "type": "0",
-            "value": ""
-        },
-        {
-            "propertyName": "value",
-            "displayName": "Built-in LED",
-            "name": "D13",
-            "type": "bool",
-            "unit": "",
-            "value": ""
-        }
-    ]
-}
-```
+Example hardware definitions can be found in the `definitions/` directory.
 
 # Limitations
 * BlinkaConnect currently only supports WiFi, Cellular and Ethernet connectivity.

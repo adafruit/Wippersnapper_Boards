@@ -1,0 +1,214 @@
+{
+    "boardName": "adafruit_metro_m4_airliftlite",
+    "mcuName": "samd51j20",
+    "VID": "0x239A",
+    "PID": "0x8038",
+    "displayName": "Metro M4 Airlift Lite",
+    "description": "Metro M4 + ESP32 Airlift Co-Processor.",
+    "components": [
+        {
+            "name": "A0",
+            "displayName": "A0",
+            "property": "value",
+            "dataType": "int16",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "A1",
+            "displayName": "A1",
+            "property": "value",
+            "dataType": "int16",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "A2",
+            "displayName": "A2",
+            "property": "value",
+            "dataType": "int16",
+            "value": "0",
+            "readable": false,
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "A3",
+            "displayName": "A3",
+            "property": "value",
+            "dataType": "int16",
+            "value": "0",
+            "readable": false,
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "A4",
+            "displayName": "A4",
+            "property": "value",
+            "dataType": "int16",
+            "value": "0",
+            "readable": false,
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "A5",
+            "displayName": "A5",
+            "property": "value",
+            "dataType": "int16",
+            "value": "0",
+            "readable": false,
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D0",
+            "displayName": "D0",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D1",
+            "displayName": "D1",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D2",
+            "displayName": "D2",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D3",
+            "displayName": "D3",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D4",
+            "displayName": "D4",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D5",
+            "displayName": "D5",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D6",
+            "displayName": "D6",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D7",
+            "displayName": "D7",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D8",
+            "displayName": "D8",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D9",
+            "displayName": "D9",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D10",
+            "displayName": "D10",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D11",
+            "displayName": "D11",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D12",
+            "displayName": "D12",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        },
+        {
+            "name": "D13",
+            "displayName": "D13 LED",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
+        }
+    ]
+}

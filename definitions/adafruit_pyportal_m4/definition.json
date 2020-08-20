@@ -1,89 +1,60 @@
 {
-    "boardName": "PyPortal",
+    "boardName": "adafruit_pyportal_m4",
     "mcuName": "samd51j20",
     "VID": "0x239A",
     "PID": "0x8036",
-    "displayName": "",
+    "displayName": "PyPortal",
     "description": "320x240 IoT display.",
     "components": [
-      {
-        "name": "A1",
-        "displayName": "A1",
-        "property": "value",
-        "dataType": "int16",
-        "period": "-1",
-        "device": {
-          "value": "",
-          "lastUpdateTime": ""
+        {
+            "name": "A1",
+            "displayName": "A1",
+            "property": "value",
+            "dataType": "int16",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
         },
-        "IO": {
-          "value" : "",
-          "lastUpdateTime" : ""
-        }
-      },
-      {
-        "name": "A4",
-        "displayName": "A4",
-        "property": "value",
-        "dataType": "int16",
-        "value": "0",
-        "period": "-1",
-        "device": {
-          "value": "",
-          "lastUpdateTime": ""
+        {
+            "name": "A4",
+            "displayName": "A4",
+            "property": "value",
+            "dataType": "int16",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
         },
-        "IO": {
-          "value" : "",
-          "lastUpdateTime" : ""
-        }
-      },
-      {
-        "name": "D3",
-        "displayName": "D3",
-        "property": "value",
-        "dataType": "bool",
-        "value": "0",
-        "period": "-1",
-        "device": {
-          "value": "",
-          "lastUpdateTime": ""
+        {
+            "name": "D3",
+            "displayName": "D3",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
         },
-        "IO": {
-          "value" : "",
-          "lastUpdateTime" : ""
-        }
-      },
-      {
-        "name": "D4",
-        "displayName": "D4",
-        "property": "value",
-        "dataType": "bool",
-        "value": "0",
-        "period": "-1",
-        "device": {
-          "value": "",
-          "lastUpdateTime": ""
+        {
+            "name": "D4",
+            "displayName": "D4",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
         },
-        "IO": {
-          "value" : "",
-          "lastUpdateTime" : ""
+        {
+            "name": "D13",
+            "displayName": "D13 LED",
+            "property": "value",
+            "dataType": "bool",
+            "value": "0",
+            "direction": null,
+            "period": "-1",
+            "lastUpdated": null
         }
-      },
-      {
-        "name": "D13",
-        "displayName": "D13 LED",
-        "property": "value",
-        "dataType": "bool",
-        "value": "0",
-        "period": "-1",
-        "device": {
-          "value": "",
-          "lastUpdateTime": ""
-        },
-        "IO": {
-          "value" : "",
-          "lastUpdateTime" : ""
-        }
-      }
     ]
-  }
+}
