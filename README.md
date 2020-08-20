@@ -43,7 +43,7 @@ Each general component uses the following structure:
 | property     | yes      | String    | Property type                                                                          |
 | dataType     | yes      | String    | Expected data type from component                                                      |
 | period       | no      | int32     | Number of milliseconds between measurements. Defaults to -1, no active measurements.   |
-| writable     | yes      | boolean   | Whether the component is writable. Default is True, read/write.                        |
+| readable     | yes      | boolean   | Whether the component is input only. Default is True, read/write.                        |
 
 ## Component value objects
 Each component contains two objects which store data: `device` and `io`. The `device` object contains the value from the board and the time it was reported. The `io` object contains the value reported from the Adafruit IO service and the time it was reported, in ISO-8601 format.
