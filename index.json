@@ -14,6 +14,11 @@
             "vid": "0x239A",
             "pid": "0x8021",
             "board":"adafruit_metro_m4"
+        },
+        {
+            "vid": "0x04d8",
+            "pid": "0x00dd",
+            "board":"adafruit_mcp2221a"
         }
     ]
 }
