@@ -42,6 +42,7 @@ Each general component uses the following structure:
 | displayName  | no       | String    | Human-readable display name for Adafruit IO                                            |
 | property     | yes      | String    | Property type                                                                          |
 | dataType     | yes      | String    | Expected data type from component                                                      |
+| max_resolution     | no      | int    | Max resolution of an ADC pin, in bits                                                      |
 | period       | no      | int32     | Number of milliseconds between measurements. Defaults to -1, no active measurements.   |
 | readable     | yes      | boolean   | Whether the component is input only. Default is True, read/write.                        |
 
