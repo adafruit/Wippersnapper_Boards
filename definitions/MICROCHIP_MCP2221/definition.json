@@ -1,5 +1,5 @@
 {
-    "boardName": "adafruit_mcp2221a",
+    "boardName": "MICROCHIP_MCP2221",
     "mcuName": "mcp2221a",
     "VID": "0x04d8",
     "PID": "0x00dd",

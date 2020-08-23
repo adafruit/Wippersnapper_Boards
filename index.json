@@ -18,7 +18,7 @@
         {
             "vid": "0x04d8",
             "pid": "0x00dd",
-            "board":"adafruit_mcp2221a"
+            "board":"MICROCHIP_MCP2221"
         }
     ]
 }
