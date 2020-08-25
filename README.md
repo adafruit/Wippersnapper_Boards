@@ -1,10 +1,10 @@
-# BlinkaConnect_Boards
-Hardware specification and boards for BlinkaConnect.
+# Wippersnapper_Boards
+Hardware specification and boards for Wippersnapper.
 
-This repository, its contents, and the BlinkaConnect hardware specification is a ***work in progress and subject to change***.
+This repository, its contents, and the Wippersnapper hardware specification is a ***work in progress and subject to change***.
 
 # Introduction
-This README.md specifies the hardware definition model for internet-of-things hardware compatible with BlinkaConnect. 
+This README.md specifies the hardware definition model for internet-of-things hardware compatibility with Wippersnapper. 
 
 # Repository Contents
 
@@ -112,12 +112,10 @@ Stores the number of milliseconds between measurements as a signed 32-bit int. D
 Example hardware definitions can be found in the `definitions/` directory.
 
 # Limitations
-* BlinkaConnect currently only supports WiFi, Cellular and Ethernet connectivity.
+* Wippersnapper currently only supports WiFi, Cellular and Ethernet connectivity.
 
 # Contributing
-If you do not see the board you're using with BlinkaConnect
-
-To add support for new hardware:
+If you do not see the board you want to use with Wippersnapper, adding support for a board is simple and we welcome all contributions:
 * Fork this repository and checkout a new branch.
 * Make a new directory in `definitions/YOUR_BOARD_NAME`
 * Add your hardware definition, `YOUR_BOARD_NAME.json`, to `definitions/YOUR_BOARD_NAME`.
