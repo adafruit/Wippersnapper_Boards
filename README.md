@@ -19,49 +19,54 @@ The hardware definition describes the contents (hardware information, components
 
 Information related to the hardware including the hardware's name, definition and unique identifiers.
 
-| Property    | Required | Data Type | description             |
-|-------------|----------|-----------|-------------------------|
-| boardName   | Yes      | String    | Hardware name           |
-| mcuName     | Yes      | String    | Microcontroller name    |
-| VID         | Yes      | int16     | USB Vendor ID           |
-| PID         | Yes      | int16     | USB Product ID          |
-| displayName | Yes      | String    | Adafruit IO Device name |
-| definition | Yes      | String    | Device definition      |
-| lastUpdated | Yes      | Time    | Last time the board definition was updated, in ISO-8601      |
+| Property    | Required | Data Type | description                                             |
+|-------------|----------|-----------|---------------------------------------------------------|
+| boardName   | Yes      | String    | Hardware name                                           |
+| mcuName     | Yes      | String    | Microcontroller name                                    |
+| VID         | Yes      | int16     | USB Vendor ID                                           |
+| PID         | Yes      | int16     | USB Product ID                                          |
+| displayName | Yes      | String    | Adafruit IO Device name                                 |
+| definition  | Yes      | String    | Device definition                                       |
+| lastUpdated | Yes      | Time      | Last time the board definition was updated, in ISO-8601 |
 
 
 ## Components
 
 Hardware components are digital pins, ADC pins, sensors, servos, or motors. These components are defined within the `components` array. 
 
-Each general component uses the following structure:
+\
+Each hardware component is defined by adding the following to the `.json` definition file:
 
-| Property      | Required | Data Type | description                                                                       |
-|--------------|----------|-----------|-----------------------------------------------------------------------------------|
-| name         | yes      | String    | Component type. Components connected to hardware externally are prefixed by `external_`|
-| displayName  | no       | String    | Human-readable display name for Adafruit IO                                            |
-| property     | yes      | String    | Property type                                                                          |
-| dataType     | yes      | String    | Expected data type from component                                                      |
-| max_resolution     | no      | int    | Max resolution of an ADC pin, in bits                                                      |
-| period       | no      | int32     | Number of milliseconds between measurements. Defaults to -1, no active measurements.   |
-| readable     | yes      | boolean   | Whether the component is input only. Default is True, read/write.                        |
-
-## Component value objects
-Each component contains two objects which store data: `device` and `io`. The `device` object contains the value from the board and the time it was reported. The `io` object contains the value reported from the Adafruit IO service and the time it was reported, in ISO-8601 format.
+| Property       | Required | Data Type | description                                                                            |
+|----------------|----------|-----------|----------------------------------------------------------------------------------------|
+| name           | yes      | string    | Component type. Components connected to hardware externally are prefixed by `external_`|
+| displayName    | no       | string    | Human-readable display name for Adafruit IO                                            |
+| dataType       | yes      | string    | Expected data type from component                                                      |
+| max_resolution | no       | int16     | Max resolution of an analog component, in bits                                         |
+| readable       | yes      | boolean   | Whether the component is input only. Default is True, read/write.                      |
 
 
+The following properties are set by the Wippersnapper web application. **You do not need to define these values**:
 
-```
-"device": {
-    "value": "",
-    "lastUpdateTime": ""
-},
-"io": {
-    "value" : "",
-    "lastUpdateTime" : ""
-}
-```
+| Property       | Required | Data Type | description                                                                            |
+|----------------|----------|-----------|----------------------------------------------------------------------------------------|
+| mode  | no       | int16     | Component mode. See `mode` for type definitions.                              |
+| direction      | no       | bool      | Defines the direction of a component, either input (`0`) or output (`1`).              |
+| pull           | no       | bool      | Defines the pull direction of a component, either up (`0`) or down (`1`).              |
+| period         | no       | int32     | Number of milliseconds between measurements. Defaults to -1, no active measurements.   |
 
+### `period` Measurement Period
+
+Stores the number of milliseconds between measurements as a signed 32-bit int. Defining a value of `-1` stops a measurement. This field is **zero** by default.
+
+### `mode` Component mode
+
+Defines the component's mode. Currently can either be analog (`1`), or digital (`2`).
+* [Associated protocol buffer message](https://github.com/adafruit/Wippersnapper_Protobuf/blob/master/proto/pin/v1/pin.proto#L28)
+
+
+## Draft
+The following information is a draft and not currently implemented by Adafruit Wippersnapper.
 
 #### Sensor Component Types
 
@@ -103,9 +108,6 @@ The component's `propertyName`, `type`, and `unit` describe component's the data
 | ``value``             | int                   | 16-bit Analog value, unit-less                                          |
 | ``weight``            | float                 | grams (g)                                                               |
 
-#### Measurement Period
-
-Stores the number of milliseconds between measurements as a signed 32-bit int. Defining a value of `-1` stops a measurement. This field is **zero** by default.
 
 # Examples
 
