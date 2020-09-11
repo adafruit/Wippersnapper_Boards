@@ -9,222 +9,102 @@
         {
             "name": "A0",
             "displayName": "A0",
-            "dataType": "int16",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "int16"
         },
         {
             "name": "A1",
             "displayName": "A1",
-            "dataType": "int16",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "int16"
         },
         {
             "name": "A2",
             "displayName": "A2",
-            "dataType": "int16",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "int16"
         },
         {
             "name": "A3",
             "displayName": "A3",
-            "dataType": "int16",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "int16"
         },
         {
             "name": "A4",
             "displayName": "A4",
-            "dataType": "int16",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "int16"
         },
         {
             "name": "A5",
             "displayName": "A5",
-            "dataType": "int16",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "int16"
         },
         {
             "name": "D0",
             "displayName": "D0",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "D1",
             "displayName": "D1",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "D2",
             "displayName": "D2",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "D3",
             "displayName": "D3",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "D4",
             "displayName": "D4",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "D5",
             "displayName": "D5",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "D6",
             "displayName": "D6",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "D7",
             "displayName": "D7",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "D8",
             "displayName": "D8",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "D9",
             "displayName": "D9",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "D10",
             "displayName": "D10",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "D11",
             "displayName": "D11",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "D12",
             "displayName": "D12",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "D13",
             "displayName": "D13 LED",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         }
     ]
 }

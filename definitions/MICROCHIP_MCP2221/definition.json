@@ -9,82 +9,40 @@
         {
             "name": "G0",
             "displayName": "G0",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "G1",
             "displayName": "G1",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "G2",
             "displayName": "G2",
-            "mode": null,
-            "dataType": "bool",
-            "value": "0",
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "G3",
             "displayName": "G3",
-            "dataType": "bool",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "dataType": "bool"
         },
         {
             "name": "G1",
             "displayName": "ADC1",
             "dataType": "int",
-            "max_resolution": "10",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "max_resolution": "10"
         },
         {
             "name": "G2",
             "displayName": "ADC2",
             "dataType": "int",
-            "max_resolution": "10",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "max_resolution": "10"
         },
         {
             "name": "G3",
             "displayName": "ADC3",
             "dataType": "int",
-            "max_resolution": "10",
-            "value": "0",
-            "mode": null,
-            "direction": null,
-            "pull": null,
-            "period": "-1",
-            "lastUpdated": null
+            "max_resolution": "10"
         }
     ]
 }
