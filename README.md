@@ -44,6 +44,7 @@ Each hardware component is defined by adding the following to the `.json` defini
 | dataType       | yes      | string    | Expected data type from component                                                      |
 | max_resolution | no       | int16     | Max resolution of an analog component, in bits                                         |
 | readable       | yes      | boolean   | Whether the component is input only. Default is True, read/write.                      |
+| autoConfigure  | no       | boolean   | Automatically initialize after the device is connected to Wippersnapper.               |
 
 
 The following properties are set by the Wippersnapper web application. **You do not need to define these values**:
@@ -54,6 +55,7 @@ The following properties are set by the Wippersnapper web application. **You do 
 | direction      | no       | bool      | Defines the direction of a component, either input (`0`) or output (`1`).              |
 | pull           | no       | bool      | Defines the pull direction of a component, either up (`0`) or down (`1`).              |
 | period         | no       | int32     | Number of milliseconds between measurements. Defaults to -1, no active measurements.   |
+
 
 ### `period` Measurement Period
 

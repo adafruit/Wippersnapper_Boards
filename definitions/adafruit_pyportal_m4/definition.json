@@ -12,6 +12,12 @@
             "dataType": "int16"
         },
         {
+            "name": "A2",
+            "displayName": "Light Sensor",
+            "dataType": "int16",
+            "autoConfigure": "True"
+        },
+        {
             "name": "A4",
             "displayName": "A4",
             "dataType": "int16"
