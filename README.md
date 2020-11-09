@@ -54,7 +54,7 @@ The following properties are set by the Wippersnapper web application. **You do 
 | mode  | no       | int16     | Component mode. See `mode` for type definitions.                              |
 | direction      | no       | bool      | Defines the direction of a component, either input (`0`) or output (`1`).              |
 | pull           | no       | bool      | Defines the pull direction of a component, either up (`0`) or down (`1`).              |
-| period         | no       | int32     | Number of milliseconds between measurements. Defaults to -1, no active measurements.   |
+| period         | no       | int32     | Number of milliseconds between measurements. Set to 0 to send data on when a value changes. Defaults to -1, off, no active measurements.   |
 
 
 ### `period` Measurement Period
