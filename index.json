@@ -19,6 +19,9 @@
             "board":"adafruit_huzzah_8266"
         },
         {
+            "board":"adafruit_huzzah_32"
+        },
+        {
             "vid": "0x04d8",
             "pid": "0x00dd",
             "board":"MICROCHIP_MCP2221"

@@ -1,0 +1,135 @@
+{
+    "boardName": "adafruit_huzzah_32",
+    "mcuName": "ESP32",
+    "VID": "0x239A",
+    "PID": "0x8036",
+    "displayName": "Adafruit Feather HUZZAH ESP32",
+    "description": "Feather Huzzah with ESP32.",
+    "components": [
+        {
+            "name": "A0",
+            "displayName": "A0",
+            "dataType": "int16"
+        },
+        {
+            "name": "A1",
+            "displayName": "A1",
+            "dataType": "int16"
+        },
+        {
+            "name": "A2",
+            "displayName": "A2",
+            "dataType": "int16",
+            "readable": false
+        },
+        {
+            "name": "A3",
+            "displayName": "A3",
+            "dataType": "int16",
+            "readable": false
+        },
+        {
+            "name": "A4",
+            "displayName": "A4",
+            "dataType": "int16",
+            "readable": false
+        },
+        {
+            "name": "A5",
+            "displayName": "A5",
+            "dataType": "int16"
+        },
+        {
+            "name": "A6",
+            "displayName": "A6",
+            "dataType": "int16"
+        },
+        {
+            "name": "A7",
+            "displayName": "A7",
+            "dataType": "int16"
+        },
+        {
+            "name": "A8",
+            "displayName": "A8",
+            "dataType": "int16"
+        },
+        {
+            "name": "A9",
+            "displayName": "A9",
+            "dataType": "int16"
+        },
+        {
+            "name": "A10",
+            "displayName": "A10",
+            "dataType": "int16"
+        },
+        {
+            "name": "A11",
+            "displayName": "A11",
+            "dataType": "int16",
+            "readable": false
+        },
+        {
+            "name": "A12",
+            "displayName": "A12",
+            "dataType": "int16"
+        },
+        {
+            "name": "A13",
+            "displayName": "VBAT",
+            "dataType": "int16",
+            "readable": false
+        },
+        {
+            "name": "D0",
+            "displayName": "D0",
+            "dataType": "bool"
+        },
+        {
+            "name": "D2",
+            "displayName": "D2",
+            "dataType": "bool"
+        },
+        {
+            "name": "D4",
+            "displayName": "D4",
+            "dataType": "bool"
+        },
+        {
+            "name": "D12",
+            "displayName": "D12",
+            "dataType": "bool"
+        },
+        {
+            "name": "D14",
+            "displayName": "D14",
+            "dataType": "bool"
+        },
+        {
+            "name": "D15",
+            "displayName": "D15",
+            "dataType": "bool"
+        },
+        {
+            "name": "D27",
+            "displayName": "D27",
+            "dataType": "bool"
+        },
+        {
+            "name": "D32",
+            "displayName": "D32",
+            "dataType": "bool"
+        },
+        {
+            "name": "D33",
+            "displayName": "D33",
+            "dataType": "bool"
+        },
+        {
+            "name": "D13",
+            "displayName": "D13 LED",
+            "dataType": "bool"
+        }
+    ]
+}
