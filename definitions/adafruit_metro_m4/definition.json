@@ -5,7 +5,80 @@
     "PID": "0x8021",
     "displayName": "Metro M4 Express",
     "description": "Metro M4 Express + ESP32 Airlift Shield.",
-    "components": [
+    "components": {
+      "digitalPins": [
+        {
+            "name": "D0",
+            "displayName": "D0",
+            "dataType": "bool"
+        },
+        {
+            "name": "D1",
+            "displayName": "D1",
+            "dataType": "bool"
+        },
+        {
+            "name": "D2",
+            "displayName": "D2",
+            "dataType": "bool"
+        },
+        {
+            "name": "D3",
+            "displayName": "D3",
+            "dataType": "bool"
+        },
+        {
+            "name": "D4",
+            "displayName": "D4",
+            "dataType": "bool"
+        },
+        {
+            "name": "D5",
+            "displayName": "D5",
+            "dataType": "bool"
+        },
+        {
+            "name": "D6",
+            "displayName": "D6",
+            "dataType": "bool"
+        },
+        {
+            "name": "D7",
+            "displayName": "D7",
+            "dataType": "bool"
+        },
+        {
+            "name": "D8",
+            "displayName": "D8",
+            "dataType": "bool"
+        },
+        {
+            "name": "D9",
+            "displayName": "D9",
+            "dataType": "bool"
+        },
+        {
+            "name": "D10",
+            "displayName": "D10",
+            "dataType": "bool"
+        },
+        {
+            "name": "D11",
+            "displayName": "D11",
+            "dataType": "bool"
+        },
+        {
+            "name": "D12",
+            "displayName": "D12",
+            "dataType": "bool"
+        },
+        {
+            "name": "D13",
+            "displayName": "D13 LED",
+            "dataType": "bool"
+        }
+      ],
+      "analogPins": [
         {
             "name": "A0",
             "displayName": "A0",
@@ -35,57 +108,7 @@
             "name": "A5",
             "displayName": "A5",
             "dataType": "int16"
-        },
-        {
-            "name": "D0",
-            "displayName": "D0",
-            "dataType": "bool"
-        },
-        {
-            "name": "D1",
-            "displayName": "D1",
-            "dataType": "bool"
-        },
-        {
-            "name": "D2",
-            "displayName": "D2",
-            "dataType": "bool"
-        },
-        {
-            "name": "D3",
-            "displayName": "D3",
-            "dataType": "bool"
-        },
-        {
-            "name": "D4",
-            "displayName": "D4",
-            "dataType": "bool"
-        },
-        {
-            "name": "D8",
-            "displayName": "D8",
-            "dataType": "bool"
-        },
-        {
-            "name": "D9",
-            "displayName": "D9",
-            "dataType": "bool"
-        },
-        {
-            "name": "D11",
-            "displayName": "D11",
-            "dataType": "bool",
-            "value": "0"
-        },
-        {
-            "name": "D12",
-            "displayName": "D12",
-            "dataType": "bool"
-        },
-        {
-            "name": "D13",
-            "displayName": "D13 LED",
-            "dataType": "bool"
         }
-    ]
+      ]
+    }
 }
