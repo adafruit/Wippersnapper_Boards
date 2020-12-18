@@ -1,23 +1,23 @@
 # Wippersnapper_Boards
 Hardware specification and boards for Wippersnapper.
 
-This repository, its contents, and the Wippersnapper hardware specification is a ***work in progress and subject to change***.
+This repository, its contents, and Wippersnapper is a ***work in progress and subject to change***.
 
 # Introduction
-This README.md specifies the hardware definition model for internet-of-things hardware compatibility with Wippersnapper. 
+This README.md specifies the hardware description model for internet-of-things hardware compatibility with Wippersnapper. 
 
 # Repository Contents
 
-`definition`: Contains hardware definition models.
-`boards.json`: Index of hardware within `definitions/` containing hardware USB vendor ID (vid) and product ID (pid).
+`description`: Contains hardware description models.
+`boards.json`: Index of hardware within `descriptions/` containing hardware USB vendor ID (vid) and product ID (pid).
 
-# Hardware definition
+# Hardware description
 
-The hardware definition describes the contents (hardware information, components) of a physical piece of hardware or project.
+The hardware description describes the contents (hardware information, components) of a physical piece of hardware or project.
 
 ## Information
 
-Information related to the hardware including the hardware's name, definition and unique identifiers.
+Information related to the hardware including the hardware's name, description and unique identifiers.
 
 | Property    | Required | Data Type | description                                             |
 |-------------|----------|-----------|---------------------------------------------------------|
@@ -26,8 +26,8 @@ Information related to the hardware including the hardware's name, definition an
 | VID         | Yes      | int16     | USB Vendor ID                                           |
 | PID         | Yes      | int16     | USB Product ID                                          |
 | displayName | Yes      | String    | Adafruit IO Device name                                 |
-| definition  | Yes      | String    | Device definition                                       |
-| lastUpdated | Yes      | Time      | Last time the board definition was updated, in ISO-8601 |
+| description  | Yes      | String    | Device description                                       |
+| lastUpdated | Yes      | Time      | Last time the board description was updated, in ISO-8601 |
 
 
 ## Components
@@ -35,7 +35,7 @@ Information related to the hardware including the hardware's name, definition an
 Hardware components are digital pins, ADC pins, sensors, servos, or motors. These components are defined within the `components` array. 
 
 \
-Each hardware component is defined by adding the following to the `.json` definition file:
+Each hardware component is defined by adding the following to the `.json` description file:
 
 | Property       | Required | Data Type | description                                                                            |
 |----------------|----------|-----------|----------------------------------------------------------------------------------------|
@@ -51,7 +51,7 @@ The following properties are set by the Wippersnapper web application. **You do 
 
 | Property       | Required | Data Type | description                                                                            |
 |----------------|----------|-----------|----------------------------------------------------------------------------------------|
-| mode  | no       | int16     | Component mode. See `mode` for type definitions.                              |
+| mode  | no       | int16     | Component mode. See `mode` for type descriptions.                              |
 | direction      | no       | bool      | Defines the direction of a component, either input (`0`) or output (`1`).              |
 | pull           | no       | bool      | Defines the pull direction of a component, either up (`0`) or down (`1`).              |
 | period         | no       | int32     | Number of milliseconds between measurements. Set to 0 to send data on when a value changes. Defaults to -1, off, no active measurements.   |
@@ -67,7 +67,50 @@ Defines the component's mode. Currently can either be analog (`1`), or digital (
 * [Associated protocol buffer message](https://github.com/adafruit/Wippersnapper_Protobuf/blob/master/proto/pin/v1/pin.proto#L28)
 
 
-## Draft
+## Addressable RGB Pixels
+
+Internally, Wippersnapper has an Addressable Pixel API which implements configuring and writing to
+addressable RGB pixels such as the WS2812 (NeoPixel) and APA201 (Dotstar).
+
+To define addressable pixels connected to your board, add a component containing the following to the description file:
+
+### Addressable RGB Pixel Component
+| Name        	| Required 	| Data Type    	| Description                                                                         	|
+|-------------	|----------	|--------------	|-------------------------------------------------------------------------------------	|
+| pixelPin    	| yes      	| int       	| Pin to output data on.                                                              	|
+| pixelNumber 	| yes      	| int       	| Number of pixels connected to a strip                                               	|
+| pixelType   	| yes      	| `PixelType`  	| Type of pixel connected to pixelPin. See `PixelType` below for compatible hardware. 	|
+| pixelOrder  	| yes      	| `PixelOrder` 	| Pixel color channel order. See `PixelOrder` below for example values.               	|
+
+#### PixelType
+Wippersnapper currently supports the WS2812 ("NeoPixel") and APA201 ("Dotstar") addressable RGB pixel
+hardware.
+
+Use one of the values in the table below as the `pixelType` in an addressable RGB pixel component.
+
+| Name              	| Value             	|
+|-------------------	|-------------------	|
+| WS2182 (NeoPixel) 	| PIXEL_TYPE_WS2812 	|
+| APA201 (Dotstar)  	| PIXEL_TYPE_APA201 	|
+
+#### PixelOrder
+Order to transmit pixels. 
+
+Use one of the values in the table below as the `PixelOrder` in an addressable RGB pixel component.
+
+| Transmit Order 	| Value            	|
+|----------------	|------------------	|
+| RGB            	| PIXEL_ORDER_RGB  	|
+| RBG            	| PIXEL_ORDER_RBG  	|
+| RGBW           	| PIXEL_ORDER_RGBW 	|
+| GRB            	| PIXEL_ORDER_GRB  	|
+| GBR            	| PIXEL_ORDER_GBR  	|
+| GRBW           	| PIXEL_ORDER_GRBW 	|
+| BGR            	| PIXEL_ORDER_BGR  	|
+| BRG            	| PIXEL_ORDER_BRG  	|
+
+
+## Draft - Unfinished!
 The following information is a draft and not currently implemented by Adafruit Wippersnapper.
 
 #### Sensor Component Types
@@ -76,7 +119,7 @@ Sensors are special component types that are defined by attaching a component to
 
 | Property     | Required | Data Type | description                                                                       |
 |--------------|----------|-----------|-----------------------------------------------------------------------------------|
-| sensorID     | Yes      |   int32   | Sensor instance number. Must be unique (no two conflicting sensorIDs per definition) |
+| sensorID     | Yes      |   int32   | Sensor instance number. Must be unique (no two conflicting sensorIDs per description) |
 | max_val      | No       |   float   |  Maximum value of this sensor's value in SI units.                                   |
 | min_val      | No       |   float   |  Minimum value of this sensor's value in SI units.                                   |
 
@@ -113,7 +156,7 @@ The component's `propertyName`, `type`, and `unit` describe component's the data
 
 # Examples
 
-Example hardware definitions can be found in the `definitions/` directory.
+Example hardware descriptions can be found in the `descriptions/` directory.
 
 # Limitations
 * Wippersnapper currently only supports WiFi, Cellular and Ethernet connectivity.
@@ -121,10 +164,10 @@ Example hardware definitions can be found in the `definitions/` directory.
 # Contributing
 If you do not see the board you want to use with Wippersnapper, adding support for a board is simple and we welcome all contributions:
 * Fork this repository and checkout a new branch.
-* Make a new directory in `definitions/YOUR_BOARD_NAME`
-* Add your hardware definition, `YOUR_BOARD_NAME.json`, to `definitions/YOUR_BOARD_NAME`.
+* Make a new directory in `descriptions/YOUR_BOARD_NAME`
+* Add your hardware description, `YOUR_BOARD_NAME.json`, to `descriptions/YOUR_BOARD_NAME`.
 * Add a new board to `index.json`. 
-  * The `board` key value should match the name of the directory and definition file you created.
+  * The `board` key value should match the name of the directory and description file you created.
   * This file is sorted by Vendor ID (VID) first.
     * If you are contributing hardware not designed by Adafruit - you will need to create a new Array and append an object containing the Product ID (`PID`) and `board`.
 * Create a pull request on this repository
