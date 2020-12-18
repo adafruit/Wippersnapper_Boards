@@ -5,7 +5,60 @@
     "PID":"0x8036",
     "displayName":"Adafruit Feather HUZZAH ESP32",
     "description":"Feather Huzzah with ESP32.",
-    "components":[
+    "components": {
+      "digitalPins": [
+       {
+          "name":"D0",
+          "displayName":"D0",
+          "dataType":"bool"
+       },
+       {
+          "name":"D2",
+          "displayName":"D2",
+          "dataType":"bool"
+       },
+       {
+          "name":"D4",
+          "displayName":"D4",
+          "dataType":"bool"
+       },
+       {
+          "name":"D12",
+          "displayName":"D12",
+          "dataType":"bool"
+       },
+       {
+          "name":"D14",
+          "displayName":"D14",
+          "dataType":"bool"
+       },
+       {
+          "name":"D15",
+          "displayName":"D15",
+          "dataType":"bool"
+       },
+       {
+          "name":"D27",
+          "displayName":"D27",
+          "dataType":"bool"
+       },
+       {
+          "name":"D32",
+          "displayName":"D32",
+          "dataType":"bool"
+       },
+       {
+          "name":"D33",
+          "displayName":"D33",
+          "dataType":"bool"
+       },
+       {
+          "name":"D13",
+          "displayName":"D13 LED",
+          "dataType":"bool"
+       }
+      ],
+      "analogPins": [
        {
           "name":"A0",
           "displayName":"A0",
@@ -75,56 +128,7 @@
           "name":"A13",
           "displayName":"VBAT",
           "dataType":"int16"
-       },
-       {
-          "name":"D0",
-          "displayName":"D0",
-          "dataType":"bool"
-       },
-       {
-          "name":"D2",
-          "displayName":"D2",
-          "dataType":"bool"
-       },
-       {
-          "name":"D4",
-          "displayName":"D4",
-          "dataType":"bool"
-       },
-       {
-          "name":"D12",
-          "displayName":"D12",
-          "dataType":"bool"
-       },
-       {
-          "name":"D14",
-          "displayName":"D14",
-          "dataType":"bool"
-       },
-       {
-          "name":"D15",
-          "displayName":"D15",
-          "dataType":"bool"
-       },
-       {
-          "name":"D27",
-          "displayName":"D27",
-          "dataType":"bool"
-       },
-       {
-          "name":"D32",
-          "displayName":"D32",
-          "dataType":"bool"
-       },
-       {
-          "name":"D33",
-          "displayName":"D33",
-          "dataType":"bool"
-       },
-       {
-          "name":"D13",
-          "displayName":"D13 LED",
-          "dataType":"bool"
        }
-    ]
- }
+      ]
+    }
+}

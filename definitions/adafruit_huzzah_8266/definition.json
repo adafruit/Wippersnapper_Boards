@@ -3,17 +3,8 @@
     "mcuName": "esp8266",
     "displayName": "Feather Huzzah ESP8266",
     "description": "Feather Huzzah ESP8266 with USB and Battery Charging.",
-    "components": [
-        {
-            "name": "A0",
-            "displayName": "A",
-            "dataType": "int16"
-        },
-        {
-            "name": "D0",
-            "displayName": "Red LED",
-            "dataType": "bool"
-        },
+    "components": {
+      "digitalPins": [
         {
             "name": "D1",
             "displayName": "D1",
@@ -21,7 +12,7 @@
         },
         {
             "name": "D2",
-            "displayName": "Blue LED",
+            "displayName": "D2 - Blue LED",
             "dataType": "bool"
         },
         {
@@ -56,8 +47,16 @@
         },
         {
             "name": "D16",
-            "displayName": "D16 (Deep Sleep Wake Pin)",
+            "displayName": "D16 - Deep Sleep Wake Pin",
             "dataType": "bool"
         }
-    ]
+      ],
+      "analogPins": [
+        {
+            "name": "A0",
+            "displayName": "A0",
+            "dataType": "int16"
+        }
+      ]
+    }
 }
