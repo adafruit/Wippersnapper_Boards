@@ -5,7 +5,26 @@
     "PID": "0x8036",
     "displayName": "PyPortal",
     "description": "320x240 IoT display.",
-    "components": [
+    "components":
+    {
+      "digitalPins": [
+        {
+          "name": "D3",
+          "displayName": "D3",
+          "dataType": "bool"
+        },
+        {
+          "name": "D4",
+          "displayName": "D4",
+          "dataType": "bool"
+        },
+        {
+          "name": "D13",
+          "displayName": "D13 LED",
+          "dataType": "bool"
+        }
+      ],
+      "analogPins": [
         {
             "name": "A1",
             "displayName": "A1",
@@ -21,21 +40,14 @@
             "name": "A4",
             "displayName": "A4",
             "dataType": "int16"
-        },
-        {
-            "name": "D3",
-            "displayName": "D3",
-            "dataType": "bool"
-        },
-        {
-            "name": "D4",
-            "displayName": "D4",
-            "dataType": "bool"
-        },
-        {
-            "name": "D13",
-            "displayName": "D13 LED",
-            "dataType": "bool"
         }
-    ]
-}
+      ],
+      "pixels": [
+        {
+          "pixelPin": 1,
+          "pixelNumber": 1,
+          "pixelType": "PIXEL_TYPE_WS2812",
+          "pixelOrder": "PIXEL_ORDER_RGB"
+        }
+      ]
+    }
