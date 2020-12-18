@@ -5,7 +5,8 @@
     "PID": "0x00dd",
     "displayName": "MCP2221",
     "description": "General purpose USB to GPIO w/ADC, DAC, I2C.",
-    "components": [
+    "components": {
+      "digitalPins": [
         {
             "name": "G0",
             "displayName": "G0",
@@ -25,24 +26,27 @@
             "name": "G3",
             "displayName": "G3",
             "dataType": "bool"
-        },
+        }
+      ],
+      "analogPins": [
         {
             "name": "G1",
             "displayName": "ADC1",
             "dataType": "int",
-            "max_resolution": "10"
+            "max_resolution": 10
         },
         {
             "name": "G2",
             "displayName": "ADC2",
             "dataType": "int",
-            "max_resolution": "10"
+            "max_resolution": 10
         },
         {
             "name": "G3",
             "displayName": "ADC3",
             "dataType": "int",
-            "max_resolution": "10"
+            "max_resolution": 10
         }
-    ]
+      ]
+    }
 }
