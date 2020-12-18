@@ -5,37 +5,8 @@
     "PID": "0x8038",
     "displayName": "Metro M4 Airlift Lite",
     "description": "Metro M4 + ESP32 Airlift Co-Processor.",
-    "components": [
-        {
-            "name": "A0",
-            "displayName": "A0",
-            "dataType": "int16"
-        },
-        {
-            "name": "A1",
-            "displayName": "A1",
-            "dataType": "int16"
-        },
-        {
-            "name": "A2",
-            "displayName": "A2",
-            "dataType": "int16"
-        },
-        {
-            "name": "A3",
-            "displayName": "A3",
-            "dataType": "int16"
-        },
-        {
-            "name": "A4",
-            "displayName": "A4",
-            "dataType": "int16"
-        },
-        {
-            "name": "A5",
-            "displayName": "A5",
-            "dataType": "int16"
-        },
+    "components": {
+      "digitalPins": [
         {
             "name": "D0",
             "displayName": "D0",
@@ -106,5 +77,38 @@
             "displayName": "D13 LED",
             "dataType": "bool"
         }
-    ]
+      ],
+      "analogPins": [
+        {
+            "name": "A0",
+            "displayName": "A0",
+            "dataType": "int16"
+        },
+        {
+            "name": "A1",
+            "displayName": "A1",
+            "dataType": "int16"
+        },
+        {
+            "name": "A2",
+            "displayName": "A2",
+            "dataType": "int16"
+        },
+        {
+            "name": "A3",
+            "displayName": "A3",
+            "dataType": "int16"
+        },
+        {
+            "name": "A4",
+            "displayName": "A4",
+            "dataType": "int16"
+        },
+        {
+            "name": "A5",
+            "displayName": "A5",
+            "dataType": "int16"
+        }
+      ]
+    }
 }
