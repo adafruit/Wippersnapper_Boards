@@ -16,9 +16,13 @@
             "board":"adafruit_metro_m4"
         },
         {
+            "vid": "0xEA60",
+            "pid": "0x10C4",
             "board":"adafruit_huzzah_8266"
         },
         {
+            "vid": "0xEA60",
+            "pid": "0x10C4",
             "board":"adafruit_huzzah_32"
         },
         {

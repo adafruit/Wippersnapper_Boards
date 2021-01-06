@@ -1,6 +1,8 @@
 {
     "boardName": "adafruit_huzzah_8266",
     "mcuName": "esp8266",
+    "VID":"0xEA60",
+    "PID":"0x10C4",
     "displayName": "Feather Huzzah ESP8266",
     "description": "Feather Huzzah ESP8266 with USB and Battery Charging.",
     "components": {

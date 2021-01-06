@@ -44,6 +44,7 @@
       ],
       "pixels": [
         {
+          "displayName": "Built-in NeoPixel",
           "pixelPin": 1,
           "pixelNumber": 1,
           "pixelType": "PIXEL_TYPE_WS2812",
@@ -51,3 +52,4 @@
         }
       ]
     }
+}

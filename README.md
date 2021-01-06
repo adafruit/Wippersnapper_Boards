@@ -40,7 +40,7 @@ Each hardware component is defined by adding the following to the `.json` descri
 | Property       | Required | Data Type | description                                                                            |
 |----------------|----------|-----------|----------------------------------------------------------------------------------------|
 | name           | yes      | string    | Component type. Components connected to hardware externally are prefixed by `external_`|
-| displayName    | no       | string    | Human-readable display name for Adafruit IO                                            |
+| displayName    | yes       | string    | Human-readable display name for Adafruit IO                                            |
 | dataType       | yes      | string    | Expected data type from component                                                      |
 | max_resolution | no       | int16     | Max resolution of an analog component, in bits                                         |
 | autoConfigure  | no       | boolean   | Automatically initialize after the device is connected to Wippersnapper.               |
@@ -76,6 +76,7 @@ To define addressable pixels connected to your board, add a component containing
 ### Addressable RGB Pixel Component
 | Name        	| Required 	| Data Type    	| Description                                                                         	|
 |-------------	|----------	|--------------	|-------------------------------------------------------------------------------------	|
+| displayName    | yes       | string    | Human-readable display name for Adafruit IO                                            |
 | pixelPin    	| yes      	| int       	| Pin to output data on.                                                              	|
 | pixelNumber 	| yes      	| int       	| Number of pixels connected to a strip                                               	|
 | pixelType   	| yes      	| `PixelType`  	| Type of pixel connected to pixelPin. See `PixelType` below for compatible hardware. 	|
