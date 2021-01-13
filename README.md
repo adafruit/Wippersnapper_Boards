@@ -43,7 +43,6 @@ Each hardware component is defined by adding the following to the `.json` descri
 | displayName    | yes       | string    | Human-readable display name for Adafruit IO                                            |
 | dataType       | yes      | string    | Expected data type from component                                                      |
 | max_resolution | no       | int16     | Max resolution of an analog component, in bits                                         |
-| autoConfigure  | no       | boolean   | Automatically initialize after the device is connected to Wippersnapper.               |
 
 
 The following properties are set by the Wippersnapper web application. **You do not need to define these values**:
