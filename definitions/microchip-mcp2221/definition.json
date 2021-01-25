@@ -1,5 +1,5 @@
 {
-    "boardName": "MICROCHIP_MCP2221",
+    "boardName": "microchip-mcp2221",
     "mcuName": "mcp2221a",
     "VID": "0x04d8",
     "PID": "0x00dd",

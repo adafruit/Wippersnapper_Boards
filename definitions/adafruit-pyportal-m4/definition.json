@@ -1,5 +1,5 @@
 {
-    "boardName": "adafruit_pyportal_m4",
+    "boardName": "adafruit-pyportal-m4",
     "mcuName": "samd51j20",
     "VID": "0x239A",
     "PID": "0x8036",

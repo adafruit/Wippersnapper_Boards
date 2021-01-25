@@ -1,10 +1,10 @@
 {
-    "boardName": "adafruit_metro_m4",
+    "boardName": "adafruit-metro-m4-airliftlite",
     "mcuName": "samd51j20",
     "VID": "0x239A",
-    "PID": "0x8021",
-    "displayName": "Metro M4 Express",
-    "description": "Metro M4 Express + ESP32 Airlift Shield.",
+    "PID": "0x8038",
+    "displayName": "Metro M4 Airlift Lite",
+    "description": "Metro M4 + ESP32 Airlift Co-Processor.",
     "components": {
       "digitalPins": [
         {

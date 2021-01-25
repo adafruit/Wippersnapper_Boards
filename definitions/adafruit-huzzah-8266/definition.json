@@ -1,5 +1,5 @@
 {
-    "boardName": "adafruit_huzzah_8266",
+    "boardName": "adafruit-huzzah-8266",
     "mcuName": "esp8266",
     "VID":"0xEA60",
     "PID":"0x10C4",
