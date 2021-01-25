@@ -29,6 +29,9 @@ Information related to the hardware including the hardware's name, description a
 | description  | Yes      | String    | Device description                                       |
 | lastUpdated | Yes      | Time      | Last time the board description was updated, in ISO-8601 |
 
+### boardName Naming Scheme
+A `boardName` MAY ONLY contain lower case ASCII letters, numbers, and the dash character (“-”).
+
 
 ## Components
 
