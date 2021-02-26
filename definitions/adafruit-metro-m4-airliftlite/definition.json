@@ -5,6 +5,8 @@
     "PID": "0x8038",
     "displayName": "Metro M4 Airlift Lite",
     "description": "Metro M4 + ESP32 Airlift Co-Processor.",
+    "productPageURL":"https://www.adafruit.com/product/4000",
+    "documentationURL":"https://learn.adafruit.com/adafruit-metro-m4-express-airlift-wifi",
     "components": {
       "digitalPins": [
         {

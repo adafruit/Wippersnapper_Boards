@@ -5,6 +5,8 @@
     "PID": "0x00dd",
     "displayName": "MCP2221",
     "description": "General purpose USB to GPIO w/ADC, DAC, I2C.",
+    "productPageURL":"https://www.adafruit.com/product/4471",
+    "documentationURL":"https://learn.adafruit.com/circuitpython-libraries-on-any-computer-with-mcp2221",
     "components": {
       "digitalPins": [
         {
