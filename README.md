@@ -27,7 +27,9 @@ Information related to the hardware including the hardware's name, description a
 | PID         | Yes      | int16     | USB Product ID                                          |
 | displayName | Yes      | String    | Adafruit IO Device name                                 |
 | description  | Yes      | String    | Device description                                       |
-| lastUpdated | Yes      | Time      | Last time the board description was updated, in ISO-8601 |
+| productPageURL | Yes      | String      | Link to board's homepage. |
+| documentationURL | Yes      | String      | Link to board's documentation. |
+
 
 ### boardName Naming Scheme
 A `boardName` MAY ONLY contain lower case ASCII letters, numbers, and the dash character (“-”).
