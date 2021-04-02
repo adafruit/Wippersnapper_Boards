@@ -23,6 +23,7 @@ Information related to the hardware including the hardware's name, description a
 |-------------|----------|-----------|---------------------------------------------------------|
 | boardName   | Yes      | String    | Hardware name                                           |
 | mcuName     | Yes      | String    | Microcontroller name                                    |
+| mcuRefVoltage     | Yes      | Float    | Microcontroller's maximum voltage reference, in Volts.                                    |
 | VID         | Yes      | int16     | USB Vendor ID                                           |
 | PID         | Yes      | int16     | USB Product ID                                          |
 | displayName | Yes      | String    | Adafruit IO Device name                                 |

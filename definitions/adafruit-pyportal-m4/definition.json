@@ -1,6 +1,7 @@
 {
     "boardName": "adafruit-pyportal-m4",
     "mcuName": "samd51j20",
+    "mcuRefVoltage": 3.3,
     "VID": "0x239A",
     "PID": "0x8036",
     "displayName": "PyPortal",

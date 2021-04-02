@@ -1,6 +1,7 @@
 {
     "boardName": "adafruit-metro-m4-airliftlite",
     "mcuName": "samd51j20",
+    "mcuRefVoltage": 3.3,
     "VID": "0x239A",
     "PID": "0x8038",
     "displayName": "Metro M4 Airlift Lite",
