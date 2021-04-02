@@ -1,7 +1,7 @@
 {
     "boardName":"adafruit-huzzah-32",
     "mcuName":"ESP32",
-    "mcuRefVoltage": 1.1,
+    "mcuRefVoltage": 3.3,
     "VID":"0x239A",
     "PID":"0x8036",
     "displayName":"Adafruit Feather HUZZAH ESP32",
