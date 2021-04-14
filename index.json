@@ -29,6 +29,11 @@
             "vid": "0x04d8",
             "pid": "0x00dd",
             "board":"microchip-mcp2221"
+        },
+        {
+            "vid": "0x239A",
+            "pid": "0x80F9",
+            "board":"adafruit-funhouse-esp32s2"
         }
     ]
 }

@@ -1,6 +1,7 @@
 {
     "boardName":"adafruit-funhouse-esp32s2",
     "mcuName":"esp32s2",
+    "mcuRefVoltage": 2.6,
     "VID":"0x239A",
     "PID":"0x80F9",
     "displayName":"Adafruit Funhouse ESP32-S2",
