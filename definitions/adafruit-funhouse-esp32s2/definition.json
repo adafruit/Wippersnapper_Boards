@@ -65,11 +65,6 @@
         "dataType":"bool"
      },
      {
-        "name":"D11",
-        "displayName":"D11",
-        "dataType":"bool"
-     },
-     {
         "name":"D12",
         "displayName":"D12",
         "dataType":"bool"
