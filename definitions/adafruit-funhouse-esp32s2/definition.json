@@ -15,29 +15,74 @@
              "dataType":"bool"
           },
           {
-             "name":"D4",
-             "displayName":"Button Select",
-             "dataType":"bool"
-          },
-          {
              "name":"D3",
              "displayName":"Button Down",
              "dataType":"bool"
           },
           {
-             "name":"A0",
-             "displayName":"A0",
-             "dataType":"int16"
+             "name":"D4",
+             "displayName":"Button Select",
+             "dataType":"bool"
           },
           {
-             "name":"A1",
-             "displayName":"A1",
-             "dataType":"int16"
+             "name":"D17",
+             "displayName":"D17 (A0)",
+             "dataType":"bool"
           },
           {
-             "name":"A2",
-             "displayName":"A2",
-             "dataType":"int16"
+             "name":"D2",
+             "displayName":"D2 (A1)",
+             "dataType":"bool"
+          },
+          {
+             "name":"D1",
+             "displayName":"D1 (A2)",
+             "dataType":"bool"
+          },
+          {
+             "name":"D6",
+             "displayName":"D6",
+             "dataType":"bool"
+          },
+          {
+             "name":"D7",
+             "displayName":"D7",
+             "dataType":"bool"
+          },
+          {
+             "name":"D8",
+             "displayName":"D8",
+             "dataType":"bool"
+          },
+          {
+             "name":"D9",
+             "displayName":"D9",
+             "dataType":"bool"
+          },
+          {
+             "name":"D10",
+             "displayName":"D10",
+             "dataType":"bool"
+          },
+          {
+             "name":"D11",
+             "displayName":"D11",
+             "dataType":"bool"
+          },
+          {
+             "name":"D12",
+             "displayName":"D12",
+             "dataType":"bool"
+          },
+          {
+             "name":"D13",
+             "displayName":"D13",
+             "dataType":"bool"
+          },
+          {
+             "name":"D14",
+             "displayName":"D14",
+             "dataType":"bool"
           },
           {
              "name":"D37",
