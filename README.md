@@ -1,22 +1,17 @@
 # Wippersnapper_Boards
-Hardware specification and boards for Wippersnapper.
-
-This repository, its contents, and Wippersnapper is a ***work in progress and subject to change***.
+Hardware definition models for Adafruit.io WipperSnapper.
 
 # Introduction
-This README.md specifies the hardware description model for internet-of-things hardware compatibility with Wippersnapper. 
+This repository contains Adafruit and user-submitted description models of hardware for use with Adafruit.io WipperSnapper. These hardware description models are "pared-down" digital twins, virtual representations of physical development boards.
 
 # Repository Contents
-
 `description`: Contains hardware description models.
 `boards.json`: Index of hardware within `descriptions/` containing hardware USB vendor ID (vid) and product ID (pid).
 
-# Hardware description
-
-The hardware description describes the contents (hardware information, components) of a physical piece of hardware or project.
+# Hardware description model
+The hardware description model describes the contents (hardware information, properties, physical components) of a development board.
 
 ## Information
-
 Information related to the hardware including the hardware's name, description and unique identifiers.
 
 | Property    | Required | Data Type | description                                             |
@@ -51,7 +46,7 @@ Each hardware component is defined by adding the following to the `.json` descri
 | max_resolution | no       | int16     | Max resolution of an analog component, in bits                                         |
 
 
-The following properties are set by the Wippersnapper web application. **You do not need to define these values**:
+The following properties are set by the WipperSnapper web application. **You do not need to define these values**:
 
 | Property       | Required | Data Type | description                                                                            |
 |----------------|----------|-----------|----------------------------------------------------------------------------------------|
@@ -72,103 +67,15 @@ Defines the component's mode. Currently can either be analog (`1`), or digital (
 * [Associated protocol buffer message](https://github.com/adafruit/Wippersnapper_Protobuf/blob/master/proto/pin/v1/pin.proto#L28)
 
 
-## Addressable RGB Pixels
-
-Internally, Wippersnapper has an Addressable Pixel API which implements configuring and writing to
-addressable RGB pixels such as the WS2812 (NeoPixel) and APA201 (Dotstar).
-
-To define addressable pixels connected to your board, add a component containing the following to the description file:
-
-### Addressable RGB Pixel Component
-| Name        	| Required 	| Data Type    	| Description                                                                         	|
-|-------------	|----------	|--------------	|-------------------------------------------------------------------------------------	|
-| displayName    | yes       | string    | Human-readable display name for Adafruit IO                                            |
-| pixelPin    	| yes      	| int       	| Pin to output data on.                                                              	|
-| pixelNumber 	| yes      	| int       	| Number of pixels connected to a strip                                               	|
-| pixelType   	| yes      	| `PixelType`  	| Type of pixel connected to pixelPin. See `PixelType` below for compatible hardware. 	|
-| pixelOrder  	| yes      	| `PixelOrder` 	| Pixel color channel order. See `PixelOrder` below for example values.               	|
-
-#### PixelType
-Wippersnapper currently supports the WS2812 ("NeoPixel") and APA201 ("Dotstar") addressable RGB pixel
-hardware.
-
-Use one of the values in the table below as the `pixelType` in an addressable RGB pixel component.
-
-| Name              	| Value             	|
-|-------------------	|-------------------	|
-| WS2182 (NeoPixel) 	| PIXEL_TYPE_WS2812 	|
-| APA201 (Dotstar)  	| PIXEL_TYPE_APA201 	|
-
-#### PixelOrder
-Order to transmit pixels. 
-
-Use one of the values in the table below as the `PixelOrder` in an addressable RGB pixel component.
-
-| Transmit Order 	| Value            	|
-|----------------	|------------------	|
-| RGB            	| PIXEL_ORDER_RGB  	|
-| RBG            	| PIXEL_ORDER_RBG  	|
-| RGBW           	| PIXEL_ORDER_RGBW 	|
-| GRB            	| PIXEL_ORDER_GRB  	|
-| GBR            	| PIXEL_ORDER_GBR  	|
-| GRBW           	| PIXEL_ORDER_GRBW 	|
-| BGR            	| PIXEL_ORDER_BGR  	|
-| BRG            	| PIXEL_ORDER_BRG  	|
-
-
-## Draft - Unfinished!
-The following information is a draft and not currently implemented by Adafruit Wippersnapper.
-
-#### Sensor Component Types
-
-Sensors are special component types that are defined by attaching a component to the device in user-code. These components should append the following properties onto the component structure above:
-
-| Property     | Required | Data Type | description                                                                       |
-|--------------|----------|-----------|-----------------------------------------------------------------------------------|
-| sensorID     | Yes      |   int32   | Sensor instance number. Must be unique (no two conflicting sensorIDs per description) |
-| max_val      | No       |   float   |  Maximum value of this sensor's value in SI units.                                   |
-| min_val      | No       |   float   |  Minimum value of this sensor's value in SI units.                                   |
-
-
-
-#### Properties and Units
-The component's `propertyName`, `type`, and `unit` describe component's the data type and SI unit. The table below mirrors the [Sensor Properties and Units defined in the CircuitPython API documentation.](https://circuitpython.readthedocs.io/en/latest/docs/design_guide.html#sensor-properties-and-units).
-
-| Property name         | Python type           | Units                                                                   |
-| --------------------- | --------------------- | ----------------------------------------------------------------------- |
-| ``acceleration``      | (float, float, float) | x, y, z meter per second per second                                     |
-| ``magnetic``          | (float, float, float) | x, y, z micro-Tesla (uT)                                                |
-| ``orientation``       | (float, float, float) | x, y, z degrees                                                         |
-| ``gyro``              | (float, float, float) | x, y, z radians per second                                              |
-| ``temperature``       | float                 | degrees centigrade                                                      |
-| ``eCO2``              | float                 | equivalent CO2 in ppm                                                   |
-| ``TVOC``              | float                 | Total Volatile Organic Compounds in ppb                                 |
-| ``distance``          | float                 | centimeters                                                             |
-| ``light``             | float                 | non-unit-specific light levels (should be monotonic but is not lux)     |
-| ``lux``               | float                 | SI lux                                                                  |
-| ``pressure``          | float                 | hectopascal (hPa)                                                       |
-| ``relative_humidity`` | float                 | percent                                                                 |
-| ``current``           | float                 | milliamps (mA)                                                          |
-| ``voltage``           | float                 | volts (V)                                                               |
-| ``color``             | int                   | RGB, eight bits per channel (0xff0000 is red)                           |
-| ``alarm``             | (time.struct, str)    | Sample alarm time and string to characterize frequency such as "hourly" |
-| ``datetime``          | time.struct           | date and time                                                           |
-| ``duty_cycle``        | int                   | 16-bit PWM duty cycle (regardless of output resolution)                 |
-| ``frequency``         | int                   | Hertz                                                                   |
-| ``value``             | bool                  | Digital logic                                                           |
-| ``value``             | int                   | 16-bit Analog value, unit-less                                          |
-| ``weight``            | float                 | grams (g)                                                               |
-
-
 # Examples
 
 Example hardware descriptions can be found in the `descriptions/` directory.
 
 # Limitations
-* Wippersnapper currently only supports WiFi, Cellular and Ethernet connectivity.
+* WipperSnapper currently only supports WiFi connectivity
 
 # Contributing
-If you do not see the board you want to use with Wippersnapper, adding support for a board is simple and we welcome all contributions:
+If you do not see the board you want to use with WipperSnapper, adding support for a board is simple and we welcome all contributions:
 * Fork this repository and checkout a new branch.
 * Make a new directory in `descriptions/YOUR_BOARD_NAME`
 * Add your hardware description, `YOUR_BOARD_NAME.json`, to `descriptions/YOUR_BOARD_NAME`.
