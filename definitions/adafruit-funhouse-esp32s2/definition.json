@@ -5,8 +5,8 @@
     "VID":"0x239A",
     "PID":"0x80F9",
     "displayName":"Adafruit Funhouse ESP32-S2",
-    "productPageURL":"https://www.adafruit.com",
-    "documentationURL":"https://learn.adafruit.com",
+    "productPageURL":"https://www.adafruit.com/product/4985",
+    "documentationURL":"https://learn.adafruit.com/adafruit-funhouse",
     "components":{
        "digitalPins":[
           {

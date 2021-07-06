@@ -34,6 +34,11 @@
             "vid": "0x239A",
             "pid": "0x80F9",
             "board":"adafruit-funhouse-esp32s2"
+        },
+        {
+            "vid": "0x239A",
+            "pid": "0x80DF",
+            "board":"adafruit-metro-esp32s2"
         }
     ]
 }
