@@ -1,0 +1,61 @@
+{
+    "boardName":"adafruit-magtag-esp32s2",
+    "mcuName":"esp32s2",
+    "mcuRefVoltage":2.6,
+    "VID":"0x239A",
+    "PID":"0x80DF",
+    "displayName":"Adafruit MagTag \"2.9\"",
+    "productPageURL":"https://www.adafruit.com/product/4800",
+    "documentationURL":"https://learn.adafruit.com/adafruit-magtag",
+    "components":{
+       "digitalPins":[
+          {
+             "name":"D15",
+             "displayName":"Button A",
+             "dataType":"bool"
+          },
+          {
+             "name":"D14",
+             "displayName":"Button B",
+             "dataType":"bool"
+          },
+          {
+             "name":"D12",
+             "displayName":"Button C",
+             "dataType":"bool"
+          },
+          {
+             "name":"D11",
+             "displayName":"Button D",
+             "dataType":"bool"
+          },
+          {
+             "name":"D10",
+             "displayName":"D10",
+             "dataType":"bool"
+          },
+          {
+             "name":"D18",
+             "displayName":"D18 (A1)",
+             "dataType":"bool"
+          },
+          {
+             "name":"D13",
+             "displayName":"Built-in LED",
+             "dataType":"bool"
+          }
+       ],
+       "analogPins":[
+          {
+             "name":"A1",
+             "displayName":"A1",
+             "dataType":"int16"
+          },
+          {
+             "name":"A3",
+             "displayName":"Light Sensor (A3)",
+             "dataType":"int16"
+          }
+       ]
+    }
+}

@@ -39,6 +39,11 @@
             "vid": "0x239A",
             "pid": "0x80DF",
             "board":"adafruit-metro-esp32s2"
+        },
+        {
+            "vid": "0x239A",
+            "pid": "0x80DF",
+            "board":"adafruit-magtag-esp32s2"
         }
     ]
 }
