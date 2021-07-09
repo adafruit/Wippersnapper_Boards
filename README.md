@@ -67,6 +67,48 @@ Defines the component's mode. Currently can either be analog (`1`), or digital (
 * [Associated protocol buffer message](https://github.com/adafruit/Wippersnapper_Protobuf/blob/master/proto/pin/v1/pin.proto#L28)
 
 
+### Sensor Components
+
+## I2C Sensors
+
+Development boards may have I2C sensors connected to the I2C bus. The WipperSnapper hardware specification uses a list, `i2cSensors`, to define the information and capabilities of a sensor.
+
+An example `i2cSensors` list describing hardware with an [AHT20 Temperature and Humidity sensor](https://www.adafruit.com/product/4566) connected to the i2c bus is below:
+
+```
+{
+   "i2cSensors":[
+      {
+         "name":"AHT20",
+         "displayName":"AHT20 Humidity and Temperature Sensor",
+         "address":"0x38",
+         "address2":null,
+         "version:null,
+         "sensor_id":null,
+         "type":null,
+         "max_value":null,
+         "min_value":null,
+         "resolution":null,
+         "min_delay":null
+      }
+   ]
+}
+```
+
+The individual fields are intended to be used as follows:
+* `name` [REQUIRED]: The sensor name or ID, up to a maximum of twelve characters (ex. "MPL115A2")
+* `displayName` [REQUIRED]: A descriptive sensor name which will be displayed on the WipperSnapper device interface.
+* `address` [REQUIRED]: The i2c device's unique bus address. Must be between 0x00 and 0x7F.
+* `address2` [optional]: An optional second i2c unique bus address. Must be between 0x00 and 0x7F.
+* `version` [optional]: The version of the sensor HW and the driver to allow us to differentiate versions of the board or driver
+* `sensor_id` [optional]: A unique sensor identifier that is used to differentiate this specific sensor instance from any others that are present on the system or in the sensor network
+* `type` [optional]: The sensor type, based on [sensors_type_t in sensors.h](https://github.com/adafruit/Adafruit_Sensor/blob/master/Adafruit_Sensor.h).
+* `max_value` [optional]: The maximum value that this sensor can return (in the appropriate SI unit)
+* `min_value` [optional]: The minimum value that this sensor can return (in the appropriate SI unit)
+* `resolution` [optional]: The smallest difference between two values that this sensor can report (in the appropriate SI unit)
+* `min_delay` [optional]: The minimum delay in microseconds between two sensor events, or '0' if there is no constant sensor rate
+
+
 # Examples
 
 Example hardware descriptions can be found in the `descriptions/` directory.
