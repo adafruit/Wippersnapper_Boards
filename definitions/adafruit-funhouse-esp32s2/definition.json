@@ -117,31 +117,38 @@
              "dataType":"int16"
           }
        ],
+       "i2cBus": [
+           {
+               "i2cBusId": "0",
+               "SDA": 34,
+               "SCL": 33
+           }
+       ],
        "i2cSensors":[
           {
              "name":"AHT20",
              "displayName":"AHT20 Humidity and Temperature Sensor",
              "address":"0x38",
              "address2":null,
-             "sensor_id":null,
+             "sensorId":null,
              "type":null,
-             "max_value":null,
-             "min_value":null,
+             "maxValue":null,
+             "minValue":null,
              "resolution":null,
-             "min_delay":null
+             "minDelay":null
           },
           {
              "name":"DPS310",
              "displayName":"AHT20 Humidity and Temperature Sensor",
              "address":"0x77",
              "address2":null,
-             "sensor_id":null,
+             "sensorId":null,
              "id":null,
              "type":null,
-             "max_value":null,
-             "min_value":null,
+             "maxValue":null,
+             "minValue":null,
              "resolution":null,
-             "min_delay":null
+             "minDelay":null
           }
        ]
     }
