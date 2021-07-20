@@ -84,12 +84,12 @@ An example `i2cSensors` list describing hardware with an [AHT20 Temperature and 
          "address":"0x38",
          "address2":null,
          "version:null,
-         "sensor_id":null,
+         "sensorId":null,
          "type":null,
-         "max_value":null,
-         "min_value":null,
+         "maxValue":null,
+         "minValue":null,
          "resolution":null,
-         "min_delay":null
+         "minDelay":null
       }
    ]
 }
@@ -101,12 +101,12 @@ The individual fields are intended to be used as follows:
 * `address` [REQUIRED]: The i2c device's unique bus address. Must be between 0x00 and 0x7F.
 * `address2` [optional]: An optional second i2c unique bus address. Must be between 0x00 and 0x7F.
 * `version` [optional]: The version of the sensor HW and the driver to allow us to differentiate versions of the board or driver
-* `sensor_id` [optional]: A unique sensor identifier that is used to differentiate this specific sensor instance from any others that are present on the system or in the sensor network
+* `sensorId` [optional]: A unique sensor identifier that is used to differentiate this specific sensor instance from any others that are present on the system or in the sensor network
 * `type` [optional]: The sensor type, based on [sensors_type_t in sensors.h](https://github.com/adafruit/Adafruit_Sensor/blob/master/Adafruit_Sensor.h).
-* `max_value` [optional]: The maximum value that this sensor can return (in the appropriate SI unit)
-* `min_value` [optional]: The minimum value that this sensor can return (in the appropriate SI unit)
+* `maxValue` [optional]: The maximum value that this sensor can return (in the appropriate SI unit)
+* `minValue` [optional]: The minimum value that this sensor can return (in the appropriate SI unit)
 * `resolution` [optional]: The smallest difference between two values that this sensor can report (in the appropriate SI unit)
-* `min_delay` [optional]: The minimum delay in microseconds between two sensor events, or '0' if there is no constant sensor rate
+* `minDelay` [optional]: The minimum delay in microseconds between two sensor events, or '0' if there is no constant sensor rate
 
 
 # Examples
