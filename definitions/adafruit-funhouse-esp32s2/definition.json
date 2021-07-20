@@ -116,6 +116,40 @@
              "displayName":"Light Sensor",
              "dataType":"int16"
           }
+       ],
+       "i2cPorts": [
+           {
+               "i2cPortId": "0",
+               "SDA": 34,
+               "SCL": 33
+           }
+       ],
+       "i2cSensors":[
+          {
+             "name":"AHT20",
+             "displayName":"AHT20 Humidity and Temperature Sensor",
+             "address":"0x38",
+             "address2":null,
+             "sensorId":null,
+             "type":null,
+             "maxValue":null,
+             "minValue":null,
+             "resolution":null,
+             "minDelay":null
+          },
+          {
+             "name":"DPS310",
+             "displayName":"AHT20 Humidity and Temperature Sensor",
+             "address":"0x77",
+             "address2":null,
+             "sensorId":null,
+             "id":null,
+             "type":null,
+             "maxValue":null,
+             "minValue":null,
+             "resolution":null,
+             "minDelay":null
+          }
        ]
     }
  }
