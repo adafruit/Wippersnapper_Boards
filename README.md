@@ -2,12 +2,7 @@
 
 This repository contains Adafruit and user-submitted description models of hardware for use with Adafruit.io WipperSnapper Beta.
 
-These hardware description models (HDMs) are similar in concept to IoT digital twins, virtual representations of physical development boards. They contain everything the Adafruit.io broker needs to know about the device connecting to it.
-
-# Repository Contents
-`description`: Contains hardware description models.
-
-`boards.json`: An index of hardware within `descriptions/` containing hardware USB vendor ID (vid) and product ID (pid).
+These hardware description models (HDMs) are similar in concept to IoT "digital twins", virtual representations of physical development boards. They contain everything Adafruit.io WipperSnapper needs to know about the device connecting to it.
 
 # What is a hardware description model?
 A hardware description model (HDM) describes the contents (information, properties, physical components) of a development board.
@@ -63,7 +58,7 @@ The following properties are set by the WipperSnapper web application. **You do 
 
 Hardware exposing the I2C bus may add an `i2cPorts` array to its HDM.
 
-The following HDM snippet defines an I2C port 0 with a `SDA` GPIO pin of `34` and a `SCL` GPIO pin of 33.
+The following HDM snippet defines an I2C interface on port 0 with a `SDA` GPIO pin of `34` and a `SCL` GPIO pin of 33.
 
 ```
 "i2cPorts": [
