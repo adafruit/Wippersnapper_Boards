@@ -50,6 +50,13 @@
             "dataType": "int",
             "max_resolution": 10
         }
+      ],
+      "i2cPorts": [
+        {
+            "i2cPortId": "0",
+            "SDA": 22,
+            "SCL": 23
+        }
       ]
     }
 }
