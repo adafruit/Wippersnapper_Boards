@@ -46,8 +46,8 @@
             "board":"adafruit-magtag-esp32s2"
         },
         {
-            "vid":"0x8002",
-            "pid":"0x303A",
+            "vid":"0x303A",
+            "pid":"0x8002",
             "board":"um-tinys2-esp32s2"
         }
     ]
