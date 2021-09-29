@@ -44,13 +44,11 @@
             "dataType": "int16"
         }
       ],
-      "pixels": [
+      "i2cPorts": [
         {
-          "displayName": "Built-in NeoPixel",
-          "pixelPin": 1,
-          "pixelNumber": 1,
-          "pixelType": "PIXEL_TYPE_WS2812",
-          "pixelOrder": "PIXEL_ORDER_RGB"
+            "i2cPortId": "0",
+            "SDA": 27,
+            "SCL": 28
         }
       ]
     }

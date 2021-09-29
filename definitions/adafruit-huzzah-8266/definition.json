@@ -62,6 +62,13 @@
             "displayName": "A0",
             "dataType": "int16"
         }
+      ],
+      "i2cPorts": [
+        {
+            "i2cPortId": "0",
+            "SDA": 4,
+            "SCL": 5
+        }
       ]
     }
 }

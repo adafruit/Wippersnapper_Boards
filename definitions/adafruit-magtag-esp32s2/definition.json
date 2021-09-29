@@ -56,6 +56,13 @@
              "displayName":"Light Sensor (A3)",
              "dataType":"int16"
           }
-       ]
+       ],
+       "i2cPorts": [
+        {
+            "i2cPortId": "0",
+            "SDA": 33,
+            "SCL": 34
+        }
+      ]
     }
 }
