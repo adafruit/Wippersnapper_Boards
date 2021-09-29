@@ -44,6 +44,11 @@
             "vid": "0x239A",
             "pid": "0x80DF",
             "board":"adafruit-magtag-esp32s2"
+        },
+        {
+            "vid":"0x8002",
+            "pid":"0x303A",
+            "board":"um-tinys2-esp32s2"
         }
     ]
 }
