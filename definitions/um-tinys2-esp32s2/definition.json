@@ -2,8 +2,13 @@
     "boardName":"um-tinys2-esp32s2",
     "mcuName":"esp32s2",
     "mcuRefVoltage":2.6,
+<<<<<<< HEAD
     "VID":"0x303a",
     "PID":"0x8002",
+=======
+    "VID":"0x8002",
+    "PID":"0x303A",
+>>>>>>> 8def5cb69c2901692b1840d662e0a30b93823923
     "displayName":"Unexpected Maker TinyS2",
     "productPageURL":"https://unexpectedmaker.com/tinys2",
     "documentationURL":"https://unexpectedmaker.com/tinys2",
@@ -133,4 +138,8 @@
          }
        ]
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8def5cb69c2901692b1840d662e0a30b93823923
