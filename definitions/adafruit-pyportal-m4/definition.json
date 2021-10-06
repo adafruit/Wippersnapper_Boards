@@ -46,7 +46,7 @@
       ],
       "i2cPorts": [
         {
-            "i2cPortId": "0",
+            "i2cPortId": 0,
             "SDA": 27,
             "SCL": 28
         }
