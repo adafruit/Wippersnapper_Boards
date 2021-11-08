@@ -97,22 +97,22 @@
        ],
        "analogPins":[
           {
-             "name":"17",
+             "name":"A17",
              "displayName":"A0",
              "dataType":"int16"
           },
           {
-             "name":"2",
+             "name":"A2",
              "displayName":"A1",
              "dataType":"int16"
           },
           {
-             "name":"1",
+             "name":"A1",
              "displayName":"A2",
              "dataType":"int16"
           },
           {
-             "name":"18",
+             "name":"A18",
              "displayName":"Light Sensor",
              "dataType":"int16"
           }
