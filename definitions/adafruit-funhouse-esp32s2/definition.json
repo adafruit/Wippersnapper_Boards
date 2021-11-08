@@ -112,7 +112,7 @@
              "dataType":"int16"
           },
           {
-             "name":"A18",
+             "name":"A3",
              "displayName":"Light Sensor",
              "dataType":"int16"
           }
