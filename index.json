@@ -49,6 +49,11 @@
             "vid":"0x303A",
             "pid":"0x8002",
             "board":"um-tinys2-esp32s2"
+        },
+        {
+            "vid":"0x0",
+            "pid":"0x0",
+            "board":"raspberry-pi-4b"
         }
     ]
 }
