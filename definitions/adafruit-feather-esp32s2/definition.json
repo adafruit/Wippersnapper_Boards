@@ -10,104 +10,104 @@
     "components":{
        "digitalPins":[
           {
-             "name":"1",
+             "name":"D1",
              "displayName":"D1",
              "dataType":"bool"
           },
           {
-             "name":"2",
+             "name":"D2",
              "displayName":"D2",
              "dataType":"bool"
           },
           {
-             "name":"3",
+             "name":"D3",
              "displayName":"D3",
              "dataType":"bool"
           },
           {
-             "name":"4",
+             "name":"D4",
              "displayName":"D4",
              "dataType":"bool"
           },
           {
-             "name":"5",
+             "name":"D5",
              "displayName":"D5",
              "dataType":"bool"
           },
           {
-             "name":"6",
+             "name":"D6",
              "displayName":"D6",
              "dataType":"bool"
           },
           {
-             "name":"7",
+             "name":"D7",
              "displayName":"D7",
              "dataType":"bool"
           },
           {
-             "name":"8",
+             "name":"D8",
              "displayName":"D8",
              "dataType":"bool"
           },
           {
-             "name":"9",
+             "name":"D9",
              "displayName":"D9",
              "dataType":"bool"
           },
           {
-             "name":"10",
+             "name":"D10",
              "displayName":"D10",
              "dataType":"bool"
           },
           {
-             "name":"11",
+             "name":"D11",
              "displayName":"D11",
              "dataType":"bool"
           },
           {
-             "name":"12",
+             "name":"D12",
              "displayName":"D12",
              "dataType":"bool"
           },
           {
-             "name":"13",
+             "name":"D13",
              "displayName":"D13 (LED)",
              "dataType":"bool"
           },
           {
-             "name":"14",
+             "name":"D14",
              "displayName":"D14",
              "dataType":"bool"
           }
        ],
        "analogPins":[
           {
-             "name":"18",
+             "name":"A18",
              "displayName":"A0",
              "dataType":"int16"
           },
           {
-             "name":"17",
+             "name":"A17",
              "displayName":"A1",
              "dataType":"int16"
           },
           {
-             "name":"16",
+             "name":"A16",
              "displayName":"A2",
              "dataType":"int16"
           },
           {
-             "name":"15",
+             "name":"A15",
              "displayName":"A3",
              "dataType":"int16"
           },
           {
-             "name":"14",
+             "name":"A14",
              "displayName":"A4",
              "dataType":"int16"
           },
           {
-             "name":"8",
+             "name":"A8",
              "displayName":"A5",
              "dataType":"int16"
           }
