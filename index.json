@@ -51,11 +51,6 @@
             "board":"um-tinys2-esp32s2"
         },
         {
-            "vid":"0x0",
-            "pid":"0x0",
-            "board":"raspberry-pi-4b"
-        },
-        {
             "vid":"0x239A",
             "pid":"0x80EB",
             "board":"adafruit-feather-esp32s2"
