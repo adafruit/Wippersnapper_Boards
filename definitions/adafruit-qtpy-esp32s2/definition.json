@@ -1,83 +1,79 @@
 {
-    "boardName":"adafruit-qtpy-esp32s2",
-    "mcuName":"esp32s2",
-    "mcuRefVoltage":2.6,
-    "VID":"0x239A",
-    "PID":"0x8111",
-    "displayName":"Adafruit QT Py ESP32-S2",
-    "productPageURL":"https://www.adafruit.com/product/5000",
-    "documentationURL":"https://learn.adafruit.com/",
-    "components":{
-       "digitalPins":[
-          {
-             "name":"D5",
-             "displayName":"D5",
-             "dataType":"bool"
-          },
-          {
-            "name":"D6",
-            "displayName":"D6",
-            "dataType":"bool"
-         },
-         {
-            "name":"D7",
-            "displayName":"D7",
-            "dataType":"bool"
-         },
-         {
-            "name":"D8",
-            "displayName":"D8",
-            "dataType":"bool"
-         },
-         {
-            "name":"D9",
-            "displayName":"D9",
-            "dataType":"bool"
-         },
-       ],
-       "analogPins":[
-          {
-             "name":"A18",
-             "displayName":"A0",
-             "dataType":"int16"
-          },
-          {
-             "name":"A17",
-             "displayName":"A1",
-             "dataType":"int16"
-          },
-          {
-             "name":"A9",
-             "displayName":"A2",
-             "dataType":"int16"
-          },
-          {
-             "name":"A8",
-             "displayName":"A3",
-             "dataType":"int16"
-          },
-          {
-             "name":"A7",
-             "displayName":"A4",
-             "dataType":"int16"
-          },
-          {
-             "name":"A6",
-             "displayName":"A5",
-             "dataType":"int16"
-          },
-          {
-            "name":"A16",
-            "displayName":"A6",
-            "dataType":"int16"
-         }
-       ],
-       "i2cPorts":[
-          {
-             "i2cPortId":0,
-             "SDA":7,
-             "SCL":6
-          }
-       ]
-    }
- }
+	"boardName": "adafruit-qtpy-esp32s2",
+	"mcuName": "esp32s2",
+	"mcuRefVoltage": 2.6,
+	"VID": "0x239A",
+	"PID": "0x8111",
+	"displayName": "Adafruit QT Py ESP32-S2",
+	"productPageURL": "https://www.adafruit.com/product/5000",
+	"documentationURL": "https://learn.adafruit.com/",
+	"components": {
+		"digitalPins": [{
+				"name": "D5",
+				"displayName": "D5",
+				"dataType": "bool"
+			},
+			{
+				"name": "D6",
+				"displayName": "D6",
+				"dataType": "bool"
+			},
+			{
+				"name": "D7",
+				"displayName": "D7",
+				"dataType": "bool"
+			},
+			{
+				"name": "D8",
+				"displayName": "D8",
+				"dataType": "bool"
+			},
+			{
+				"name": "D9",
+				"displayName": "D9",
+				"dataType": "bool"
+			}
+		],
+		"analogPins": [{
+				"name": "A18",
+				"displayName": "A0",
+				"dataType": "int16"
+			},
+			{
+				"name": "A17",
+				"displayName": "A1",
+				"dataType": "int16"
+			},
+			{
+				"name": "A9",
+				"displayName": "A2",
+				"dataType": "int16"
+			},
+			{
+				"name": "A8",
+				"displayName": "A3",
+				"dataType": "int16"
+			},
+			{
+				"name": "A7",
+				"displayName": "A4",
+				"dataType": "int16"
+			},
+			{
+				"name": "A6",
+				"displayName": "A5",
+				"dataType": "int16"
+			},
+			{
+				"name": "A16",
+				"displayName": "A6",
+				"dataType": "int16"
+			}
+		],
+		"i2cPorts": [{
+			"i2cPortId": 0,
+			"SDA": 7,
+			"SCL": 6
+		}]
+	}
+}
