@@ -54,6 +54,11 @@
             "vid":"0x239A",
             "pid":"0x80EB",
             "board":"adafruit-feather-esp32s2"
+        },
+        {
+            "vid":"0x239A",
+            "pid":"0x8111",
+            "board":"adafruit-qtpy-esp32s2"
         }
     ]
 }
