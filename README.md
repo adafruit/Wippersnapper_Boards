@@ -73,20 +73,20 @@ The following HDM snippet defines an I2C interface on port 0 with a `SDA` GPIO p
 
 # Examples
 
-Example hardware descriptions can be found in the `descriptions/` directory.
+Example hardware descriptions can be found in the `boards/` directory.
 
 # Limitations
 * WipperSnapper currently only supports hardware with WiFi connectivity.
-* WipperSnapper currently supports the following microcontrollers: ESP32, ESP32-S2, SAMD51, SAMD21.
+* WipperSnapper currently supports the following microcontrollers: ESP8266, ESP32, ESP32-S2, SAMD51, SAMD21.
 
 # Contributing
 If you do not see the board you want to use with WipperSnapper, adding support for a board we already have support for (see above, _Limitations_) is simple and we welcome all contributions:
 * Fork this repository and checkout a new branch.
-* Make a new directory in `descriptions/YOUR_BOARD_NAME`
-* Add your hardware description, `YOUR_BOARD_NAME.json`, to `descriptions/YOUR_BOARD_NAME`.
-* Add an image of your board in `images/`
-* Add a new board to `index.json`. 
+* Make a new directory in `boards/YOUR_BOARD_NAME`
+* Add the hardware description to this folder as `definition.json`
+* Add an image of the hardware to this folder as `image.svg`
+* Add a new board entry to `index.json`. 
   * The `board` key value should match the name of the directory and description file you created.
   * This file is sorted by Vendor ID (VID) first.
     * If you are contributing hardware not designed by Adafruit - you will need to create a new Array and append an object containing the Product ID (`PID`) and `board`.
-* Create a pull request on this repository
+* Create a pull request to this repository
