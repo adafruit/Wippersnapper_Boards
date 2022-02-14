@@ -11,13 +11,18 @@
     "components": {
       "digitalPins": [
         {
+            "name": "D0",
+            "displayName": "D0 (Red LED)",
+            "dataType": "bool"
+        },
+        {
             "name": "D1",
             "displayName": "D1",
             "dataType": "bool"
         },
         {
             "name": "D2",
-            "displayName": "D2 - Blue LED",
+            "displayName": "D2 (Blue LED)",
             "dataType": "bool"
         },
         {
