@@ -3,8 +3,19 @@
     "mcuName":"ESP32",
     "mcuRefVoltage": 3.3,
     "displayName":"Adafruit Feather ESP32 V2",
-    "productPageURL":"https://www.adafruit.com/product/",
+    "productPageURL":"https://www.adafruit.com/product/5400",
     "documentationURL":"https://learn.adafruit.com/",
+    "esptool": {
+        "flashSize": "4MB",
+        "offsets": [
+          {
+            "0xe000": "wippersnapper.esp32.littlefs.VERSION.boot_app0.bin",
+            "0x1000": "wippersnapper.esp32.littlefs.VERSION.bootloader.bin",
+            "0x10000": "wippersnapper.esp32.littlefs.VERSION.bin",
+            "0x8000": "wippersnapper.esp32.littlefs.VERSION.partitions.bin"
+          }
+        ]
+    },
     "components": {
       "digitalPins": [
        {

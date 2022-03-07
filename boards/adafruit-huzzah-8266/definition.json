@@ -8,6 +8,14 @@
     "description": "Feather Huzzah ESP8266 with USB and Battery Charging.",
     "productPageURL":"https://www.adafruit.com/product/2821",
     "documentationURL":"https://learn.adafruit.com/adafruit-feather-huzzah-esp8266",
+    "esptool": {
+        "flashSize": "1MB",
+        "offsets": [
+          {
+            "0x0": "wippersnapper.esp8266.littlefs.VERSION.bin"
+          }
+        ]
+    },
     "components": {
       "digitalPins": [
         {
