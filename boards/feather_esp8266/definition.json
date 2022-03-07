@@ -1,5 +1,5 @@
 {
-    "boardName": "adafruit-huzzah-8266",
+    "boardName": "feather_esp8266",
     "mcuName": "esp8266",
     "mcuRefVoltage": 1.1,
     "VID":"0xEA60",
