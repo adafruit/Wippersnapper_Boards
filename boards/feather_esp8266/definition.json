@@ -13,7 +13,7 @@
         "fileSystemSize": 65536,
         "blockSize": 8192,
         "structure": {
-            "0x0": "wippersnapper.esp8266.littlefs.VERSION.bin"
+            "0x0": "wippersnapper.feather_esp8266.littlefs.VERSION.bin"
           }
     },
     "components": {
