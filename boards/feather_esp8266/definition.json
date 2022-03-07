@@ -12,7 +12,7 @@
         "offset": "0x200000",
         "fileSystemSize": "65536",
         "blockSize": "8192",
-        "offsets": [
+        "structure": [
           {
             "0x0": "wippersnapper.esp8266.littlefs.VERSION.bin"
           }
