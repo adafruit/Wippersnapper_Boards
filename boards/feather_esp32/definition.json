@@ -8,7 +8,9 @@
     "productPageURL":"https://www.adafruit.com/product/3405",
     "documentationURL":"https://learn.adafruit.com/adafruit-huzzah32-esp32-feather",
     "esptool": {
-      "flashSize": "4MB",
+      "fileSystemSize": "94208",
+      "blockSize": "4096",
+      "offset": "0x290000",
       "offsets": [
         {
           "0xe000": "wippersnapper.esp32.littlefs.VERSION.boot_app0.bin",

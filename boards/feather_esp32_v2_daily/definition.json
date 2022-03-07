@@ -6,8 +6,10 @@
     "productPageURL":"https://www.adafruit.com/product/5400",
     "documentationURL":"https://learn.adafruit.com/",
     "esptool": {
-        "flashSize": "4MB",
-        "offsets": [
+        "fileSystemSize": "94208",
+        "blockSize": "4096",
+        "offset": "0x290000",
+        "application": [
           {
             "0xe000": "wippersnapper.esp32.littlefs.VERSION.boot_app0.bin",
             "0x1000": "wippersnapper.esp32.littlefs.VERSION.bootloader.bin",

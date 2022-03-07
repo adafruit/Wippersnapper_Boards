@@ -9,7 +9,9 @@
     "productPageURL":"https://www.adafruit.com/product/2821",
     "documentationURL":"https://learn.adafruit.com/adafruit-feather-huzzah-esp8266",
     "esptool": {
-        "flashSize": "1MB",
+        "offset": "0x200000",
+        "fileSystemSize": "65536",
+        "blockSize": "8192",
         "offsets": [
           {
             "0x0": "wippersnapper.esp8266.littlefs.VERSION.bin"
