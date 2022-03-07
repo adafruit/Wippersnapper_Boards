@@ -9,7 +9,7 @@
     "productPageURL":"https://www.adafruit.com/product/2821",
     "documentationURL":"https://learn.adafruit.com/adafruit-feather-huzzah-esp8266",
     "esptool": {
-        "offset": 0x200000,
+        "offset": "0x200000",
         "fileSystemSize": 65536,
         "blockSize": 8192,
         "structure": {
