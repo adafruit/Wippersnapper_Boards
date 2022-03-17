@@ -1,5 +1,5 @@
 {
-    "boardName": "feather_esp8266",
+    "boardName": "feather-esp8266",
     "mcuName": "esp8266",
     "mcuRefVoltage": 1.1,
     "VID":"0xEA60",

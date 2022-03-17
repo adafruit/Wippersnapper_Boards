@@ -1,5 +1,5 @@
 {
-    "boardName":"feather_esp32",
+    "boardName":"feather-esp32",
     "mcuName":"ESP32",
     "mcuRefVoltage": 3.3,
     "VID":"0x239A",
