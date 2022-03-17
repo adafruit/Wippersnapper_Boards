@@ -1,5 +1,5 @@
 {
-    "boardName": "adafruit-huzzah-8266",
+    "boardName": "feather-esp8266",
     "mcuName": "esp8266",
     "mcuRefVoltage": 1.1,
     "VID":"0xEA60",
@@ -8,6 +8,14 @@
     "description": "Feather Huzzah ESP8266 with USB and Battery Charging.",
     "productPageURL":"https://www.adafruit.com/product/2821",
     "documentationURL":"https://learn.adafruit.com/adafruit-feather-huzzah-esp8266",
+    "esptool": {
+        "offset": "0x200000",
+        "fileSystemSize": 65536,
+        "blockSize": 8192,
+        "structure": {
+            "0x0": "wippersnapper.feather_esp8266.littlefs.VERSION.bin"
+          }
+    },
     "components": {
       "digitalPins": [
         {
