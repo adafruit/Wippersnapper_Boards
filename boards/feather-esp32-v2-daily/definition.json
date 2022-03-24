@@ -87,6 +87,12 @@
         "name":"D37",
         "displayName":"D37",
         "dataType":"bool"
+       },
+       {
+        "name":"D38",
+        "displayName":"Button Switch (SW38)",
+        "dataType":"bool",
+        "direction": 0
        }
       ],
       "analogPins": [
