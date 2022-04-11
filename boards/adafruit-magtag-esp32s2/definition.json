@@ -5,6 +5,7 @@
     "VID":"0x239A",
     "PID":"0x80DF",
     "displayName":"Adafruit MagTag \"2.9\"",
+    "vendor":"Adafruit",
     "productPageURL":"https://www.adafruit.com/product/4800",
     "documentationURL":"https://learn.adafruit.com/adafruit-magtag",
     "components":{

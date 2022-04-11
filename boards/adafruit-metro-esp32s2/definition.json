@@ -5,6 +5,7 @@
     "VID":"0x239A",
     "PID":"0x80DF",
     "displayName":"Adafruit Metro ESP32-S2",
+    "vendor":"Adafruit",
     "productPageURL":"https://www.adafruit.com/product/4775",
     "documentationURL":"https://learn.adafruit.com/adafruit-metro-esp32-s2",
     "components":{

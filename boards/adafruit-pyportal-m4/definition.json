@@ -5,6 +5,7 @@
     "VID": "0x239A",
     "PID": "0x8036",
     "displayName": "PyPortal",
+    "vendor":"Adafruit",
     "description": "320x240 IoT display.",
     "productPageURL":"https://www.adafruit.com/product/4116",
     "documentationURL":"https://learn.adafruit.com/adafruit-pyportal",

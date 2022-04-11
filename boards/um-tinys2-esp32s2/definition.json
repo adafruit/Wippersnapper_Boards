@@ -5,6 +5,7 @@
     "VID":"0x303A",
     "PID":"0x8002",
     "displayName":"Unexpected Maker TinyS2",
+    "vendor":"Unexpected Maker",
     "productPageURL":"https://unexpectedmaker.com/tinys2",
     "documentationURL":"https://unexpectedmaker.com/tinys2",
     "components":{
