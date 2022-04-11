@@ -5,6 +5,7 @@
     "VID": "0x239A",
     "PID": "0x8021",
     "displayName": "Metro M4 Express",
+    "vendor":"Adafruit",
     "description": "Metro M4 Express.",
     "productPageURL":"https://www.adafruit.com/product/3382",
     "documentationURL":"https://learn.adafruit.com/adafruit-metro-m4-express-featuring-atsamd51",

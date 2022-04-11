@@ -5,6 +5,7 @@
     "VID":"0x239A",
     "PID":"0x8036",
     "displayName":"Adafruit Feather HUZZAH ESP32",
+    "vendor":"Adafruit",
     "productPageURL":"https://www.adafruit.com/product/3405",
     "documentationURL":"https://learn.adafruit.com/adafruit-huzzah32-esp32-feather",
     "esptool": {

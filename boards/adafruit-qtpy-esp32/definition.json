@@ -3,6 +3,7 @@
     "mcuName":"esp32",
     "mcuRefVoltage":3.3,
     "displayName":"Adafruit QT Py ESP32",
+    "vendor":"Adafruit",
     "productPageURL":"https://www.adafruit.com/product/5395",
     "documentationURL":"https://learn.adafruit.com/",
     "components":{
