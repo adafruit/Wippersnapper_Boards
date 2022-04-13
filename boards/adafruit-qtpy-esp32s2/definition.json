@@ -11,28 +11,63 @@
     "components":{
         "digitalPins":[
             {
-                "name":"D5",
-                "displayName":"D5",
+                "name":"D18",
+                "displayName":"A0",
                 "dataType":"bool"
             },
             {
-                "name":"D6",
-                "displayName":"D6",
-                "dataType":"bool"
-            },
-            {
-                "name":"D7",
-                "displayName":"D7",
-                "dataType":"bool"
-            },
-            {
-                "name":"D8",
-                "displayName":"D8",
+                "name":"D17",
+                "displayName":"A1",
                 "dataType":"bool"
             },
             {
                 "name":"D9",
-                "displayName":"D9",
+                "displayName":"A2",
+                "dataType":"bool"
+            },
+            {
+                "name":"D8",
+                "displayName":"A3",
+                "dataType":"bool"
+            },
+            {
+                "name":"D7",
+                "displayName":"SDA",
+                "dataType":"bool"
+            },
+            {
+                "name":"D6",
+                "displayName":"SCL",
+                "dataType":"bool"
+            },
+            {
+                "name":"D5",
+                "displayName":"TX",
+                "dataType":"bool"
+            },
+            {
+                "name":"D35",
+                "displayName":"MOSI",
+                "dataType":"bool"
+            },
+            {
+                "name":"D37",
+                "displayName":"MISO",
+                "dataType":"bool"
+            },
+            {
+                "name":"D36",
+                "displayName":"SCK",
+                "dataType":"bool"
+            },
+            {
+                "name":"D16",
+                "displayName":"RX",
+                "dataType":"bool"
+            },
+            {
+                "name":"D0",
+                "displayName":"Boot Pushbutton",
                 "dataType":"bool"
             }
         ],
@@ -50,26 +85,25 @@
             {
                 "name":"A9",
                 "displayName":"A2",
+                "direction":"0",
                 "dataType":"int16"
             },
             {
                 "name":"A8",
                 "displayName":"A3",
+                "direction":"0",
                 "dataType":"int16"
             },
             {
                 "name":"A7",
-                "displayName":"A4",
+                "displayName":"SDA",
+                "direction":"0",
                 "dataType":"int16"
             },
             {
                 "name":"A6",
-                "displayName":"A5",
-                "dataType":"int16"
-            },
-            {
-                "name":"A16",
-                "displayName":"A6",
+                "displayName":"SCL",
+                "direction":"0",
                 "dataType":"int16"
             }
         ],
