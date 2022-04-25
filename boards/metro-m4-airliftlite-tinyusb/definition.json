@@ -1,5 +1,5 @@
 {
-    "boardName": "adafruit-metro-m4-airliftlite",
+    "boardName": "metro-m4-airliftlite-tinyusb",
     "mcuName": "samd51j20",
     "mcuRefVoltage": 3.3,
     "VID": "0x239A",

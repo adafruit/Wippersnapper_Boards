@@ -1,38 +1,43 @@
 {
-    "boardName":"adafruit-feather-esp32s2-tft",
+    "boardName":"funhouse",
     "mcuName":"esp32s2",
     "mcuRefVoltage":2.6,
     "VID":"0x239A",
-    "PID":"0x810F",
-    "displayName":"Adafruit ESP32-S2 TFT Feather",
+    "PID":"0x80F9",
+    "displayName":"Adafruit Funhouse ESP32-S2",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/5300",
-    "documentationURL":"https://learn.adafruit.com/",
+    "productPageURL":"https://www.adafruit.com/product/4985",
+    "documentationURL":"https://learn.adafruit.com/adafruit-funhouse",
     "components":{
        "digitalPins":[
           {
-             "name":"D1",
-             "displayName":"D1",
-             "dataType":"bool"
-          },
-          {
-             "name":"D2",
-             "displayName":"D2",
+             "name":"D5",
+             "displayName":"Button Up",
              "dataType":"bool"
           },
           {
              "name":"D3",
-             "displayName":"D3",
+             "displayName":"Button Down",
              "dataType":"bool"
           },
           {
              "name":"D4",
-             "displayName":"D4",
+             "displayName":"Button Select",
              "dataType":"bool"
           },
           {
-             "name":"D5",
-             "displayName":"D5",
+             "name":"D17",
+             "displayName":"D17 (A0)",
+             "dataType":"bool"
+          },
+          {
+             "name":"D2",
+             "displayName":"D2 (A1)",
+             "dataType":"bool"
+          },
+          {
+             "name":"D1",
+             "displayName":"D1 (A2)",
              "dataType":"bool"
           },
           {
@@ -72,53 +77,53 @@
           },
           {
              "name":"D13",
-             "displayName":"D13 (LED)",
+             "displayName":"D13",
              "dataType":"bool"
           },
           {
              "name":"D14",
              "displayName":"D14",
              "dataType":"bool"
+          },
+          {
+             "name":"D37",
+             "displayName":"Built-in LED",
+             "dataType":"bool"
+          },
+          {
+             "name":"D16",
+             "displayName":"PIR Sensor",
+             "dataType":"bool"
           }
        ],
        "analogPins":[
           {
-             "name":"A18",
+             "name":"A17",
              "displayName":"A0",
              "dataType":"int16"
           },
           {
-            "name":"A17",
-            "displayName":"A1",
-            "dataType":"int16"
-         },
-         {
-            "name":"A16",
-            "displayName":"A2",
-            "dataType":"int16"
-         },
-         {
-            "name":"A15",
-            "displayName":"A3",
-            "dataType":"int16"
-         },
-         {
-            "name":"A14",
-            "displayName":"A4",
-            "dataType":"int16"
-         },
-         {
-            "name":"A8",
-            "displayName":"A5",
-            "dataType":"int16"
-         }
-       ],
-       "i2cPorts":[
+             "name":"A2",
+             "displayName":"A1",
+             "dataType":"int16"
+          },
           {
-             "i2cPortId":0,
-             "SDA":42,
-             "SCL":41
+             "name":"A1",
+             "displayName":"A2",
+             "dataType":"int16"
+          },
+          {
+             "name":"A3",
+             "displayName":"Light Sensor",
+             "dataType":"int16"
           }
+       ],
+       "i2cPorts": [
+           {
+               "i2cPortId": 0,
+               "SDA": 34,
+               "SCL": 33
+           }
        ]
     }
  }

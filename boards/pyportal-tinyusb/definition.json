@@ -1,5 +1,5 @@
 {
-    "boardName": "adafruit-pyportal-m4",
+    "boardName": "pyportal-tinyusb",
     "mcuName": "samd51j20",
     "mcuRefVoltage": 3.3,
     "VID": "0x239A",
