@@ -1,5 +1,5 @@
 {
-    "boardName":"feather-esp32-v2-daily",
+    "boardName":"feather-esp32-v2",
     "mcuName":"ESP32",
     "mcuRefVoltage": 3.3,
     "displayName":"Adafruit Feather ESP32 V2",
