@@ -1,5 +1,5 @@
 {
-    "boardName":"adafruit-qtpy-esp32",
+    "boardName":"qtpy-esp32",
     "mcuName":"esp32",
     "mcuRefVoltage":3.3,
     "displayName":"Adafruit QT Py ESP32",
