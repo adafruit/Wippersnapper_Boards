@@ -2,92 +2,113 @@
     "boardName":"qtpy-esp32",
     "mcuName":"esp32",
     "mcuRefVoltage":3.3,
-    "displayName":"Adafruit QT Py ESP32",
+    "displayName":"Adafruit QT Py ESP32 Pico",
     "vendor":"Adafruit",
     "productPageURL":"https://www.adafruit.com/product/5395",
     "documentationURL":"https://learn.adafruit.com/",
+    "esptool": {
+        "fileSystemSize": 94208,
+        "blockSize": 4096,
+        "offset": "0x290000",
+        "structure": {
+            "0xe000": "wippersnapper.qtpy_esp32.littlefs.VERSION.boot_app0.bin",
+            "0x1000": "wippersnapper.qtpy_esp32.littlefs.VERSION.bootloader.bin",
+            "0x10000": "wippersnapper.qtpy_esp32.littlefs.VERSION.bin",
+            "0x8000": "wippersnapper.qtpy_esp32.littlefs.VERSION.partitions.bin"
+          }
+      },
     "components":{
         "digitalPins":[
             {
-                "name":"D18",
-                "displayName":"D18",
+                "name":"D26",
+                "displayName":"A0",
                 "dataType":"bool"
             },
             {
-                "name":"D17",
-                "displayName":"D17",
+                "name":"D25",
+                "displayName":"A1",
                 "dataType":"bool"
             },
             {
-                "name":"D9",
-                "displayName":"D9",
+                "name":"D27",
+                "displayName":"A2",
                 "dataType":"bool"
             },
             {
-                "name":"D8",
-                "displayName":"D8",
+                "name":"D15",
+                "displayName":"A3",
+                "dataType":"bool"
+            },
+            {
+                "name":"D4",
+                "displayName":"SDA",
+                "dataType":"bool"
+            },
+            {
+                "name":"D33",
+                "displayName":"SCL",
+                "dataType":"bool"
+            },
+            {
+                "name":"D32",
+                "displayName":"TX",
+                "dataType":"bool"
+            },
+            {
+                "name":"D13",
+                "displayName":"MOSI",
+                "dataType":"bool"
+            },
+            {
+                "name":"D12",
+                "displayName":"MISO",
+                "dataType":"bool"
+            },
+            {
+                "name":"D14",
+                "displayName":"SCK",
                 "dataType":"bool"
             },
             {
                 "name":"D7",
-                "displayName":"D7",
+                "displayName":"RX",
                 "dataType":"bool"
             },
             {
-                "name":"D6",
-                "displayName":"D6",
-                "dataType":"bool"
-            },
-            {
-                "name":"D5",
-                "displayName":"D5",
-                "dataType":"bool"
-            },
-            {
-                "name":"D35",
-                "displayName":"D35",
-                "dataType":"bool"
-            },
-            {
-                "name":"D37",
-                "displayName":"D37",
-                "dataType":"bool"
-            },
-            {
-                "name":"D36",
-                "displayName":"D36",
-                "dataType":"bool"
-            },
-            {
-                "name":"D16",
-                "displayName":"D16",
+                "name":"D0",
+                "displayName":"Boot Pushbutton",
                 "dataType":"bool"
             }
         ],
         "analogPins":[
             {
-                "name":"A0",
+                "name":"A26",
                 "displayName":"A0",
                 "dataType":"int16"
             },
             {
-                "name":"A1",
+                "name":"A25",
                 "displayName":"A1",
                 "dataType":"int16"
             },
             {
-                "name":"A2",
+                "name":"A27",
                 "displayName":"A2",
                 "dataType":"int16"
             },
             {
-                "name":"A3",
+                "name":"A15",
                 "displayName":"A3",
                 "dataType":"int16"
             },
             {
                 "name":"A4",
-                "displayName":"A4",
+                "displayName":"SDA",
+                "dataType":"int16"
+            },
+            {
+                "name":"A33",
+                "displayName":"SCL",
                 "dataType":"int16"
             }
         ],
