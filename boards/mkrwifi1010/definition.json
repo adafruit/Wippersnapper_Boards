@@ -1,5 +1,5 @@
 {
-    "boardName":"mkr-wifi-1010",
+    "boardName":"mkrwifi1010",
     "mcuName":"samd21",
     "mcuRefVoltage":3.3,
     "VID":"0x2341",

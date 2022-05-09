@@ -1,5 +1,5 @@
 {
-    "boardName":"adafruit-feather-esp32s2",
+    "boardName":"feather-esp32s2",
     "mcuName":"esp32s2",
     "mcuRefVoltage":2.6,
     "VID":"0x239A",

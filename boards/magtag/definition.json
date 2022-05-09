@@ -1,5 +1,5 @@
 {
-    "boardName":"adafruit-magtag-esp32s2",
+    "boardName":"magtag",
     "mcuName":"esp32s2",
     "mcuRefVoltage":2.6,
     "VID":"0x239A",

@@ -1,5 +1,5 @@
 {
-    "boardName":"feather-esp32-v2-daily",
+    "boardName":"feather-esp32-v2",
     "mcuName":"ESP32",
     "mcuRefVoltage": 3.3,
     "displayName":"Adafruit Feather ESP32 V2",
@@ -11,10 +11,10 @@
         "blockSize": 4096,
         "offset": "0x290000",
         "structure": {
-            "0xe000": "wippersnapper.feather_esp32_v2_daily.littlefs.VERSION.boot_app0.bin",
-            "0x1000": "wippersnapper.feather_esp32_v2_daily.littlefs.VERSION.bootloader.bin",
-            "0x10000": "wippersnapper.feather_esp32_v2_daily.littlefs.VERSION.bin",
-            "0x8000": "wippersnapper.feather_esp32_v2_daily.littlefs.VERSION.partitions.bin"
+            "0xe000": "wippersnapper.feather_esp32_v2.littlefs.VERSION.boot_app0.bin",
+            "0x1000": "wippersnapper.feather_esp32_v2.littlefs.VERSION.bootloader.bin",
+            "0x10000": "wippersnapper.feather_esp32_v2.littlefs.VERSION.bin",
+            "0x8000": "wippersnapper.feather_esp32_v2.littlefs.VERSION.partitions.bin"
         }
     },
     "components": {

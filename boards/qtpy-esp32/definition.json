@@ -1,67 +1,76 @@
 {
-    "boardName":"adafruit-qtpy-esp32s3",
-    "mcuName":"esp32s3",
-    "mcuRefVoltage":2.6,
-    "VID":"0x239A",
-    "PID":"0x8119",
-    "displayName":"Adafruit QT Py ESP32-S3",
+    "boardName":"qtpy-esp32",
+    "mcuName":"esp32",
+    "mcuRefVoltage":3.3,
+    "displayName":"Adafruit QT Py ESP32 Pico",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/",
-    "documentationURL":"https://learn.adafruit.com/adafruit-qt-py-esp32-s3",
+    "productPageURL":"https://www.adafruit.com/product/5395",
+    "documentationURL":"https://learn.adafruit.com/",
+    "esptool": {
+        "fileSystemSize": 94208,
+        "blockSize": 4096,
+        "offset": "0x290000",
+        "structure": {
+            "0xe000": "wippersnapper.qtpy_esp32.littlefs.VERSION.boot_app0.bin",
+            "0x1000": "wippersnapper.qtpy_esp32.littlefs.VERSION.bootloader.bin",
+            "0x10000": "wippersnapper.qtpy_esp32.littlefs.VERSION.bin",
+            "0x8000": "wippersnapper.qtpy_esp32.littlefs.VERSION.partitions.bin"
+          }
+      },
     "components":{
         "digitalPins":[
             {
-                "name":"D18",
+                "name":"D26",
                 "displayName":"A0",
                 "dataType":"bool"
             },
             {
-                "name":"D17",
+                "name":"D25",
                 "displayName":"A1",
                 "dataType":"bool"
             },
             {
-                "name":"D9",
+                "name":"D27",
                 "displayName":"A2",
                 "dataType":"bool"
             },
             {
-                "name":"D8",
+                "name":"D15",
                 "displayName":"A3",
                 "dataType":"bool"
             },
             {
-                "name":"D7",
+                "name":"D4",
                 "displayName":"SDA",
                 "dataType":"bool"
             },
             {
-                "name":"D6",
+                "name":"D33",
                 "displayName":"SCL",
                 "dataType":"bool"
             },
             {
-                "name":"D5",
+                "name":"D32",
                 "displayName":"TX",
                 "dataType":"bool"
             },
             {
-                "name":"D35",
+                "name":"D13",
                 "displayName":"MOSI",
                 "dataType":"bool"
             },
             {
-                "name":"D37",
+                "name":"D12",
                 "displayName":"MISO",
                 "dataType":"bool"
             },
             {
-                "name":"D36",
+                "name":"D14",
                 "displayName":"SCK",
                 "dataType":"bool"
             },
             {
-                "name":"D16",
+                "name":"D7",
                 "displayName":"RX",
                 "dataType":"bool"
             },
@@ -73,45 +82,41 @@
         ],
         "analogPins":[
             {
-                "name":"A18",
+                "name":"A26",
                 "displayName":"A0",
                 "dataType":"int16"
             },
             {
-                "name":"A17",
+                "name":"A25",
                 "displayName":"A1",
                 "dataType":"int16"
             },
             {
-                "name":"A9",
+                "name":"A27",
                 "displayName":"A2",
-                "direction":"0",
                 "dataType":"int16"
             },
             {
-                "name":"A8",
+                "name":"A15",
                 "displayName":"A3",
-                "direction":"0",
                 "dataType":"int16"
             },
             {
-                "name":"A7",
+                "name":"A4",
                 "displayName":"SDA",
-                "direction":"0",
                 "dataType":"int16"
             },
             {
-                "name":"A6",
+                "name":"A33",
                 "displayName":"SCL",
-                "direction":"0",
                 "dataType":"int16"
             }
         ],
         "i2cPorts":[
             {
                 "i2cPortId":0,
-                "SDA":41,
-                "SCL":40
+                "SDA":22,
+                "SCL":19
             }
         ]
     }
