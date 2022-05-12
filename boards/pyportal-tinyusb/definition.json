@@ -9,6 +9,7 @@
     "description": "320x240 IoT display.",
     "productPageURL":"https://www.adafruit.com/product/4116",
     "documentationURL":"https://learn.adafruit.com/adafruit-pyportal",
+    "installMethod":"uf2",
     "components":
     {
       "digitalPins": [
