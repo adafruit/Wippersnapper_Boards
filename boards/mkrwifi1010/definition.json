@@ -8,6 +8,7 @@
     "vendor":"Arduino",
     "productPageURL":"https://store-usa.arduino.cc/products/arduino-mkr-wifi-1010",
     "documentationURL":"https://docs.arduino.cc/hardware/mkr-wifi-1010",
+    "installMethod":"library",
     "components":{
        "digitalPins":[
           {

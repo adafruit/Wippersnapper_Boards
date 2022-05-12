@@ -9,6 +9,7 @@
     "vendor":"Adafruit",
     "productPageURL":"https://www.adafruit.com/product/4471",
     "documentationURL":"https://learn.adafruit.com/circuitpython-libraries-on-any-computer-with-mcp2221",
+    "installMethod":"python",
     "components": {
       "digitalPins": [
         {

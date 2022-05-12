@@ -9,6 +9,7 @@
     "description": "Metro M4 Express.",
     "productPageURL":"https://www.adafruit.com/product/3382",
     "documentationURL":"https://learn.adafruit.com/adafruit-metro-m4-express-featuring-atsamd51",
+    "installMethod":"uf2",
     "components": {
       "digitalPins": [
         {
