@@ -2,8 +2,6 @@
     "boardName":"nano-33-iot",
     "mcuName":"samd21",
     "mcuRefVoltage":3.3,
-    "VID":"0x2341",
-    "PID":"0x8057",
     "displayName":"Arduino Nano 33 IoT",
     "vendor":"Arduino",
     "productPageURL":"https://store-usa.arduino.cc/products/arduino-nano-33-iot",
