@@ -18,7 +18,7 @@ Information related to the hardware including the hardware's name, description a
 | VID         | Yes      | int16     | USB Vendor ID                                           |
 | PID         | Yes      | int16     | USB Product ID                                          |
 | displayName | Yes      | String    | Adafruit IO Device name                                 |
-| description  | Yes      | String    | Device description                                       |
+| description  | No      | String    | Device description                                       |
 | productPageURL | Yes      | String      | Link to board's homepage. |
 | documentationURL | Yes      | String      | Link to board's documentation. |
 
@@ -29,7 +29,7 @@ A `boardName` MAY ONLY contain lower case ASCII letters, numbers, and the dash c
 
 ## Components
 
-Components are ports such as digital pins or analog pins. These components are defined within the `components` array. 
+Components are ports such as digital pins or analog pins. These components are defined within the `components` array.
 
 \
 Each hardware component is defined by adding the following to the `.json` description file:
@@ -85,7 +85,7 @@ If you do not see the board you want to use with WipperSnapper, adding support f
 * Make a new directory in `boards/YOUR_BOARD_NAME`
 * Add the hardware description to this folder as `definition.json`
 * Add an image of the hardware to this folder as `image.svg`
-* Add a new board entry to `index.json`. 
+* Add a new board entry to `index.json`.
   * The `board` key value should match the name of the directory and description file you created.
   * This file is sorted by Vendor ID (VID) first.
     * If you are contributing hardware not designed by Adafruit - you will need to create a new Array and append an object containing the Product ID (`PID`) and `board`.
