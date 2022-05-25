@@ -1,0 +1,16 @@
+# Reference for adding or expanding schemas: https://ajv.js.org/json-schema.html#json-data-type
+name: Validate JSON and Filenames
+
+on: [pull_request]
+
+jobs:
+  validate-board-definition:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Validate Board JSON
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          schema: /boards/schema.json
+          jsons: boards/*/definition.json
