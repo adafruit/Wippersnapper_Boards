@@ -15,10 +15,8 @@ Information related to the hardware including the hardware's name, description a
 | boardName   | Yes      | String    | Hardware name                                           |
 | mcuName     | Yes      | String    | Microcontroller name                                    |
 | mcuRefVoltage     | Yes      | Float    | Microcontroller's maximum voltage reference, in Volts.                                    |
-| VID         | Yes      | int16     | USB Vendor ID                                           |
-| PID         | Yes      | int16     | USB Product ID                                          |
 | displayName | Yes      | String    | Adafruit IO Device name                                 |
-| description  | Yes      | String    | Device description                                       |
+| description  | No      | String    | Device description                                       |
 | productPageURL | Yes      | String      | Link to board's homepage. |
 | documentationURL | Yes      | String      | Link to board's documentation. |
 
@@ -29,7 +27,7 @@ A `boardName` MAY ONLY contain lower case ASCII letters, numbers, and the dash c
 
 ## Components
 
-Components are ports such as digital pins or analog pins. These components are defined within the `components` array. 
+Components are ports such as digital pins or analog pins. These components are defined within the `components` array.
 
 \
 Each hardware component is defined by adding the following to the `.json` description file:
@@ -82,11 +80,17 @@ Example hardware descriptions can be found in the `boards/` directory.
 # Contributing
 If you do not see the board you want to use with WipperSnapper, adding support for a board we already have support for (see above, _Limitations_) is simple and we welcome all contributions:
 * Fork this repository and checkout a new branch.
-* Make a new directory in `boards/YOUR_BOARD_NAME`
+* Make a new directory in `boards/BOARD_NAME`
+  * `BOARD_NAME` **must** match `boardName` from the hardware description
 * Add the hardware description to this folder as `definition.json`
-* Add an image of the hardware to this folder as `image.svg`
-* Add a new board entry to `index.json`. 
-  * The `board` key value should match the name of the directory and description file you created.
-  * This file is sorted by Vendor ID (VID) first.
-    * If you are contributing hardware not designed by Adafruit - you will need to create a new Array and append an object containing the Product ID (`PID`) and `board`.
+* Add an image of the hardware to this folder as `image.svg`, `image.png`, `image.gif`, or `image.jpg`
+* **Optional:** Make a new directory in `boards/BOARD_NAME/images`
+  * Add image files to appear in the steps of the firmware install process:
+    * `boot-drive.png`
+    * `boot-loader.gif`
+    * `drag-drop.svg`
+    * `reset.jpg`
+    * `usb.jpeg`
+  * Any file can have any image extension
+  * `boot-loader.gif` is expected to be an animated gif to help the user with timing
 * Create a pull request to this repository

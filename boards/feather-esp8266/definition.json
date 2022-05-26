@@ -2,8 +2,6 @@
     "boardName": "feather-esp8266",
     "mcuName": "esp8266",
     "mcuRefVoltage": 1.1,
-    "VID":"0xEA60",
-    "PID":"0x10C4",
     "displayName": "Feather Huzzah ESP8266",
     "vendor":"Adafruit",
     "description": "Feather Huzzah ESP8266 with USB and Battery Charging.",

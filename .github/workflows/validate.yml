@@ -1,4 +1,3 @@
-# Reference for adding or expanding schemas: https://ajv.js.org/json-schema.html#json-data-type
 name: Validate JSON and Filenames
 
 on: [pull_request]
@@ -7,10 +6,42 @@ jobs:
   validate-board-definition:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
 
       - name: Validate Board JSON
         uses: nhalstead/validate-json-action@0.1.3
         with:
+          # Schema Docs: https://ajv.js.org/json-schema.html#json-data-type
           schema: /boards/schema.json
           jsons: boards/*/definition.json
+
+      - name: List Changed Board Files
+        id: changed-files
+        uses: tj-actions/changed-files@v21
+        with:
+          files: boards/**/*
+
+      - name: Validate Filenames
+        run: |
+          board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif)))$"
+          exit_value=0
+
+          for file in ${{ steps.changed-files.outputs.added_files }}; do
+            if [[ $file =~ $board_definition_regex ]]; then
+              echo "✅ $file"
+            else
+              echo "❌ $file"
+              exit_value=1
+            fi
+          done
+
+          for file in ${{ steps.changed-files.outputs.renamed_files }}; do
+            if [[ $file =~ $board_definition_regex ]]; then
+              echo "✅ $file"
+            else
+              echo "❌ $file"
+              exit_value=1
+            fi
+          done
+
+          exit $exit_value

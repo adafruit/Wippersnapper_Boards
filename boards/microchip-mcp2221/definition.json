@@ -2,8 +2,6 @@
     "boardName": "microchip-mcp2221",
     "mcuName": "mcp2221a",
     "mcuRefVoltage": 3.3,
-    "VID": "0x04d8",
-    "PID": "0x00dd",
     "displayName": "MCP2221",
     "description": "General purpose USB to GPIO w/ADC, DAC, I2C.",
     "vendor":"Adafruit",

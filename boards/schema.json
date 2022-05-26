@@ -2,13 +2,13 @@
   "title": "Board Definition",
   "description": "A WipperSnapper-compatible Board for use in Adafruit IO",
   "type": "object",
-  "required": [ "boardName", "mcuName", "mcuRefVoltage", "VID", "PID", "displayName", "description", "productPageURL", "documentationURL" ],
+  "required": [ "boardName", "mcuName", "mcuRefVoltage", "displayName", "productPageURL", "documentationURL" ],
   "properties": {
     "boardName": {
       "description": "Hardware name. Must be unique within this repository.",
       "type": "string",
       "minLength": 3,
-      "maxLength": 24
+      "maxLength": 40
     },
     "mcuName": {
       "description": "Microcontroller name.",
@@ -25,7 +25,7 @@
       "description": "The human-friendly name of this board.",
       "type": "string",
       "minLength": 3,
-      "maxLength": 24
+      "maxLength": 50
     },
     "description": {
       "description": "Device description.",

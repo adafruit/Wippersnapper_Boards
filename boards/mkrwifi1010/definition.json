@@ -2,8 +2,6 @@
     "boardName":"mkrwifi1010",
     "mcuName":"samd21",
     "mcuRefVoltage":3.3,
-    "VID":"0x2341",
-    "PID":"0x8054",
     "displayName":"Arduino MKR WiFi 1010",
     "vendor":"Arduino",
     "productPageURL":"https://store-usa.arduino.cc/products/arduino-mkr-wifi-1010",

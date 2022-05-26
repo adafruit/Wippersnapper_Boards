@@ -2,8 +2,6 @@
     "boardName":"feather-esp32",
     "mcuName":"ESP32",
     "mcuRefVoltage": 3.3,
-    "VID":"0x239A",
-    "PID":"0x8036",
     "displayName":"Adafruit Feather HUZZAH ESP32",
     "vendor":"Adafruit",
     "productPageURL":"https://www.adafruit.com/product/3405",

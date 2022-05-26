@@ -2,8 +2,6 @@
     "boardName":"feather-esp32s2-tft",
     "mcuName":"esp32s2",
     "mcuRefVoltage":2.6,
-    "VID":"0x239A",
-    "PID":"0x810F",
     "displayName":"Adafruit ESP32-S2 TFT Feather",
     "vendor":"Adafruit",
     "productPageURL":"https://www.adafruit.com/product/5300",
