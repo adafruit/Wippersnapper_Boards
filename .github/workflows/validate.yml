@@ -18,11 +18,16 @@ jobs:
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v21
+        with:
+          files: boards/**/*
 
       - name: List all changed files
         run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            echo "$file was changed"
+          for file in ${{ steps.changed-files.outputs.added_files }}; do
+            echo "$file was added"
+          done
+          for file in ${{ steps.changed-files.outputs.renamed_files }}; do
+            echo "$file was renamed"
           done
 
       # - name: Validate Filenames
