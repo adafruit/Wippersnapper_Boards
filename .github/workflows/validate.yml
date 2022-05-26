@@ -19,4 +19,4 @@ jobs:
         uses: batista/lint-filenames@v1
         with:
           path: './boards/feather-esp32s2'
-          pattern: '^definition\\.json|image\\.(png|jpe?g|gif)$'
+          pattern: '^(definition\\.json|image\\.(png|jpe?g|gif))$'
