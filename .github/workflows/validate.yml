@@ -23,12 +23,28 @@ jobs:
 
       - name: List all changed files
         run: |
+          board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-drive|drag-drop|reset))\.(png|jpe?g|gif)))$"
+          exit_value=0
+
           for file in ${{ steps.changed-files.outputs.added_files }}; do
-            echo "$file was added"
+            if [[ $file =~ $board_definition_regex ]]; then
+              echo "✅ $file"
+            else
+              echo "❌ $file"
+              exit_value=1
+            fi
           done
+
           for file in ${{ steps.changed-files.outputs.renamed_files }}; do
-            echo "$file was renamed"
+            if [[ $file =~ $board_definition_regex ]]; then
+              echo "✅ $file"
+            else
+              echo "❌ $file"
+              exit_value=1
+            fi
           done
+
+          exit $exit_value
 
       # - name: Validate Filenames
       #   uses: batista/lint-filenames@v1
