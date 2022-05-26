@@ -14,3 +14,9 @@ jobs:
         with:
           schema: /boards/schema.json
           jsons: boards/*/definition.json
+
+      - name: Validate Filenames
+        uses: batista/lint-filenames@v1
+        with:
+          path: './boards/feather-esp32s2'
+          pattern: '^definition\\.json|image\\.(png|jpe?g|gif)$'
