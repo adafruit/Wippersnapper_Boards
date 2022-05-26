@@ -80,10 +80,11 @@ Example hardware descriptions can be found in the `boards/` directory.
 # Contributing
 If you do not see the board you want to use with WipperSnapper, adding support for a board we already have support for (see above, _Limitations_) is simple and we welcome all contributions:
 * Fork this repository and checkout a new branch.
-* Make a new directory in `boards/YOUR_BOARD_NAME`
+* Make a new directory in `boards/BOARD_NAME`
+  * `BOARD_NAME` **must** match `boardName` from the hardware description
 * Add the hardware description to this folder as `definition.json`
 * Add an image of the hardware to this folder as `image.svg`, `image.png`, `image.gif`, or `image.jpg`
-* **Optional:** Make a new directory in `boards/YOUR_BOARD_NAME/images`
+* **Optional:** Make a new directory in `boards/BOARD_NAME/images`
   * Add image files to appear in the steps of the firmware install process:
     * `boot-drive.png`
     * `boot-loader.gif`
