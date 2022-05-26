@@ -15,8 +15,6 @@ Information related to the hardware including the hardware's name, description a
 | boardName   | Yes      | String    | Hardware name                                           |
 | mcuName     | Yes      | String    | Microcontroller name                                    |
 | mcuRefVoltage     | Yes      | Float    | Microcontroller's maximum voltage reference, in Volts.                                    |
-| VID         | Yes      | int16     | USB Vendor ID                                           |
-| PID         | Yes      | int16     | USB Product ID                                          |
 | displayName | Yes      | String    | Adafruit IO Device name                                 |
 | description  | No      | String    | Device description                                       |
 | productPageURL | Yes      | String      | Link to board's homepage. |
@@ -84,9 +82,14 @@ If you do not see the board you want to use with WipperSnapper, adding support f
 * Fork this repository and checkout a new branch.
 * Make a new directory in `boards/YOUR_BOARD_NAME`
 * Add the hardware description to this folder as `definition.json`
-* Add an image of the hardware to this folder as `image.svg`
-* Add a new board entry to `index.json`.
-  * The `board` key value should match the name of the directory and description file you created.
-  * This file is sorted by Vendor ID (VID) first.
-    * If you are contributing hardware not designed by Adafruit - you will need to create a new Array and append an object containing the Product ID (`PID`) and `board`.
+* Add an image of the hardware to this folder as `image.svg`, `image.png`, `image.gif`, or `image.jpg`
+* **Optional:** Make a new directory in `boards/YOUR_BOARD_NAME/images`
+  * Add image files to appear in the steps of the firmware install process:
+    * `boot-drive.png`
+    * `boot-loader.gif`
+    * `drag-drop.svg`
+    * `reset.jpg`
+    * `usb.jpeg`
+  * Any file can have any image extension
+  * `boot-loader.gif` is expected to be an animated gif to help the user with timing
 * Create a pull request to this repository
