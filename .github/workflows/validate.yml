@@ -1,4 +1,3 @@
-# Reference for adding or expanding schemas: https://ajv.js.org/json-schema.html#json-data-type
 name: Validate JSON and Filenames
 
 on: [pull_request]
@@ -9,21 +8,22 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # - name: Validate Board JSON
-      #   uses: nhalstead/validate-json-action@0.1.3
-      #   with:
-      #     schema: /boards/schema.json
-      #     jsons: boards/*/definition.json
+      - name: Validate Board JSON
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          # Schema Docs: https://ajv.js.org/json-schema.html#json-data-type
+          schema: /boards/schema.json
+          jsons: boards/*/definition.json
 
-      - name: Get changed files
+      - name: List Changed Board Files
         id: changed-files
         uses: tj-actions/changed-files@v21
         with:
           files: boards/**/*
 
-      - name: List all changed files
+      - name: Validate Filenames
         run: |
-          board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-drive|drag-drop|reset))\.(png|jpe?g|gif)))$"
+          board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-drive|drag-drop|reset|usb))\.(png|jpe?g|gif)))$"
           exit_value=0
 
           for file in ${{ steps.changed-files.outputs.added_files }}; do
@@ -45,9 +45,3 @@ jobs:
           done
 
           exit $exit_value
-
-      # - name: Validate Filenames
-      #   uses: batista/lint-filenames@v1
-      #   with:
-      #     path: './boards/feather-esp32s2'
-      #     pattern: '^(definition\.json|image\.(png|jpe?g|gif))$'
