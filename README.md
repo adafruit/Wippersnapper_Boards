@@ -1,8 +1,13 @@
-# WipperSnapper Boards - Hardware Description Models for Adafruit IO WipperSnapper Beta
+# WipperSnapper Boards - Hardware Description Models for Adafruit IO WipperSnapper
 
-This repository contains Adafruit and user-submitted description models of hardware for use with Adafruit.io WipperSnapper Beta.
+This repository contains Adafruit and user-submitted description models of hardware for use with Adafruit.io.
 
-These hardware description models (HDMs) are similar in concept to IoT "digital twins", virtual representations of physical development boards. They contain everything Adafruit.io WipperSnapper needs to know about the device connecting to it.
+These hardware description models (HDMs) are similar in concept to IoT "digital twins", virtual representations of physical development boards. They contain everything Adafruit.io needs to know about the device connecting to it.
+
+# Contributing
+If you do not see the board you want to use with Adafruit IO on this repository, [follow this how-to guide on the Adafruit Learning System for full instructions about adding a board to this repository](https://learn.adafruit.com/how-to-add-a-new-board-to-wippersnapper).
+
+https://learn.adafruit.com/how-to-add-a-new-board-to-wippersnapper/overview
 
 # What is a hardware description model?
 A hardware description model (HDM) describes the contents (information, properties, physical components) of a development board.
@@ -74,23 +79,4 @@ The following HDM snippet defines an I2C interface on port 0 with a `SDA` GPIO p
 Example hardware descriptions can be found in the `boards/` directory.
 
 # Limitations
-* WipperSnapper currently only supports hardware with WiFi connectivity.
-* WipperSnapper currently supports the following microcontrollers: ESP8266, ESP32, ESP32-S2, SAMD51, SAMD21.
-
-# Contributing
-If you do not see the board you want to use with WipperSnapper, adding support for a board we already have support for (see above, _Limitations_) is simple and we welcome all contributions:
-* Fork this repository and checkout a new branch.
-* Make a new directory in `boards/BOARD_NAME`
-  * `BOARD_NAME` **must** match `boardName` from the hardware description
-* Add the hardware description to this folder as `definition.json`
-* Add an image of the hardware to this folder as `image.svg`, `image.png`, `image.gif`, or `image.jpg`
-* **Optional:** Make a new directory in `boards/BOARD_NAME/images`
-  * Add image files to appear in the steps of the firmware install process:
-    * `boot-drive.png`
-    * `boot-loader.gif`
-    * `drag-drop.svg`
-    * `reset.jpg`
-    * `usb.jpeg`
-  * Any file can have any image extension
-  * `boot-loader.gif` is expected to be an animated gif to help the user with timing
-* Create a pull request to this repository
+* The Adafruit IO WipperSnapper Firmware currently supports the following microcontrollers with a WiFi network interface: ESP8266, ESP32, ESP32-S2, ESP32-S3, SAMD51, SAMD21.
