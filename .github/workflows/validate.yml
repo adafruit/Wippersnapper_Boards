@@ -57,7 +57,7 @@ jobs:
               IFS='/'
               read -a SPLIT_MIME <<< "$MIME"
               IFS=' '
-              MIME_EXT=$SPLIT_MIME[-1] # last item
+              MIME_EXT=${SPLIT_MIME[-1]} # last item
               NEW_FILE="${file%.$EXT}.$MIME_EXT"
               echo "❌ $file: rename to $NEW_FILE"
               exit_value=1
