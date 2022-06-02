@@ -23,10 +23,8 @@ jobs:
 
       - name: Gather Added & Renamed Files
         id: changed-files
-        run: echo "Combining changed files..."
-        outputs:
-          # put all the changed file we care about into a single variable
-          files: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
+        # put all the changed file we care about into a single variable
+        run: ::set-output name=files::'${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}'
 
       - name: Validate Filenames
         run: |
