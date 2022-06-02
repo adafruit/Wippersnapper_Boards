@@ -50,6 +50,10 @@ jobs:
           exit $exit_value
 
       - name: Rename Mismatched Extensions
+        run: echo "TODO"
       - name: Resize Large Images
+        run: echo "TODO"
       - name: Optimize All Images
+        run: echo "TODO"
       - name: Validate File Sizes
+        run: echo "TODO"
