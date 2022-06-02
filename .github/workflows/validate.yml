@@ -25,10 +25,8 @@ jobs:
         env:
           FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
         run: |
-          board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif)))$"
           exit_value=0
-
-          echo $FILES
+          board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif)))$"
 
           for file in $FILES; do
             if [[ $file =~ $board_definition_regex ]]; then
@@ -46,27 +44,27 @@ jobs:
           FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
         run: |
           # check each files mimetype against its extension
+          exit_value=0
+
           for file in $FILES; do
-            echo "Testing $file"
             MIME=`file -b --mime-type $file`
             EXT="${file##*.}"
-            echo "Extension: $EXT"
-            echo "Mimetype: $MIME"
 
-            if [[ "image/$EXT" == $MIME ]]; then
+            if [[ "image/$EXT" == $MIME || ($EXT == "jpg" && $MIME == "image/jpeg") ]]; then
               echo "✅ $file"
             else
-              echo "Renaming $file"
-
               # split the mimetype on '/'
               IFS='/'
               read -a SPLIT_MIME <<< "$MIME"
               IFS=' '
               MIME_EXT=$SPLIT_MIME[-1] # last item
-
-              mv -- "$file" "${file%.$EXT}.$MIME_EXT"
+              NEW_FILE="${file%.$EXT}.$MIME_EXT"
+              echo "❌ $file: rename to $NEW_FILE"
+              exit_value=1
             fi
           done
+
+          exit $exit_value
 
       - name: Resize Large Images
         run: echo "TODO"
