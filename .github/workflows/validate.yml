@@ -42,7 +42,24 @@ jobs:
           exit $exit_value
 
       - name: Rename Mismatched Extensions
-        run: echo "TODO"
+        env:
+          FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
+        run: |
+          # check each files mimetype against its extension
+          for file in $FILES; do
+            echo "Testing $file"
+            MIME=`file -b --mime-type $file`
+            EXT="${file##*.}"
+            echo "Extension: $EXT"
+            echo "Mimetype: $MIME"
+
+            if [[ "image/$EXT" == $MIME ]]; then
+              echo "✅ $file"
+            else
+              echo "$file extension ($EXT) doesn't match its mimetype ($MIME)"
+            fi
+          done
+
       - name: Resize Large Images
         run: echo "TODO"
       - name: Optimize All Images
