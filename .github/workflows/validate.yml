@@ -26,6 +26,9 @@ jobs:
           board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif)))$"
           exit_value=0
 
+          echo ${{ steps.changed-files.outputs.renamed_files }}
+          echo ${{ join(steps.changed-files.outputs.renamed_files, ", ") }}
+
           for file in ${{ steps.changed-files.outputs.added_files }}; do
             if [[ $file =~ $board_definition_regex ]]; then
               echo "✅ $file"
@@ -45,3 +48,8 @@ jobs:
           done
 
           exit $exit_value
+
+      - name: Rename Mismatched Extensions
+      - name: Resize Large Images
+      - name: Optimize All Images
+      - name: Validate File Sizes
