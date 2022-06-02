@@ -45,9 +45,6 @@ jobs:
         env:
           FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
         run: |
-          # for splitting mimetypes later
-          IFS='/'
-
           # check each files mimetype against its extension
           for file in $FILES; do
             echo "Testing $file"
@@ -62,7 +59,9 @@ jobs:
               echo "Renaming $file"
 
               # split the mimetype on '/'
+              IFS='/'
               read -a SPLIT_MIME <<< "$MIME"
+              IFS=' '
               MIME_EXT=$SPLIT_MIME[-1] # last item
 
               mv -- "$file" "${file%.$EXT}.$MIME_EXT"
