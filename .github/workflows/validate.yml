@@ -54,7 +54,7 @@ jobs:
             MIME=`file -b --mime-type $FILE`
             EXT="${FILE##*.}"
 
-            if [[ "image/$EXT" == $MIME || ($EXT == "jpg" && $MIME == "image/jpeg") || ($EXT == "svg" && $MIME == "image/svg+xml") ]]; then
+            if [[ "image/$EXT" == $MIME || ($EXT == "jpg" && $MIME == "image/jpeg") || ($EXT == "svg" && ($MIME == "image/svg+xml" || $MIME == "text/xml")) ]]; then
               echo "✅ $FILE"
 
             else
