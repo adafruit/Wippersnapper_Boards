@@ -8,12 +8,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # - name: Validate Board JSON
-      #   uses: nhalstead/validate-json-action@0.1.3
-      #   with:
-      #     # Schema Docs: https://ajv.js.org/json-schema.html#json-data-type
-      #     schema: /boards/schema.json
-      #     jsons: boards/*/definition.json
+      - name: Validate Board JSON
+        uses: nhalstead/validate-json-action@0.1.3
+        with:
+          # Schema Docs: https://ajv.js.org/json-schema.html#json-data-type
+          schema: /boards/schema.json
+          jsons: boards/*/definition.json
 
       - name: List Changed Board Files
         id: changed-files
@@ -21,106 +21,105 @@ jobs:
         with:
           files: boards/**/*
 
-      # - name: Validate Only Expected Filenames
-      #   env:
-      #     FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
-      #   run: |
-      #     EXIT_VALUE=0
-      #     board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
-      #
-      #     for FILE in $FILES; do
-      #       if [[ $FILE =~ $board_definition_regex ]]; then
-      #         echo "✅ $FILE"
-      #       else
-      #         echo "❌ $FILE"
-      #         EXIT_VALUE=1
-      #       fi
-      #     done
-      #
-      #     exit $EXIT_VALUE
-      #
-      # - name: Validate Image File Extension<->Mimetype Agreement
-      #   env:
-      #     FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
-      #   run: |
-      #     EXIT_VALUE=0
-      #
-      #     for FILE in $FILES; do
-      #       # check each file's mimetype matches its extension
-      #       MIME=`file -b --mime-type $FILE`
-      #       EXT="${file##*.}"
-      #
-      #       if [[ "image/$EXT" == $MIME || ($EXT == "jpg" && $MIME == "image/jpeg") || ($EXT == "svg" && $MIME == "image/svg+xml") ]]; then
-      #         echo "✅ $FILE"
-      #
-      #       else
-      #         # Doesn't match? Report it helpfully
-      #         # split the mimetype on '/'
-      #         IFS='/'
-      #         read -a SPLIT_MIME <<< "$MIME"
-      #         IFS=' '
-      #         MIME_EXT=${SPLIT_MIME[-1]} # last item
-      #         NEW_FILE="${file%.$EXT}.$MIME_EXT"
-      #         echo "❌ $FILE: rename to $NEW_FILE"
-      #
-      #         EXIT_VALUE=1
-      #       fi
-      #     done
-      #
-      #     exit $EXIT_VALUE
+      - name: Validate Only Expected Filenames
+        env:
+          FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
+        run: |
+          EXIT_VALUE=0
+          board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
+
+          for FILE in $FILES; do
+            if [[ $FILE =~ $board_definition_regex ]]; then
+              echo "✅ $FILE"
+            else
+              echo "❌ $FILE"
+              EXIT_VALUE=1
+            fi
+          done
+
+          exit $EXIT_VALUE
+
+      - name: Validate Image File Extension<->Mimetype Agreement
+        env:
+          FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
+        run: |
+          EXIT_VALUE=0
+
+          for FILE in $FILES; do
+            # check each file's mimetype matches its extension
+            MIME=`file -b --mime-type $FILE`
+            EXT="${file##*.}"
+
+            if [[ "image/$EXT" == $MIME || ($EXT == "jpg" && $MIME == "image/jpeg") || ($EXT == "svg" && $MIME == "image/svg+xml") ]]; then
+              echo "✅ $FILE"
+
+            else
+              # Doesn't match? Report it helpfully
+              # split the mimetype on '/'
+              IFS='/'
+              read -a SPLIT_MIME <<< "$MIME"
+              IFS=' '
+              MIME_EXT=${SPLIT_MIME[-1]} # last item
+              NEW_FILE="${file%.$EXT}.$MIME_EXT"
+              echo "❌ $FILE: rename to $NEW_FILE"
+
+              EXIT_VALUE=1
+            fi
+          done
+
+          exit $EXIT_VALUE
 
 
       - uses: mfinelli/setup-imagemagick@v1
 
-      # - name: Validate Image Dimensions
-      #   env:
-      #     FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
-      #   run: |
-      #     EXIT_VALUE=0
-      #
-      #     MAX_WIDTH=800
-      #     MAX_HEIGHT=2000
-      #
-      #     for FILE in $FILES; do
-      #       # use imagemagick for the width
-      #       WIDTH=`identify -ping -format "%w" $FILE`
-      #       BAD_WIDTH=false
-      #       if [[ "$WIDTH" -gt "$MAX_WIDTH" ]]; then
-      #         EXIT_VALUE=1
-      #         BAD_WIDTH=true
-      #       fi
-      #
-      #       # use imagemagick for the height
-      #       HEIGHT=`identify -ping -format "%h" $FILE`
-      #       BAD_HEIGHT=false
-      #       if [[ "$HEIGHT" -gt "$MAX_HEIGHT" ]]; then
-      #         EXIT_VALUE=1
-      #         BAD_HEIGHT=true
-      #       fi
-      #
-      #       if [[ $BAD_WIDTH = true || $BAD_HEIGHT = true ]]; then
-      #         echo "❌ $FILE  ($WIDTH x $HEIGHT)"
-      #         if [[ $BAD_WIDTH = true ]]; then
-      #           echo "  ↔️ width must be 800 pixels or less"
-      #         fi
-      #
-      #         if [[ $BAD_HEIGHT = true ]]; then
-      #           echo "  ↕️ height must be 2000 pixels or less"
-      #         fi
-      #
-      #       else
-      #         echo "✅ $FILE $WIDTH x $HEIGHT"
-      #       fi
-      #     done
-      #
-      #     if [[ $EXIT_VALUE = 1 ]]; then
-      #       echo "Resize your images to fix these ☝️ issues."
-      #     fi
-      #
-      #     exit $EXIT_VALUE
+      - name: Validate Image Dimensions
+        env:
+          FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
+        run: |
+          EXIT_VALUE=0
 
-      - name: Optimize All Image Files
-        run: echo "TODO"
+          MAX_WIDTH=800
+          MAX_HEIGHT=2000
+
+          for FILE in $FILES; do
+            # use imagemagick for the width
+            WIDTH=`identify -ping -format "%w" $FILE`
+            BAD_WIDTH=false
+            if [[ "$WIDTH" -gt "$MAX_WIDTH" ]]; then
+              EXIT_VALUE=1
+              BAD_WIDTH=true
+            fi
+
+            # use imagemagick for the height
+            HEIGHT=`identify -ping -format "%h" $FILE`
+            BAD_HEIGHT=false
+            if [[ "$HEIGHT" -gt "$MAX_HEIGHT" ]]; then
+              EXIT_VALUE=1
+              BAD_HEIGHT=true
+            fi
+
+            if [[ $BAD_WIDTH = true || $BAD_HEIGHT = true ]]; then
+              echo "❌ $FILE  ($WIDTH x $HEIGHT)"
+              if [[ $BAD_WIDTH = true ]]; then
+                echo "  ↔️ width must be 800 pixels or less"
+              fi
+
+              if [[ $BAD_HEIGHT = true ]]; then
+                echo "  ↕️ height must be 2000 pixels or less"
+              fi
+
+            else
+              echo "✅ $FILE $WIDTH x $HEIGHT"
+            fi
+          done
+
+          if [[ $EXIT_VALUE = 1 ]]; then
+            echo "Resize your images to fix these ☝️ issues."
+          fi
+
+          exit $EXIT_VALUE
+
+      # - name: Optimize All Image Files
 
       - name: Validate Image File Sizes
         env:
@@ -151,8 +150,5 @@ jobs:
 
           exit $EXIT_VALUE
 
-      - name: Add & Commit (maybe branch and PR?)
-        run: echo "TODO"
-
-      - name: Leave Helpful Comment
-        run: echo "TODO"
+      # - name: Add & Commit (maybe branch and PR?)
+      # - name: Leave Helpful Comment
