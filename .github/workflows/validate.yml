@@ -137,8 +137,6 @@ jobs:
 
           exit $EXIT_VALUE
 
-      # - name: Optimize All Image Files
-
       - name: Validate Image File Sizes
         env:
           FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
@@ -172,6 +170,3 @@ jobs:
           fi
 
           exit $EXIT_VALUE
-
-      # - name: Add & Commit (maybe branch and PR?)
-      # - name: Leave Helpful Comment
