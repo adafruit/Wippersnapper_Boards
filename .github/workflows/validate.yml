@@ -95,13 +95,13 @@ jobs:
               BAD_HEIGHT=true
             fi
 
-            if [[ $BAD_WIDTH == true || $BAD_HEIGHT == true ]]; then
+            if [[ $BAD_WIDTH = true || $BAD_HEIGHT = true ]]; then
               echo "❌ $file $WIDTH x $HEIGHT"
-              if [[ $BAD_WIDTH == true ]]; then
+              if [[ $BAD_WIDTH = true ]]; then
                 echo "↔️ width must be 800 pixels or less"
               fi
 
-              if [[ $BAD_HEIGHT == true ]]; then
+              if [[ $BAD_HEIGHT = true ]]; then
                 echo "↕️ height must be 2000 pixels or less"
               fi
 
