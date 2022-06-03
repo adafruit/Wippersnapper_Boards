@@ -26,7 +26,7 @@ jobs:
       #     FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
       #   run: |
       #     exit_value=0
-      #     board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif)))$"
+      #     board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
       #
       #     for file in $FILES; do
       #       if [[ $file =~ $board_definition_regex ]]; then
@@ -50,7 +50,7 @@ jobs:
       #       MIME=`file -b --mime-type $file`
       #       EXT="${file##*.}"
       #
-      #       if [[ "image/$EXT" == $MIME || ($EXT == "jpg" && $MIME == "image/jpeg") ]]; then
+      #       if [[ "image/$EXT" == $MIME || ($EXT == "jpg" && $MIME == "image/jpeg") || ($EXT == "svg" && $MIME == "image/svg+xml") ]]; then
       #         echo "✅ $file"
       #
       #       else
