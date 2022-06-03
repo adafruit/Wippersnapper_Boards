@@ -86,7 +86,7 @@ jobs:
             WIDTH=`identify -ping -format "%w" $file`
             echo $WIDTH
             BAD_WIDTH=false
-            if [[ "$WIDTH" > "$MAX_WIDTH" ]]; then
+            if [[ "$WIDTH" -gt "$MAX_WIDTH" ]]; then
               echo "bad width"
               exit_value=1
               BAD_WIDTH=true
@@ -96,7 +96,7 @@ jobs:
             HEIGHT=`identify -ping -format "%h" $file`
             echo $HEIGHT
             BAD_HEIGHT=false
-            if [[ "$HEIGHT" > "$MAX_HEIGHT" ]]; then
+            if [[ "$HEIGHT" -gt "$MAX_HEIGHT" ]]; then
               echo "bad height"
               exit_value=1
               BAD_HEIGHT=true
