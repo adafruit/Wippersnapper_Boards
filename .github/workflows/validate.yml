@@ -25,33 +25,33 @@ jobs:
       #   env:
       #     FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
       #   run: |
-      #     exit_value=0
+      #     EXIT_VALUE=0
       #     board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
       #
-      #     for file in $FILES; do
-      #       if [[ $file =~ $board_definition_regex ]]; then
-      #         echo "✅ $file"
+      #     for FILE in $FILES; do
+      #       if [[ $FILE =~ $board_definition_regex ]]; then
+      #         echo "✅ $FILE"
       #       else
-      #         echo "❌ $file"
-      #         exit_value=1
+      #         echo "❌ $FILE"
+      #         EXIT_VALUE=1
       #       fi
       #     done
       #
-      #     exit $exit_value
+      #     exit $EXIT_VALUE
       #
       # - name: Validate Image File Extension<->Mimetype Agreement
       #   env:
       #     FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
       #   run: |
-      #     exit_value=0
+      #     EXIT_VALUE=0
       #
-      #     for file in $FILES; do
+      #     for FILE in $FILES; do
       #       # check each file's mimetype matches its extension
-      #       MIME=`file -b --mime-type $file`
+      #       MIME=`file -b --mime-type $FILE`
       #       EXT="${file##*.}"
       #
       #       if [[ "image/$EXT" == $MIME || ($EXT == "jpg" && $MIME == "image/jpeg") || ($EXT == "svg" && $MIME == "image/svg+xml") ]]; then
-      #         echo "✅ $file"
+      #         echo "✅ $FILE"
       #
       #       else
       #         # Doesn't match? Report it helpfully
@@ -61,13 +61,13 @@ jobs:
       #         IFS=' '
       #         MIME_EXT=${SPLIT_MIME[-1]} # last item
       #         NEW_FILE="${file%.$EXT}.$MIME_EXT"
-      #         echo "❌ $file: rename to $NEW_FILE"
+      #         echo "❌ $FILE: rename to $NEW_FILE"
       #
-      #         exit_value=1
+      #         EXIT_VALUE=1
       #       fi
       #     done
       #
-      #     exit $exit_value
+      #     exit $EXIT_VALUE
 
 
       - uses: mfinelli/setup-imagemagick@v1
@@ -76,30 +76,30 @@ jobs:
       #   env:
       #     FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
       #   run: |
-      #     exit_value=0
+      #     EXIT_VALUE=0
       #
       #     MAX_WIDTH=800
       #     MAX_HEIGHT=2000
       #
-      #     for file in $FILES; do
+      #     for FILE in $FILES; do
       #       # use imagemagick for the width
-      #       WIDTH=`identify -ping -format "%w" $file`
+      #       WIDTH=`identify -ping -format "%w" $FILE`
       #       BAD_WIDTH=false
       #       if [[ "$WIDTH" -gt "$MAX_WIDTH" ]]; then
-      #         exit_value=1
+      #         EXIT_VALUE=1
       #         BAD_WIDTH=true
       #       fi
       #
       #       # use imagemagick for the height
-      #       HEIGHT=`identify -ping -format "%h" $file`
+      #       HEIGHT=`identify -ping -format "%h" $FILE`
       #       BAD_HEIGHT=false
       #       if [[ "$HEIGHT" -gt "$MAX_HEIGHT" ]]; then
-      #         exit_value=1
+      #         EXIT_VALUE=1
       #         BAD_HEIGHT=true
       #       fi
       #
       #       if [[ $BAD_WIDTH = true || $BAD_HEIGHT = true ]]; then
-      #         echo "❌ $file  ($WIDTH x $HEIGHT)"
+      #         echo "❌ $FILE  ($WIDTH x $HEIGHT)"
       #         if [[ $BAD_WIDTH = true ]]; then
       #           echo "  ↔️ width must be 800 pixels or less"
       #         fi
@@ -109,15 +109,15 @@ jobs:
       #         fi
       #
       #       else
-      #         echo "✅ $file $WIDTH x $HEIGHT"
+      #         echo "✅ $FILE $WIDTH x $HEIGHT"
       #       fi
       #     done
       #
-      #     if [[ $exit_value = 1 ]]; then
+      #     if [[ $EXIT_VALUE = 1 ]]; then
       #       echo "Resize your images to fix these ☝️ issues."
       #     fi
       #
-      #     exit $exit_value
+      #     exit $EXIT_VALUE
 
       - name: Optimize All Image Files
         run: echo "TODO"
@@ -126,30 +126,30 @@ jobs:
         env:
           FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
         run: |
-          exit_value=0
+          EXIT_VALUE=0
 
           MAX_FILESIZE=$((400*1024)) # 400kb
 
-          for file in $FILES; do
-            FILESIZE=$(stat -c%s "$file")
+          for FILE in $FILES; do
+            FILESIZE=$(stat -c%s "$FILE")
 
             if [[ "$FILESIZE" -gt "$MAX_FILESIZE"  ]]; then
-              exit_value=1
-              echo "❌ $file ($FILESIZE)"
+              EXIT_VALUE=1
+              echo "❌ $FILE ($FILESIZE)"
 
             else
-              echo "✅ $file ($FILESIZE)"
+              echo "✅ $FILE ($FILESIZE)"
             fi
           done
 
-          if [[ $exit_value = 1 ]]; then
+          if [[ $EXIT_VALUE = 1 ]]; then
             echo "These image files ☝️ are too large. You can try:"
             echo "- exporting at lower quality settings"
             echo "- exporting a different image format (jpg, png, svg, etc)"
             echo "- shrinking the image's dimensions before exporting"
           fi
 
-          exit $exit_value
+          exit $EXIT_VALUE
 
       - name: Add & Commit (maybe branch and PR?)
         run: echo "TODO"
