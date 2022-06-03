@@ -46,6 +46,10 @@ jobs:
           EXIT_VALUE=0
 
           for FILE in $FILES; do
+            if [[ $FILE == */definition.json ]]; then
+              continue # non-image file
+            fi
+
             # check each file's mimetype matches its extension
             MIME=`file -b --mime-type $FILE`
             EXT="${file##*.}"
@@ -82,6 +86,10 @@ jobs:
           MAX_HEIGHT=2000
 
           for FILE in $FILES; do
+            if [[ $FILE == */definition.json ]]; then
+              continue # non-image file
+            fi
+
             # use imagemagick for the width
             WIDTH=`identify -ping -format "%w" $FILE`
             BAD_WIDTH=false
@@ -130,6 +138,10 @@ jobs:
           MAX_FILESIZE=$((400*1024)) # 400kb
 
           for FILE in $FILES; do
+            if [[ $FILE == */definition.json ]]; then
+              continue # non-image file
+            fi
+
             FILESIZE=$(stat -c%s "$FILE")
 
             if [[ "$FILESIZE" -gt "$MAX_FILESIZE"  ]]; then
