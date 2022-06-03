@@ -52,7 +52,7 @@ jobs:
 
             # check each file's mimetype matches its extension
             MIME=`file -b --mime-type $FILE`
-            EXT="${file##*.}"
+            EXT="${FILE##*.}"
 
             if [[ "image/$EXT" == $MIME || ($EXT == "jpg" && $MIME == "image/jpeg") || ($EXT == "svg" && $MIME == "image/svg+xml") ]]; then
               echo "✅ $FILE"
@@ -64,7 +64,7 @@ jobs:
               read -a SPLIT_MIME <<< "$MIME"
               IFS=' '
               MIME_EXT=${SPLIT_MIME[-1]} # last item
-              NEW_FILE="${file%.$EXT}.$MIME_EXT"
+              NEW_FILE="${FILE%.$EXT}.$MIME_EXT"
               echo "❌ $FILE: rename to $NEW_FILE"
 
               EXIT_VALUE=1
