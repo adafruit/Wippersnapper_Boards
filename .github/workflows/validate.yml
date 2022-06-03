@@ -50,22 +50,32 @@ jobs:
               continue # non-image file
             fi
 
-            # check each file's mimetype matches its extension
+            # extract each file's mimetype and extension
             MIME=`file -b --mime-type $FILE`
             EXT="${FILE##*.}"
 
+            # ad-hoc check that extension matches mimetype
             if [[ "image/$EXT" == $MIME || ($EXT == "jpg" && $MIME == "image/jpeg") || ($EXT == "svg" && ($MIME == "image/svg+xml" || $MIME == "text/xml")) ]]; then
+              # Match!
               echo "✅ $FILE"
 
             else
-              # Doesn't match? Report it helpfully
+              # Doesn't match? Give helpful report
+
               # split the mimetype on '/'
               IFS='/'
               read -a SPLIT_MIME <<< "$MIME"
               IFS=' '
-              MIME_EXT=${SPLIT_MIME[-1]} # last item
-              NEW_FILE="${FILE%.$EXT}.$MIME_EXT"
-              echo "❌ $FILE: rename to $NEW_FILE"
+              # take the last item
+              MIME_EXT=${SPLIT_MIME[-1]}
+
+              if [[ "$MIME_EXT" == "xml" ]]; then
+                MIME_EXT="svg"
+              else if [[ "$MIME_EXT" == "jpeg" ]]; then
+                MIME_EXT="jpg"
+              fi
+
+              echo "❌ $FILE: wrong file extension, expected .$MIME_EXT"
 
               EXIT_VALUE=1
             fi
@@ -122,7 +132,7 @@ jobs:
           done
 
           if [[ $EXIT_VALUE = 1 ]]; then
-            echo "Resize your images to fix these ☝️ issues."
+            echo "Fix these ☝️ issues by resizing your images to fit inside ${MAX_WIDTH}x${MAX_HEIGHT}."
           fi
 
           exit $EXIT_VALUE
@@ -154,7 +164,8 @@ jobs:
           done
 
           if [[ $EXIT_VALUE = 1 ]]; then
-            echo "These image files ☝️ are too large. You can try:"
+            echo "These image files ☝️ are too large, they must be smaller than 400kb. You can try:"
+            echo "- using an image compressor"
             echo "- exporting at lower quality settings"
             echo "- exporting a different image format (jpg, png, svg, etc)"
             echo "- shrinking the image's dimensions before exporting"
