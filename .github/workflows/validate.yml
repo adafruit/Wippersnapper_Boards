@@ -131,9 +131,9 @@ jobs:
           MAX_FILESIZE=$((400*1024)) # 400kb
 
           for file in $FILES; do
-            FILESIZE=`identify -ping -format "%b" $file`
+            FILESIZE=$(stat -c%s "$file")
 
-            if [[ $FILESIZE -gt $MAX_FILESIZE  ]]; then
+            if [[ "$FILESIZE" -gt "$MAX_FILESIZE"  ]]; then
               echo "❌ $file is too large! ($FILESIZE > $MAX_FILESIZE)"
 
             else
