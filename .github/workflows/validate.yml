@@ -85,7 +85,7 @@ jobs:
             if [[ WIDTH > 800 ]]; then
               exit_value = 1
               BAD_WIDTH=true
-            done
+            fi
 
             # use imagemagick for the width
             HEIGHT=`identify -ping -format "%h" $file`
@@ -93,21 +93,21 @@ jobs:
             if [[ HEIGHT > 2000 ]]; then
               exit_value = 1
               BAD_HEIGHT=true
-            done
+            fi
 
             if [[ BAD_WIDTH || BAD_HEIGHT ]]; then
               echo "❌ $file:"
               if [[ BAD_WIDTH ]]; then
                 echo "↔️ width > 800 pixels"
-              done
+              fi
 
               if [[ BAD_HEIGHT ]]; then
                 echo "↕️ height > 2000 pixels"
-              done
+              fi
 
             else
               echo "✅ $file $WIDTH x $HEIGHT"
-            done
+            fi
           done
 
           exit $exit_value
