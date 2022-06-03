@@ -98,11 +98,15 @@ jobs:
                 MIME_EXT="jpg"
               fi
 
-              echo "❌ $FILE: wrong file extension, expected .$MIME_EXT"
+              echo "❌ $FILE: expected .$MIME_EXT"
 
               EXIT_VALUE=1
             fi
           done
+
+          if [[ $EXIT_VALUE = 1 ]]; then
+            echo "Fix these ☝️ issues by renaming each ❌ file to the indicated extension."
+          fi
 
           exit $EXIT_VALUE
 
@@ -144,7 +148,7 @@ jobs:
             fi
 
             if [[ $BAD_WIDTH = true || $BAD_HEIGHT = true ]]; then
-              echo "❌ $FILE  ($WIDTH x $HEIGHT)"
+              echo "❌ $FILE  (${WIDTH}x${HEIGHT})"
               if [[ $BAD_WIDTH = true ]]; then
                 echo "  ↔️ width must be 800 pixels or less"
               fi
@@ -154,12 +158,12 @@ jobs:
               fi
 
             else
-              echo "✅ $FILE $WIDTH x $HEIGHT"
+              echo "✅ $FILE  (${WIDTH}x${HEIGHT})"
             fi
           done
 
           if [[ $EXIT_VALUE = 1 ]]; then
-            echo "Fix these ☝️ issues by resizing your images to fit inside ${MAX_WIDTH}x${MAX_HEIGHT}."
+            echo "Fix these ☝️ issues by resizing each ❌ image to fit with ${MAX_WIDTH}x${MAX_HEIGHT}."
           fi
 
           exit $EXIT_VALUE
@@ -195,11 +199,15 @@ jobs:
           done
 
           if [[ $EXIT_VALUE = 1 ]]; then
-            echo "These image files ☝️ are too large, they must be smaller than 400kb. You can try:"
+            echo "Fix these issues ☝️ by compressing each ❌ file to be smaller than 400kb. You can try:"
+            echo "- shrinking the image's dimensions (do this first if dimension validation also failed for a given file)"
             echo "- using an image compressor"
-            echo "- exporting at lower quality settings"
-            echo "- exporting a different image format (jpg, png, svg, etc)"
-            echo "- shrinking the image's dimensions before exporting"
+            echo "- exporting at lower quality settings (png or jpg)"
+            echo "- exporting a different image format:"
+            echo "  - photos are best saved as jpg"
+            echo "  - screenshots and digital images are best saved as png"
+            echo "  - svg might be efficient for images with few colors and simple shapes"
+            echo "  - gif should only be used when animation is needed (i.e. the boot-loader image)"
           fi
 
           exit $EXIT_VALUE
