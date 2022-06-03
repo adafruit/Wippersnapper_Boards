@@ -1,9 +1,10 @@
-name: Validate JSON and Filenames
+name: Validate Board Files
 
 on: [pull_request]
 
 jobs:
-  validate-board-definition:
+  validate-definition-files:
+    name: Validate Definition Files
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -15,15 +16,31 @@ jobs:
           schema: /boards/schema.json
           jsons: boards/*/definition.json
 
+  changed-files:
+    name: List added and renamed files
+    runs-on: ubuntu-latest
+    outputs:
+      # All files that were Added, Copied, Modified, or Renamed
+      files: ${{ steps.list-changed-files.outputs.all_changed_files }}
+
+    steps:
+      - uses: actions/checkout@v3
       - name: List Changed Board Files
-        id: changed-files
+        id: list-changed-files
         uses: tj-actions/changed-files@v21
         with:
           files: boards/**/*
 
+  validate-expected-filenames:
+    name: Validate Filenames
+    runs-on: ubuntu-latest
+    needs: changed-files
+    env:
+      FILES: ${{ needs.changed-files.outputs.files }}
+
+    steps:
+      - uses: actions/checkout@v3
       - name: Validate Only Expected Filenames
-        env:
-          FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
         run: |
           EXIT_VALUE=0
           board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
@@ -39,9 +56,15 @@ jobs:
 
           exit $EXIT_VALUE
 
+  validate-image-extension-mimetype-agreement:
+    name: Validate Image Extensions Match Their Mimetypes
+    runs-on: ubuntu-latest
+    needs: changed-files
+    env:
+      FILES: ${{ needs.changed-files.outputs.files }}
+    steps:
+      - uses: actions/checkout@v3
       - name: Validate Image File Extension<->Mimetype Agreement
-        env:
-          FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
         run: |
           EXIT_VALUE=0
 
@@ -83,12 +106,16 @@ jobs:
 
           exit $EXIT_VALUE
 
-
+  validate-image-dimensions:
+    name: Validate Image Dimensions
+    runs-on: ubuntu-latest
+    needs: changed-files
+    env:
+      FILES: ${{ needs.changed-files.outputs.files }}
+    steps:
+      - uses: actions/checkout@v3
       - uses: mfinelli/setup-imagemagick@v1
-
       - name: Validate Image Dimensions
-        env:
-          FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
         run: |
           EXIT_VALUE=0
 
@@ -137,9 +164,15 @@ jobs:
 
           exit $EXIT_VALUE
 
+  validate-image-file-sizes:
+    name: Validate Image File Sizes
+    runs-on: ubuntu-latest
+    needs: changed-files
+    env:
+      FILES: ${{ needs.changed-files.outputs.files }}
+    steps:
+      - uses: actions/checkout@v3
       - name: Validate Image File Sizes
-        env:
-          FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
         run: |
           EXIT_VALUE=0
 
