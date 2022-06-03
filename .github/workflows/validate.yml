@@ -84,32 +84,28 @@ jobs:
           for file in $FILES; do
             # use imagemagick for the width
             WIDTH=`identify -ping -format "%w" $file`
-            echo $WIDTH
             BAD_WIDTH=false
             if [[ "$WIDTH" -gt "$MAX_WIDTH" ]]; then
-              echo "bad width"
               exit_value=1
               BAD_WIDTH=true
             fi
 
             # use imagemagick for the height
             HEIGHT=`identify -ping -format "%h" $file`
-            echo $HEIGHT
             BAD_HEIGHT=false
             if [[ "$HEIGHT" -gt "$MAX_HEIGHT" ]]; then
-              echo "bad height"
               exit_value=1
               BAD_HEIGHT=true
             fi
 
             if [[ $BAD_WIDTH = true || $BAD_HEIGHT = true ]]; then
-              echo "❌ $file $WIDTH x $HEIGHT"
+              echo "❌ $file  ($WIDTH x $HEIGHT)"
               if [[ $BAD_WIDTH = true ]]; then
-                echo "↔️ width must be 800 pixels or less"
+                echo "  ↔️ width must be 800 pixels or less"
               fi
 
               if [[ $BAD_HEIGHT = true ]]; then
-                echo "↕️ height must be 2000 pixels or less"
+                echo "  ↕️ height must be 2000 pixels or less"
               fi
 
             else
