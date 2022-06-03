@@ -17,7 +17,7 @@ jobs:
           jsons: boards/*/definition.json
 
   changed-files:
-    name: List added and renamed files
+    name: List Changed Files
     runs-on: ubuntu-latest
     outputs:
       # All files that were Added, Copied, Modified, or Renamed
@@ -57,7 +57,7 @@ jobs:
           exit $EXIT_VALUE
 
   validate-image-extension-mimetype-agreement:
-    name: Validate Image Extensions Match Their Mimetypes
+    name: Validate Extensions Match Mimetypes
     runs-on: ubuntu-latest
     needs: changed-files
     env:
@@ -94,7 +94,7 @@ jobs:
 
               if [[ "$MIME_EXT" == "xml" ]]; then
                 MIME_EXT="svg"
-              else if [[ "$MIME_EXT" == "jpeg" ]]; then
+              elif [[ "$MIME_EXT" == "jpeg" ]]; then
                 MIME_EXT="jpg"
               fi
 
