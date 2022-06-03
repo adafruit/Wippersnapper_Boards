@@ -134,12 +134,20 @@ jobs:
             FILESIZE=$(stat -c%s "$file")
 
             if [[ "$FILESIZE" -gt "$MAX_FILESIZE"  ]]; then
-              echo "❌ $file is too large! ($FILESIZE > $MAX_FILESIZE)"
+              exit_value=1
+              echo "❌ $file ($FILESIZE)"
 
             else
               echo "✅ $file ($FILESIZE)"
             fi
           done
+
+          if [[ $exit_value = 1 ]]; then
+            echo "These image files ☝️ are too large. You can try:"
+            echo "- exporting at lower quality settings"
+            echo "- exporting a different image format (jpg, png, svg, etc)"
+            echo "- shrinking the image's dimensions before exporting"
+          fi
 
           exit $exit_value
 
