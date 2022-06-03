@@ -83,7 +83,7 @@ jobs:
             WIDTH=`identify -ping -format "%w" $file`
             BAD_WIDTH=false
             if [[ WIDTH > 800 ]]; then
-              exit_value = 1
+              exit_value=1
               BAD_WIDTH=true
             fi
 
@@ -91,24 +91,28 @@ jobs:
             HEIGHT=`identify -ping -format "%h" $file`
             BAD_HEIGHT=false
             if [[ HEIGHT > 2000 ]]; then
-              exit_value = 1
+              exit_value=1
               BAD_HEIGHT=true
             fi
 
-            if [[ BAD_WIDTH || BAD_HEIGHT ]]; then
+            if [[ BAD_WIDTH = true || BAD_HEIGHT = true ]]; then
               echo "❌ $file:"
-              if [[ BAD_WIDTH ]]; then
-                echo "↔️ width > 800 pixels"
+              if [[ BAD_WIDTH = true ]]; then
+                echo "↔️ width must be 800 pixels or less"
               fi
 
-              if [[ BAD_HEIGHT ]]; then
-                echo "↕️ height > 2000 pixels"
+              if [[ BAD_HEIGHT = true ]]; then
+                echo "↕️ height must be 2000 pixels or less"
               fi
 
             else
               echo "✅ $file $WIDTH x $HEIGHT"
             fi
           done
+
+          if [[ $exit_value = 1 ]]; then
+            echo "Resize your images to fix these ☝️ issues."
+          fi
 
           exit $exit_value
 
