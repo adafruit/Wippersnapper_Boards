@@ -58,6 +58,7 @@ jobs:
               echo "✅ $FILE"
 
             else
+              echo "Debug: EXT = $EXT, MIME = $MIME"
               # Doesn't match? Report it helpfully
               # split the mimetype on '/'
               IFS='/'
