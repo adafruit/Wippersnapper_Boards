@@ -82,26 +82,26 @@ jobs:
             # use imagemagick for the width
             WIDTH=`identify -ping -format "%w" $file`
             BAD_WIDTH=false
-            if [[ WIDTH > 800 ]]; then
+            if [[ "$WIDTH" > 800 ]]; then
               exit_value=1
               BAD_WIDTH=true
             fi
 
-            # use imagemagick for the width
+            # use imagemagick for the height
             HEIGHT=`identify -ping -format "%h" $file`
             BAD_HEIGHT=false
-            if [[ HEIGHT > 2000 ]]; then
+            if [[ "$HEIGHT" > 2000 ]]; then
               exit_value=1
               BAD_HEIGHT=true
             fi
 
-            if [[ BAD_WIDTH = true || BAD_HEIGHT = true ]]; then
-              echo "❌ $file:"
-              if [[ BAD_WIDTH = true ]]; then
+            if [[ $BAD_WIDTH == true || $BAD_HEIGHT == true ]]; then
+              echo "❌ $file $WIDTH x $HEIGHT"
+              if [[ $BAD_WIDTH == true ]]; then
                 echo "↔️ width must be 800 pixels or less"
               fi
 
-              if [[ BAD_HEIGHT = true ]]; then
+              if [[ $BAD_HEIGHT == true ]]; then
                 echo "↕️ height must be 2000 pixels or less"
               fi
 
