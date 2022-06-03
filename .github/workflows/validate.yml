@@ -78,12 +78,15 @@ jobs:
         run: |
           exit_value=0
 
+          MAX_WIDTH=800
+          MAX_HEIGHT=2000
+
           for file in $FILES; do
             # use imagemagick for the width
             WIDTH=`identify -ping -format "%w" $file`
             echo $WIDTH
             BAD_WIDTH=false
-            if [[ "$WIDTH" > 800 ]]; then
+            if [[ "$WIDTH" > "$MAX_WIDTH" ]]; then
               echo "bad width"
               exit_value=1
               BAD_WIDTH=true
@@ -93,7 +96,7 @@ jobs:
             HEIGHT=`identify -ping -format "%h" $file`
             echo $HEIGHT
             BAD_HEIGHT=false
-            if [[ "$HEIGHT" > 2000 ]]; then
+            if [[ "$HEIGHT" > "$MAX_HEIGHT" ]]; then
               echo "bad height"
               exit_value=1
               BAD_HEIGHT=true
