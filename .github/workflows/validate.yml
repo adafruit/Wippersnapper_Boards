@@ -187,6 +187,7 @@ jobs:
           EXIT_VALUE=0
 
           MAX_FILESIZE=$((400*1024)) # 400kb
+          MAX_ANIGIF_FILESIZE=$((1000*1024)) # 1MB
 
           for FILE in $FILES; do
             if [[ $FILE == */definition.json ]]; then
@@ -195,7 +196,13 @@ jobs:
 
             FILESIZE=$(stat -c%s "$FILE")
 
-            if [[ "$FILESIZE" -gt "$MAX_FILESIZE"  ]]; then
+            if [[ $FILE == */boot-loader.gif ]]; then
+              MAX=$MAX_FILESIZE
+            else
+              MAX=$MAX_ANIGIF_FILESIZE
+            fi
+
+            if [[ "$FILESIZE" -gt "$MAX"  ]]; then
               EXIT_VALUE=1
               echo "❌ $FILE ($FILESIZE)"
 
@@ -205,7 +212,7 @@ jobs:
           done
 
           if [[ $EXIT_VALUE = 1 ]]; then
-            echo "Fix these issues ☝️ by compressing each ❌ file to be smaller than 400kb. You can try:"
+            echo "Fix these issues ☝️ by compressing each ❌ file to be smaller than 400KB (1MB for boot-loader.gif animations). You can try:"
             echo "- shrinking the image's dimensions (do this first if dimension validation also failed for a given file)"
             echo "- using an image compressor"
             echo "- exporting at lower quality settings (png or jpg)"
