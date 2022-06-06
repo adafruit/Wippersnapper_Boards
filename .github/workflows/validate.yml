@@ -59,7 +59,9 @@ jobs:
   validate-image-extension-mimetype-agreement:
     name: Validate Extensions Match Mimetypes
     runs-on: ubuntu-latest
-    needs: changed-files
+    needs:
+      - changed-files
+      - validate-expected-filenames
     env:
       FILES: ${{ needs.changed-files.outputs.files }}
     steps:
@@ -113,7 +115,9 @@ jobs:
   validate-image-dimensions:
     name: Validate Image Dimensions
     runs-on: ubuntu-latest
-    needs: changed-files
+    needs:
+      - changed-files
+      - validate-image-extension-mimetype-agreement
     env:
       FILES: ${{ needs.changed-files.outputs.files }}
     steps:
@@ -163,7 +167,7 @@ jobs:
           done
 
           if [[ $EXIT_VALUE = 1 ]]; then
-            echo "Fix these ☝️ issues by resizing each ❌ image to fit with ${MAX_WIDTH}x${MAX_HEIGHT}."
+            echo "Fix these ☝️ issues by resizing each ❌ image to fit within ${MAX_WIDTH}x${MAX_HEIGHT}."
           fi
 
           exit $EXIT_VALUE
@@ -171,7 +175,9 @@ jobs:
   validate-image-file-sizes:
     name: Validate Image File Sizes
     runs-on: ubuntu-latest
-    needs: changed-files
+    needs:
+      - changed-files
+      - validate-image-dimensions
     env:
       FILES: ${{ needs.changed-files.outputs.files }}
     steps:
