@@ -1,9 +1,10 @@
-name: Validate JSON and Filenames
+name: Validate Board Files
 
 on: [pull_request]
 
 jobs:
-  validate-board-definition:
+  validate-definition-files:
+    name: Validate Definition Files
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -15,15 +16,31 @@ jobs:
           schema: /boards/schema.json
           jsons: boards/*/definition.json
 
+  changed-files:
+    name: List Changed Files
+    runs-on: ubuntu-latest
+    outputs:
+      # All files that were Added, Copied, Modified, or Renamed
+      files: ${{ steps.list-changed-files.outputs.all_changed_files }}
+
+    steps:
+      - uses: actions/checkout@v3
       - name: List Changed Board Files
-        id: changed-files
+        id: list-changed-files
         uses: tj-actions/changed-files@v21
         with:
           files: boards/**/*
 
+  validate-expected-filenames:
+    name: Validate Filenames
+    runs-on: ubuntu-latest
+    needs: changed-files
+    env:
+      FILES: ${{ needs.changed-files.outputs.files }}
+
+    steps:
+      - uses: actions/checkout@v3
       - name: Validate Only Expected Filenames
-        env:
-          FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
         run: |
           EXIT_VALUE=0
           board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
@@ -39,42 +56,74 @@ jobs:
 
           exit $EXIT_VALUE
 
+  validate-image-extension-mimetype-agreement:
+    name: Validate Extensions Match Mimetypes
+    runs-on: ubuntu-latest
+    needs:
+      - changed-files
+      - validate-expected-filenames
+    env:
+      FILES: ${{ needs.changed-files.outputs.files }}
+    steps:
+      - uses: actions/checkout@v3
       - name: Validate Image File Extension<->Mimetype Agreement
-        env:
-          FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
         run: |
           EXIT_VALUE=0
 
           for FILE in $FILES; do
-            # check each file's mimetype matches its extension
-            MIME=`file -b --mime-type $FILE`
-            EXT="${file##*.}"
+            if [[ $FILE == */definition.json ]]; then
+              continue # non-image file
+            fi
 
-            if [[ "image/$EXT" == $MIME || ($EXT == "jpg" && $MIME == "image/jpeg") || ($EXT == "svg" && $MIME == "image/svg+xml") ]]; then
+            # extract each file's mimetype and extension
+            MIME=`file -b --mime-type $FILE`
+            EXT="${FILE##*.}"
+
+            # ad-hoc check that extension matches mimetype
+            if [[ "image/$EXT" == $MIME || ($EXT == "jpg" && $MIME == "image/jpeg") || ($EXT == "svg" && ($MIME == "image/svg+xml" || $MIME == "text/xml")) ]]; then
+              # Match!
               echo "✅ $FILE"
 
             else
-              # Doesn't match? Report it helpfully
+              # Doesn't match? Give helpful report
+
               # split the mimetype on '/'
               IFS='/'
               read -a SPLIT_MIME <<< "$MIME"
               IFS=' '
-              MIME_EXT=${SPLIT_MIME[-1]} # last item
-              NEW_FILE="${file%.$EXT}.$MIME_EXT"
-              echo "❌ $FILE: rename to $NEW_FILE"
+              # take the last item
+              MIME_EXT=${SPLIT_MIME[-1]}
+
+              if [[ "$MIME_EXT" == "xml" ]]; then
+                MIME_EXT="svg"
+              elif [[ "$MIME_EXT" == "jpeg" ]]; then
+                MIME_EXT="jpg"
+              fi
+
+              echo "❌ $FILE: expected .$MIME_EXT"
 
               EXIT_VALUE=1
             fi
           done
 
+          if [[ $EXIT_VALUE = 1 ]]; then
+            echo "Fix these ☝️ issues by renaming each ❌ file to the indicated extension."
+          fi
+
           exit $EXIT_VALUE
 
-
+  validate-image-dimensions:
+    name: Validate Image Dimensions
+    runs-on: ubuntu-latest
+    needs:
+      - changed-files
+      - validate-image-extension-mimetype-agreement
+    env:
+      FILES: ${{ needs.changed-files.outputs.files }}
+    steps:
+      - uses: actions/checkout@v3
       - uses: mfinelli/setup-imagemagick@v1
-
       - name: Validate Image Dimensions
-        env:
-          FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
         run: |
           EXIT_VALUE=0
 
@@ -82,8 +131,12 @@ jobs:
           MAX_HEIGHT=2000
 
           for FILE in $FILES; do
+            if [[ $FILE == */definition.json ]]; then
+              continue # non-image file
+            fi
+
             # use imagemagick for the width
-            WIDTH=`identify -ping -format "%w" $FILE`
+            WIDTH=`identify -ping -format "%w" ${FILE}[0]`
             BAD_WIDTH=false
             if [[ "$WIDTH" -gt "$MAX_WIDTH" ]]; then
               EXIT_VALUE=1
@@ -91,7 +144,7 @@ jobs:
             fi
 
             # use imagemagick for the height
-            HEIGHT=`identify -ping -format "%h" $FILE`
+            HEIGHT=`identify -ping -format "%h" ${FILE}[0]`
             BAD_HEIGHT=false
             if [[ "$HEIGHT" -gt "$MAX_HEIGHT" ]]; then
               EXIT_VALUE=1
@@ -99,7 +152,7 @@ jobs:
             fi
 
             if [[ $BAD_WIDTH = true || $BAD_HEIGHT = true ]]; then
-              echo "❌ $FILE  ($WIDTH x $HEIGHT)"
+              echo "❌ $FILE  (${WIDTH}x${HEIGHT})"
               if [[ $BAD_WIDTH = true ]]; then
                 echo "  ↔️ width must be 800 pixels or less"
               fi
@@ -109,30 +162,47 @@ jobs:
               fi
 
             else
-              echo "✅ $FILE $WIDTH x $HEIGHT"
+              echo "✅ $FILE  (${WIDTH}x${HEIGHT})"
             fi
           done
 
           if [[ $EXIT_VALUE = 1 ]]; then
-            echo "Resize your images to fix these ☝️ issues."
+            echo "Fix these ☝️ issues by resizing each ❌ image to fit within ${MAX_WIDTH}x${MAX_HEIGHT}."
           fi
 
           exit $EXIT_VALUE
 
-      # - name: Optimize All Image Files
-
+  validate-image-file-sizes:
+    name: Validate Image File Sizes
+    runs-on: ubuntu-latest
+    needs:
+      - changed-files
+      - validate-image-dimensions
+    env:
+      FILES: ${{ needs.changed-files.outputs.files }}
+    steps:
+      - uses: actions/checkout@v3
       - name: Validate Image File Sizes
-        env:
-          FILES: ${{ steps.changed-files.outputs.renamed_files }} ${{ steps.changed-files.outputs.added_files }}
         run: |
           EXIT_VALUE=0
 
           MAX_FILESIZE=$((400*1024)) # 400kb
+          MAX_ANIGIF_FILESIZE=$((1000*1024)) # 1MB
 
           for FILE in $FILES; do
+            if [[ $FILE == */definition.json ]]; then
+              continue # non-image file
+            fi
+
             FILESIZE=$(stat -c%s "$FILE")
 
-            if [[ "$FILESIZE" -gt "$MAX_FILESIZE"  ]]; then
+            if [[ $FILE == *loader.gif ]]; then
+              MAX=$MAX_ANIGIF_FILESIZE
+            else
+              MAX=$MAX_FILESIZE
+            fi
+
+            if [[ "$FILESIZE" -gt "$MAX"  ]]; then
               EXIT_VALUE=1
               echo "❌ $FILE ($FILESIZE)"
 
@@ -142,13 +212,15 @@ jobs:
           done
 
           if [[ $EXIT_VALUE = 1 ]]; then
-            echo "These image files ☝️ are too large. You can try:"
-            echo "- exporting at lower quality settings"
-            echo "- exporting a different image format (jpg, png, svg, etc)"
-            echo "- shrinking the image's dimensions before exporting"
+            echo "Fix these issues ☝️ by compressing each ❌ file to be smaller than 400KB (1MB for boot-loader.gif animations). You can try:"
+            echo "- shrinking the image's dimensions (do this first if dimension validation also failed for a given file)"
+            echo "- using an image compressor"
+            echo "- exporting at lower quality settings (png or jpg)"
+            echo "- exporting a different image format:"
+            echo "  - photos are best saved as jpg"
+            echo "  - screenshots and digital images are best saved as png"
+            echo "  - svg might be efficient for images with few colors and simple shapes"
+            echo "  - gif should only be used when animation is needed (i.e. the boot-loader image)"
           fi
 
           exit $EXIT_VALUE
-
-      # - name: Add & Commit (maybe branch and PR?)
-      # - name: Leave Helpful Comment
