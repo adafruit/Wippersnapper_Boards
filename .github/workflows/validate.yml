@@ -196,11 +196,13 @@ jobs:
 
             FILESIZE=$(stat -c%s "$FILE")
 
-            if [[ $FILE == */boot-loader.gif ]]; then
+            if [[ $FILE == *loader.gif ]]; then
               MAX=$MAX_FILESIZE
             else
               MAX=$MAX_ANIGIF_FILESIZE
             fi
+
+            echo "Max: $MAX"
 
             if [[ "$FILESIZE" -gt "$MAX"  ]]; then
               EXIT_VALUE=1
