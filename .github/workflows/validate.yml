@@ -122,7 +122,9 @@ jobs:
       FILES: ${{ needs.changed-files.outputs.files }}
     steps:
       - uses: actions/checkout@v3
-      - uses: mfinelli/setup-imagemagick@v1
+      # use temporary fork until primary maintainer fixes IM download url
+      # - uses: mfinelli/setup-imagemagick@v1
+      - uses: mataki/setup-imagemagick@change-download-url
       - name: Validate Image Dimensions
         run: |
           EXIT_VALUE=0
