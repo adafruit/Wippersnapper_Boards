@@ -12,7 +12,7 @@
     "esptool": {
       "fileSystemSize": 94208,
       "blockSize": 4096,
-      "offset": "0x290000",
+      "offset": "0x0",
       "structure": {
           "0xe000": "wippersnapper.qtpy_esp32c3.littlefs.VERSION.boot_app0.bin",
           "0x0": "wippersnapper.qtpy_esp32c3.littlefs.VERSION.bootloader.bin",
