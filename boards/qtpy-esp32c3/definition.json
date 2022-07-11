@@ -11,7 +11,7 @@
     "installMethod":"web",
     "esptool": {
       "fileSystemSize": 94208,
-      "blockSize": 4000,
+      "blockSize": 4096,
       "offset": "0x00290000",
       "structure": {
           "0x0": "wippersnapper.qtpy_esp32c3.littlefs.VERSION.combined.bin"
