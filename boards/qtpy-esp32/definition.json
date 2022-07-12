@@ -12,10 +12,7 @@
         "blockSize": 4096,
         "offset": "0x290000",
         "structure": {
-            "0xe000": "wippersnapper.qtpy_esp32.littlefs.VERSION.boot_app0.bin",
-            "0x1000": "wippersnapper.qtpy_esp32.littlefs.VERSION.bootloader.bin",
-            "0x10000": "wippersnapper.qtpy_esp32.littlefs.VERSION.bin",
-            "0x8000": "wippersnapper.qtpy_esp32.littlefs.VERSION.partitions.bin"
+            "0x0": "wippersnapper.qtpy_esp32.littlefs.VERSION.combined.bin"
           }
       },
     "components":{
