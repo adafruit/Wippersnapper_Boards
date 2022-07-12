@@ -11,6 +11,9 @@
         "fileSystemSize": 94208,
         "blockSize": 4096,
         "offset": "0x290000",
+        "flashMode" : "dio",
+        "flashFreq" : "80m",
+        "flashSize" : "8MB",
         "structure": {
             "0x0": "wippersnapper.qtpy_esp32.littlefs.VERSION.combined.bin"
           }
