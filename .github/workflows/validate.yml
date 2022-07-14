@@ -213,7 +213,7 @@ jobs:
 
           if [[ $EXIT_VALUE = 1 ]]; then
             echo "Fix these issues ☝️ by compressing each ❌ file to be smaller than 400KB (1MB for boot-loader.gif animations). You can try:"
-            echo "- shrinking the image's dimensions (do this first if dimension validation also failed for a given file)"
+            echo "- shrinking the image's dimensions"
             echo "- using an image compressor"
             echo "- exporting at lower quality settings (png or jpg)"
             echo "- exporting a different image format:"
