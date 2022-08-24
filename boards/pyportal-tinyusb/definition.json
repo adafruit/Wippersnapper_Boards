@@ -14,34 +14,46 @@
         {
           "name": "D3",
           "displayName": "D3",
-          "dataType": "bool"
+          "dataType": "bool",
+          "hasAnalogOut": true
         },
         {
           "name": "D4",
           "displayName": "D4",
-          "dataType": "bool"
+          "dataType": "bool",
+          "hasAnalogOut": false
         },
         {
           "name": "D13",
           "displayName": "D13 LED",
-          "dataType": "bool"
+          "dataType": "bool",
+          "hasAnalogOut": true
         }
       ],
       "analogPins": [
         {
+            "name": "A0",
+            "displayName": "A0 (Speaker)",
+            "dataType": "int16",
+            "hasAnalogOut": true
+        },
+        {
             "name": "A1",
-            "displayName": "A1",
-            "dataType": "int16"
+            "displayName": "D3",
+            "dataType": "int16",
+            "hasAnalogOut": true
         },
         {
             "name": "A2",
             "displayName": "Light Sensor",
-            "dataType": "int16"
+            "dataType": "int16",
+            "hasAnalogOut": false
         },
         {
-            "name": "A4",
-            "displayName": "A4",
-            "dataType": "int16"
+            "name": "A3",
+            "displayName": "D4",
+            "dataType": "int16",
+            "hasAnalogOut": true
         }
       ],
       "i2cPorts": [
