@@ -83,8 +83,7 @@
         {
             "name": "A0",
             "displayName": "A0",
-            "dataType": "int16",
-            "hasAnalogOut":false
+            "dataType": "int16"
         }
       ],
       "i2cPorts": [

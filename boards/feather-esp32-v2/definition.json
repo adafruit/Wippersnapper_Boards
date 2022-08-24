@@ -101,8 +101,7 @@
        {
         "name":"D37",
         "displayName":"D37",
-        "dataType":"bool",
-        "hasAnalogOut":false
+        "dataType":"bool"
        },
        {
         "name":"D38",
@@ -128,20 +127,17 @@
        {
           "name":"A2",
           "displayName":"A2",
-          "dataType":"int16",
-          "hasAnalogOut":false
+          "dataType":"int16"
        },
        {
           "name":"A3",
           "displayName":"A3",
-          "dataType":"int16",
-          "hasAnalogOut":false
+          "dataType":"int16"
        },
        {
           "name":"A4",
           "displayName":"A4",
-          "dataType":"int16",
-          "hasAnalogOut":false
+          "dataType":"int16"
        },
        {
           "name":"A5",

@@ -20,8 +20,7 @@
         {
           "name": "D4",
           "displayName": "D4",
-          "dataType": "bool",
-          "hasAnalogOut": false
+          "dataType": "bool"
         },
         {
           "name": "D13",
@@ -46,8 +45,7 @@
         {
             "name": "A2",
             "displayName": "Light Sensor",
-            "dataType": "int16",
-            "hasAnalogOut": false
+            "dataType": "int16"
         },
         {
             "name": "A3",
