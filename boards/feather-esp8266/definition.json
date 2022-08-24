@@ -21,59 +21,70 @@
         {
             "name": "D0",
             "displayName": "D0 (Red LED)",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasAnalogOut": true
         },
         {
             "name": "D1",
             "displayName": "D1",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasAnalogOut": true
         },
         {
             "name": "D2",
             "displayName": "D2 (Blue LED)",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasAnalogOut": true
         },
         {
             "name": "D4",
             "displayName": "D4",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasAnalogOut": true
         },
         {
             "name": "D5",
             "displayName": "D5",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasAnalogOut": true
         },
         {
             "name": "D12",
             "displayName": "D12",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasAnalogOut": true
         },
         {
             "name": "D13",
             "displayName": "D13",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasAnalogOut": true
         },
         {
             "name": "D14",
             "displayName": "D14",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasAnalogOut": true
         },
         {
             "name": "D15",
             "displayName": "D15",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasAnalogOut": true
         },
         {
             "name": "D16",
             "displayName": "D16 - Deep Sleep Wake Pin",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasAnalogOut": true
         }
       ],
       "analogPins": [
         {
             "name": "A0",
             "displayName": "A0",
-            "dataType": "int16"
+            "dataType": "int16",
+            "hasAnalogOut":false
         }
       ],
       "i2cPorts": [
