@@ -13,7 +13,7 @@
       "fileSystemSize": 94208,
       "blockSize": 4096,
       "offset": "0x00290000",
-      "flashMode" : "qio",
+      "flashMode" : "dout",
       "flashFreq" : "80m",
       "flashSize" : "4MB",
       "structure": {
