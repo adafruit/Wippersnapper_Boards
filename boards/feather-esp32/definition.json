@@ -11,6 +11,7 @@
       "fileSystemSize": 94208,
       "blockSize": 4096,
       "offset": "0x290000",
+      "chip": "esp32",
       "flashMode" : "dio",
       "flashFreq" : "80m",
       "flashSize" : "4MB",
