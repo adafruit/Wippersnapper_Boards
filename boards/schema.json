@@ -59,13 +59,25 @@
       "description": "List of available pins and I2C ports for this board.",
       "type": "object",
       "required": ["digitalPins", "analogPins", "i2cPorts"],
-      "additionalProperties": false
+      "additionalProperties": false,
+      "properties": {
+        "digitalPins": { "type": "string" },
+        "analogPins": { "type": "string" },
+        "i2cPorts": { "type": "string" }
+      }
     },
     "esptool": {
       "description": "Installation metadata for boards that use the web-based WipperSnapper firmware installer",
       "type": "object",
       "required": ["offset", "chip", "fileSystemSize", "blockSize", "structure"],
-      "additionalProperties": false
+      "additionalProperties": false,
+      "properties": {
+        "offset": { "type": "string" },
+        "chip": { "type": "string" },
+        "fileSystemSize": { "type": "string" },
+        "blockSize": { "type": "string" },
+        "structure": { "type": "string" }
+      }
     }
   }
 }
