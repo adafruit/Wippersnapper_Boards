@@ -63,15 +63,45 @@
       "properties": {
         "digitalPins": {
           "description": "Information about each digital pin present on this board.",
-          "type": "array"
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [ "name", "displayName", "dataType" ],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "displayName": { "type": "string" },
+              "dataType": { "type": "string" }
+            }
+          }
         },
         "analogPins": {
           "description": "Information about each analog pin present on this board.",
-          "type": "array"
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [ "name", "displayName", "dataType" ],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "displayName": { "type": "string" },
+              "dataType": { "type": "string" }
+            }
+          }
         },
         "i2cPorts": {
           "description": "Information about the I2C ports present on this board.",
-          "type": "array"
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [ "i2cPortId", "SDA", "SCL" ],
+            "additionalProperties": false,
+            "properties": {
+              "i2cPortId": { "type": "number" },
+              "SDA": { "type": "number" },
+              "SCL": { "type": "number" }
+            }
+          }
         }
       }
     },
