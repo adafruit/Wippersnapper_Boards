@@ -2,7 +2,7 @@
   "title": "Board Definition",
   "description": "A WipperSnapper-compatible Board for use in Adafruit IO",
   "type": "object",
-  "required": [ "boardName", "mcuName", "mcuRefVoltage", "displayName", "productPageURL", "documentationURL" ],
+  "required": [ "boardName", "mcuName", "mcuRefVoltage", "displayName", "productPageURL", "documentationURL", "components" ],
   "additionalProperties": false,
   "properties": {
     "boardName": {
@@ -57,11 +57,15 @@
     },
     "components": {
       "description": "List of available pins and I2C ports for this board.",
-      "type": "object"
+      "type": "object",
+      "required": ["digitalPins", "analogPins", "i2cPorts"],
+      "additionalProperties": false
     },
     "esptool": {
       "description": "Installation metadata for boards that use the web-based WipperSnapper firmware installer",
-      "type": "object"
+      "type": "object",
+      "required": ["offset", "chip", "fileSystemSize", "blockSize", "structure"],
+      "additionalProperties": false
     }
   }
 }
