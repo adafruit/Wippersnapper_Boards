@@ -43,6 +43,25 @@
       "description": "Link to board's documentation.",
       "type": "string",
       "format": "uri"
+    },
+    "vendor": {
+      "description": "Name of the company that makes the board.",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 24
+    },
+    "installMethod": {
+      "description": "The WipperSnapper firmware installation method for this board.",
+      "type": "string",
+      "pattern": "^(web|uf2|library|python)$"
+    },
+    "components": {
+      "description": "List of available pins and I2C ports for this board.",
+      "type": "object"
+    },
+    "esptool": {
+      "description": "Installation metadata for boards that use the web-based WipperSnapper firmware installer",
+      "type": "object"
     }
   }
 }
