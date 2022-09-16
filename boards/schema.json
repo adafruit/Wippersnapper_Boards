@@ -58,25 +58,49 @@
     "components": {
       "description": "List of available pins and I2C ports for this board.",
       "type": "object",
-      "required": ["digitalPins", "analogPins", "i2cPorts"],
+      "required": [ "digitalPins", "analogPins", "i2cPorts" ],
       "additionalProperties": false,
       "properties": {
-        "digitalPins": { "type": "string" },
-        "analogPins": { "type": "string" },
-        "i2cPorts": { "type": "string" }
+        "digitalPins": {
+          "description": "Information about each digital pin present on this board.",
+          "type": "array"
+        },
+        "analogPins": {
+          "description": "Information about each analog pin present on this board.",
+          "type": "array"
+        },
+        "i2cPorts": {
+          "description": "Information about the I2C ports present on this board.",
+          "type": "array"
+        }
       }
     },
     "esptool": {
       "description": "Installation metadata for boards that use the web-based WipperSnapper firmware installer",
       "type": "object",
-      "required": ["offset", "chip", "fileSystemSize", "blockSize", "structure"],
+      "required": [ "offset", "chip", "fileSystemSize", "blockSize", "structure" ],
       "additionalProperties": false,
       "properties": {
-        "offset": { "type": "string" },
-        "chip": { "type": "string" },
-        "fileSystemSize": { "type": "string" },
-        "blockSize": { "type": "string" },
-        "structure": { "type": "string" }
+        "offset": {
+          "description": "",
+          "type": "string"
+        },
+        "chip": {
+          "description": "",
+          "type": "string"
+        },
+        "fileSystemSize": {
+          "description": "",
+          "type": "number"
+        },
+        "blockSize": {
+          "description": "",
+          "type": "number"
+        },
+        "structure": {
+          "description": "The list of files and their filesystem offsets.",
+          "type": "object"
+        }
       }
     }
   }
