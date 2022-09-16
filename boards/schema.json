@@ -89,6 +89,18 @@
           "description": "",
           "type": "string"
         },
+        "flashMode": {
+          "description": "",
+          "type": "string"
+        },
+        "flashFreq": {
+          "description": "",
+          "type": "string"
+        },
+        "flashSize": {
+          "description": "",
+          "type": "string"
+        },
         "fileSystemSize": {
           "description": "",
           "type": "number"
