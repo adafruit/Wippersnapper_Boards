@@ -95,7 +95,7 @@
         "name":"D38",
         "displayName":"Button Switch (SW38)",
         "dataType":"bool",
-        "direction": 0
+        "direction": "INPUT"
        }
       ],
       "analogPins": [
