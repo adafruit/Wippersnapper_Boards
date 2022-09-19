@@ -84,25 +84,25 @@
             {
                 "name":"A9",
                 "displayName":"A2",
-                "direction":"0",
+                "direction":"INPUT",
                 "dataType":"int16"
             },
             {
                 "name":"A8",
                 "displayName":"A3",
-                "direction":"0",
+                "direction":"INPUT",
                 "dataType":"int16"
             },
             {
                 "name":"A7",
                 "displayName":"SDA",
-                "direction":"0",
+                "direction":"INPUT",
                 "dataType":"int16"
             },
             {
                 "name":"A6",
                 "displayName":"SCL",
-                "direction":"0",
+                "direction":"INPUT",
                 "dataType":"int16"
             }
         ],

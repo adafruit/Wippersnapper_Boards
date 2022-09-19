@@ -11,6 +11,7 @@
         "fileSystemSize": 94208,
         "blockSize": 4096,
         "offset": "0x290000",
+        "chip": "esp32",
         "flashMode" : "dio",
         "flashFreq" : "80m",
         "flashSize" : "8MB",
@@ -107,7 +108,7 @@
         "name":"D38",
         "displayName":"Button Switch (SW38)",
         "dataType":"bool",
-        "direction": 0,
+        "direction":"INPUT",
         "hasAnalogOut":true
        }
       ],

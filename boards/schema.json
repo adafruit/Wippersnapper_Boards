@@ -2,7 +2,8 @@
   "title": "Board Definition",
   "description": "A WipperSnapper-compatible Board for use in Adafruit IO",
   "type": "object",
-  "required": [ "boardName", "mcuName", "mcuRefVoltage", "displayName", "productPageURL", "documentationURL" ],
+  "required": [ "boardName", "mcuName", "mcuRefVoltage", "installMethod", "displayName", "productPageURL", "documentationURL", "components" ],
+  "additionalProperties": false,
   "properties": {
     "boardName": {
       "description": "Hardware name. Must be unique within this repository.",
@@ -42,6 +43,130 @@
       "description": "Link to board's documentation.",
       "type": "string",
       "format": "uri"
+    },
+    "vendor": {
+      "description": "Name of the company that makes the board.",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 24
+    },
+    "installMethod": {
+      "description": "The WipperSnapper firmware installation method for this board.",
+      "type": "string",
+      "pattern": "^(web|uf2|library|python)$"
+    },
+    "published": {
+      "description": "Whether this board is officially published. When false, it won't appear in the firmware installer, for instance.",
+      "type": "boolean"
+    },
+    "components": {
+      "description": "List of available pins and I2C ports for this board.",
+      "type": "object",
+      "required": [ "digitalPins", "analogPins", "i2cPorts" ],
+      "additionalProperties": false,
+      "properties": {
+        "digitalPins": {
+          "description": "Information about each digital pin present on this board.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [ "name", "displayName", "dataType" ],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "displayName": { "type": "string" },
+              "dataType": { "type": "string" },
+              "direction": {
+                "description": "This pin's direction, either INPUT or OUTPUT. For pins that are input or output ONLY, leave blank if it supports both.",
+                "type": "string",
+                "pattern": "^(INPUT|OUTPUT)$"
+              },
+              "hasPWM": {
+                "description": "If true, this digital pin supports general PWM output, and thus PWM components.",
+                "type": "boolean"
+              },
+              "hasServo": {
+                "description": "If true, hasPWM should also be true, and this PWM-enabled pin also supports servo components.",
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "analogPins": {
+          "description": "Information about each analog pin present on this board.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [ "name", "displayName", "dataType" ],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "displayName": { "type": "string" },
+              "dataType": { "type": "string" },
+              "direction": {
+                "description": "This pin's direction, either INPUT or OUTPUT. For pins that are input or output ONLY, leave blank if it supports both.",
+                "type": "string",
+                "pattern": "^(INPUT|OUTPUT)$"
+              },
+              "maxResolution": { "type": "number" }
+            }
+          }
+        },
+        "i2cPorts": {
+          "description": "Information about the I2C ports present on this board.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [ "i2cPortId", "SDA", "SCL" ],
+            "additionalProperties": false,
+            "properties": {
+              "i2cPortId": { "type": "number" },
+              "SDA": { "type": "number" },
+              "SCL": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    "esptool": {
+      "description": "Installation metadata for boards that use the web-based WipperSnapper firmware installer",
+      "type": "object",
+      "required": [ "offset", "chip", "fileSystemSize", "blockSize", "structure" ],
+      "additionalProperties": false,
+      "properties": {
+        "offset": {
+          "description": "",
+          "type": "string"
+        },
+        "chip": {
+          "description": "",
+          "type": "string"
+        },
+        "flashMode": {
+          "description": "",
+          "type": "string"
+        },
+        "flashFreq": {
+          "description": "",
+          "type": "string"
+        },
+        "flashSize": {
+          "description": "",
+          "type": "string"
+        },
+        "fileSystemSize": {
+          "description": "",
+          "type": "number"
+        },
+        "blockSize": {
+          "description": "",
+          "type": "number"
+        },
+        "structure": {
+          "description": "The list of files and their filesystem offsets.",
+          "type": "object"
+        }
+      }
     }
   }
 }
