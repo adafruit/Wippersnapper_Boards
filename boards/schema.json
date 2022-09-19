@@ -72,7 +72,11 @@
               "name": { "type": "string" },
               "displayName": { "type": "string" },
               "dataType": { "type": "string" },
-              "direction": { "type": "string" }
+              "direction": {
+                "description": "This pin's direction, either INPUT or OUTPUT. For pins that are input or output ONLY, leave blank if it supports both.",
+                "type": "string",
+                "pattern": "^(INPUT|OUTPUT)$"
+              }
             }
           }
         },
@@ -87,7 +91,11 @@
               "name": { "type": "string" },
               "displayName": { "type": "string" },
               "dataType": { "type": "string" },
-              "direction": { "type": "string" },
+              "direction": {
+                "description": "This pin's direction, either INPUT or OUTPUT. For pins that are input or output ONLY, leave blank if it supports both.",
+                "type": "string",
+                "pattern": "^(INPUT|OUTPUT)$"
+              },
               "maxResolution": { "type": "number" }
             }
           }
