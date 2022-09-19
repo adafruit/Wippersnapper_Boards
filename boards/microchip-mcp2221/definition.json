@@ -36,19 +36,19 @@
             "name": "G1",
             "displayName": "ADC1",
             "dataType": "int",
-            "max_resolution": 10
+            "maxResolution": 10
         },
         {
             "name": "G2",
             "displayName": "ADC2",
             "dataType": "int",
-            "max_resolution": 10
+            "maxResolution": 10
         },
         {
             "name": "G3",
             "displayName": "ADC3",
             "dataType": "int",
-            "max_resolution": 10
+            "maxResolution": 10
         }
       ],
       "i2cPorts": [

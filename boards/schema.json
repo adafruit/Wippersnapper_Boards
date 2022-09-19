@@ -71,7 +71,8 @@
             "properties": {
               "name": { "type": "string" },
               "displayName": { "type": "string" },
-              "dataType": { "type": "string" }
+              "dataType": { "type": "string" },
+              "direction": { "type": "number" }
             }
           }
         },
@@ -85,7 +86,9 @@
             "properties": {
               "name": { "type": "string" },
               "displayName": { "type": "string" },
-              "dataType": { "type": "string" }
+              "dataType": { "type": "string" },
+              "direction": { "type": "number" },
+              "maxResolution": { "type": "number" }
             }
           }
         },
