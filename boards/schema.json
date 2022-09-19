@@ -76,6 +76,14 @@
                 "description": "This pin's direction, either INPUT or OUTPUT. For pins that are input or output ONLY, leave blank if it supports both.",
                 "type": "string",
                 "pattern": "^(INPUT|OUTPUT)$"
+              },
+              "hasPWM": {
+                "description": "If true, this digital pin supports general PWM output, and thus PWM components.",
+                "type": "boolean"
+              },
+              "hasServo": {
+                "description": "If true, hasPWM should also be true, and this PWM-enabled pin also supports servo components.",
+                "type": "boolean"
               }
             }
           }
