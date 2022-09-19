@@ -55,6 +55,10 @@
       "type": "string",
       "pattern": "^(web|uf2|library|python)$"
     },
+    "published": {
+      "description": "Whether this board is officially published. When false, it won't appear in the firmware installer, for instance.",
+      "type": "boolean"
+    },
     "components": {
       "description": "List of available pins and I2C ports for this board.",
       "type": "object",
