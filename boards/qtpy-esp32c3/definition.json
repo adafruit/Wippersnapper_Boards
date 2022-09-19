@@ -2,8 +2,6 @@
     "boardName":"qtpy-esp32c3",
     "mcuName":"esp32c3",
     "mcuRefVoltage":2.6,
-    "VID":"0x303A",
-    "PID":"0x1001",
     "displayName":"Adafruit QT Py ESP32-C3",
     "vendor":"Adafruit",
     "productPageURL":"https://www.adafruit.com/product/5405",

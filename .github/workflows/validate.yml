@@ -16,6 +16,22 @@ jobs:
           schema: /boards/schema.json
           jsons: boards/*/definition.json
 
+
+  check-user-permissions:
+    name: Check Write Permission
+    runs-on: ubuntu-latest
+    outputs:
+      # Extract the permission for later jobs to use
+      has-write-permission: ${{ steps.check.outputs.has-permission }}
+    steps:
+    - name: Check user permission
+      id: check
+      uses: scherermichael-oss/action-has-permission@master
+      with:
+        required-permission: write
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   changed-files:
     name: List Changed Files
     runs-on: ubuntu-latest
@@ -34,16 +50,31 @@ jobs:
   validate-expected-filenames:
     name: Validate Filenames
     runs-on: ubuntu-latest
-    needs: changed-files
+    needs:
+    - changed-files
+    - check-user-permissions
     env:
       FILES: ${{ needs.changed-files.outputs.files }}
+      CAN_WRITE_TO_REPO: ${{ needs.check-user-permissions.outputs.has-write-permission }}
 
     steps:
       - uses: actions/checkout@v3
       - name: Validate Only Expected Filenames
         run: |
           EXIT_VALUE=0
-          board_definition_regex="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
+
+          # external contributors can modify some files
+          EXTERNAL_REGEX="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
+
+          # folks with write access to the repo (Adafruit team) can change more sensitive files
+          INTERNAL_REGEX="^boards\/(schema.json|.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg))))$"
+
+          # apply the appropriate regex based on permissions of the user
+          if [[ $CAN_WRITE_TO_REPO ]]; then
+            board_definition_regex=$INTERNAL_REGEX
+          else
+            board_definition_regex=$EXTERNAL_REGEX
+          fi
 
           for FILE in $FILES; do
             if [[ $FILE =~ $board_definition_regex ]]; then
@@ -71,7 +102,7 @@ jobs:
           EXIT_VALUE=0
 
           for FILE in $FILES; do
-            if [[ $FILE == */definition.json ]]; then
+            if [[ $FILE == *.json ]]; then
               continue # non-image file
             fi
 
@@ -131,7 +162,7 @@ jobs:
           MAX_HEIGHT=2000
 
           for FILE in $FILES; do
-            if [[ $FILE == */definition.json ]]; then
+            if [[ $FILE == *.json ]]; then
               continue # non-image file
             fi
 
@@ -190,7 +221,7 @@ jobs:
           MAX_ANIGIF_FILESIZE=$((1000*1024)) # 1MB
 
           for FILE in $FILES; do
-            if [[ $FILE == */definition.json ]]; then
+            if [[ $FILE == *.json ]]; then
               continue # non-image file
             fi
 
