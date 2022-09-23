@@ -8,7 +8,7 @@
     "documentationURL":"https://learn.adafruit.com/adafruit-huzzah32-esp32-feather",
     "installMethod":"web",
     "esptool": {
-      "fileSystemSize": 1638400,
+      "fileSystemSize": 1507328,
       "blockSize": 4096,
       "offset": "0x290000",
       "chip": "esp32",
