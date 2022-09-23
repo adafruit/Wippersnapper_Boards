@@ -8,7 +8,7 @@
     "documentationURL":"https://learn.adafruit.com/adafruit-qt-py-esp32-c3-wifi-dev-board",
     "installMethod":"web",
     "esptool": {
-      "fileSystemSize": 94208,
+      "fileSystemSize": 1507328,
       "blockSize": 4096,
       "offset": "0x00290000",
       "chip": "esp32c3",
