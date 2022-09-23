@@ -8,9 +8,9 @@
     "documentationURL":"https://learn.adafruit.com/adafruit-esp32-feather-v2",
     "installMethod":"web",
     "esptool": {
-        "fileSystemSize": 1638400,
+        "fileSystemSize": 10420224,
         "blockSize": 65536,
-        "offset": "0x670000",
+        "offset": "0x610000",
         "chip": "esp32",
         "flashMode" : "dio",
         "flashFreq" : "80m",
