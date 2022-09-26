@@ -13,7 +13,8 @@
                 "name":"D18",
                 "displayName":"A0",
                 "dataType":"bool",
-                "hasPWM":true
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D17",
@@ -74,7 +75,8 @@
             {
                 "name":"D0",
                 "displayName":"Boot Pushbutton",
-                "dataType":"bool"
+                "dataType":"bool",
+                "direction":"INPUT"
             }
         ],
         "analogPins":[
@@ -83,6 +85,7 @@
                 "displayName":"A0",
                 "dataType":"int16",
                 "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A17",
