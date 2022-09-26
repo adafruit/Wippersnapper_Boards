@@ -14,8 +14,7 @@
         {
           "name": "D3",
           "displayName": "D3",
-          "dataType": "bool",
-          "hasPWM": true
+          "dataType": "bool"
         },
         {
           "name": "D4",
@@ -27,7 +26,18 @@
           "displayName": "D13 LED",
           "dataType": "bool",
           "hasPWM": true
-        }
+        },
+        {
+          "name": "D25",
+          "displayName": "TFT Backlight",
+          "dataType": "bool",
+          "hasPWM": true
+        },
+        {
+            "name": "D50",
+            "displayName": "Speaker Enable",
+            "dataType": "bool"
+          }
       ],
       "analogPins": [
         {
@@ -39,8 +49,7 @@
         {
             "name": "A1",
             "displayName": "D3",
-            "dataType": "int16",
-            "hasPWM": true
+            "dataType": "int16"
         },
         {
             "name": "A2",
@@ -50,8 +59,7 @@
         {
             "name": "A3",
             "displayName": "D4",
-            "dataType": "int16",
-            "hasPWM": true
+            "dataType": "int16"
         }
       ],
       "i2cPorts": [
