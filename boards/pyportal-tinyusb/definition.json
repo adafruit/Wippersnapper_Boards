@@ -15,7 +15,7 @@
           "name": "D3",
           "displayName": "D3",
           "dataType": "bool",
-          "hasAnalogOut": true
+          "hasPWM": true
         },
         {
           "name": "D4",
@@ -26,7 +26,7 @@
           "name": "D13",
           "displayName": "D13 LED",
           "dataType": "bool",
-          "hasAnalogOut": true
+          "hasPWM": true
         }
       ],
       "analogPins": [
@@ -34,13 +34,13 @@
             "name": "A0",
             "displayName": "A0 (Speaker)",
             "dataType": "int16",
-            "hasAnalogOut": true
+            "hasPWM": true
         },
         {
             "name": "A1",
             "displayName": "D3",
             "dataType": "int16",
-            "hasAnalogOut": true
+            "hasPWM": true
         },
         {
             "name": "A2",
@@ -51,7 +51,7 @@
             "name": "A3",
             "displayName": "D4",
             "dataType": "int16",
-            "hasAnalogOut": true
+            "hasPWM": true
         }
       ],
       "i2cPorts": [

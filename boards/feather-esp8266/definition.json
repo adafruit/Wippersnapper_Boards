@@ -23,61 +23,61 @@
             "name": "D0",
             "displayName": "D0 (Red LED)",
             "dataType": "bool",
-            "hasAnalogOut": true
+            "hasPWM": true
         },
         {
             "name": "D1",
             "displayName": "D1",
             "dataType": "bool",
-            "hasAnalogOut": true
+            "hasPWM": true
         },
         {
             "name": "D2",
             "displayName": "D2 (Blue LED)",
             "dataType": "bool",
-            "hasAnalogOut": true
+            "hasPWM": true
         },
         {
             "name": "D4",
             "displayName": "D4",
             "dataType": "bool",
-            "hasAnalogOut": true
+            "hasPWM": true
         },
         {
             "name": "D5",
             "displayName": "D5",
             "dataType": "bool",
-            "hasAnalogOut": true
+            "hasPWM": true
         },
         {
             "name": "D12",
             "displayName": "D12",
             "dataType": "bool",
-            "hasAnalogOut": true
+            "hasPWM": true
         },
         {
             "name": "D13",
             "displayName": "D13",
             "dataType": "bool",
-            "hasAnalogOut": true
+            "hasPWM": true
         },
         {
             "name": "D14",
             "displayName": "D14",
             "dataType": "bool",
-            "hasAnalogOut": true
+            "hasPWM": true
         },
         {
             "name": "D15",
             "displayName": "D15",
             "dataType": "bool",
-            "hasAnalogOut": true
+            "hasPWM": true
         },
         {
             "name": "D16",
             "displayName": "D16 - Deep Sleep Wake Pin",
             "dataType": "bool",
-            "hasAnalogOut": true
+            "hasPWM": true
         }
       ],
       "analogPins": [
