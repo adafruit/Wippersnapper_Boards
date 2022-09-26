@@ -12,22 +12,29 @@
             {
                 "name":"D18",
                 "displayName":"A0",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true
             },
             {
                 "name":"D17",
                 "displayName":"A1",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D9",
                 "displayName":"A2",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D8",
                 "displayName":"A3",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D7",
@@ -74,12 +81,15 @@
             {
                 "name":"A18",
                 "displayName":"A0",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
             },
             {
                 "name":"A17",
                 "displayName":"A1",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A9",
