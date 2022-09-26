@@ -108,7 +108,15 @@
                 "type": "string",
                 "pattern": "^(INPUT|OUTPUT)$"
               },
-              "maxResolution": { "type": "number" }
+              "maxResolution": { "type": "number" },
+              "hasPWM": {
+                "description": "If true, this digital pin supports general PWM output, and thus PWM components.",
+                "type": "boolean"
+              },
+              "hasServo": {
+                "description": "If true, hasPWM should also be true, and this PWM-enabled pin also supports servo components.",
+                "type": "boolean"
+              }
             }
           }
         },
