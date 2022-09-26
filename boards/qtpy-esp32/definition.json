@@ -8,9 +8,9 @@
     "documentationURL":"https://learn.adafruit.com/",
     "installMethod":"web",
     "esptool": {
-        "fileSystemSize": 94208,
+        "fileSystemSize": 1638400,
         "blockSize": 4096,
-        "offset": "0x290000",
+        "offset": "0x670000",
         "chip": "esp32",
         "flashMode" : "dio",
         "flashFreq" : "80m",
