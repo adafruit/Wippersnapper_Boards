@@ -9,7 +9,12 @@
     "installMethod":"uf2",
     "components":{
        "digitalPins":[
-          {
+        {
+            "name":"D0",
+            "displayName":"D0 (Boot Btn)",
+            "dataType":"bool"
+        },
+        {
              "name":"D1",
              "displayName":"D1",
              "dataType":"bool",
