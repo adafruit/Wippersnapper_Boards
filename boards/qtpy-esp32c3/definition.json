@@ -24,42 +24,58 @@
             {
                 "name":"D0",
                 "displayName":"D0 (A3)",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D1",
                 "displayName":"D1 (A2)",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D3",
                 "displayName":"D3 (A1)",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D4",
                 "displayName":"D0 (A0)",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D5",
                 "displayName":"D5 (SDA)",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D6",
                 "displayName":"D6 (SCL)",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D7",
                 "displayName":"D7 (MO)",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D8",
                 "displayName":"D8 (MI)",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D9",
@@ -69,44 +85,60 @@
             {
                 "name":"D10",
                 "displayName":"D10 (SCK)",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D20",
                 "displayName":"D20 (RX)",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D21",
                 "displayName":"D21 (TX)",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             }
         ],
         "analogPins":[
             {
                 "name":"A0",
                 "displayName":"A0",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A1",
                 "displayName":"A1",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A2",
                 "displayName":"A2",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A3",
                 "displayName":"A3",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A4",
                 "displayName":"A4",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             }
         ],
         "i2cPorts":[

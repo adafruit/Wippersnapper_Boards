@@ -24,13 +24,31 @@
         {
           "name": "D13",
           "displayName": "D13 LED",
-          "dataType": "bool"
-        }
+          "dataType": "bool",
+          "hasPWM": true
+        },
+        {
+          "name": "D25",
+          "displayName": "TFT Backlight",
+          "dataType": "bool",
+          "hasPWM": true
+        },
+        {
+            "name": "D50",
+            "displayName": "Speaker Enable",
+            "dataType": "bool"
+          }
       ],
       "analogPins": [
         {
+            "name": "A0",
+            "displayName": "A0 (Speaker)",
+            "dataType": "int16",
+            "hasPWM": true
+        },
+        {
             "name": "A1",
-            "displayName": "A1",
+            "displayName": "D3",
             "dataType": "int16"
         },
         {
@@ -39,8 +57,8 @@
             "dataType": "int16"
         },
         {
-            "name": "A4",
-            "displayName": "A4",
+            "name": "A3",
+            "displayName": "D4",
             "dataType": "int16"
         }
       ],

@@ -27,17 +27,23 @@
           {
              "name":"D17",
              "displayName":"D17 (A0)",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasPWM":true,
+             "hasServo":true
           },
           {
              "name":"D2",
              "displayName":"D2 (A1)",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasPWM":true,
+             "hasServo":true
           },
           {
              "name":"D1",
              "displayName":"D1 (A2)",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasPWM":true,
+             "hasServo":true
           },
           {
              "name":"D6",

@@ -32,24 +32,31 @@
           {
              "name":"D10",
              "displayName":"D10",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasPWM":true,
+             "hasServo":true
           },
           {
              "name":"D18",
              "displayName":"D18 (A1)",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasPWM":true,
+             "hasServo":true
           },
           {
              "name":"D13",
              "displayName":"Built-in LED",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasPWM":true
           }
        ],
        "analogPins":[
           {
              "name":"A1",
              "displayName":"A1",
-             "dataType":"int16"
+             "dataType":"int16",
+             "hasPWM":true,
+             "hasServo":true
           },
           {
              "name":"A3",

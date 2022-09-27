@@ -12,98 +12,129 @@
             {
                 "name":"D18",
                 "displayName":"A0",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D17",
                 "displayName":"A1",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D9",
                 "displayName":"A2",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D8",
                 "displayName":"A3",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D7",
                 "displayName":"SDA",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D6",
                 "displayName":"SCL",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D5",
                 "displayName":"TX",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D35",
                 "displayName":"MOSI",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D37",
                 "displayName":"MISO",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D36",
                 "displayName":"SCK",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D16",
                 "displayName":"RX",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D0",
                 "displayName":"Boot Pushbutton",
-                "dataType":"bool"
+                "dataType":"bool",
+                "direction":"INPUT"
             }
         ],
         "analogPins":[
             {
                 "name":"A18",
                 "displayName":"A0",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A17",
                 "displayName":"A1",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A9",
                 "displayName":"A2",
-                "direction":"INPUT",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A8",
                 "displayName":"A3",
-                "direction":"INPUT",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A7",
                 "displayName":"SDA",
-                "direction":"INPUT",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A6",
                 "displayName":"SCL",
-                "direction":"INPUT",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             }
         ],
         "i2cPorts":[
