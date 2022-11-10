@@ -93,7 +93,8 @@
           {
              "name":"D37",
              "displayName":"Built-in LED",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasPWM":true
           },
           {
              "name":"D16",
