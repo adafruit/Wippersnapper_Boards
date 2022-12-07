@@ -12,174 +12,179 @@
         "digitalPins":[
             {
                 "name":"D0",
-                "displayName":"D0",
+                "displayName":"GP0",
                 "dataType":"bool"
             },
             {
                 "name":"D1",
-                "displayName":"D1",
+                "displayName":"GP1",
                 "dataType":"bool"
             },
             {
                 "name":"D2",
-                "displayName":"D2",
+                "displayName":"GP2",
                 "dataType":"bool"
             },
             {
                 "name":"D3",
-                "displayName":"D3",
+                "displayName":"GP3",
                 "dataType":"bool"
             },
             {
                 "name":"D4",
-                "displayName":"D4",
+                "displayName":"GP4",
                 "dataType":"bool"
             },
             {
                 "name":"D5",
-                "displayName":"D5",
+                "displayName":"GP5",
                 "dataType":"bool"
             },
             {
                 "name":"D6",
-                "displayName":"D6",
+                "displayName":"GP6",
                 "dataType":"bool"
             },
             {
                 "name":"D7",
-                "displayName":"D7",
+                "displayName":"GP7",
                 "dataType":"bool"
             },
             {
                 "name":"D8",
-                "displayName":"D8",
+                "displayName":"GP8",
                 "dataType":"bool"
             },
             {
                 "name":"D9",
-                "displayName":"D9",
+                "displayName":"GP9",
                 "dataType":"bool"
             },
             {
                 "name":"D10",
-                "displayName":"D10",
+                "displayName":"GP10",
                 "dataType":"bool"
             },
             {
                 "name":"D11",
-                "displayName":"D11",
+                "displayName":"GP11",
                 "dataType":"bool"
             },
             {
                 "name":"D12",
-                "displayName":"D12",
+                "displayName":"GP12",
                 "dataType":"bool"
             },
             {
                 "name":"D13",
-                "displayName":"D13",
+                "displayName":"GP13",
                 "dataType":"bool"
             },
             {
                 "name":"D14",
-                "displayName":"D14",
+                "displayName":"GP14",
                 "dataType":"bool"
             },
             {
                 "name":"D15",
-                "displayName":"D15",
+                "displayName":"GP15",
                 "dataType":"bool"
             },
             {
                 "name":"D16",
-                "displayName":"D16",
+                "displayName":"GP16",
                 "dataType":"bool"
             },
             {
                 "name":"D17",
-                "displayName":"D17",
+                "displayName":"GP17",
                 "dataType":"bool"
             },
             {
                 "name":"D18",
-                "displayName":"D18",
+                "displayName":"GP18",
                 "dataType":"bool"
             },
             {
                 "name":"D19",
-                "displayName":"D19",
+                "displayName":"GP19",
                 "dataType":"bool"
             },
             {
                 "name":"D20",
-                "displayName":"D20",
+                "displayName":"GP20",
                 "dataType":"bool"
             },
             {
                 "name":"D21",
-                "displayName":"D21",
+                "displayName":"GP21",
                 "dataType":"bool"
             },
             {
                 "name":"D22",
-                "displayName":"D22",
+                "displayName":"GP22",
                 "dataType":"bool"
             },
             {
                 "name":"D23",
-                "displayName":"D23",
+                "displayName":"GP23",
                 "dataType":"bool"
             },
             {
                 "name":"D24",
-                "displayName":"D24",
+                "displayName":"GP24",
                 "dataType":"bool"
             },
             {
                 "name":"D25",
-                "displayName":"D25",
+                "displayName":"GP25",
                 "dataType":"bool"
             },
             {
                 "name":"D26",
-                "displayName":"D26",
+                "displayName":"GP26",
                 "dataType":"bool"
             },
             {
                 "name":"D27",
-                "displayName":"D27",
+                "displayName":"GP27",
                 "dataType":"bool"
             },
             {
                 "name":"D28",
-                "displayName":"D28",
+                "displayName":"GP28",
                 "dataType":"bool"
             },
             {
                 "name":"D29",
-                "displayName":"D29",
+                "displayName":"GP29",
+                "dataType":"bool"
+            },
+            {
+                "name":"D32",
+                "displayName":"LED (BUILT-IN)",
                 "dataType":"bool"
             }
         ],
         "analogPins":[
             {
                 "name":"A0",
-                "displayName":"A0",
+                "displayName":"GP0",
                 "dataType":"int16"
             },
             {
                 "name":"A1",
-                "displayName":"A1",
+                "displayName":"GP1",
                 "dataType":"int16"
             },
             {
                 "name":"A2",
-                "displayName":"A2",
+                "displayName":"GP2",
                 "dataType":"int16"
             },
             {
                 "name":"A3",
-                "displayName":"A3",
+                "displayName":"GP3",
                 "dataType":"int16"
             }
         ],
