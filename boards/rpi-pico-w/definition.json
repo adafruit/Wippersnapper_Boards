@@ -13,157 +13,218 @@
             {
                 "name":"D0",
                 "displayName":"GP0",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D1",
                 "displayName":"GP1",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D2",
                 "displayName":"GP2",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D3",
                 "displayName":"GP3",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D4",
                 "displayName":"GP4",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D5",
                 "displayName":"GP5",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D6",
                 "displayName":"GP6",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D7",
                 "displayName":"GP7",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D8",
                 "displayName":"GP8",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D9",
                 "displayName":"GP9",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D10",
                 "displayName":"GP10",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D11",
                 "displayName":"GP11",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D12",
                 "displayName":"GP12",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D13",
                 "displayName":"GP13",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D14",
                 "displayName":"GP14",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D15",
                 "displayName":"GP15",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D16",
                 "displayName":"GP16",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D17",
                 "displayName":"GP17",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D18",
                 "displayName":"GP18",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D19",
                 "displayName":"GP19",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D20",
                 "displayName":"GP20",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D21",
                 "displayName":"GP21",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D22",
                 "displayName":"GP22",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D23",
                 "displayName":"GP23",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D24",
                 "displayName":"GP24",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D25",
                 "displayName":"GP25",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D26",
                 "displayName":"GP26",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D27",
                 "displayName":"GP27",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D28",
                 "displayName":"GP28",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D29",
                 "displayName":"GP29",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D32",
                 "displayName":"LED (BUILT-IN)",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true
             }
         ],
         "analogPins":[
