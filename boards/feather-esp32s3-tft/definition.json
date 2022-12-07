@@ -155,8 +155,8 @@
         "i2cPorts":[
           {
             "i2cPortId":0,
-            "SDA":3,
-            "SCL":4
+            "SDA":42,
+            "SCL":41
           }
         ]
       }
