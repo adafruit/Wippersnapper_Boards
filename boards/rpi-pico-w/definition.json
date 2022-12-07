@@ -223,8 +223,7 @@
             {
                 "name":"D32",
                 "displayName":"LED (BUILT-IN)",
-                "dataType":"bool",
-                "hasPWM":true
+                "dataType":"bool"
             }
         ],
         "analogPins":[
