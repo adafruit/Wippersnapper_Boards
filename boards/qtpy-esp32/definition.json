@@ -101,6 +101,11 @@
                 "name":"D0",
                 "displayName":"Boot Pushbutton",
                 "dataType":"bool"
+            },
+            {
+                "name":"D5",
+                "displayName":"D5 (NeoPixel)",
+                "dataType":"bool"
             }
         ],
         "analogPins":[

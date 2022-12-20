@@ -107,6 +107,11 @@
             "dataType": "bool",
             "hasPWM":true,
             "hasServo":true
+        },
+        {
+            "name": "D40",
+            "displayName": "D40 (NeoPixel)",
+            "dataType": "bool"
         }
       ],
       "analogPins": [

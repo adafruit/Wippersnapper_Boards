@@ -77,6 +77,11 @@
                 "displayName":"Boot Pushbutton",
                 "dataType":"bool",
                 "direction":"INPUT"
+            },
+            {
+                "name":"D39",
+                "displayName":"D39 (NeoPixel)",
+                "dataType":"bool"
             }
         ],
         "analogPins":[

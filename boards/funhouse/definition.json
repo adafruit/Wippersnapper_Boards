@@ -87,8 +87,13 @@
           },
           {
              "name":"D14",
-             "displayName":"D14",
+             "displayName":"D14 (DotStar Data)",
              "dataType":"bool"
+          },
+          {
+            "name":"D15",
+            "displayName":"D15 (DotStar Clock)",
+            "dataType":"bool"
           },
           {
              "name":"D37",

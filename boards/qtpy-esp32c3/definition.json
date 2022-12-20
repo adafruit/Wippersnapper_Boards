@@ -102,6 +102,11 @@
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true
+            },
+            {
+                "name":"D2",
+                "displayName":"D2 (NeoPixel)",
+                "dataType":"bool"
             }
         ],
         "analogPins":[

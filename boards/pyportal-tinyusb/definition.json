@@ -37,7 +37,12 @@
             "name": "D50",
             "displayName": "Speaker Enable",
             "dataType": "bool"
-          }
+        },
+        {
+            "name": "D2",
+            "displayName": "D2 (NeoPixel)",
+            "dataType": "bool"
+        }
       ],
       "analogPins": [
         {

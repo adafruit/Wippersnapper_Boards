@@ -97,8 +97,7 @@
             "name":"D13",
             "displayName":"D13 (LED)",
             "dataType":"bool",
-            "hasPWM":true,
-            "hasServo":true
+            "hasPWM":true
           },
           {
             "name":"D14",
@@ -106,6 +105,11 @@
             "dataType":"bool",
             "hasPWM":true,
             "hasServo":true
+          },
+          {
+            "name":"D33",
+            "displayName":"D33 (NeoPixel)",
+            "dataType":"bool"
           }
         ],
         "analogPins":[

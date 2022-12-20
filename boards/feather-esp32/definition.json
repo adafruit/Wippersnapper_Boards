@@ -23,10 +23,9 @@
       "digitalPins": [
        {
          "name":"D13",
-         "displayName":"D13",
+         "displayName":"D13 (LED BUILT-IN)",
          "dataType":"bool",
-         "hasPWM":true,
-         "hasServo":true
+         "hasPWM":true
        },
        {
          "name":"D12",
