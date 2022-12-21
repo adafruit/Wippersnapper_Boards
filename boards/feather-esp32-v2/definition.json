@@ -21,12 +21,16 @@
     },
     "components": {
       "digitalPins": [
-       {
+        {
+          "name":"D0",
+          "displayName":"D0 (NeoPixel)",
+          "dataType":"bool"
+        },
+        {
           "name":"D13",
           "displayName":"D13 (LED BUILT-IN)",
           "dataType":"bool",
-          "hasPWM":true,
-          "hasServo":true
+          "hasPWM":true
        },
        {
         "name":"D12",

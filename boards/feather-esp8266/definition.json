@@ -36,9 +36,7 @@
             "name": "D2",
             "displayName": "D2 (Blue LED)",
             "dataType": "bool",
-            "hasPWM": true,
-            "hasServo": true
-
+            "hasPWM": true
         },
         {
             "name": "D4",

@@ -132,8 +132,12 @@
             "name":"D42",
             "displayName":"Built-in LED",
             "dataType":"bool",
-            "hasPWM":true,
-            "hasServo":true
+            "hasPWM":true
+         },
+         {
+            "name":"D45",
+            "displayName":"D45 (NeoPixel",
+            "dataType":"bool"
          }
        ],
        "analogPins":[

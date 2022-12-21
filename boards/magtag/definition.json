@@ -9,7 +9,12 @@
     "installMethod":"uf2",
     "components":{
        "digitalPins":[
-          {
+        {
+             "name":"D1",
+             "displayName":"D1 (NeoPixel)",
+             "dataType":"bool"
+        },
+        {
              "name":"D15",
              "displayName":"Button A",
              "dataType":"bool"
