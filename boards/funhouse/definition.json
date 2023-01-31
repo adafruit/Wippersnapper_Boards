@@ -105,6 +105,11 @@
              "name":"D16",
              "displayName":"PIR Sensor",
              "dataType":"bool"
+          },
+          {
+             "name":"D42",
+             "displayName":"Speaker/Piezo",
+             "dataType":"bool"
           }
        ],
        "analogPins":[
