@@ -227,23 +227,23 @@
         ],
         "analogPins":[
             {
-                "name":"A0",
-                "displayName":"GP0",
+                "name":"A26",
+                "displayName":"A0 (GP0)",
                 "dataType":"int16"
             },
             {
-                "name":"A1",
-                "displayName":"GP1",
+                "name":"A27",
+                "displayName":"A1 (GP1)",
                 "dataType":"int16"
             },
             {
-                "name":"A2",
-                "displayName":"GP2",
+                "name":"A28",
+                "displayName":"A2 (GP2)",
                 "dataType":"int16"
             },
             {
-                "name":"A3",
-                "displayName":"GP3",
+                "name":"A29",
+                "displayName":"A3 (GP3)",
                 "dataType":"int16"
             }
         ],
