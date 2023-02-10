@@ -89,6 +89,11 @@
              "name":"D33",
              "displayName":"D33 (NeoPixel)",
              "dataType":"bool"
+         },
+         {
+            "name":"D0",
+            "displayName":"BOOT Push Button",
+            "dataType":"bool"
          }
        ],
        "analogPins":[
