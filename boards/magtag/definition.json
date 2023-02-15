@@ -56,7 +56,13 @@
           }
        ],
        "analogPins":[
-          {
+           {
+             "name":"A0",
+             "displayName":"Piezo Speaker (A0)",
+             "hasPWM":true,
+             "dataType":"int16"
+           },
+           {
              "name":"A1",
              "displayName":"A1",
              "dataType":"int16",
