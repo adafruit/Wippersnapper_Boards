@@ -11,7 +11,7 @@
         "digitalPins":[
           {
             "name":"D0",
-            "displayName":"D0 (Boot Btn)",
+            "displayName":"D0 (Boot Push Button)",
             "dataType":"bool"
           },
           {
