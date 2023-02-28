@@ -5,7 +5,7 @@
     "displayName":"ESP32-S3 Reverse TFT Feather",
     "vendor":"Adafruit",
     "productPageURL":"https://www.adafruit.com/product/5691",
-    "documentationURL":"",
+    "documentationURL":"https://www.adafruit.com/product/5691",
     "installMethod":"uf2",
     "components":{
         "digitalPins":[
