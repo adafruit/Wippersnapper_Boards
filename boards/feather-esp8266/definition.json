@@ -11,7 +11,7 @@
     "esptool": {
         "offset": "0x200000",
         "chip": "esp8266",
-        "fileSystemSize": 0x1FA000,
+        "fileSystemSize": 2072576,
         "blockSize": 8192,
         "structure": {
             "0x0": "wippersnapper.feather_esp8266.littlefs.VERSION.bin"
