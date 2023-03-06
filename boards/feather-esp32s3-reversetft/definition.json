@@ -1,5 +1,5 @@
 {
-    "boardName":"feather-esp32s3-4mbflash-2mbpsram",
+    "boardName":"feather-esp32s3-reversetft",
     "mcuName":"esp32s3",
     "mcuRefVoltage":2.6,
     "displayName":"ESP32-S3 Reverse TFT Feather",
