@@ -111,7 +111,7 @@
         "analogPins":[
             {
                 "name":"A26",
-                "displayName":"A0",
+                "displayName":"A0 (OUTPUT ONLY!)",
                 "dataType":"int16",
                 "hasPWM":true
             },
