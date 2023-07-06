@@ -1,5 +1,5 @@
 {
-    "boardName": "pyportal-titano",
+    "boardName": "pyportal-titano-tinyusb",
     "mcuName": "samd51j20",
     "mcuRefVoltage": 3.3,
     "displayName": "PyPortal Titano",
