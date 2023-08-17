@@ -1,5 +1,5 @@
 {
-    "boardName":"um_featherS2",
+    "boardName":"um_feathers2",
     "mcuName":"esp32s2",
     "mcuRefVoltage":2.6,
     "displayName":"Unexpected Maker FeatherS2",
