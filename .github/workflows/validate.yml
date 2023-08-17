@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Validate Board JSON
-        uses: lorennorman/validate-json-action
+        uses: lorennorman/validate-json-action@master
         with:
           # Schema Docs: https://ajv.js.org/json-schema.html#json-data-type
           schema: /boards/schema.json
