@@ -24,13 +24,13 @@ jobs:
       has-write-permission: ${{ steps.set-permission.outputs.has-permission }}
     steps:
       - uses: octokit/request-action@v2.x
-        id: check
+        id: fetch-permissions
         with:
           route: GET /repos/${{ github.repository }}/collaborators/${{ github.actor }}/permission
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - id: set-permission
-        if: fromJson(steps.check.outputs.data).permission == 'admin' || fromJson(steps.check.outputs.data).permission == 'write'
+        if: fromJson(steps.fetch-permissions.outputs.data).permission == 'admin' || fromJson(steps.fetch-permissions.outputs.data).permission == 'write'
         run: echo "has-permission=true" >> "$GITHUB_OUTPUT"
 
   changed-files:
@@ -63,10 +63,6 @@ jobs:
       - name: Validate Only Expected Filenames
         run: |
           EXIT_VALUE=0
-
-          echo "CAN_WRITE_TO_REPO: $CAN_WRITE_TO_REPO"
-          echo "needs.check-user-permissions.outputs.has-write-permission"
-          echo ${{ needs.check-user-permissions.outputs.has-write-permission }}
 
           # external contributors can modify some files
           EXTERNAL_REGEX="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
