@@ -24,6 +24,7 @@ jobs:
       has-write-permission: ${{ steps.check.outputs.is-a-member }}
     steps:
       - name: Check user permission
+        id: check
         # if: ${{ github.event.pull_request.author_association == 'MEMBER' }}
         run: |
           echo "is-a-member=true" >> "$GITHUB_OUTPUT"
