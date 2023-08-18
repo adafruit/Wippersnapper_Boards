@@ -19,11 +19,20 @@ jobs:
       - name: wget and wait for response
         env:
           WEBHOOK_TOKEN: ${{ secrets.WEBHOOK_TOKEN }}
+        # TODO:
+        # - catch these locally to inspect secrets are intact, use ngrok
+        # - expose importer controller in dev
+        # - check the secret, fail nice
+        # - do the import:
+        #   - 200 if all good
+        #   - on failure:
+        #     - if known, give JSON list of issues with import
+        #     - tell Sentry too
+        # - what should this webhook do upon failure?
+        #   - fail the action
+        #   - expose the response
         run: |
-          echo "${{ secrets.WEBHOOK_TOKEN }}"
-          echo "$WEBHOOK_TOKEN"
           wget -S https://io.adafruit.com/wipper_releases?token=${{ secrets.WEBHOOK_TOKEN }} 2>&1 | awk '/^  HTTP/{print $2}'
-          wget -S https://io.adafruit.com/wipper_releases?token=$WEBHOOK_TOKEN 2>&1 | awk '/^  HTTP/{print $2}'
 
           if [ $? = 200 ]; then
             echo "Something went wrong"
