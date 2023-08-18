@@ -102,7 +102,7 @@ jobs:
           EXIT_VALUE=0
 
           for FILE in $FILES; do
-            if [[ $FILE == *.json ]]; then
+            if [[ $FILE =~ "\.(svg|jpe?g|png)$" ]]; then
               continue # non-image file
             fi
 
@@ -131,7 +131,7 @@ jobs:
                 MIME_EXT="jpg"
               fi
 
-              echo "❌ $FILE: expected .$MIME_EXT"
+              echo "❌ $FILE: expected extension .$MIME_EXT"
 
               EXIT_VALUE=1
             fi
