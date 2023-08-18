@@ -1,7 +1,7 @@
 on: [pull_request]
-  # pull_request:
-  #   types:
-  #     - closed
+# pull_request:
+#   types:
+#     - closed
 
 jobs:
   alert-not-merged:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged != true
     steps:
-      run: echo "PR closed but not merged, do nothing."
+      - run: echo "PR closed but not merged, do nothing."
 
   call-import-webhook:
     name: Call Webhook
