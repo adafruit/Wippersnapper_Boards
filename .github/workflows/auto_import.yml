@@ -16,11 +16,13 @@ jobs:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-    - run: |
-      wget --server-response https://io.adafruit.com/wipper_releases 2>&1 | awk '/^  HTTP/{print $2}'
-      if [ $? = 200 ]; then
-        echo "Something went wrong"
-        exit 1
-      else
-        echo "All good"
-      fi
+      - name: wget and wait for response
+        run: |
+          wget -S https://io.adafruit.com/wipper_releases 2>&1 | awk '/^  HTTP/{print $2}'
+
+          if [ $? = 200 ]; then
+            echo "Something went wrong"
+            exit 1
+          else
+            echo "All good"
+          fi
