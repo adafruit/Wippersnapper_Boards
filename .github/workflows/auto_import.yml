@@ -1,0 +1,26 @@
+on: [pull_request]
+  # pull_request:
+  #   types:
+  #     - closed
+
+jobs:
+  alert-not-merged:
+    name: Alert No Merge
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged != true
+    steps:
+      run: echo "PR closed but not merged, do nothing."
+
+  call-import-webhook:
+    name: Call Webhook
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+      wget --server-response https://io.adafruit.com/wipper_releases 2>&1 | awk '/^  HTTP/{print $2}'
+      if [ $? = 200 ]; then
+        echo "Something went wrong"
+        exit 1
+      else
+        echo "All good"
+      fi
