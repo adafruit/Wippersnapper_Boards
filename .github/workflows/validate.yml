@@ -21,15 +21,11 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       # Extract the permission for later jobs to use
-      has-write-permission: ${{ steps.check.outputs.has-permission }}
+      has-write-permission: ${{ steps.check.outputs.is-a-member }}
     steps:
-    - name: Check user permission
-      id: check
-      uses: scherermichael-oss/action-has-permission@master
-      with:
-        required-permission: write
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check user permission
+        if: ${{ github.event.pull_request.author_association == 'MEMBER' }}
+        run: echo "is-a-member=true" >> "$GITHUB_OUTPUT"
 
   changed-files:
     name: List Changed Files
