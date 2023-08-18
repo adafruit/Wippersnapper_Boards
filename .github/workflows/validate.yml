@@ -72,11 +72,14 @@ jobs:
 
           # apply the appropriate regex based on permissions of the user
           if [[ $CAN_WRITE_TO_REPO ]]; then
+            echo using internal
             board_definition_regex=$INTERNAL_REGEX
           else
+            echo using external
             board_definition_regex=$EXTERNAL_REGEX
           fi
 
+          echo $FILES
           for FILE in $FILES; do
             if [[ $FILE =~ $board_definition_regex ]]; then
               echo "✅ $FILE"
