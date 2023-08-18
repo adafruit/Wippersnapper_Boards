@@ -21,19 +21,17 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       # Extract the permission for later jobs to use
-      has-write-permission: ${{ steps.set-permission.has-permission }}
+      has-write-permission: ${{ steps.set-permission.outputs.has-permission }}
     steps:
       - uses: octokit/request-action@v2.x
         id: check
         with:
-          route: GET /repos/{org_repo}/collaborators/{actor}/permission
-          actor: ${{ github.actor }}
-          org_repo: ${{ github.repository }}
+          route: GET /repos/${{ github.repository }}/collaborators/${{ github.actor }}/permission
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - id: set-permission
         if: steps.check.outputs.data.permission == 'admin' || steps.check.outputs.data.permission == 'write'
-        run: echo "has-permission=true" >> $GITHUB_OUTPUT
+        run: echo "has-permission=true" >> "$GITHUB_OUTPUT"
 
   changed-files:
     name: List Changed Files
