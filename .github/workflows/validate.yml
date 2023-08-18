@@ -21,24 +21,16 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       # Extract the permission for later jobs to use
-      has-write-permission: ${{ steps.check.outputs.is-a-member }}
+      has-write-permission: ${{ steps.check.outputs.data.permission == 'admin' || steps.check.outputs.data.permission == 'write' }}
     steps:
       - uses: octokit/request-action@v2.x
         id: check
         with:
-          # route: GET /repos/{owner}/{repo}/releases/latest
-          route: GET /repos/adafruit/Wippersnapper_Boards/collaborators/{actor}/permission
+          route: GET /repos/{org_repo}/collaborators/{actor}/permission
           actor: ${{ github.actor }}
+          org_repo: ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: "echo api response: '${{ steps.check.outputs.data }}'"
-
-      # - name: Check user permission
-      #   id: check
-      #   # if: ${{ github.event.pull_request.author_association == 'MEMBER' }}
-      #   run: |
-      #     echo "is-a-member=true" >> "$GITHUB_OUTPUT"
-      #     echo ${{ github.event.pull_request.author_association }}
 
   changed-files:
     name: List Changed Files
