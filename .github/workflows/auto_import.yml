@@ -17,8 +17,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: wget and wait for response
+        env:
+          WEBHOOK_TOKEN: ${{ secrets.WEBHOOK_TOKEN }}
         run: |
-          wget -S https://io.adafruit.com/wipper_releases 2>&1 | awk '/^  HTTP/{print $2}'
+          ${{ secrets.WEBHOOK_TOKEN }}
+          $WEBHOOK_TOKEN
+          wget -S https://io.adafruit.com/wipper_releases?token=${{ secrets.WEBHOOK_TOKEN }} 2>&1 | awk '/^  HTTP/{print $2}'
+          wget -S https://io.adafruit.com/wipper_releases?token=$WEBHOOK_TOKEN 2>&1 | awk '/^  HTTP/{print $2}'
 
           if [ $? = 200 ]; then
             echo "Something went wrong"
