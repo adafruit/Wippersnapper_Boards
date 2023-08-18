@@ -45,8 +45,6 @@ jobs:
       - name: List Changed Board Files
         id: list-changed-files
         uses: tj-actions/changed-files@v37
-        # with:
-        #   files: boards/**/*
 
   validate-expected-filenames:
     name: Validate Filenames
@@ -68,14 +66,12 @@ jobs:
           EXTERNAL_REGEX="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
 
           # folks with write access to the repo (Adafruit team) can change more sensitive files
-          INTERNAL_REGEX="^boards\/(schema.json|.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg))))$"
+          INTERNAL_REGEX="^(\.github\/.*|boards\/(schema.json|.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))))$"
 
           # apply the appropriate regex based on permissions of the user
           if [[ $CAN_WRITE_TO_REPO ]]; then
-            echo using internal
             board_definition_regex=$INTERNAL_REGEX
           else
-            echo using external
             board_definition_regex=$EXTERNAL_REGEX
           fi
 
