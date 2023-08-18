@@ -102,7 +102,7 @@ jobs:
           EXIT_VALUE=0
 
           for FILE in $FILES; do
-            if [[ $FILE =~ "\.(?!svg|jpe?g|png)$" ]]; then
+            if ! [[ $FILE =~ "\.(svg|jpe?g|png)$" ]]; then
               continue # non-image file
             fi
 
