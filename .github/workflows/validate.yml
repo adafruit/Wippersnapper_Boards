@@ -31,7 +31,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - id: set-permission
         if: fromJson(steps.fetch-permissions.outputs.data).permission == 'admin' || fromJson(steps.fetch-permissions.outputs.data).permission == 'write'
-        run: echo "has-permission=true" >> "$GITHUB_OUTPUT"
+        run: echo "do nothing" #"has-permission=true" >> "$GITHUB_OUTPUT"
 
   changed-files:
     name: List Changed Files
@@ -45,8 +45,8 @@ jobs:
       - name: List Changed Board Files
         id: list-changed-files
         uses: tj-actions/changed-files@v37
-        with:
-          files: boards/**/*
+        # with:
+        #   files: boards/**/*
 
   validate-expected-filenames:
     name: Validate Filenames
