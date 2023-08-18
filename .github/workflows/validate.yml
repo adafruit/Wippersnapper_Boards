@@ -59,16 +59,14 @@ jobs:
         run: |
           EXIT_VALUE=0
 
-          echo "CAN_WRITE_TO_REPO"
-          echo $CAN_WRITE_TO_REPO
-          echo "SOMETHING_UNSET"
-          echo $SOMETHING_UNSET
+          echo "CAN_WRITE_TO_REPO: $CAN_WRITE_TO_REPO"
+          echo "SOMETHING_UNSET: $SOMETHING_UNSET"
           echo "needs.check-user-permissions.outputs.is-a-member"
-          echo "${{ needs.check-user-permissions.outputs.is-a-member }}"
           echo ${{ needs.check-user-permissions.outputs.is-a-member }}
           echo "needs.check-user-permissions.outputs.has-write-permission"
-          echo "${{ needs.check-user-permissions.outputs.has-write-permission }}"
           echo ${{ needs.check-user-permissions.outputs.has-write-permission }}
+          echo "needs.check-user-permissions.outputs"
+          echo ${{ needs.check-user-permissions.outputs }}
 
           # external contributors can modify some files
           EXTERNAL_REGEX="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"

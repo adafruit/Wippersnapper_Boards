@@ -11,6 +11,7 @@
       "minLength": 3,
       "maxLength": 40
     },
+
     "mcuName": {
       "description": "Microcontroller name.",
       "type": "string",
