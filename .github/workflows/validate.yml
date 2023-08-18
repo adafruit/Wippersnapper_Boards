@@ -27,7 +27,7 @@ jobs:
         id: check
         with:
           # route: GET /repos/{owner}/{repo}/releases/latest
-          route: GET /repos/adafruit/Wippersnapper_Boards/collaborators/{ actor }/permission
+          route: GET /repos/adafruit/Wippersnapper_Boards/collaborators/{actor}/permission
           actor: ${{ github.actor }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
