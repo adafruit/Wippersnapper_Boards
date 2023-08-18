@@ -51,12 +51,24 @@ jobs:
     env:
       FILES: ${{ needs.changed-files.outputs.files }}
       CAN_WRITE_TO_REPO: ${{ needs.check-user-permissions.outputs.has-write-permission }}
+      SOMETHING_UNSET: ${{ needs.check-user-permissions.outputs.something-unset }}
 
     steps:
       - uses: actions/checkout@v3
       - name: Validate Only Expected Filenames
         run: |
           EXIT_VALUE=0
+
+          echo "CAN_WRITE_TO_REPO"
+          echo $CAN_WRITE_TO_REPO
+          echo "SOMETHING_UNSET"
+          echo $SOMETHING_UNSET
+          echo "needs.check-user-permissions.outputs.is-a-member"
+          echo "${{ needs.check-user-permissions.outputs.is-a-member }}"
+          echo ${{ needs.check-user-permissions.outputs.is-a-member }}
+          echo "needs.check-user-permissions.outputs.has-write-permission"
+          echo "${{ needs.check-user-permissions.outputs.has-write-permission }}"
+          echo ${{ needs.check-user-permissions.outputs.has-write-permission }}
 
           # external contributors can modify some files
           EXTERNAL_REGEX="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
