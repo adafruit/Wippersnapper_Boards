@@ -62,6 +62,8 @@ jobs:
         run: |
           EXIT_VALUE=0
 
+          # TODO: break these regexes up into modular chunks that check specific things for readability and composability
+
           # external contributors can modify some files
           EXTERNAL_REGEX="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
 

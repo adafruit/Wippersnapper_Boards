@@ -19,7 +19,6 @@
           "0x0": "wippersnapper.feather_esp32.littlefs.VERSION.combined.bin"
         }
     },
-
     "components": {
       "digitalPins": [
        {
