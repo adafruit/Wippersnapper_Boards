@@ -30,7 +30,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - id: set-permission
-        if: steps.check.outputs.data.permission == 'admin' || steps.check.outputs.data.permission == 'write'
+        if: fromJson(steps.check.outputs.data).permission == 'admin' || fromJson(steps.check.outputs.data).permission == 'write'
         run: echo "has-permission=true" >> "$GITHUB_OUTPUT"
 
   changed-files:
