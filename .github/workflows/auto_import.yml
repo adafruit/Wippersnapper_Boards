@@ -31,11 +31,11 @@ jobs:
         #   - expose the response
         run: |
           SIGNATURE=$(echo -n "$GITHUB_SHA" | openssl sha256 -hmac "$SIGNING_TOKEN")
-          wget -S --header="ngrok-skip-browser-warning: anything" --header="X-HUB-SIGNATURE-256: $SIGNATURE" --method=POST --body-data="$GITHUB_SHA"  https://bf3a-24-99-205-102.ngrok-free.app/api/github/boards/refresh 2>&1 | awk '/^  HTTP/{print $2}'
+          HTTP_STATUS=$(wget -S --header="ngrok-skip-browser-warning: anything" --header="X-HUB-SIGNATURE-256: $SIGNATURE" --method=POST --body-data="$GITHUB_SHA"  https://bf3a-24-99-205-102.ngrok-free.app/api/github/boards/refresh 2>&1 | awk '/^  HTTP/{print $2}')
 
-          if [ $? = 200 ]; then
-            echo "Something went wrong"
+          if [[ $HTTP_STATUS != 204 ]]; then
+            echo "❌ Import Failed: Retry the import manually to see the error messages"
             exit 1
-          else
-            echo "All good"
           fi
+
+          echo "✅ Import Successful"
