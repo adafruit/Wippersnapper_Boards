@@ -19,23 +19,13 @@ jobs:
       - name: wget and wait for response
         env:
           SIGNING_TOKEN: ${{ secrets.AUTO_IMPORT_TOKEN }}
-        # TODO:
-        # - check the secret, fail nice
-        # - do the import:
-        #   - 200 if all good
-        #   - on failure:
-        #     - if known, give JSON list of issues with import
-        #     - tell Sentry too
-        # - what should this webhook do upon failure?
-        #   - fail the action
-        #   - expose the response
         run: |
           SIGNATURE=$(echo -n "$GITHUB_SHA" | openssl sha256 -hmac "$SIGNING_TOKEN")
           HTTP_STATUS=$(wget -S --header="ngrok-skip-browser-warning: anything" --header="X-HUB-SIGNATURE-256: $SIGNATURE" --method=POST --body-data="$GITHUB_SHA"  https://bf3a-24-99-205-102.ngrok-free.app/api/github/boards/refresh 2>&1 | awk '/^  HTTP/{print $2}')
 
           if [[ $HTTP_STATUS != 204 ]]; then
-            echo "❌ Import Failed: Retry the import manually to see the error messages"
+            echo "❌ Board Definition Import Failed: Retry the import manually to see the error messages"
             exit 1
           fi
 
-          echo "✅ Import Successful"
+          echo "✅  Board Definition Import Successful"
