@@ -32,7 +32,8 @@ jobs:
         #   - fail the action
         #   - expose the response
         run: |
-          wget -S https://io.adafruit.com/wipper_releases?token=${{ secrets.WEBHOOK_TOKEN }} 2>&1 | awk '/^  HTTP/{print $2}'
+          SIGNATURE=$(echo -n "$GITHUB_SHA" | openssl sha256 -hmac "$WEBHOOK_TOKEN")
+          wget -S --header="HTTP_X_HUB_TOKEN: $WEBHOOK_TOKEN" --header="HTTP_X_HUB_SIGNATURE_256: $SIGNATURE" --body-data="$GITHUB_SHA"  https://bf3a-24-99-205-102.ngrok-free.app/api/github/boards/refresh 2>&1 | awk '/^  HTTP/{print $2}'
 
           if [ $? = 200 ]; then
             echo "Something went wrong"
