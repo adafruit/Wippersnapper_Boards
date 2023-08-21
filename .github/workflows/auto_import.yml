@@ -33,7 +33,7 @@ jobs:
         #   - expose the response
         run: |
           SIGNATURE=$(echo -n "$GITHUB_SHA" | openssl sha256 -hmac "$WEBHOOK_TOKEN")
-          wget -S --header="ngrok-skip-browser-warning: anything" --header="HTTP_X_HUB_TOKEN: $WEBHOOK_TOKEN" --header="HTTP_X_HUB_SIGNATURE_256: $SIGNATURE" --method=POST --body-data="$GITHUB_SHA"  https://bf3a-24-99-205-102.ngrok-free.app/api/github/boards/refresh 2>&1 | awk '/^  HTTP/{print $2}'
+          wget -S --header="ngrok-skip-browser-warning: anything" --header="X-HUB-TOKEN: $WEBHOOK_TOKEN" --header="X-HUB-SIGNATURE-256: $SIGNATURE" --method=POST --body-data="$GITHUB_SHA"  https://bf3a-24-99-205-102.ngrok-free.app/api/github/boards/refresh 2>&1 | awk '/^  HTTP/{print $2}'
 
           if [ $? = 200 ]; then
             echo "Something went wrong"
