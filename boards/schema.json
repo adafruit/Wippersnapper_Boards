@@ -92,19 +92,18 @@
             },
             "oneOf": [
               {},
-              {
-                "properties": [{
+              { "properties": {
                   "uartTx": {
                     "description": "If true, this pin will be used as the UART transmit pin. There should also be a 'uartRx' property on another pin.",
                     "type": "boolean"
                   }
-              }]},
-              { "properties": [{
+              }},
+              { "properties": {
                   "uartRx": {
                     "description": "If true, this pin will be used as the UART receive pin. There should also be a 'uartTx' property on another pin.",
                     "type": "boolean"
                   }
-              }]}
+              }}
             ]
           }
         },
