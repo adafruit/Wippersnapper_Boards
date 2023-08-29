@@ -88,16 +88,24 @@
               "hasServo": {
                 "description": "If true, hasPWM should also be true, and this PWM-enabled pin also supports servo components.",
                 "type": "boolean"
-              },
-              "uartTx": {
-                "description": "If true, this pin will be used as the UART transmit pin. There should also be a 'uartRx' property on another pin.",
-                "type": "boolean"
-              },
-              "uartRx": {
-                "description": "If true, this pin will be used as the UART receive pin. There should also be a 'uartTx' property on another pin.",
-                "type": "boolean"
               }
-            }
+            },
+            "oneOf": [
+              {},
+              {
+                "properties": [{
+                  "uartTx": {
+                    "description": "If true, this pin will be used as the UART transmit pin. There should also be a 'uartRx' property on another pin.",
+                    "type": "boolean"
+                  }
+              }]},
+              { "properties": [{
+                  "uartRx": {
+                    "description": "If true, this pin will be used as the UART receive pin. There should also be a 'uartTx' property on another pin.",
+                    "type": "boolean"
+                  }
+              }]}
+            ]
           }
         },
         "analogPins": {
