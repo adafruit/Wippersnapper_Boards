@@ -10,34 +10,6 @@
     "components":{
        "digitalPins":[
           {
-             "name":"X1",
-             "displayName":"UART Hardware Transmit Pin",
-             "dataType":"bool",
-             "uartHardwareTx": true
-          },
-          {
-             "name":"X2",
-             "displayName":"UART Hardware Receive Pin",
-             "dataType":"bool",
-             "uartHardwareRx": true
-          },
-          {
-             "name":"X3",
-             "displayName":"UART Software Transmit Pin",
-             "dataType":"bool",
-             "uartSoftwareTx": true,
-             "hasPWM":true,
-             "hasServo":true
-          },
-          {
-             "name":"X4",
-             "displayName":"UART Software Receive Pin",
-             "dataType":"bool",
-             "uartSoftwareRx": true,
-             "hasPWM":true,
-             "hasServo":true
-          },
-          {
              "name":"D5",
              "displayName":"Button Up",
              "dataType":"bool"
@@ -163,6 +135,10 @@
              "dataType":"int16"
           }
        ],
+       "uartPins": {
+         "tx": "D10",
+         "rx": "D11"
+       },
        "i2cPorts": [
            {
                "i2cPortId": 0,

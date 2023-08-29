@@ -120,6 +120,22 @@
             }
           }
         },
+        "uartPins": {
+          "description": "(optional) Which pins to use for UART transmit/receive. If the board has hardware UART, specify the unique, hardware pins. For software UART, specify the names of existing, digital pins.",
+          "type": "object",
+          "required": [ "tx", "rx" ],
+          "additionalProperties": false,
+          "properties": {
+            "tx": {
+              "description": "The transmit pin.",
+              "type": "string"
+            },
+            "rx": {
+              "description": "The receive pin.",
+              "type": "string"
+            }
+          }
+        },
         "i2cPorts": {
           "description": "Information about the I2C ports present on this board.",
           "type": "array",
