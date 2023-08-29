@@ -68,12 +68,14 @@
           {
              "name":"D10",
              "displayName":"D10",
-             "dataType":"bool"
+             "dataType":"bool",
+             "uartTx": true
           },
           {
              "name":"D11",
              "displayName":"D11",
-             "dataType":"bool"
+             "dataType":"bool",
+             "uartRx": true
           },
           {
              "name":"D12",
@@ -135,10 +137,6 @@
              "dataType":"int16"
           }
        ],
-       "uartPins": {
-         "tx": "D10",
-         "rx": "D11"
-       },
        "i2cPorts": [
            {
                "i2cPortId": 0,
