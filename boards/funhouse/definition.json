@@ -73,8 +73,7 @@
           {
              "name":"D11",
              "displayName":"D11",
-             "dataType":"bool",
-             "uartRx": true
+             "dataType":"bool"
           },
           {
              "name":"D12",
