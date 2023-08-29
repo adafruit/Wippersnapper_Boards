@@ -99,11 +99,7 @@
               }
             },
             "if": { "required": [ "uartRx" ] },
-            "then": { "not": { "required": [ "uartTx" ] } },
-            "else": {
-              "if": { "required": [ "uartTx" ] },
-              "then": { "not": { "required": [ "uartRx" ] } }
-            }
+            "then": { "not": { "required": [ "uartTx" ] }, "errorMessage": "Cannot specify uartTx and uartRx on same pin!" }
           }
         },
         "analogPins": {
