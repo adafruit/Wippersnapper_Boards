@@ -98,11 +98,12 @@
                 "type": "boolean"
               }
             },
-            "oneOf": [
-              { "not": { "required": [ "uartRx", "uartTx" ]} },
-              { "required": [ "uartRx" ], "not": { "required": [ "uartTx" ]} },
-              { "required": [ "uartTx" ], "not": { "required": [ "uartRx" ]} }
-            ]
+            "if": { "required": [ "uartRx" ] },
+            "then": { "not": { "required": [ "uartTx" ] } },
+            "else": {
+              "if": { "required": [ "uartTx" ] },
+              "then": { "not": { "required": [ "uartRx" ] } }
+            }
           }
         },
         "analogPins": {
