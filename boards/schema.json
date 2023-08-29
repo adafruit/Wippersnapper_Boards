@@ -107,7 +107,7 @@
           "if": { "oneOf": [
             { "contains": { "required": [ "uartRx" ]}},
             { "contains": { "required": [ "uartTx" ]}}
-          ],
+          ]},
           "then": {
             "allOf": [{
               "contains": { "required": [ "uartRx" ]},
