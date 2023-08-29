@@ -68,8 +68,7 @@
           {
              "name":"D10",
              "displayName":"D10",
-             "dataType":"bool",
-             "uartTx": true
+             "dataType":"bool"
           },
           {
              "name":"D11",
@@ -80,9 +79,7 @@
           {
              "name":"D12",
              "displayName":"D12",
-             "dataType":"bool",
-             "uartRx": true,
-             "uartTx": true
+             "dataType":"bool"
           },
           {
              "name":"D13",

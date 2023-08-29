@@ -99,7 +99,26 @@
               }
             },
             "if": { "required": [ "uartRx" ] },
-            "then": { "not": { "required": [ "uartTx" ] }, "errorMessage": "Cannot specify uartTx and uartRx on same pin!" }
+            "then": {
+              "not": { "required": [ "uartTx" ] },
+              "errorMessage": "Cannot specify uartTx and uartRx on same pin!"
+            }
+          },
+          "if": { "oneOf": [
+            { "contains": { "required": [ "uartRx" ]}},
+            { "contains": { "required": [ "uartTx" ]}}
+          ],
+          "then": {
+            "allOf": [{
+              "contains": { "required": [ "uartRx" ]},
+              "minContains": 1,
+              "maxContains": 1
+            },{
+              "contains": { "required": [ "uartTx" ]},
+              "minContains": 1,
+              "maxContains": 1
+            }],
+            "errorMessage": "Must specify neither uartRx or uartTx, or both exactly once!"
           }
         },
         "analogPins": {
