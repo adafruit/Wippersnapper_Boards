@@ -27,6 +27,18 @@
           "dataType":"bool"
         },
         {
+            "name":"D7",
+            "displayName":"D7 (UART RX)",
+            "dataType":"bool",
+            "uartRx": true
+        },
+        {
+            "name":"D8",
+            "displayName":"D8 (UART TX)",
+            "dataType":"bool",
+            "uartTx": true
+        },
+        {
           "name":"D13",
           "displayName":"D13 (LED BUILT-IN)",
           "dataType":"bool",
