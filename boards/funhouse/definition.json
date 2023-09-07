@@ -115,14 +115,12 @@
           {
             "name":"D10",
             "displayName":"D10",
-            "dataType":"bool",
-            "uartTx": true
+            "dataType":"bool"
          },
          {
             "name":"D11",
             "displayName":"D11",
-            "dataType":"bool",
-            "uartRx": true
+            "dataType":"bool"
          },
          {
             "name":"D43",
