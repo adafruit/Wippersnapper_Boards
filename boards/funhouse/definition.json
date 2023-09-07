@@ -126,7 +126,7 @@
             "name":"D43",
             "displayName":"D44 (UART RX)",
             "dataType":"bool",
-            "uartTx": true
+            "uartRx": true
          },
          {
             "name":"D43",
