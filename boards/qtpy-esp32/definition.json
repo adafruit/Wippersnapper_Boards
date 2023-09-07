@@ -56,6 +56,14 @@
                 "hasServo":true
             },
             {
+                "name":"D32",
+                "displayName":"D32 (UART TX)",
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true,
+                "uartTx":true
+            },
+            {
                 "name":"D33",
                 "displayName":"SCL",
                 "dataType":"bool",
@@ -92,10 +100,11 @@
             },
             {
                 "name":"D7",
-                "displayName":"RX",
+                "displayName":"D7 (UART RX)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "uartRx":true
             },
             {
                 "name":"D0",

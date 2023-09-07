@@ -111,7 +111,31 @@
              "displayName":"Speaker/Piezo",
              "dataType":"bool",
              "hasPWM":true
-          }
+          },
+          {
+            "name":"D10",
+            "displayName":"D10",
+            "dataType":"bool",
+            "uartTx": true
+         },
+         {
+            "name":"D11",
+            "displayName":"D11",
+            "dataType":"bool",
+            "uartRx": true
+         },
+         {
+            "name":"D43",
+            "displayName":"D44 (UART RX)",
+            "dataType":"bool",
+            "uartTx": true
+         },
+         {
+            "name":"D43",
+            "displayName":"D43 (UART TX)",
+            "dataType":"bool",
+            "uartTx": true
+         }
        ],
        "analogPins":[
           {

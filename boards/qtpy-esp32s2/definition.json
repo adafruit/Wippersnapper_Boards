@@ -49,8 +49,9 @@
             },
             {
                 "name":"D5",
-                "displayName":"TX",
-                "dataType":"bool"
+                "displayName":"D5 (UART TX)",
+                "dataType":"bool",
+                "uartTx": true
             },
             {
                 "name":"D35",
@@ -69,8 +70,9 @@
             },
             {
                 "name":"D16",
-                "displayName":"RX",
-                "dataType":"bool"
+                "displayName":"D16 (UART RX)",
+                "dataType":"bool",
+                "uartRx": true
             },
             {
                 "name":"D0",
