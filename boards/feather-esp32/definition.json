@@ -104,6 +104,18 @@
          "dataType":"bool",
          "hasPWM":true,
          "hasServo":true
+       },
+       {
+         "name": "D16",
+         "displayName": "D16 (UART RX)",
+         "dataType": "bool",
+         "uartRx": true
+       },
+       {
+         "name": "D17",
+         "displayName": "D17 (UART TX)",
+         "dataType": "bool",
+         "uartTx": true
        }
       ],
       "analogPins": [
@@ -124,16 +136,19 @@
        {
           "name":"A34",
           "displayName":"A2",
+          "direction": "INPUT",
           "dataType":"int16"
        },
        {
           "name":"A39",
           "displayName":"A3",
+          "direction": "INPUT",
           "dataType":"int16"
        },
        {
           "name":"A36",
           "displayName":"A4",
+          "direction": "INPUT",
           "dataType":"int16"
        },
        {

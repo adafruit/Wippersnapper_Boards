@@ -11,17 +11,19 @@
         "digitalPins":[
           {
             "name":"D1",
-            "displayName":"D1",
+            "displayName": "D1 (UART TX)",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo": true,
+            "uartTx": true
           },
           {
             "name":"D2",
-            "displayName":"D2",
+            "displayName": "D2 (UART RX)",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo": true,
+            "uartRx": true
           },
           {
             "name":"D3",

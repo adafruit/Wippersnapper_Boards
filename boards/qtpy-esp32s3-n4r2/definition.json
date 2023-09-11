@@ -142,6 +142,20 @@
                 "dataType":"int16",
                 "hasPWM":true,
                 "hasServo":true
+            },
+            {
+                "name":"A5",
+                "displayName":"A5 (UART TX)",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"A16",
+                "displayName":"A16 (UART RX)",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             }
         ],
         "i2cPorts":[
