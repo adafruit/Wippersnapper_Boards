@@ -53,7 +53,21 @@
              "displayName":"Built-in LED",
              "dataType":"bool",
              "hasPWM":true
-          }
+          },
+          {
+             "name":"D43",
+             "displayName":"D43 (UART TX)",
+             "dataType":"bool",
+             "hasPWM":false,
+             "uartTx":true
+          },
+          {
+            "name":"D44",
+            "displayName":"D44 (UART RX)",
+            "dataType":"bool",
+            "hasPWM":false,
+            "uartRx":true
+         }
        ],
        "analogPins":[
            {

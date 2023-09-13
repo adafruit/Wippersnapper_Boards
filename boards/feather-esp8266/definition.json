@@ -54,10 +54,11 @@
         },
         {
             "name": "D12",
-            "displayName": "D12",
+            "displayName": "D12 (UART TX)",
             "dataType": "bool",
             "hasPWM": true,
-            "hasServo": true
+            "hasServo": true,
+            "uartTx": true
         },
         {
             "name": "D13",
@@ -68,10 +69,11 @@
         },
         {
             "name": "D14",
-            "displayName": "D14",
+            "displayName": "D14 (UART RX)",
             "dataType": "bool",
             "hasPWM": true,
-            "hasServo": true
+            "hasServo": true,
+            "uartRx": true
         },
         {
             "name": "D15",
