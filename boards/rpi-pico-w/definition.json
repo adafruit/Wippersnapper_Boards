@@ -7,6 +7,7 @@
     "productPageURL":"https://www.raspberrypi.com/products/raspberry-pi-pico/",
     "documentationURL":"https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html",
     "installMethod":"uf2",
+    "installBoardName":"picow_rp2040_tinyusb",
     "components":{
         "digitalPins":[
             {

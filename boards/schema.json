@@ -55,6 +55,12 @@
       "type": "string",
       "pattern": "^(web|uf2|library|python)$"
     },
+    "installBoardName": {
+      "description": "(Optional) Name to use instead of `boardName` to look up the firmware asset in the WipperSnapper Arduino Releases",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 40
+    },
     "published": {
       "description": "Whether this board is officially published. When false, it won't appear in the firmware installer, for instance.",
       "type": "boolean"
