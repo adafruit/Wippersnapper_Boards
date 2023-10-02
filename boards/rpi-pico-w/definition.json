@@ -12,17 +12,19 @@
         "digitalPins":[
             {
                 "name":"D0",
-                "displayName":"GP0",
+                "displayName":"GP0 (UART TX)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "uartTx":true
             },
             {
                 "name":"D1",
-                "displayName":"GP1",
+                "displayName":"GP1 (UART RX)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "uartRx":true
             },
             {
                 "name":"D2",

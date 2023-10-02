@@ -146,6 +146,20 @@
                 "dataType":"int16",
                 "hasPWM":true,
                 "hasServo":true
+            },
+            {
+                "name":"A20",
+                "displayName":"A20 (UART TX)",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"A21",
+                "displayName":"A21 (UART RX)",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             }
         ],
         "i2cPorts":[

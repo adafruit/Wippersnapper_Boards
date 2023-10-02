@@ -76,13 +76,15 @@
           },
           {
              "name":"D13",
-             "displayName":"D13",
-             "dataType":"bool"
+             "displayName":"D13 (UART RX)",
+             "dataType":"bool",
+             "uartRx":true
           },
           {
              "name":"D14",
-             "displayName":"D14",
-             "dataType":"bool"
+             "displayName":"D14 (UART TX)",
+             "dataType":"bool",
+             "uartTx":true
           }
        ],
        "analogPins":[

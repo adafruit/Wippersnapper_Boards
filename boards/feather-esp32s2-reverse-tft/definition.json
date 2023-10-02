@@ -81,6 +81,18 @@
             "name":"D21",
             "displayName":"D21 (NeoPixel Power Pin)",
             "dataType":"bool"
+          },
+          {
+            "name": "D38",
+            "displayName": "D38 (UART RX)",
+            "dataType": "bool",
+            "uartRx": true
+          },
+          {
+            "name": "D39",
+            "displayName": "D39 (UART TX)",
+            "dataType": "bool",
+            "uartTx": true
           }
         ],
         "analogPins":[

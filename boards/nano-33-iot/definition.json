@@ -10,6 +10,18 @@
     "components":{
        "digitalPins":[
           {
+             "name":"TX",
+             "displayName":"TX",
+             "dataType":"bool",
+             "uartTx":true
+          },
+          {
+             "name":"RX",
+             "displayName":"RX",
+             "dataType":"bool",
+             "uartRx":true
+          },
+          {
              "name":"D2",
              "displayName":"D2",
              "dataType":"bool"
