@@ -33,6 +33,35 @@
       "selected": false
     },
     {
+      "name": "Button Down",
+      "pinName": "D3",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "DOWN"
+    },
+    {
+      "name": "Button Select",
+      "pinName": "D4",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true
+    },
+    {
+      "name": "Button Up",
+      "pinName": "D5",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "DOWN"
+    },
+    {
       "name": "DotStar",
       "pixelNumber": "5",
       "pixelsOrder": "BGR",
