@@ -88,17 +88,66 @@
        },
        {
         "name":"D26",
-        "displayName":"D26",
+        "displayName":"D26 (A0)",
         "dataType":"bool",
         "hasPWM":true,
         "hasServo":true
        },
        {
         "name":"D25",
-        "displayName":"D25",
+        "displayName":"D25 (A1)",
         "dataType":"bool",
         "hasPWM":true,
         "hasServo":true
+       },
+       {
+         "name":"D34",
+         "displayName":"D34 (A2)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
+       },
+       {
+         "name":"D39",
+         "displayName":"D39 (A3)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
+       },
+       {
+         "name":"D36",
+         "displayName":"D36 (A4)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
+       },
+       {
+         "name":"D4",
+         "displayName":"D4 (A5)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
+       },
+       {
+         "name":"D5",
+         "displayName":"D5 (SCK)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
+       },
+       {
+         "name":"D19",
+         "displayName":"D19 (MOSI)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
+       },
+       {
+         "name":"D21",
+         "displayName":"D21 (MISO)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
        },
        {
         "name":"D37",
