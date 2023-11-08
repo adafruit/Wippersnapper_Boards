@@ -48,34 +48,54 @@
         "type": "object",
         "required": [ "name", "type" ],
         "additionalProperties": false,
+        "oneOf": [
+          { "properties": {
+            "isPin": { "type": "boolean", "const": true }
+          }},
+          { "properties": {
+            "isPixel": { "type": "boolean", "const": true }
+          }},
+          { "properties": {
+            "isI2C": { "type": "boolean", "const": true }
+          }},
+          { "properties": {
+            "isPWM": { "type": "boolean", "const": true }
+          }},
+          { "properties": {
+            "isServo": { "type": "boolean", "const": true }
+          }},
+          { "properties": {
+            "isUART": { "type": "boolean", "const": true }
+          }},
+          { "properties": {
+            "isDS18X20": { "type": "boolean", "const": true }
+          }}
+        ],
         "properties": {
           "name": { "type": "string" },
           "type": { "type": "string" },
           "selected": { "type": "boolean" },
           "period": { "type": "number" },
-          "isI2C": { "type": "boolean" },
+
           "i2cAddress": { "type": "number" },
           "sensorType": { "type": "string" },
-          "isPin": { "type": "boolean" },
+
           "pinName": { "type": "string" },
           "mode": { "type": "string" },
           "direction": { "type": "string" },
           "pull": { "type": "string" },
           "analogReadMode": { "type": "string" },
-          "isPixel": { "type": "boolean" },
+
           "pixelNumber": { "type": "string" },
           "pixelsOrder": { "type": "string" },
           "pixelBrightness": { "type": "string" },
           "dataPinName": { "type": "string" },
           "clockPinName": { "type": "string" },
           "pixelsType": { "type": "string" },
-          "isPWM": { "type": "boolean" },
+
           "pwmSetting": { "type": "string" },
           "frequency": { "type": "string" },
-          "resolution": { "type": "number" },
-          "isServo": { "type": "boolean" },
-          "isUART": { "type": "boolean" },
-          "isDS18X20": { "type": "boolean" }
+          "resolution": { "type": "number" }
         }
       }
     }
