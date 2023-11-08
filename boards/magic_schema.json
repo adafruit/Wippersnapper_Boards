@@ -47,24 +47,39 @@
       "items": {
         "type": "object",
         "required": [ "name", "type" ],
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "selected": { "const": false },
+          "isPin": { "type": "boolean", "const": true },
+          "isI2C": { "type": "boolean", "const": true }
+        },
         "oneOf": [
           { "required": [ "isPin" ],
             "properties": {
               "isPin": {},
               "name": {},
               "type": {},
+              "selected": {},
               "pinName": { "type": "string" },
               "mode": { "type": "string" },
               "direction": { "type": "string" }
             },
             "additionalProperties": false
+          },
+          { "required": [ "isI2C" ],
+            "properties": {
+              "isI2C": {},
+              "name": {},
+              "type": {},
+              "selected": {},
+              "period": { "type": "integer"},
+              "i2cAddress": { "type": "integer"},
+              "sensorType": { "type": "string"}
+            },
+            "additionalProperties": false
           }
-        ],
-        "properties": {
-          "isPin": { "type": "boolean", "const": true },
-          "name": { "type": "string" },
-          "type": { "type": "string" }
-        }
+        ]
       }
     }
   }

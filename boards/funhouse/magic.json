@@ -8,7 +8,87 @@
   },
   "components": [
     {
-      "name": true,
+      "name": "AHT20: Humidity",
+      "isI2C": true,
+      "type": "aht20:humidity",
+      "period": 30,
+      "i2cAddress": 56,
+      "sensorType": "humidity"
+    },
+    {
+      "name": "AHT20: Temperature (°F)",
+      "isI2C": true,
+      "type": "aht20:ambient-temp-fahrenheit",
+      "period": 30,
+      "i2cAddress": 56,
+      "sensorType": "ambient-temp-fahrenheit"
+    },
+    {
+      "name": "AHT20: Temperature Sensor (°C)",
+      "isI2C": true,
+      "type": "aht20:ambient-temp",
+      "period": 900,
+      "i2cAddress": 56,
+      "sensorType": "ambient-temp",
+      "selected": false
+    },
+    {
+      "name": "Button Down",
+      "pinName": "D3",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "DOWN"
+    },
+    {
+      "name": "Button Select",
+      "pinName": "D4",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true
+    },
+    {
+      "name": "Button Up",
+      "pinName": "D5",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "DOWN"
+    },
+    {
+      "name": "DPS310: Pressure Sensor",
+      "isI2C": true,
+      "type": "dps310:pressure",
+      "period": 900,
+      "i2cAddress": 118,
+      "sensorType": "pressure"
+    },
+    {
+      "name": "DPS310: Temperature Sensor (°C)",
+      "isI2C": true,
+      "type": "dps310:ambient-temp",
+      "period": 900,
+      "i2cAddress": 118,
+      "sensorType": "ambient-temp",
+      "selected": false
+    },
+    {
+      "name": "DPS310: Temperature Sensor (°F)",
+      "isI2C": true,
+      "type": "dps310:ambient-temp-fahrenheit",
+      "period": 900,
+      "i2cAddress": 118,
+      "sensorType": "ambient-temp-fahrenheit",
+      "selected": false
+    },
+    {
+      "name": "LED",
       "pinName": "D37",
       "type": "led",
       "mode": "DIGITAL",
