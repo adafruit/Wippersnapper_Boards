@@ -75,33 +75,7 @@
           { "properties": {
             "isDS18X20": { "type": "boolean", "const": true }
           }}
-        ],
-        "properties": {
-          "name": { "type": "string" },
-          "type": { "type": "string" },
-          "selected": { "type": "boolean" },
-          "period": { "type": "number" },
-
-          "i2cAddress": { "type": "number" },
-          "sensorType": { "type": "string" },
-
-          "pinName": { "type": "string" },
-          "mode": { "type": "string" },
-          "direction": { "type": "string" },
-          "pull": { "type": "string" },
-          "analogReadMode": { "type": "string" },
-
-          "pixelNumber": { "type": "string" },
-          "pixelsOrder": { "type": "string" },
-          "pixelBrightness": { "type": "string" },
-          "dataPinName": { "type": "string" },
-          "clockPinName": { "type": "string" },
-          "pixelsType": { "type": "string" },
-
-          "pwmSetting": { "type": "string" },
-          "frequency": { "type": "string" },
-          "resolution": { "type": "number" }
-        }
+        ]
       }
     }
   }
