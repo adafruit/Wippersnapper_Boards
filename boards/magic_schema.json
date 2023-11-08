@@ -71,8 +71,17 @@
           "pixelBrightness": { "type": "string" },
           "dataPinName": { "type": "string" },
           "clockPinName": { "type": "string" },
-          "pixelsType": { "type": "string" }
-
+          "pixelsType": { "type": "string" },
+          "isDS18X20": { "type": "boolean", "const": true },
+          "sensorResolution": { "type": "number" },
+          "isUART": { "type": "boolean", "const": true },
+          "baudRate": { "type": "string" },
+          "inverted": { "type": "boolean" },
+          "uartRx": { "type": "string" },
+          "uartTx": { "type": "string" },
+          "isServo": { "type": "boolean", "const": true },
+          "minPulseWidth": { "type": "number" },
+          "maxPulseWidth": { "type": "number" }
         },
         "oneOf": [
           { "required": [ "isPin" ],
@@ -128,6 +137,44 @@
               "dataPinName": {},
               "clockPinName": {},
               "pixelsType": {}
+            },
+            "additionalProperties": false
+          },
+          { "required": [ "isDS18X20" ],
+            "properties": {
+              "isDS18X20": {},
+              "name": {},
+              "type": {},
+              "selected": {},
+              "pinName": {},
+              "sensorResolution": {}
+            },
+            "additionalProperties": false
+          },
+          { "required": [ "isUART" ],
+            "properties": {
+              "isUART": {},
+              "name": {},
+              "type": {},
+              "selected": {},
+              "baudRate": {},
+              "inverted": {},
+              "uartRx": {},
+              "uartTx": {}
+            },
+            "additionalProperties": false
+          },
+          { "required": [ "isServo" ],
+            "properties": {
+              "isServo": {},
+              "name": {},
+              "type": {},
+              "selected": {},
+              "mode": {},
+              "direction": {},
+              "frequency": {},
+              "minPulseWidth": {},
+              "maxPulseWidth": {}
             },
             "additionalProperties": false
           }
