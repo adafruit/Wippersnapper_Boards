@@ -47,7 +47,6 @@
       "items": {
         "type": "object",
         "required": [ "name", "type" ],
-        "additionalProperties": false,
         "oneOf": [
           { "required": [ "isPin" ],
             "properties": {
@@ -57,37 +56,44 @@
               "pinName": { "type": "string" },
               "mode": { "type": "string" },
               "direction": { "type": "string" }
-            }
+            },
+            "additionalProperties": false
           },
           { "required": [ "isPixel" ],
             "properties": {
               "isPixel": { "type": "boolean", "const": true }
-            }
+            },
+            "additionalProperties": false
           },
           { "required": [ "isI2C" ],
             "properties": {
               "isI2C": { "type": "boolean", "const": true }
-            }
+            },
+            "additionalProperties": false
           },
           { "required": [ "isPWM" ],
             "properties": {
               "isPWM": { "type": "boolean", "const": true }
-            }
+            },
+            "additionalProperties": false
           },
           { "required": [ "isServo" ],
             "properties": {
               "isServo": { "type": "boolean", "const": true }
-            }
+            },
+            "additionalProperties": false
           },
           { "required": [ "isUART" ],
             "properties": {
               "isUART": { "type": "boolean", "const": true }
-            }
+            },
+            "additionalProperties": false
           },
           { "required": [ "isDS18X20" ],
             "properties": {
               "isDS18X20": { "type": "boolean", "const": true }
-            }
+            },
+            "additionalProperties": false
           }
         ]
       }
