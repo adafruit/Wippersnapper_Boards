@@ -51,8 +51,15 @@
           "name": { "type": "string" },
           "type": { "type": "string" },
           "selected": { "const": false },
+          "period": { "type": "integer" },
           "isPin": { "type": "boolean", "const": true },
-          "isI2C": { "type": "boolean", "const": true }
+          "pinName": { "type": "string" },
+          "mode": { "type": "string" },
+          "direction": { "type": "string" },
+          "pull": { "type": "string" },
+          "isI2C": { "type": "boolean", "const": true },
+          "i2cAddress": { "type": "integer"},
+          "sensorType": { "type": "string"}
         },
         "oneOf": [
           { "required": [ "isPin" ],
@@ -61,11 +68,11 @@
               "name": {},
               "type": {},
               "selected": {},
-              "pinName": { "type": "string" },
-              "mode": { "type": "string" },
-              "direction": { "type": "string" },
-              "period": { "type": "integer" },
-              "pull": { "type": "string" }
+              "pinName": {},
+              "mode": {},
+              "direction": {},
+              "period": {},
+              "pull": {}
             },
             "additionalProperties": false
           },
@@ -75,9 +82,9 @@
               "name": {},
               "type": {},
               "selected": {},
-              "period": { "type": "integer"},
-              "i2cAddress": { "type": "integer"},
-              "sensorType": { "type": "string"}
+              "period": {},
+              "i2cAddress": {},
+              "sensorType": {}
             },
             "additionalProperties": false
           }
