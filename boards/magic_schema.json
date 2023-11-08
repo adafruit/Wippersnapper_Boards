@@ -46,56 +46,16 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [ "name", "type" ],
-        "oneOf": [
-          { "required": [ "isPin" ],
-            "properties": {
-              "isPin": { "type": "boolean", "const": true },
-              "name": { "type": "string" },
-              "type": { "type": "string" },
-              "pinName": { "type": "string" },
-              "mode": { "type": "string" },
-              "direction": { "type": "string" }
-            },
-            "additionalProperties": false
-          },
-          { "required": [ "isPixel" ],
-            "properties": {
-              "isPixel": { "type": "boolean", "const": true }
-            },
-            "additionalProperties": false
-          },
-          { "required": [ "isI2C" ],
-            "properties": {
-              "isI2C": { "type": "boolean", "const": true }
-            },
-            "additionalProperties": false
-          },
-          { "required": [ "isPWM" ],
-            "properties": {
-              "isPWM": { "type": "boolean", "const": true }
-            },
-            "additionalProperties": false
-          },
-          { "required": [ "isServo" ],
-            "properties": {
-              "isServo": { "type": "boolean", "const": true }
-            },
-            "additionalProperties": false
-          },
-          { "required": [ "isUART" ],
-            "properties": {
-              "isUART": { "type": "boolean", "const": true }
-            },
-            "additionalProperties": false
-          },
-          { "required": [ "isDS18X20" ],
-            "properties": {
-              "isDS18X20": { "type": "boolean", "const": true }
-            },
-            "additionalProperties": false
-          }
-        ]
+        "required": [ "name", "type", "isPin" ],
+        "properties": {
+          "isPin": { "type": "boolean", "const": true },
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "pinName": { "type": "string" },
+          "mode": { "type": "string" },
+          "direction": { "type": "string" }
+        },
+        "additionalProperties": false
       }
     }
   }
