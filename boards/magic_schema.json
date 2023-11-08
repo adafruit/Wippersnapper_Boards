@@ -1,0 +1,80 @@
+{
+  "title": "Board Magic Configuration",
+  "description": "A magic auto-configuration file for a WipperSnapper Board in Adafruit IO",
+  "type": "object",
+  "required": [ "export_version", "exported_by", "exported_at", "device", "components" ],
+  "additionalProperties": false,
+  "properties": {
+    "export_version": {
+      "description": "The version of the magic config system used to export this file.",
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 16
+    },
+    "exported_by": {
+      "description": "The vendor responsible for this magic config file.",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 24
+    },
+    "exported_at": {
+      "description": "The date this magic config file was created",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 24
+    },
+    "device": {
+      "type": "object",
+      "required": [ "board", "firmware_version" ],
+      "additionalProperties": false,
+      "properties": {
+        "board": {
+          "description": "The board name this magic config file was exported from.",
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 40
+        },
+        "firmware_version": {
+          "description": "The WipperSnapper firmware version running on the board when this magic file was exported.",
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 16
+        }
+      }
+    },
+    "components": {
+      "description": "Exhaustive list of built-in components for this board, with suggestions selected",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [ "name", "type" ],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "period": { "type": "number" },
+          "isI2C": { "type": "boolean" },
+          "i2cAddress": { "type": "number" },
+          "sensorType": { "type": "string" },
+          "isPin": { "type": "boolean" },
+          "pinName": { "type": "string" },
+          "mode": { "type": "string" },
+          "direction": { "type": "string" },
+          "pull": { "type": "string" },
+          "analogReadMode": { "type": "string" },
+          "isPixel": { "type": "boolean" },
+          "pixelNumber": { "type": "string" },
+          "pixelsOrder": { "type": "string" },
+          "pixelBrightness": { "type": "string" },
+          "dataPinName": { "type": "string" },
+          "clockPinName": { "type": "string" },
+          "pixelsType": { "type": "string" },
+          "isPWM": { "type": "boolean" },
+          "pwmSetting": { "type": "string" },
+          "frequency": { "type": "string" },
+          "resolution": { "type": "number" },
+        }
+      }
+    }
+  }
+}

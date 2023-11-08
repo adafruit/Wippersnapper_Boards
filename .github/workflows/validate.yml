@@ -9,12 +9,18 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      # Schema Docs: https://ajv.js.org/json-schema.html#json-data-type
       - name: Validate Board JSON
         uses: lorennorman/validate-json-action@master
         with:
-          # Schema Docs: https://ajv.js.org/json-schema.html#json-data-type
           schema: /boards/schema.json
           jsons: boards/*/definition.json
+
+      - name: Validate Magic JSON
+        uses: lorennorman/validate-json-action@master
+        with:
+          schema: /boards/magic_schema.json
+          jsons: boards/*/magic.json
 
   check-user-permissions:
     name: Check Write Permission
