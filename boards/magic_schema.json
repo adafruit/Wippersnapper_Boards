@@ -50,6 +50,9 @@
         "oneOf": [
           { "required": [ "isPin" ],
             "properties": {
+              "isPin": {},
+              "name": {},
+              "type": {},
               "pinName": { "type": "string" },
               "mode": { "type": "string" },
               "direction": { "type": "string" }
