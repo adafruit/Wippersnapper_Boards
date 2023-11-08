@@ -46,8 +46,10 @@
       "type": "array",
       "items": {
         "type": "object",
+        "required": [ "name", "type" ],
+        "additionalProperties": false,
         "oneOf": [
-          { "required": [ "isPin", "name", "type" ],
+          { "required": [ "isPin" ],
             "properties": {
               "isPin": { "type": "boolean", "const": true },
               "name": { "type": "string" },
@@ -55,27 +57,38 @@
               "pinName": { "type": "string" },
               "mode": { "type": "string" },
               "direction": { "type": "string" }
-            },
-            "additionalProperties": false
+            }
           },
-          { "properties": {
-            "isPixel": { "type": "boolean", "const": true }
-          }},
-          { "properties": {
-            "isI2C": { "type": "boolean", "const": true }
-          }},
-          { "properties": {
-            "isPWM": { "type": "boolean", "const": true }
-          }},
-          { "properties": {
-            "isServo": { "type": "boolean", "const": true }
-          }},
-          { "properties": {
-            "isUART": { "type": "boolean", "const": true }
-          }},
-          { "properties": {
-            "isDS18X20": { "type": "boolean", "const": true }
-          }}
+          { "required": [ "isPixel" ],
+            "properties": {
+              "isPixel": { "type": "boolean", "const": true }
+            }
+          },
+          { "required": [ "isI2C" ],
+            "properties": {
+              "isI2C": { "type": "boolean", "const": true }
+            }
+          },
+          { "required": [ "isPWM" ],
+            "properties": {
+              "isPWM": { "type": "boolean", "const": true }
+            }
+          },
+          { "required": [ "isServo" ],
+            "properties": {
+              "isServo": { "type": "boolean", "const": true }
+            }
+          },
+          { "required": [ "isUART" ],
+            "properties": {
+              "isUART": { "type": "boolean", "const": true }
+            }
+          },
+          { "required": [ "isDS18X20" ],
+            "properties": {
+              "isDS18X20": { "type": "boolean", "const": true }
+            }
+          }
         ]
       }
     }
