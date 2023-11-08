@@ -48,15 +48,18 @@
         "type": "object",
         "required": [ "name", "type" ],
         "oneOf": [
-          { "required": [ "isPin" ] }
+          { "required": [ "isPin" ],
+            "properties": {
+              "pinName": { "type": "string" },
+              "mode": { "type": "string" },
+              "direction": { "type": "string" }
+            }
+          }
         ],
         "properties": {
           "isPin": { "type": "boolean", "const": true },
           "name": { "type": "string" },
-          "type": { "type": "string" },
-          "pinName": { "type": "string" },
-          "mode": { "type": "string" },
-          "direction": { "type": "string" }
+          "type": { "type": "string" }
         },
         "additionalProperties": false
       }
