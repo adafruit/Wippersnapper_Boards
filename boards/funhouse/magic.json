@@ -28,13 +28,13 @@
       "isI2C": true,
       "type": "aht20:ambient-temp",
       "period": 900,
-      "i2cAddress": 56,
+      "i2cAddress": true,
       "sensorType": "ambient-temp",
       "selected": false
     },
     {
       "name": "Button Down",
-      "pinName": "D3",
+      "pinName": true,
       "type": "push_button",
       "mode": "DIGITAL",
       "direction": "INPUT",
