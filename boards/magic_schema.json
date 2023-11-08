@@ -73,6 +73,9 @@
           "pwmSetting": { "type": "string" },
           "frequency": { "type": "string" },
           "resolution": { "type": "number" },
+          "isServo": { "type": "boolean" },
+          "isUART": { "type": "boolean" },
+          "isDS18X20": { "type": "boolean" }
         }
       }
     }
