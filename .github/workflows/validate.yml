@@ -65,10 +65,10 @@ jobs:
           # TODO: break these regexes up into modular chunks that check specific things for readability and composability
 
           # external contributors can modify some files
-          EXTERNAL_REGEX="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
+          EXTERNAL_REGEX="^boards\/.*\/(definition\.json|magic\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
 
           # folks with write access to the repo (Adafruit team) can change more sensitive files
-          INTERNAL_REGEX="^(\.github\/.*|boards\/(schema.json|.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))))$"
+          INTERNAL_REGEX="^(\.github\/.*|boards\/(schema.json|.*\/(definition\.json|magic\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))))$"
 
           # apply the appropriate regex based on permissions of the user
           if [[ $CAN_WRITE_TO_REPO ]]; then
