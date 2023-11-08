@@ -46,10 +46,8 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [ "name", "type" ],
-        "additionalProperties": false,
         "oneOf": [
-          { "required": [ "isPin" ],
+          { "required": [ "isPin", "name", "type" ],
             "properties": {
               "isPin": { "type": "boolean", "const": true },
               "name": { "type": "string" },
@@ -57,7 +55,8 @@
               "pinName": { "type": "string" },
               "mode": { "type": "string" },
               "direction": { "type": "string" }
-            }
+            },
+            "additionalProperties": false
           },
           { "properties": {
             "isPixel": { "type": "boolean", "const": true }
