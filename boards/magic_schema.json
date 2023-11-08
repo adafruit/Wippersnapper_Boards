@@ -63,7 +63,9 @@
               "selected": {},
               "pinName": { "type": "string" },
               "mode": { "type": "string" },
-              "direction": { "type": "string" }
+              "direction": { "type": "string" },
+              "period": { "type": "integer" },
+              "pull": { "type": "string" }
             },
             "additionalProperties": false
           },
