@@ -4,7 +4,7 @@ on: [pull_request]
 
 jobs:
   validate-definition-files:
-    name: Validate Definition Files
+    name: Validate JSON Schemas
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
