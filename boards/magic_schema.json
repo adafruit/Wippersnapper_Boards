@@ -46,7 +46,10 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [ "name", "type", "isPin" ],
+        "required": [ "name", "type" ],
+        "oneOf": [
+          { "required": [ "isPin" ] }
+        ],
         "properties": {
           "isPin": { "type": "boolean", "const": true },
           "name": { "type": "string" },
