@@ -28,13 +28,13 @@
       "isI2C": true,
       "type": "aht20:ambient-temp",
       "period": 900,
-      "i2cAddress": true,
+      "i2cAddress": 56,
       "sensorType": "ambient-temp",
       "selected": false
     },
     {
       "name": "Button Down",
-      "pinName": true,
+      "pinName": "D3",
       "type": "push_button",
       "mode": "DIGITAL",
       "direction": "INPUT",
@@ -60,6 +60,17 @@
       "period": 0,
       "isPin": true,
       "pull": "DOWN"
+    },
+    {
+      "name": "DotStar",
+      "pixelNumber": "5",
+      "pixelsOrder": "BGR",
+      "pixelBrightness": "100",
+      "dataPinName": "D14",
+      "clockPinName": "D15",
+      "pixelsType": "DOTSTAR",
+      "type": "dotstar",
+      "isPixel": true
     },
     {
       "name": "DPS310: Pressure Sensor",
@@ -94,6 +105,25 @@
       "mode": "DIGITAL",
       "direction": "OUTPUT",
       "isPin": true
+    },
+    {
+      "name": "Light Sensor",
+      "pinName": "A3",
+      "type": "light_sensor",
+      "mode": "ANALOG",
+      "direction": "INPUT",
+      "analogReadMode": "PIN_VALUE",
+      "period": 30,
+      "isPin": true
+    },
+    {
+      "name": "Piezo Buzzer",
+      "pinName": "D42",
+      "type": "piezo_buzzer",
+      "pwmSetting": "variableFrequency",
+      "frequency": "17",
+      "resolution": 10,
+      "isPWM": true
     }
   ]
 }

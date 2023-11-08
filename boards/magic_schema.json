@@ -55,11 +55,24 @@
           "isPin": { "type": "boolean", "const": true },
           "pinName": { "type": "string" },
           "mode": { "type": "string" },
+          "analogReadMode": { "type": "string" },
           "direction": { "type": "string" },
           "pull": { "type": "string" },
           "isI2C": { "type": "boolean", "const": true },
-          "i2cAddress": { "type": "integer"},
-          "sensorType": { "type": "string"}
+          "i2cAddress": { "type": "integer" },
+          "sensorType": { "type": "string" },
+          "isPWM": { "type": "boolean", "const": true },
+          "pwmSetting": { "type": "string" },
+          "frequency": { "type": "string" },
+          "resolution": { "type": "integer" },
+          "isPixel": { "type": "boolean", "const": true },
+          "pixelNumber": { "type": "string" },
+          "pixelsOrder": { "type": "string" },
+          "pixelBrightness": { "type": "string" },
+          "dataPinName": { "type": "string" },
+          "clockPinName": { "type": "string" },
+          "pixelsType": { "type": "string" }
+
         },
         "oneOf": [
           { "required": [ "isPin" ],
@@ -70,6 +83,7 @@
               "selected": {},
               "pinName": {},
               "mode": {},
+              "analogReadMode": {},
               "direction": {},
               "period": {},
               "pull": {}
@@ -85,6 +99,34 @@
               "period": {},
               "i2cAddress": {},
               "sensorType": {}
+            },
+            "additionalProperties": false
+          },
+          { "required": [ "isPWM" ],
+            "properties": {
+              "isPWM": {},
+              "name": {},
+              "type": {},
+              "selected": {},
+              "period": {},
+              "pwmSetting": {},
+              "frequency": {},
+              "resolution": {}
+            },
+            "additionalProperties": false
+          },
+          { "required": [ "isPixel" ],
+            "properties": {
+              "isPixel": {},
+              "name": {},
+              "type": {},
+              "selected": {},
+              "pixelNumber": {},
+              "pixelsOrder": {},
+              "pixelBrightness": {},
+              "dataPinName": {},
+              "clockPinName": {},
+              "pixelsType": {}
             },
             "additionalProperties": false
           }
