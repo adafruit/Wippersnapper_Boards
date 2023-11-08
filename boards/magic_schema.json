@@ -50,7 +50,12 @@
         "additionalProperties": false,
         "oneOf": [
           { "properties": {
-            "isPin": { "type": "boolean", "const": true }
+            "isPin": { "type": "boolean", "const": true },
+            "name": { "type": "string" },
+            "type": { "type": "string" },
+            "pinName": { "type": "string" },
+            "mode": { "type": "string" },
+            "direction": { "type": "string" }
           }},
           { "properties": {
             "isPixel": { "type": "boolean", "const": true }
