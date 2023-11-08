@@ -12,10 +12,9 @@
       "maxLength": 16
     },
     "exported_by": {
-      "description": "The vendor responsible for this magic config file.",
+      "description": "The vendor responsible for this magic config file (only Adafruit for now.)",
       "type": "string",
-      "minLength": 3,
-      "maxLength": 24
+      "const": "Adafruit"
     },
     "exported_at": {
       "description": "The date this magic config file was created",
@@ -52,6 +51,7 @@
         "properties": {
           "name": { "type": "string" },
           "type": { "type": "string" },
+          "selected": { "type": "boolean" },
           "period": { "type": "number" },
           "isI2C": { "type": "boolean" },
           "i2cAddress": { "type": "number" },
