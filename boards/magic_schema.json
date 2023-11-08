@@ -53,15 +53,15 @@
               "pinName": { "type": "string" },
               "mode": { "type": "string" },
               "direction": { "type": "string" }
-            }
+            },
+            "additionalProperties": false
           }
         ],
         "properties": {
           "isPin": { "type": "boolean", "const": true },
           "name": { "type": "string" },
           "type": { "type": "string" }
-        },
-        "additionalProperties": false
+        }
       }
     }
   }
