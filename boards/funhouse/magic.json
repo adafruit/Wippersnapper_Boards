@@ -8,7 +8,6 @@
   },
   "components": [
     {
-      "name": "LED",
       "pinName": "D37",
       "type": "led",
       "mode": "DIGITAL",
