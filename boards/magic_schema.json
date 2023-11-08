@@ -48,34 +48,36 @@
         "type": "object",
         "required": [ "name", "type" ],
         "additionalProperties": false,
-        "oneOf": [
-          { "properties": {
-            "isPin": { "type": "boolean", "const": true },
-            "name": { "type": "string" },
-            "type": { "type": "string" },
-            "pinName": { "type": "string" },
-            "mode": { "type": "string" },
-            "direction": { "type": "string" }
-          }},
-          { "properties": {
-            "isPixel": { "type": "boolean", "const": true }
-          }},
-          { "properties": {
-            "isI2C": { "type": "boolean", "const": true }
-          }},
-          { "properties": {
-            "isPWM": { "type": "boolean", "const": true }
-          }},
-          { "properties": {
-            "isServo": { "type": "boolean", "const": true }
-          }},
-          { "properties": {
-            "isUART": { "type": "boolean", "const": true }
-          }},
-          { "properties": {
-            "isDS18X20": { "type": "boolean", "const": true }
-          }}
-        ]
+        "properties": {
+          "oneOf": [
+            {
+              "isPin": { "type": "boolean" },
+              "name": { "type": "string" },
+              "type": { "type": "string" },
+              "pinName": { "type": "string" },
+              "mode": { "type": "string" },
+              "direction": { "type": "string" }
+            },
+            {
+              "isPixel": { "type": "boolean", "const": true }
+            },
+            {
+              "isI2C": { "type": "boolean", "const": true }
+            },
+            {
+              "isPWM": { "type": "boolean", "const": true }
+            },
+            {
+              "isServo": { "type": "boolean", "const": true }
+            },
+            {
+              "isUART": { "type": "boolean", "const": true }
+            },
+            {
+              "isDS18X20": { "type": "boolean", "const": true }
+            }
+          ]
+        }
       }
     }
   }
