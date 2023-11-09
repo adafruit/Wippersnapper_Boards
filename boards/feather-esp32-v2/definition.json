@@ -163,34 +163,34 @@
       ],
       "analogPins": [
        {
-          "name":"A0",
+          "name":"A26",
           "displayName":"A0",
           "dataType":"int16",
           "hasPWM":true
        },
        {
-          "name":"A1",
+          "name":"A25",
           "displayName":"A1",
           "dataType":"int16",
           "hasPWM":true
        },
        {
-          "name":"A2",
+          "name":"A34",
           "displayName":"A2",
           "dataType":"int16"
        },
        {
-          "name":"A3",
+          "name":"A39",
           "displayName":"A3",
           "dataType":"int16"
        },
        {
-          "name":"A4",
+          "name":"A36",
           "displayName":"A4",
           "dataType":"int16"
        },
        {
-          "name":"A5",
+          "name":"A4",
           "displayName":"A5",
           "dataType":"int16",
           "hasPWM":true,
