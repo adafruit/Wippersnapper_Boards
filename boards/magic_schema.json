@@ -2,27 +2,27 @@
   "title": "Board Magic Configuration",
   "description": "A magic auto-configuration file for a WipperSnapper Board in Adafruit IO",
   "type": "object",
-  "required": [ "export_version", "exported_by", "exported_at", "device", "components" ],
+  "required": [ "exportVersion", "exportedBy", "exportedAt", "exportedFromDevice", "components" ],
   "additionalProperties": false,
   "properties": {
-    "export_version": {
+    "exportVersion": {
       "description": "The version of the magic config system used to export this file.",
       "type": "string",
       "minLength": 5,
       "maxLength": 16
     },
-    "exported_by": {
+    "exportedBy": {
       "description": "The vendor responsible for this magic config file (only Adafruit for now.)",
       "type": "string",
       "const": "Adafruit"
     },
-    "exported_at": {
+    "exportedAt": {
       "description": "The date this magic config file was created",
       "type": "string",
       "minLength": 3,
       "maxLength": 24
     },
-    "device": {
+    "exportedFromDevice": {
       "type": "object",
       "required": [ "board", "firmware_version" ],
       "additionalProperties": false,
