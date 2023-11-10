@@ -1,10 +1,10 @@
 {
-  "export_version": "0.0.1",
-  "exported_by": "Adafruit",
-  "exported_at": "2023-11-03T17:19:36.410Z",
-  "device": {
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2023-11-10T21:46:02.003Z",
+  "exportedFromDevice": {
     "board": "funhouse",
-    "firmware_version": "1.0.0-beta.73"
+    "firmwareVersion": "1.0.0-beta.69"
   },
   "components": [
     {
@@ -68,8 +68,8 @@
       "pixelBrightness": "100",
       "dataPinName": "D14",
       "clockPinName": "D15",
-      "pixelsType": "DOTSTAR",
       "type": "dotstar",
+      "pixelsType": "DOTSTAR",
       "isPixel": true
     },
     {
