@@ -134,6 +134,7 @@
               "pixelNumber": {},
               "pixelsOrder": {},
               "pixelBrightness": {},
+              "pinName": {},
               "dataPinName": {},
               "clockPinName": {},
               "pixelsType": {}
@@ -160,7 +161,8 @@
               "baudRate": {},
               "inverted": {},
               "uartRx": {},
-              "uartTx": {}
+              "uartTx": {},
+              "sensorType": {}
             },
             "additionalProperties": false
           },
