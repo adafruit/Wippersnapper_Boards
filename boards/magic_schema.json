@@ -24,7 +24,7 @@
     },
     "exportedFromDevice": {
       "type": "object",
-      "required": [ "board", "firmware_version" ],
+      "required": [ "board", "firmwareVersion" ],
       "additionalProperties": false,
       "properties": {
         "board": {
@@ -33,7 +33,7 @@
           "minLength": 3,
           "maxLength": 40
         },
-        "firmware_version": {
+        "firmwareVersion": {
           "description": "The WipperSnapper firmware version running on the board when this magic file was exported.",
           "type": "string",
           "minLength": 5,
