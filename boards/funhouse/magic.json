@@ -121,7 +121,7 @@
       "pinName": "D42",
       "type": "piezo_buzzer",
       "pwmSetting": "variableFrequency",
-      "frequency": "17",
+      "frequency": "146",
       "resolution": 10,
       "isPWM": true
     }
