@@ -4,7 +4,7 @@
     "mcuRefVoltage":2.6,
     "displayName":"Adafruit MagTag \"2.9\"",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/4800",
+    "productURL":"https://www.adafruit.com/product/4800",
     "documentationURL":"https://learn.adafruit.com/adafruit-magtag",
     "installMethod":"uf2",
     "components":{

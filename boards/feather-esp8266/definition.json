@@ -5,7 +5,7 @@
     "displayName": "Feather Huzzah ESP8266",
     "vendor":"Adafruit",
     "description": "Feather Huzzah ESP8266 with USB and Battery Charging.",
-    "productPageURL":"https://www.adafruit.com/product/2821",
+    "productURL":"https://www.adafruit.com/product/2821",
     "documentationURL":"https://learn.adafruit.com/adafruit-feather-huzzah-esp8266",
     "installMethod":"web",
     "esptool": {

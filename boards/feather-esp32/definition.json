@@ -4,7 +4,7 @@
     "mcuRefVoltage": 3.3,
     "displayName":"Adafruit Feather HUZZAH ESP32",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/3405",
+    "productURL":"https://www.adafruit.com/product/3405",
     "documentationURL":"https://learn.adafruit.com/adafruit-huzzah32-esp32-feather",
     "installMethod":"web",
     "esptool": {

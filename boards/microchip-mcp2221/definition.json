@@ -5,7 +5,7 @@
     "displayName": "MCP2221",
     "description": "General purpose USB to GPIO w/ADC, DAC, I2C.",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/4471",
+    "productURL":"https://www.adafruit.com/product/4471",
     "documentationURL":"https://learn.adafruit.com/circuitpython-libraries-on-any-computer-with-mcp2221",
     "installMethod":"python",
     "components": {

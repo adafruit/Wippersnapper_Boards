@@ -4,7 +4,7 @@
     "mcuRefVoltage":2.6,
     "displayName":"Adafruit Funhouse ESP32-S2",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/4985",
+    "productURL":"https://www.adafruit.com/product/4985",
     "documentationURL":"https://learn.adafruit.com/adafruit-funhouse",
     "installMethod":"uf2",
     "components":{

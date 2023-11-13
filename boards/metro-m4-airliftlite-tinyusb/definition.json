@@ -5,7 +5,7 @@
     "displayName": "Metro M4 Airlift Lite",
     "vendor":"Adafruit",
     "description": "Metro M4 + ESP32 Airlift Co-Processor.",
-    "productPageURL":"https://www.adafruit.com/product/4000",
+    "productURL":"https://www.adafruit.com/product/4000",
     "documentationURL":"https://learn.adafruit.com/adafruit-metro-m4-express-airlift-wifi",
     "installMethod":"uf2",
     "components": {

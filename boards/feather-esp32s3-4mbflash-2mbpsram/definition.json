@@ -4,7 +4,7 @@
     "mcuRefVoltage":2.6,
     "displayName":"Adafruit ESP32-S3 Feather with 4MB Flash 2MB PSRAM",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/5477",
+    "productURL":"https://www.adafruit.com/product/5477",
     "documentationURL":"https://learn.adafruit.com/adafruit-esp32-s3-feather",
     "installMethod":"uf2",
     "components":{
@@ -182,4 +182,4 @@
         ]
       }
     }
-  
+

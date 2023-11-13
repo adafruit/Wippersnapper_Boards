@@ -22,7 +22,7 @@ Information related to the hardware including the hardware's name, description a
 | mcuRefVoltage     | Yes      | Float    | Microcontroller's maximum voltage reference, in Volts.                                    |
 | displayName | Yes      | String    | Adafruit IO Device name                                 |
 | description  | No      | String    | Device description                                       |
-| productPageURL | Yes      | String      | Link to board's homepage. |
+| productURL | Yes      | String      | Link to board's homepage. |
 | documentationURL | Yes      | String      | Link to board's documentation. |
 
 
