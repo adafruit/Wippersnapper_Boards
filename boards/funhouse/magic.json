@@ -63,9 +63,9 @@
     },
     {
       "name": "DotStar",
-      "pixelNumber": "5",
+      "pixelNumber": 5,
       "pixelsOrder": "BGR",
-      "pixelBrightness": "100",
+      "pixelBrightness": 100,
       "dataPinName": "D14",
       "clockPinName": "D15",
       "type": "dotstar",
@@ -121,7 +121,7 @@
       "pinName": "D42",
       "type": "piezo_buzzer",
       "pwmSetting": "variableFrequency",
-      "frequency": "146",
+      "frequency": 146,
       "resolution": 10,
       "isPWM": true
     }
