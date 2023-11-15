@@ -1,21 +1,41 @@
 {
   "exportVersion": "1.0.0",
   "exportedBy": "Adafruit",
-  "exportedAt": "2023-11-13T19:41:29.465Z",
+  "exportedAt": "2023-11-15T19:21:27.557Z",
   "exportedFromDevice": {
-    "board": "feather-esp32s3-tft",
+    "board": "feather-esp32s2-reverse-tft",
     "firmwareVersion": "1.0.0-beta.73"
   },
   "components": [
     {
-      "name": "Button (D0/Boot)",
+      "name": "Button D0",
       "pinName": "D0",
       "type": "push_button",
       "mode": "DIGITAL",
       "direction": "INPUT",
       "period": 0,
-      "isPin": true,
-      "pull": "UP"
+      "pull": "UP",
+      "isPin": true
+    },
+    {
+      "name": "Button D1",
+      "pinName": "D1",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "pull": "DOWN",
+      "isPin": true
+    },
+    {
+      "name": "Button D2",
+      "pinName": "D2",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "pull": "DOWN",
+      "isPin": true
     },
     {
       "name": "Dimmable LED",
