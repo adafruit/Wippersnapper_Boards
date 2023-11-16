@@ -1,0 +1,30 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2023-11-15T19:41:28.465Z",
+  "exportedFromDevice": {
+    "board": "nano-33-iot",
+    "firmwareVersion": "1.0.0-beta.73"
+  },
+  "components": [
+    {
+      "name": "Dimmable LED",
+      "type": "dimmable_led",
+      "pwmSetting": "fixedFrequency",
+      "frequency": 5000,
+      "resolution": 12,
+      "pinName": "D6",
+      "isPWM": true
+    },
+    {
+      "name": "Battery ADC",
+      "pinName": "A32",
+      "type": "potentiometer",
+      "mode": "ANALOG",
+      "direction": "INPUT",
+      "analogReadMode": "PIN_VOLTAGE",
+      "period": 30,
+      "isPin": true
+    }
+  ]
+}
