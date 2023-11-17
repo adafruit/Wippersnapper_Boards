@@ -1,0 +1,99 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2023-11-10T21:46:02.003Z",
+  "exportedFromDevice": {
+    "board": "magtag",
+    "firmwareVersion": "1.0.0-beta.69"
+  },
+  "components": [
+    {
+      "name": "Button (D0/Boot)",
+      "pinName": "D0",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    },
+    {
+      "name": "Button A",
+      "pinName": "D15",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    },
+    {
+      "name": "Button B",
+      "pinName": "D14",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    },
+    {
+      "name": "Button C",
+      "pinName": "D12",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    },
+    {
+      "name": "Button D",
+      "pinName": "D11",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    },
+    {
+      "name": "Dimmable LED",
+      "type": "dimmable_led",
+      "pwmSetting": "fixedFrequency",
+      "frequency": 5000,
+      "resolution": 12,
+      "pinName": "D13",
+      "isPWM": true,
+      "selected": false
+    },
+    {
+      "name": "Enable NeoPixel + Light Sensor",
+      "pinName": "D21",
+      "type": "mosfet_driver",
+      "mode": "DIGITAL",
+      "direction": "OUTPUT",
+      "isPin": true
+    },
+    {
+      "name": "NeoPixel",
+      "pixelNumber": 4,
+      "pixelsOrder": "GRB",
+      "pixelBrightness": 255,
+      "pinName": "D1",
+      "type": "neopixel",
+      "pixelsType": "NEOPIXEL",
+      "isPixel": true
+    },
+    {
+      "name": "Light Sensor",
+      "pinName": "A3",
+      "type": "light_sensor",
+      "mode": "ANALOG",
+      "direction": "INPUT",
+      "analogReadMode": "PIN_VALUE",
+      "period": 30,
+      "isPin": true
+    }
+  ]
+}
