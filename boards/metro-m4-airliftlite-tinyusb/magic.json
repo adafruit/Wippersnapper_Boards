@@ -19,7 +19,7 @@
     },
     {
       "name": "NeoPixel",
-      "pixelNumber": 4,
+      "pixelNumber": 1,
       "pixelsOrder": "GRB",
       "pixelBrightness": 255,
       "pinName": "D40",
