@@ -78,7 +78,7 @@
       "isI2C": true,
       "type": "dps310:pressure",
       "period": 900,
-      "i2cAddress": 118,
+      "i2cAddress": 119,
       "sensorType": "pressure"
     },
     {
@@ -86,7 +86,7 @@
       "isI2C": true,
       "type": "dps310:ambient-temp",
       "period": 900,
-      "i2cAddress": 118,
+      "i2cAddress": 119,
       "sensorType": "ambient-temp",
       "selected": false
     },
@@ -95,7 +95,7 @@
       "isI2C": true,
       "type": "dps310:ambient-temp-fahrenheit",
       "period": 900,
-      "i2cAddress": 118,
+      "i2cAddress": 119,
       "sensorType": "ambient-temp-fahrenheit",
       "selected": false
     },
@@ -109,7 +109,7 @@
     },
     {
       "name": "Light Sensor",
-      "pinName": "A3",
+      "pinName": "D18",
       "type": "light_sensor",
       "mode": "ANALOG",
       "direction": "INPUT",
