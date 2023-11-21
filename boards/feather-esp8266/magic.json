@@ -8,16 +8,6 @@
   },
   "components": [
     {
-      "name": "Button (D0/Boot)",
-      "pinName": "D38",
-      "type": "push_button",
-      "mode": "DIGITAL",
-      "direction": "INPUT",
-      "period": 0,
-      "isPin": true,
-      "pull": "UP"
-    },
-    {
       "name": "Dimmable Red LED",
       "type": "dimmable_led",
       "pwmSetting": "fixedFrequency",
