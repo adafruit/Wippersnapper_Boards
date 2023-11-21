@@ -14,8 +14,7 @@
       "frequency": 5000,
       "resolution": 12,
       "pinName": "D0",
-      "isPWM": true,
-      "selected": true
+      "isPWM": true
     },
     {
       "name": "Dimmable Blue LED",
@@ -24,8 +23,7 @@
       "frequency": 5000,
       "resolution": 12,
       "pinName": "D2",
-      "isPWM": true,
-      "selected": true
+      "isPWM": true
     }
   ]
 }
