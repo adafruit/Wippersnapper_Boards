@@ -27,7 +27,7 @@
       "name": "AHT20: Temperature Sensor (°C)",
       "isI2C": true,
       "type": "aht20:ambient-temp",
-      "period": 900,
+      "period": 30,
       "i2cAddress": 56,
       "sensorType": "ambient-temp",
       "selected": false
@@ -77,7 +77,7 @@
       "name": "DPS310: Pressure Sensor",
       "isI2C": true,
       "type": "dps310:pressure",
-      "period": 900,
+      "period": 30,
       "i2cAddress": 119,
       "sensorType": "pressure"
     },
@@ -85,7 +85,7 @@
       "name": "DPS310: Temperature Sensor (°C)",
       "isI2C": true,
       "type": "dps310:ambient-temp",
-      "period": 900,
+      "period": 30,
       "i2cAddress": 119,
       "sensorType": "ambient-temp",
       "selected": false
@@ -94,7 +94,7 @@
       "name": "DPS310: Temperature Sensor (°F)",
       "isI2C": true,
       "type": "dps310:ambient-temp-fahrenheit",
-      "period": 900,
+      "period": 30,
       "i2cAddress": 119,
       "sensorType": "ambient-temp-fahrenheit",
       "selected": false
