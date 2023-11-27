@@ -209,7 +209,7 @@
        },
        {
           "name":"A35",
-          "displayName":"VBAT",
+          "displayName":"A13 (VBAT)",
           "dataType":"int16"
        }
       ],

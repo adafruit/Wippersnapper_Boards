@@ -197,8 +197,8 @@
           "hasServo":true
        },
        {
-        "name":"A13",
-        "displayName":"A13 (VBat Monitor)",
+        "name":"A35",
+        "displayName":"VBat Monitor",
         "dataType":"int16"
        }
       ],
