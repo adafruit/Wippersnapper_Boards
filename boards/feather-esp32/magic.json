@@ -20,7 +20,7 @@
     {
       "name": "Battery ADC",
       "pinName": "A35",
-      "type": "potentiometer",
+      "type": "analog_pin",
       "mode": "ANALOG",
       "direction": "INPUT",
       "analogReadMode": "PIN_VOLTAGE",

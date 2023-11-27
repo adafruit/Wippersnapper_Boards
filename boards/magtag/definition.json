@@ -71,14 +71,21 @@
        ],
        "analogPins":[
            {
-             "name":"A0",
+             "name":"A17",
              "displayName":"Piezo Speaker (A0)",
              "hasPWM":true,
              "dataType":"int16"
            },
            {
-             "name":"A1",
-             "displayName":"A1",
+             "name":"D10",
+             "displayName":"D10",
+             "dataType":"int16",
+             "hasPWM":true,
+             "hasServo":true
+          },
+          {
+             "name":"D18",
+             "displayName":"A1 (D18)",
              "dataType":"int16",
              "hasPWM":true,
              "hasServo":true
@@ -86,6 +93,11 @@
           {
              "name":"A3",
              "displayName":"Light Sensor (A3)",
+             "dataType":"int16"
+          },
+          {
+             "name":"A4",
+             "displayName":"Voltage Monitor (A4)",
              "dataType":"int16"
           }
        ],
