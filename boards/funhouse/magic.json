@@ -109,7 +109,7 @@
     },
     {
       "name": "Light Sensor",
-      "pinName": "D18",
+      "pinName": "A18",
       "type": "light_sensor",
       "mode": "ANALOG",
       "direction": "INPUT",

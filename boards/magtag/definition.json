@@ -77,7 +77,7 @@
              "dataType":"int16"
            },
            {
-             "name":"D10",
+             "name":"A10",
              "displayName":"D10",
              "dataType":"int16",
              "hasPWM":true,
