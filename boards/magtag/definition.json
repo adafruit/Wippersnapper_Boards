@@ -84,7 +84,7 @@
              "hasServo":true
           },
           {
-             "name":"D18",
+             "name":"A18",
              "displayName":"A1 (D18)",
              "dataType":"int16",
              "hasPWM":true,
