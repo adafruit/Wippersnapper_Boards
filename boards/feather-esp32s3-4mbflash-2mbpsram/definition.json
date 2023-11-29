@@ -12,7 +12,8 @@
           {
             "name":"D0",
             "displayName":"D0 (Boot Push Button)",
-            "dataType":"bool"
+            "dataType":"bool",
+            "direction":"INPUT"
           },
           {
             "name":"D1",

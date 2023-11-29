@@ -10,6 +10,12 @@
     "components":{
       "digitalPins":[
         {
+          "name":"D0",
+          "displayName":"D0 (Boot Push Button)",
+          "dataType":"bool",
+          "direction":"INPUT"
+        },
+        {
           "name":"D1",
           "displayName":"D1",
           "dataType":"bool",

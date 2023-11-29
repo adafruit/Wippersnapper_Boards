@@ -1,0 +1,29 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2023-11-13T19:41:29.465Z",
+  "exportedFromDevice": {
+    "board": "feather-esp8266",
+    "firmwareVersion": "1.0.0-beta.73"
+  },
+  "components": [
+    {
+      "name": "Dimmable Red LED",
+      "type": "dimmable_led",
+      "pwmSetting": "fixedFrequency",
+      "frequency": 5000,
+      "resolution": 12,
+      "pinName": "D0",
+      "isPWM": true
+    },
+    {
+      "name": "Dimmable Blue LED",
+      "type": "dimmable_led",
+      "pwmSetting": "fixedFrequency",
+      "frequency": 5000,
+      "resolution": 12,
+      "pinName": "D2",
+      "isPWM": true
+    }
+  ]
+}

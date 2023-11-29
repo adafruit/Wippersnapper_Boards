@@ -138,7 +138,7 @@
          },
          {
             "name":"D45",
-            "displayName":"D45 (NeoPixel",
+            "displayName":"D45 (NeoPixel)",
             "dataType":"bool"
          }
        ],
