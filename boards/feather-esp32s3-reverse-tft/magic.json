@@ -1,0 +1,93 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2023-11-15T19:21:27.557Z",
+  "exportedFromDevice": {
+    "board": "feather-esp32s3-reverse-tft",
+    "firmwareVersion": "1.0.0-beta.73"
+  },
+  "components": [
+    {
+      "name": "Button D0",
+      "pinName": "D0",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "pull": "UP",
+      "isPin": true
+    },
+    {
+      "name": "Button D1",
+      "pinName": "D1",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "pull": "DOWN",
+      "isPin": true
+    },
+    {
+      "name": "Button D2",
+      "pinName": "D2",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "pull": "DOWN",
+      "isPin": true
+    },
+    {
+      "name": "Dimmable LED",
+      "type": "dimmable_led",
+      "pwmSetting": "fixedFrequency",
+      "frequency": 5000,
+      "resolution": 12,
+      "pinName": "D13",
+      "isPWM": true,
+      "selected": false
+    },
+    {
+      "name": "NeoPixel",
+      "pixelNumber": 1,
+      "pixelsOrder": "GRB",
+      "pixelBrightness": 255,
+      "pinName": "D33",
+      "type": "neopixel",
+      "pixelsType": "NEOPIXEL",
+      "isPixel": true
+    },
+    {
+      "name": "LC709203F: Battery Cell Percent",
+      "isI2C": true,
+      "type": "lc709203f:unitless-percent",
+      "period": 30,
+      "i2cAddress": 11,
+      "sensorType": "unitless-percent"
+    },
+    {
+      "name": "LC709203F: Battery Cell Voltage",
+      "isI2C": true,
+      "type": "lc709203f:voltage",
+      "period": 30,
+      "i2cAddress": 11,
+      "sensorType": "voltage"
+    },
+    {
+      "name": "MAX17048/MAX17049: Battery Cell Percent",
+      "isI2C": true,
+      "type": "max17048:unitless-percent",
+      "period": 30,
+      "i2cAddress": 54,
+      "sensorType": "unitless-percent"
+    },
+    {
+      "name": "MAX17048/MAX17049: Battery Cell Voltage",
+      "isI2C": true,
+      "type": "max17048:voltage",
+      "period": 30,
+      "i2cAddress": 54,
+      "sensorType": "voltage"
+    }
+  ]
+}

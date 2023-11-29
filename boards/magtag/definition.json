@@ -4,7 +4,7 @@
     "mcuRefVoltage":2.6,
     "displayName":"Adafruit MagTag \"2.9\"",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/4800",
+    "productURL":"https://www.adafruit.com/product/4800",
     "documentationURL":"https://learn.adafruit.com/adafruit-magtag",
     "installMethod":"uf2",
     "components":{
@@ -71,14 +71,21 @@
        ],
        "analogPins":[
            {
-             "name":"A0",
+             "name":"A17",
              "displayName":"Piezo Speaker (A0)",
              "hasPWM":true,
              "dataType":"int16"
            },
            {
-             "name":"A1",
-             "displayName":"A1",
+             "name":"A10",
+             "displayName":"D10",
+             "dataType":"int16",
+             "hasPWM":true,
+             "hasServo":true
+          },
+          {
+             "name":"A18",
+             "displayName":"A1 (D18)",
              "dataType":"int16",
              "hasPWM":true,
              "hasServo":true
@@ -86,6 +93,11 @@
           {
              "name":"A3",
              "displayName":"Light Sensor (A3)",
+             "dataType":"int16"
+          },
+          {
+             "name":"A4",
+             "displayName":"Voltage Monitor (A4)",
              "dataType":"int16"
           }
        ],

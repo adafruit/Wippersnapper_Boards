@@ -1,0 +1,31 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2023-11-13T19:41:29.465Z",
+  "exportedFromDevice": {
+    "board": "feather-esp32",
+    "firmwareVersion": "1.0.0-beta.73"
+  },
+  "components": [
+    {
+      "name": "Dimmable LED",
+      "type": "dimmable_led",
+      "pwmSetting": "fixedFrequency",
+      "frequency": 5000,
+      "resolution": 12,
+      "pinName": "D13",
+      "isPWM": true,
+      "selected": false
+    },
+    {
+      "name": "Battery ADC",
+      "pinName": "A35",
+      "type": "analog_pin",
+      "mode": "ANALOG",
+      "direction": "INPUT",
+      "analogReadMode": "PIN_VOLTAGE",
+      "period": 30,
+      "isPin": true
+    }
+  ]
+}

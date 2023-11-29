@@ -4,7 +4,7 @@
     "mcuRefVoltage":3.3,
     "displayName":"Arduino Nano 33 IoT",
     "vendor":"Arduino",
-    "productPageURL":"https://store-usa.arduino.cc/products/arduino-nano-33-iot",
+    "productURL":"https://store-usa.arduino.cc/products/arduino-nano-33-iot",
     "documentationURL":"https://docs.arduino.cc/hardware/nano-33-iot",
     "installMethod":"library",
     "components":{

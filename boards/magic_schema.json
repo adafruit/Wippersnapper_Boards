@@ -1,0 +1,187 @@
+{
+  "title": "Board Magic Configuration",
+  "description": "A magic auto-configuration file for a WipperSnapper Board in Adafruit IO",
+  "type": "object",
+  "required": [ "exportVersion", "exportedBy", "exportedAt", "exportedFromDevice", "components" ],
+  "additionalProperties": false,
+  "properties": {
+    "exportVersion": {
+      "description": "The version of the magic config system used to export this file.",
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 16
+    },
+    "exportedBy": {
+      "description": "The vendor responsible for this magic config file (only Adafruit for now.)",
+      "type": "string",
+      "const": "Adafruit"
+    },
+    "exportedAt": {
+      "description": "The date this magic config file was created",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 24
+    },
+    "exportedFromDevice": {
+      "type": "object",
+      "required": [ "board", "firmwareVersion" ],
+      "additionalProperties": false,
+      "properties": {
+        "board": {
+          "description": "The board name this magic config file was exported from.",
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 40
+        },
+        "firmwareVersion": {
+          "description": "The WipperSnapper firmware version running on the board when this magic file was exported.",
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 16
+        }
+      }
+    },
+    "components": {
+      "description": "Exhaustive list of built-in components for this board, with suggestions selected",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [ "name", "type" ],
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "selected": { "const": false },
+          "period": { "type": "integer" },
+          "isPin": { "type": "boolean", "const": true },
+          "pinName": { "type": "string" },
+          "mode": { "type": "string" },
+          "analogReadMode": { "type": "string" },
+          "direction": { "type": "string" },
+          "pull": { "type": "string" },
+          "isI2C": { "type": "boolean", "const": true },
+          "i2cAddress": { "type": "integer" },
+          "sensorType": { "type": "string" },
+          "isPWM": { "type": "boolean", "const": true },
+          "pwmSetting": { "type": "string" },
+          "frequency": { "type": "integer" },
+          "resolution": { "type": "integer" },
+          "isPixel": { "type": "boolean", "const": true },
+          "pixelNumber": { "type": "integer" },
+          "pixelsOrder": { "type": "string" },
+          "pixelBrightness": { "type": "integer" },
+          "dataPinName": { "type": "string" },
+          "clockPinName": { "type": "string" },
+          "pixelsType": { "type": "string" },
+          "isDS18X20": { "type": "boolean", "const": true },
+          "sensorResolution": { "type": "number" },
+          "isUART": { "type": "boolean", "const": true },
+          "baudRate": { "type": "number" },
+          "inverted": { "type": "boolean" },
+          "uartRx": { "type": "string" },
+          "uartTx": { "type": "string" },
+          "isServo": { "type": "boolean", "const": true },
+          "minPulseWidth": { "type": "number" },
+          "maxPulseWidth": { "type": "number" }
+        },
+        "oneOf": [
+          { "required": [ "isPin" ],
+            "properties": {
+              "isPin": {},
+              "name": {},
+              "type": {},
+              "selected": {},
+              "pinName": {},
+              "mode": {},
+              "analogReadMode": {},
+              "direction": {},
+              "period": {},
+              "pull": {}
+            },
+            "additionalProperties": false
+          },
+          { "required": [ "isI2C" ],
+            "properties": {
+              "isI2C": {},
+              "name": {},
+              "type": {},
+              "selected": {},
+              "period": {},
+              "i2cAddress": {},
+              "sensorType": {}
+            },
+            "additionalProperties": false
+          },
+          { "required": [ "isPWM" ],
+            "properties": {
+              "isPWM": {},
+              "name": {},
+              "type": {},
+              "selected": {},
+              "period": {},
+              "pinName": {},
+              "pwmSetting": {},
+              "frequency": {},
+              "resolution": {}
+            },
+            "additionalProperties": false
+          },
+          { "required": [ "isPixel" ],
+            "properties": {
+              "isPixel": {},
+              "name": {},
+              "type": {},
+              "selected": {},
+              "pixelNumber": {},
+              "pixelsOrder": {},
+              "pixelBrightness": {},
+              "pinName": {},
+              "dataPinName": {},
+              "clockPinName": {},
+              "pixelsType": {}
+            },
+            "additionalProperties": false
+          },
+          { "required": [ "isDS18X20" ],
+            "properties": {
+              "isDS18X20": {},
+              "name": {},
+              "type": {},
+              "selected": {},
+              "pinName": {},
+              "sensorResolution": {}
+            },
+            "additionalProperties": false
+          },
+          { "required": [ "isUART" ],
+            "properties": {
+              "isUART": {},
+              "name": {},
+              "type": {},
+              "selected": {},
+              "baudRate": {},
+              "inverted": {},
+              "uartRx": {},
+              "uartTx": {},
+              "sensorType": {}
+            },
+            "additionalProperties": false
+          },
+          { "required": [ "isServo" ],
+            "properties": {
+              "isServo": {},
+              "name": {},
+              "type": {},
+              "selected": {},
+              "mode": {},
+              "direction": {},
+              "frequency": {},
+              "minPulseWidth": {},
+              "maxPulseWidth": {}
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  }
+}

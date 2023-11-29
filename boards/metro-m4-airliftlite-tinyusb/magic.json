@@ -1,0 +1,31 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2023-11-10T21:46:02.003Z",
+  "exportedFromDevice": {
+    "board": "metro-m4-airliftlite-tinyusb",
+    "firmwareVersion": "1.0.0-beta.73"
+  },
+  "components": [
+    {
+      "name": "Dimmable LED",
+      "type": "dimmable_led",
+      "pwmSetting": "fixedFrequency",
+      "frequency": 5000,
+      "resolution": 12,
+      "pinName": "D13",
+      "isPWM": true,
+      "selected": false
+    },
+    {
+      "name": "NeoPixel",
+      "pixelNumber": 1,
+      "pixelsOrder": "GRB",
+      "pixelBrightness": 255,
+      "pinName": "D40",
+      "type": "neopixel",
+      "pixelsType": "NEOPIXEL",
+      "isPixel": true
+    }
+  ]
+}
