@@ -8,13 +8,12 @@
   },
   "components": [
     {
-      "name": "Dimmable LED",
-      "type": "dimmable_led",
-      "pwmSetting": "fixedFrequency",
-      "frequency": 5000,
-      "resolution": 12,
+      "name": "LED",
       "pinName": "D32",
-      "isPWM": true
+      "type": "led",
+      "mode": "DIGITAL",
+      "direction": "OUTPUT",
+      "isPin": true
     }
   ]
 }
