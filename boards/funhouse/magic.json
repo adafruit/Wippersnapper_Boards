@@ -100,14 +100,6 @@
       "selected": false
     },
     {
-      "name": "LED",
-      "pinName": "D37",
-      "type": "led",
-      "mode": "DIGITAL",
-      "direction": "OUTPUT",
-      "isPin": true
-    },
-    {
       "name": "Light Sensor",
       "pinName": "A18",
       "type": "light_sensor",

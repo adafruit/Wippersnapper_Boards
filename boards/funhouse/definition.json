@@ -96,12 +96,6 @@
             "dataType":"bool"
           },
           {
-             "name":"D37",
-             "displayName":"Built-in LED",
-             "dataType":"bool",
-             "hasPWM":true
-          },
-          {
              "name":"D16",
              "displayName":"PIR Sensor",
              "dataType":"bool"
