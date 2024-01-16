@@ -1,12 +1,12 @@
 {
-    "boardName": "pyportal-tinyusb",
+    "boardName": "pyportal-titano-tinyusb",
     "mcuName": "samd51j20",
     "mcuRefVoltage": 3.3,
-    "displayName": "PyPortal",
+    "displayName": "PyPortal Titano",
     "vendor":"Adafruit",
-    "description": "320x240 IoT display.",
-    "productURL":"https://www.adafruit.com/product/4116",
-    "documentationURL":"https://learn.adafruit.com/adafruit-pyportal",
+    "description": "320x480 IoT display.",
+    "productURL":"https://www.adafruit.com/product/4444",
+    "documentationURL":"https://learn.adafruit.com/adafruit-pyportal-titano",
     "installMethod":"uf2",
     "components":
     {
