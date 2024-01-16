@@ -5,7 +5,7 @@
     "displayName": "PyPortal Titano",
     "vendor":"Adafruit",
     "description": "320x480 IoT display.",
-    "productPageURL":"https://www.adafruit.com/product/4444",
+    "productURL":"https://www.adafruit.com/product/4444",
     "documentationURL":"https://learn.adafruit.com/adafruit-pyportal-titano",
     "installMethod":"uf2",
     "components":
