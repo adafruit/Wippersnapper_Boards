@@ -24,8 +24,7 @@
         {
           "name": "D13",
           "displayName": "D13 LED",
-          "dataType": "bool",
-          "hasPWM": true
+          "dataType": "bool"
         },
         {
           "name": "D25",
@@ -46,24 +45,24 @@
       ],
       "analogPins": [
         {
-            "name": "A0",
+            "name": "A14",
             "displayName": "A0 (Speaker)",
             "dataType": "int16",
             "hasPWM": true
         },
         {
-            "name": "A1",
-            "displayName": "D3",
+            "name": "A15",
+            "displayName": "D3 (A1)",
             "dataType": "int16"
         },
         {
-            "name": "A2",
-            "displayName": "Light Sensor",
+            "name": "A16",
+            "displayName": "Light Sensor (A2)",
             "dataType": "int16"
         },
         {
-            "name": "A3",
-            "displayName": "D4",
+            "name": "A17",
+            "displayName": "D4 (A3)",
             "dataType": "int16"
         }
       ],

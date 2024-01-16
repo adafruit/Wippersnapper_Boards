@@ -1,10 +1,10 @@
 {
   "exportVersion": "1.0.0",
   "exportedBy": "Adafruit",
-  "exportedAt": "2023-11-15T19:41:28.465Z",
+  "exportedAt": "2024-01-01T02:02:02.020Z",
   "exportedFromDevice": {
-    "board": "pyportal-tinyusb",
-    "firmwareVersion": "1.0.0-beta.73"
+    "board": "pyportal-titano-tinyusb",
+    "firmwareVersion": "1.0.0-beta.76"
   },
   "components": [
     {
@@ -33,22 +33,6 @@
       "resolution": 12,
       "pinName": "D25",
       "isPWM": true
-    },
-    {
-      "name": "ADT7410: Temperature Sensor (°C)",
-      "isI2C": true,
-      "type": "adt7410:ambient-temp",
-      "period": 30,
-      "i2cAddress": 118,
-      "sensorType": "ambient-temp"
-    },
-    {
-      "name": "ADT7410: Temperature Sensor (°F)",
-      "isI2C": true,
-      "type": "adt7410:ambient-temp-fahrenheit",
-      "period": 30,
-      "i2cAddress": 118,
-      "sensorType": "ambient-temp-fahrenheit"
     },
     {
       "name": "Light Sensor",
