@@ -102,17 +102,17 @@
         "name": "D8",
         "displayName": "RX (UART Receive)",
         "dataType": "bool",
-        "uartRx": true,
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "uartRx": true
       },
       {
         "name": "D20",
         "displayName": "TX (UART Transmit)",
         "dataType": "bool",
-        "uartTx": true,
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "uartTx": true
       },
       {
         "name": "D25",
@@ -242,7 +242,6 @@
         "name": "A8",
         "displayName": "RX (UART Receive)",
         "dataType": "bool",
-        "uartRx": true,
         "hasPWM": true,
         "hasServo": true
       },
