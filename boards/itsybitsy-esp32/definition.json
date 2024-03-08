@@ -93,7 +93,7 @@
       },
       {
         "name": "D15",
-        "displayName": "SDA (I2C Data, Touch)",
+        "displayName": "SDA",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
@@ -177,38 +177,10 @@
     ],
     "analogPins": [
       {
-        "name": "A0",
-        "displayName": "D0 (NeoPixel)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
         "name": "A35",
         "displayName": "D35 (User BUTTON)",
         "dataType": "bool",
         "direction": "INPUT"
-      },
-      {
-        "name": "A13",
-        "displayName": "D13 (LED BUILT-IN)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "A12",
-        "displayName": "D12",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "A14",
-        "displayName": "D14",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
       },
       {
         "name": "A33",
@@ -220,48 +192,6 @@
       {
         "name": "A32",
         "displayName": "D32",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "A27",
-        "displayName": "SCL",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "A15",
-        "displayName": "SDA (I2C Data, Touch)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "A8",
-        "displayName": "RX (UART Receive)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "A25",
-        "displayName": "A0",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "A26",
-        "displayName": "A1",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "A4",
-        "displayName": "A2",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
