@@ -1,0 +1,72 @@
+{
+  "boardName": "mcp2221",
+  "mcuName": "MCP221",
+  "mcuRefVoltage": 3.3,
+  "displayName": "Adafruit MCP2221A Breakout",
+  "vendor": "Adafruit",
+  "productURL": "https://www.adafruit.com/product/4471",
+  "documentationURL": "https://learn.adafruit.com/circuitpython-libraries-on-any-computer-with-mcp2221/",
+  "installMethod": "python",
+  "components": {
+    "digitalPins": [
+      {
+        "name": "G0",
+        "displayName": "G0",
+        "dataType": "bool"
+      },
+      {
+        "name": "G1",
+        "displayName": "G1",
+        "dataType": "bool"
+      },
+      {
+        "name": "G2",
+        "displayName": "G2",
+        "dataType": "bool"
+      },
+      {
+        "name": "G3",
+        "displayName": "G3",
+        "dataType": "bool"
+      },
+      {
+        "name": "RX",
+        "displayName": "UART RX",
+        "dataType": "bool",
+        "uartRx": true
+      },
+      {
+        "name": "TX",
+        "displayName": "UART TX",
+        "dataType": "bool",
+        "uartTx": true
+      }
+    ],
+    "analogPins": [
+      {
+        "name": "G1",
+        "displayName": "A1",
+        "dataType": "int16",
+        "direction": "INPUT"
+      },
+      {
+        "name": "G2",
+        "displayName": "A2",
+        "dataType": "int16",
+        "direction": "INPUT"
+      },
+      {
+        "name": "G3",
+        "displayName": "A3",
+        "dataType": "int16"
+      }
+    ],
+    "i2cPorts": [
+      {
+        "i2cPortId": 0,
+        "SDA": "SDA",
+        "SCL": "SCL"
+      }
+    ]
+  }
+}
