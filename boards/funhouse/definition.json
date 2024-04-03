@@ -6,8 +6,20 @@
     "vendor":"Adafruit",
     "productURL":"https://www.adafruit.com/product/4985",
     "documentationURL":"https://learn.adafruit.com/adafruit-funhouse",
-    "installMethod":"uf2",
+    "installMethod":"web",
     "installBoardName": "funhouse_noota",
+    "esptool": {
+      "fileSystemSize": 1441792,
+      "blockSize": 4096,
+      "offset": "0x290000",
+      "chip": "esp32s2",
+      "flashMode": "qio",
+      "flashFreq": "80m",
+      "flashSize": "4MB",
+      "structure": {
+        "0x0": "wippersnapper.funhouse_noota.fatfs.VERSION.combined.bin"
+      }
+    },
     "components":{
        "digitalPins":[
           {
