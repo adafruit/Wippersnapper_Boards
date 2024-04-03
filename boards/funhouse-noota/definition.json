@@ -1,5 +1,5 @@
 {
-    "boardName":"funhouse_noota",
+    "boardName":"funhouse-noota",
     "mcuName":"esp32s2",
     "mcuRefVoltage":2.6,
     "displayName":"Adafruit Funhouse ESP32-S2",
