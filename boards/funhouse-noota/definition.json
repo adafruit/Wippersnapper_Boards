@@ -6,7 +6,7 @@
     "vendor":"Adafruit",
     "productURL":"https://www.adafruit.com/product/4985",
     "documentationURL":"https://learn.adafruit.com/adafruit-funhouse",
-    "installMethod":"web",
+    "installMethod":"web-native-usb",
     "installBoardName": "funhouse_noota",
     "esptool": {
       "fileSystemSize": 1441792,
