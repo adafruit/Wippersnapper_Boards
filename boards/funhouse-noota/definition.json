@@ -9,9 +9,9 @@
     "installMethod":"web-native-usb",
     "installBoardName": "funhouse_noota",
     "esptool": {
-      "fileSystemSize": 1441792,
+      "fileSystemSize": 983040,
       "blockSize": 4096,
-      "offset": "0x290000",
+      "offset": "0x310000",
       "chip": "esp32s2",
       "flashMode": "qio",
       "flashFreq": "80m",
