@@ -7,6 +7,7 @@
     "productURL":"https://www.adafruit.com/product/5405",
     "documentationURL":"https://learn.adafruit.com/adafruit-qt-py-esp32-c3-wifi-dev-board",
     "installMethod":"web",
+    "installBoardName": "wippersnapper_qtpy_esp32c3",
     "esptool": {
       "fileSystemSize": 1441792,
       "blockSize": 4096,
@@ -16,7 +17,7 @@
       "flashFreq" : "80m",
       "flashSize" : "4MB",
       "structure": {
-          "0x0": "wippersnapper.qtpy_esp32c3.littlefs.VERSION.combined.bin"
+          "0x0": "wippersnapper.wippersnapper_qtpy_esp32c3.littlefs.VERSION.combined.bin"
         }
     },
     "components":{
