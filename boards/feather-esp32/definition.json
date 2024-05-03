@@ -8,7 +8,6 @@
     "documentationURL":"https://learn.adafruit.com/adafruit-huzzah32-esp32-feather",
     "installBoardName": "wippersnapper_feather_esp32",
     "installMethod":"web",
-    "installBoardName": "wippersnapper_feather_esp32",
     "esptool": {
       "fileSystemSize": 131072,
       "blockSize": 4096,
