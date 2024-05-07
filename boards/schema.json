@@ -53,7 +53,7 @@
     "installMethod": {
       "description": "The WipperSnapper firmware installation method for this board.",
       "type": "string",
-      "pattern": "^(web|uf2|library|python)$"
+      "pattern": "^(web|uf2|web-native-usb|library|python)$"
     },
     "installBoardName": {
       "description": "(Optional) Name to use instead of `boardName` to look up the firmware asset in the WipperSnapper Arduino Releases",
