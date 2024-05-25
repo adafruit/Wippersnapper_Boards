@@ -4,7 +4,7 @@
     "mcuRefVoltage":2.6,
     "displayName":"Adafruit QT Py ESP32-S2",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/5325",
+    "productURL":"https://www.adafruit.com/product/5325",
     "documentationURL":"https://learn.adafruit.com/adafruit-qt-py-esp32-s2",
     "installMethod":"uf2",
     "components":{
@@ -40,37 +40,53 @@
             {
                 "name":"D7",
                 "displayName":"SDA",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D6",
                 "displayName":"SCL",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D5",
-                "displayName":"TX",
-                "dataType":"bool"
+                "displayName":"D5 (UART TX)",
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true,
+                "uartTx": true
             },
             {
                 "name":"D35",
                 "displayName":"MOSI",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D37",
                 "displayName":"MISO",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D36",
                 "displayName":"SCK",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"D16",
-                "displayName":"RX",
-                "dataType":"bool"
+                "displayName":"D16 (UART RX)",
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true,
+                "uartRx": true
             },
             {
                 "name":"D0",
@@ -102,26 +118,44 @@
             {
                 "name":"A9",
                 "displayName":"A2",
-                "direction":"INPUT",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A8",
                 "displayName":"A3",
-                "direction":"INPUT",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A7",
                 "displayName":"SDA",
-                "direction":"INPUT",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             },
             {
                 "name":"A6",
                 "displayName":"SCL",
-                "direction":"INPUT",
-                "dataType":"int16"
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"A5",
+                "displayName":"A5 (UART TX)",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"A16",
+                "displayName":"A16 (UART RX)",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
             }
         ],
         "i2cPorts":[

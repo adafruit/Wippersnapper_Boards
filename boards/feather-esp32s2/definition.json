@@ -4,11 +4,17 @@
     "mcuRefVoltage":2.6,
     "displayName":"Adafruit ESP32-S2 Feather",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/5000",
+    "productURL":"https://www.adafruit.com/product/5000",
     "documentationURL":"https://learn.adafruit.com/adafruit-esp32-s2-feather",
     "installMethod":"uf2",
     "components":{
        "digitalPins":[
+         {
+            "name":"D0",
+            "displayName":"D0 (Boot Push Button)",
+            "dataType":"bool",
+            "direction":"INPUT"
+          },
           {
              "name":"D1",
              "displayName":"D1",
@@ -91,9 +97,16 @@
              "dataType":"bool"
          },
          {
-            "name":"D0",
-            "displayName":"BOOT Push Button",
-            "dataType":"bool"
+           "name": "D38",
+           "displayName": "D38 (UART RX)",
+           "dataType": "bool",
+           "uartRx": true
+         },
+         {
+           "name": "D39",
+           "displayName": "D39 (UART TX)",
+           "dataType": "bool",
+           "uartTx": true
          }
        ],
        "analogPins":[

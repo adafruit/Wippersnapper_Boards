@@ -4,7 +4,7 @@
     "mcuRefVoltage":3.3,
     "displayName":"Arduino MKR WiFi 1010",
     "vendor":"Arduino",
-    "productPageURL":"https://store-usa.arduino.cc/products/arduino-mkr-wifi-1010",
+    "productURL":"https://store-usa.arduino.cc/products/arduino-mkr-wifi-1010",
     "documentationURL":"https://docs.arduino.cc/hardware/mkr-wifi-1010",
     "installMethod":"library",
     "components":{
@@ -76,13 +76,15 @@
           },
           {
              "name":"D13",
-             "displayName":"D13",
-             "dataType":"bool"
+             "displayName":"D13 (UART RX)",
+             "dataType":"bool",
+             "uartRx":true
           },
           {
              "name":"D14",
-             "displayName":"D14",
-             "dataType":"bool"
+             "displayName":"D14 (UART TX)",
+             "dataType":"bool",
+             "uartTx":true
           }
        ],
        "analogPins":[

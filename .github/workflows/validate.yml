@@ -4,33 +4,41 @@ on: [pull_request]
 
 jobs:
   validate-definition-files:
-    name: Validate Definition Files
+    name: Validate JSON Schemas
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
+      # Schema Docs: https://ajv.js.org/json-schema.html#json-data-type
       - name: Validate Board JSON
-        uses: nhalstead/validate-json-action@0.1.3
+        uses: lorennorman/validate-json-action@master
         with:
-          # Schema Docs: https://ajv.js.org/json-schema.html#json-data-type
           schema: /boards/schema.json
           jsons: boards/*/definition.json
 
+      - name: Validate Magic JSON
+        uses: lorennorman/validate-json-action@master
+        with:
+          schema: /boards/magic_schema.json
+          jsons: boards/*/magic.json
 
   check-user-permissions:
     name: Check Write Permission
     runs-on: ubuntu-latest
     outputs:
       # Extract the permission for later jobs to use
-      has-write-permission: ${{ steps.check.outputs.has-permission }}
+      has-write-permission: ${{ steps.set-permission.outputs.has-permission }}
     steps:
-    - name: Check user permission
-      id: check
-      uses: scherermichael-oss/action-has-permission@master
-      with:
-        required-permission: write
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: octokit/request-action@v2.x
+        id: fetch-permissions
+        with:
+          route: GET /repos/${{ github.repository }}/collaborators/${{ github.actor }}/permission
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - id: set-permission
+        if: fromJson(steps.fetch-permissions.outputs.data).permission == 'admin' || fromJson(steps.fetch-permissions.outputs.data).permission == 'write'
+        run: echo "has-permission=true" >> "$GITHUB_OUTPUT"
 
   changed-files:
     name: List Changed Files
@@ -43,9 +51,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: List Changed Board Files
         id: list-changed-files
-        uses: tj-actions/changed-files@v21
-        with:
-          files: boards/**/*
+        uses: tj-actions/changed-files@v37
 
   validate-expected-filenames:
     name: Validate Filenames
@@ -63,11 +69,13 @@ jobs:
         run: |
           EXIT_VALUE=0
 
+          # TODO: break these regexes up into modular chunks that check specific things for readability and composability
+
           # external contributors can modify some files
-          EXTERNAL_REGEX="^boards\/.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
+          EXTERNAL_REGEX="^boards\/.*\/(definition\.json|magic\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))$"
 
           # folks with write access to the repo (Adafruit team) can change more sensitive files
-          INTERNAL_REGEX="^boards\/(schema.json|.*\/(definition\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg))))$"
+          INTERNAL_REGEX="^(README.md|\.github\/.*|boards\/(schema.json|magic_schema.json|.*\/(definition\.json|magic\.json|((image|images\/(boot-(drive|loader)|drag-drop|reset|usb))\.(png|jpe?g|gif|svg)))))$"
 
           # apply the appropriate regex based on permissions of the user
           if [[ $CAN_WRITE_TO_REPO ]]; then
@@ -76,6 +84,7 @@ jobs:
             board_definition_regex=$EXTERNAL_REGEX
           fi
 
+          echo $FILES
           for FILE in $FILES; do
             if [[ $FILE =~ $board_definition_regex ]]; then
               echo "✅ $FILE"
@@ -102,7 +111,7 @@ jobs:
           EXIT_VALUE=0
 
           for FILE in $FILES; do
-            if [[ $FILE == *.json ]]; then
+            if ! [[ $FILE =~ \.(svg|jpe?g|png)$ ]]; then
               continue # non-image file
             fi
 
@@ -131,7 +140,7 @@ jobs:
                 MIME_EXT="jpg"
               fi
 
-              echo "❌ $FILE: expected .$MIME_EXT"
+              echo "❌ $FILE: expected extension .$MIME_EXT"
 
               EXIT_VALUE=1
             fi
@@ -153,7 +162,7 @@ jobs:
       FILES: ${{ needs.changed-files.outputs.files }}
     steps:
       - uses: actions/checkout@v3
-      - uses: mfinelli/setup-imagemagick@v1
+      - uses: mfinelli/setup-imagemagick@v2
       - name: Validate Image Dimensions
         run: |
           EXIT_VALUE=0
@@ -162,7 +171,7 @@ jobs:
           MAX_HEIGHT=2000
 
           for FILE in $FILES; do
-            if [[ $FILE == *.json ]]; then
+            if ! [[ $FILE =~ \.(svg|jpe?g|png)$ ]]; then
               continue # non-image file
             fi
 
@@ -221,7 +230,7 @@ jobs:
           MAX_ANIGIF_FILESIZE=$((1000*1024)) # 1MB
 
           for FILE in $FILES; do
-            if [[ $FILE == *.json ]]; then
+            if ! [[ $FILE =~ \.(svg|jpe?g|png)$ ]]; then
               continue # non-image file
             fi
 

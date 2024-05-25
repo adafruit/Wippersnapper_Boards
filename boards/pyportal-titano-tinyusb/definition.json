@@ -1,0 +1,77 @@
+{
+    "boardName": "pyportal-titano-tinyusb",
+    "mcuName": "samd51j20",
+    "mcuRefVoltage": 3.3,
+    "displayName": "PyPortal Titano",
+    "vendor":"Adafruit",
+    "description": "320x480 IoT display.",
+    "productURL":"https://www.adafruit.com/product/4444",
+    "documentationURL":"https://learn.adafruit.com/adafruit-pyportal-titano",
+    "installMethod":"uf2",
+    "components":
+    {
+      "digitalPins": [
+        {
+          "name": "D3",
+          "displayName": "D3",
+          "dataType": "bool"
+        },
+        {
+          "name": "D4",
+          "displayName": "D4",
+          "dataType": "bool"
+        },
+        {
+          "name": "D13",
+          "displayName": "D13 LED",
+          "dataType": "bool"
+        },
+        {
+          "name": "D25",
+          "displayName": "TFT Backlight",
+          "dataType": "bool",
+          "hasPWM": true
+        },
+        {
+            "name": "D50",
+            "displayName": "Speaker Enable",
+            "dataType": "bool"
+        },
+        {
+            "name": "D2",
+            "displayName": "D2 (NeoPixel)",
+            "dataType": "bool"
+        }
+      ],
+      "analogPins": [
+        {
+            "name": "A14",
+            "displayName": "A0 (Speaker)",
+            "dataType": "int16",
+            "hasPWM": true
+        },
+        {
+            "name": "A15",
+            "displayName": "D3 (A1)",
+            "dataType": "int16"
+        },
+        {
+            "name": "A16",
+            "displayName": "Light Sensor (A2)",
+            "dataType": "int16"
+        },
+        {
+            "name": "A17",
+            "displayName": "D4 (A3)",
+            "dataType": "int16"
+        }
+      ],
+      "i2cPorts": [
+        {
+            "i2cPortId": 0,
+            "SDA": 27,
+            "SCL": 28
+        }
+      ]
+    }
+}

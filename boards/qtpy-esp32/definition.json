@@ -4,8 +4,8 @@
     "mcuRefVoltage":3.3,
     "displayName":"Adafruit QT Py ESP32 Pico",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/5395",
-    "documentationURL":"https://learn.adafruit.com/",
+    "productURL":"https://www.adafruit.com/product/5395",
+    "documentationURL":"https://learn.adafruit.com/adafruit-qt-py-esp32-pico",
     "installMethod":"web",
     "esptool": {
         "fileSystemSize": 1572864,
@@ -64,10 +64,11 @@
             },
             {
                 "name":"D32",
-                "displayName":"TX",
+                "displayName":"D32 (UART TX)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "uartTx":true
             },
             {
                 "name":"D13",
@@ -92,10 +93,11 @@
             },
             {
                 "name":"D7",
-                "displayName":"RX",
+                "displayName":"D7 (UART RX)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "uartRx":true
             },
             {
                 "name":"D0",
@@ -111,7 +113,7 @@
         "analogPins":[
             {
                 "name":"A26",
-                "displayName":"A0",
+                "displayName":"A0 (OUTPUT ONLY!)",
                 "dataType":"int16",
                 "hasPWM":true
             },
@@ -146,6 +148,20 @@
             {
                 "name":"A33",
                 "displayName":"SCL",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"A32",
+                "displayName":"A32 (UART TX)",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"A7",
+                "displayName":"A7 (UART RX)",
                 "dataType":"int16",
                 "hasPWM":true,
                 "hasServo":true

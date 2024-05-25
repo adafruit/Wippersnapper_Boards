@@ -4,24 +4,27 @@
     "mcuRefVoltage":3.3,
     "displayName":"Raspberry Pi Pico W",
     "vendor":"Raspberry Pi",
-    "productPageURL":"https://www.raspberrypi.com/products/raspberry-pi-pico/",
+    "productURL":"https://www.raspberrypi.com/products/raspberry-pi-pico/",
     "documentationURL":"https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html",
     "installMethod":"uf2",
+    "installBoardName":"picow_rp2040_tinyusb",
     "components":{
         "digitalPins":[
             {
                 "name":"D0",
-                "displayName":"GP0",
+                "displayName":"GP0 (UART TX)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "uartTx":true
             },
             {
                 "name":"D1",
-                "displayName":"GP1",
+                "displayName":"GP1 (UART RX)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "uartRx":true
             },
             {
                 "name":"D2",

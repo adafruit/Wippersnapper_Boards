@@ -1,0 +1,48 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2024-01-01T02:02:02.020Z",
+  "exportedFromDevice": {
+    "board": "pyportal-titano-tinyusb",
+    "firmwareVersion": "1.0.0-beta.76"
+  },
+  "components": [
+    {
+      "name": "Onboard Red LED",
+      "pinName": "D13",
+      "type": "led",
+      "mode": "DIGITAL",
+      "direction": "OUTPUT",
+      "isPin": true
+    },
+    {
+      "name": "NeoPixel",
+      "pixelNumber": 1,
+      "pixelsOrder": "GRB",
+      "pixelBrightness": 255,
+      "pinName": "D2",
+      "type": "neopixel",
+      "pixelsType": "NEOPIXEL",
+      "isPixel": true
+    },
+    {
+      "name": "TFT Backlight",
+      "type": "dimmable_led",
+      "pwmSetting": "fixedFrequency",
+      "frequency": 5000,
+      "resolution": 12,
+      "pinName": "D25",
+      "isPWM": true
+    },
+    {
+      "name": "Light Sensor",
+      "pinName": "A16",
+      "type": "light_sensor",
+      "mode": "ANALOG",
+      "direction": "INPUT",
+      "analogReadMode": "PIN_VALUE",
+      "period": 30,
+      "isPin": true
+    }
+  ]
+}

@@ -4,15 +4,16 @@
     "mcuRefVoltage":2.6,
     "displayName":"ESP32-S3 Reverse TFT Feather",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/5691",
-    "documentationURL":"https://www.adafruit.com/product/5691",
+    "productURL":"https://www.adafruit.com/product/5691",
+    "documentationURL": "https://learn.adafruit.com/esp32-s3-reverse-tft-feather",
     "installMethod":"uf2",
     "components":{
         "digitalPins":[
           {
             "name":"D0",
-            "displayName":"D0 Push Button",
-            "dataType":"bool"
+            "displayName":"D0 (Boot Push Button)",
+            "dataType":"bool",
+            "direction":"INPUT"
           },
           {
             "name":"D1",
@@ -76,6 +77,18 @@
             "name":"D33",
             "displayName":"D33 (NeoPixel)",
             "dataType":"bool"
+          },
+          {
+            "name": "D38",
+            "displayName": "D38 (UART RX)",
+            "dataType": "bool",
+            "uartRx": true
+          },
+          {
+            "name": "D39",
+            "displayName": "D39 (UART TX)",
+            "dataType": "bool",
+            "uartTx": true
           }
         ],
         "analogPins":[

@@ -4,19 +4,20 @@
     "mcuRefVoltage": 3.3,
     "displayName":"Adafruit Feather HUZZAH ESP32",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/3405",
+    "productURL":"https://www.adafruit.com/product/3405",
     "documentationURL":"https://learn.adafruit.com/adafruit-huzzah32-esp32-feather",
+    "installBoardName": "wippersnapper_feather_esp32",
     "installMethod":"web",
     "esptool": {
-      "fileSystemSize": 1441792,
+      "fileSystemSize": 131072,
       "blockSize": 4096,
-      "offset": "0x290000",
+      "offset": "0x3D0000",
       "chip": "esp32",
       "flashMode" : "dio",
       "flashFreq" : "80m",
       "flashSize" : "4MB",
       "structure": {
-          "0x0": "wippersnapper.feather_esp32.littlefs.VERSION.combined.bin"
+          "0x0": "wippersnapper.wippersnapper_feather_esp32.littlefs.VERSION.combined.bin"
         }
     },
     "components": {
@@ -95,7 +96,7 @@
        },
        {
          "name":"D36",
-         "displayName":"D34 (A4)",
+         "displayName":"D36 (A4)",
          "dataType":"bool"
        },
        {
@@ -104,6 +105,18 @@
          "dataType":"bool",
          "hasPWM":true,
          "hasServo":true
+       },
+       {
+         "name": "D16",
+         "displayName": "D16 (UART RX)",
+         "dataType": "bool",
+         "uartRx": true
+       },
+       {
+         "name": "D17",
+         "displayName": "D17 (UART TX)",
+         "dataType": "bool",
+         "uartTx": true
        }
       ],
       "analogPins": [
@@ -124,16 +137,19 @@
        {
           "name":"A34",
           "displayName":"A2",
+          "direction": "INPUT",
           "dataType":"int16"
        },
        {
           "name":"A39",
           "displayName":"A3",
+          "direction": "INPUT",
           "dataType":"int16"
        },
        {
           "name":"A36",
           "displayName":"A4",
+          "direction": "INPUT",
           "dataType":"int16"
        },
        {
@@ -194,7 +210,7 @@
        },
        {
           "name":"A35",
-          "displayName":"VBAT",
+          "displayName":"A13 (VBAT)",
           "dataType":"int16"
        }
       ],

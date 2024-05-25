@@ -4,19 +4,20 @@
     "mcuRefVoltage":2.6,
     "displayName":"Adafruit QT Py ESP32-C3",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/5405",
+    "productURL":"https://www.adafruit.com/product/5405",
     "documentationURL":"https://learn.adafruit.com/adafruit-qt-py-esp32-c3-wifi-dev-board",
+    "installBoardName": "wippersnapper_qtpy_esp32c3",
     "installMethod":"web",
     "esptool": {
-      "fileSystemSize": 1441792,
+      "fileSystemSize": 131072,
       "blockSize": 4096,
-      "offset": "0x00290000",
+      "offset": "0x3D0000",
       "chip": "esp32c3",
       "flashMode" : "dio",
       "flashFreq" : "80m",
       "flashSize" : "4MB",
       "structure": {
-          "0x0": "wippersnapper.qtpy_esp32c3.littlefs.VERSION.combined.bin"
+          "0x0": "wippersnapper.wippersnapper_qtpy_esp32c3.littlefs.VERSION.combined.bin"
         }
     },
     "components":{
@@ -91,17 +92,19 @@
             },
             {
                 "name":"D20",
-                "displayName":"D20 (RX)",
+                "displayName":"D20 (UART TX)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "uartTx":true
             },
             {
                 "name":"D21",
-                "displayName":"D21 (TX)",
+                "displayName":"D21 (UART RX)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "uartRx":true
             },
             {
                 "name":"D2",
@@ -141,6 +144,20 @@
             {
                 "name":"A4",
                 "displayName":"A4",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"A20",
+                "displayName":"A20 (UART TX)",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"A21",
+                "displayName":"A21 (UART RX)",
                 "dataType":"int16",
                 "hasPWM":true,
                 "hasServo":true

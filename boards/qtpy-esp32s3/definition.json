@@ -2,9 +2,9 @@
     "boardName":"qtpy-esp32s3",
     "mcuName":"esp32s3",
     "mcuRefVoltage":2.6,
-    "displayName":"Adafruit QT Py ESP32-S3",
+    "displayName":"Adafruit QT Py ESP32-S3 (NO PSRAM)",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/",
+    "productURL":"https://www.adafruit.com/product/5426",
     "documentationURL":"https://learn.adafruit.com/adafruit-qt-py-esp32-s3",
     "installMethod":"uf2",
     "components":{
@@ -53,10 +53,11 @@
             },
             {
                 "name":"D5",
-                "displayName":"TX",
+                "displayName":"D5 (UART TX)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "uartTx":true
             },
             {
                 "name":"D35",
@@ -81,10 +82,11 @@
             },
             {
                 "name":"D16",
-                "displayName":"RX",
+                "displayName":"D16 (UART RX)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "uartRx":true
             },
             {
                 "name":"D0",
@@ -137,6 +139,20 @@
             {
                 "name":"A6",
                 "displayName":"SCL",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"A5",
+                "displayName":"A5 (UART TX)",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"A16",
+                "displayName":"A16 (UART RX)",
                 "dataType":"int16",
                 "hasPWM":true,
                 "hasServo":true

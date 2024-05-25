@@ -2,7 +2,7 @@
   "title": "Board Definition",
   "description": "A WipperSnapper-compatible Board for use in Adafruit IO",
   "type": "object",
-  "required": [ "boardName", "mcuName", "mcuRefVoltage", "installMethod", "displayName", "productPageURL", "documentationURL", "components" ],
+  "required": [ "boardName", "mcuName", "mcuRefVoltage", "installMethod", "displayName", "productURL", "documentationURL", "components" ],
   "additionalProperties": false,
   "properties": {
     "boardName": {
@@ -34,7 +34,7 @@
       "minLength": 3,
       "maxLength": 255
     },
-    "productPageURL": {
+    "productURL": {
       "description": "Link to board's homepage.",
       "type": "string",
       "format": "uri"
@@ -53,7 +53,13 @@
     "installMethod": {
       "description": "The WipperSnapper firmware installation method for this board.",
       "type": "string",
-      "pattern": "^(web|uf2|library|python)$"
+      "pattern": "^(web|uf2|web-native-usb|library|python)$"
+    },
+    "installBoardName": {
+      "description": "(Optional) Name to use instead of `boardName` to look up the firmware asset in the WipperSnapper Arduino Releases",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 40
     },
     "published": {
       "description": "Whether this board is officially published. When false, it won't appear in the firmware installer, for instance.",
@@ -88,7 +94,20 @@
               "hasServo": {
                 "description": "If true, hasPWM should also be true, and this PWM-enabled pin also supports servo components.",
                 "type": "boolean"
+              },
+              "uartTx": {
+                "description": "If true, this pin will be used as the UART transmit pin. There should also be a 'uartRx' property on another pin.",
+                "type": "boolean"
+              },
+              "uartRx": {
+                "description": "If true, this pin will be used as the UART receive pin. There should also be a 'uartTx' property on another pin.",
+                "type": "boolean"
               }
+            },
+            "if": { "required": [ "uartRx" ] },
+            "then": {
+              "not": { "required": [ "uartTx" ] },
+              "errorMessage": "Cannot specify uartTx and uartRx on same pin!"
             }
           }
         },

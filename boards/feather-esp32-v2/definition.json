@@ -4,7 +4,7 @@
     "mcuRefVoltage": 3.3,
     "displayName":"Adafruit Feather ESP32 V2",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/5400",
+    "productURL":"https://www.adafruit.com/product/5400",
     "documentationURL":"https://learn.adafruit.com/adafruit-esp32-feather-v2",
     "installMethod":"web",
     "esptool": {
@@ -25,6 +25,18 @@
           "name":"D0",
           "displayName":"D0 (NeoPixel)",
           "dataType":"bool"
+        },
+        {
+            "name":"D7",
+            "displayName":"D7 (UART RX)",
+            "dataType":"bool",
+            "uartRx": true
+        },
+        {
+            "name":"D8",
+            "displayName":"D8 (UART TX)",
+            "dataType":"bool",
+            "uartTx": true
         },
         {
           "name":"D13",
@@ -76,17 +88,66 @@
        },
        {
         "name":"D26",
-        "displayName":"D26",
+        "displayName":"D26 (A0)",
         "dataType":"bool",
         "hasPWM":true,
         "hasServo":true
        },
        {
         "name":"D25",
-        "displayName":"D25",
+        "displayName":"D25 (A1)",
         "dataType":"bool",
         "hasPWM":true,
         "hasServo":true
+       },
+       {
+         "name":"D34",
+         "displayName":"D34 (A2)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
+       },
+       {
+         "name":"D39",
+         "displayName":"D39 (A3)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
+       },
+       {
+         "name":"D36",
+         "displayName":"D36 (A4)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
+       },
+       {
+         "name":"D4",
+         "displayName":"D4 (A5)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
+       },
+       {
+         "name":"D5",
+         "displayName":"D5 (SCK)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
+       },
+       {
+         "name":"D19",
+         "displayName":"D19 (MOSI)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
+       },
+       {
+         "name":"D21",
+         "displayName":"D21 (MISO)",
+         "dataType":"bool",
+         "hasPWM":true,
+         "hasServo":true
        },
        {
         "name":"D37",
@@ -102,42 +163,42 @@
       ],
       "analogPins": [
        {
-          "name":"A0",
+          "name":"A26",
           "displayName":"A0",
           "dataType":"int16",
           "hasPWM":true
        },
        {
-          "name":"A1",
+          "name":"A25",
           "displayName":"A1",
           "dataType":"int16",
           "hasPWM":true
        },
        {
-          "name":"A2",
+          "name":"A34",
           "displayName":"A2",
           "dataType":"int16"
        },
        {
-          "name":"A3",
+          "name":"A39",
           "displayName":"A3",
           "dataType":"int16"
        },
        {
-          "name":"A4",
+          "name":"A36",
           "displayName":"A4",
           "dataType":"int16"
        },
        {
-          "name":"A5",
+          "name":"A4",
           "displayName":"A5",
           "dataType":"int16",
           "hasPWM":true,
           "hasServo":true
        },
        {
-        "name":"A13",
-        "displayName":"A13 (VBat Monitor)",
+        "name":"A35",
+        "displayName":"VBat Monitor",
         "dataType":"int16"
        }
       ],

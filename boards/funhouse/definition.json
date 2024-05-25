@@ -4,9 +4,22 @@
     "mcuRefVoltage":2.6,
     "displayName":"Adafruit Funhouse ESP32-S2",
     "vendor":"Adafruit",
-    "productPageURL":"https://www.adafruit.com/product/4985",
+    "productURL":"https://www.adafruit.com/product/4985",
     "documentationURL":"https://learn.adafruit.com/adafruit-funhouse",
-    "installMethod":"uf2",
+    "installMethod":"web-native-usb",
+    "installBoardName": "funhouse_noota",
+    "esptool": {
+      "fileSystemSize": 983040,
+      "blockSize": 4096,
+      "offset": "0x310000",
+      "chip": "esp32s2",
+      "flashMode": "dio",
+      "flashFreq": "80m",
+      "flashSize": "4MB",
+      "structure": {
+        "0x0": "wippersnapper.funhouse_noota.fatfs.VERSION.combined.bin"
+      }
+    },
     "components":{
        "digitalPins":[
           {
@@ -96,12 +109,6 @@
             "dataType":"bool"
           },
           {
-             "name":"D37",
-             "displayName":"Built-in LED",
-             "dataType":"bool",
-             "hasPWM":true
-          },
-          {
              "name":"D16",
              "displayName":"PIR Sensor",
              "dataType":"bool"
@@ -111,7 +118,19 @@
              "displayName":"Speaker/Piezo",
              "dataType":"bool",
              "hasPWM":true
-          }
+          },
+         {
+            "name":"D44",
+            "displayName":"D44 (UART RX)",
+            "dataType":"bool",
+            "uartRx": true
+         },
+         {
+            "name":"D43",
+            "displayName":"D43 (UART TX)",
+            "dataType":"bool",
+            "uartTx": true
+         }
        ],
        "analogPins":[
           {
@@ -130,7 +149,7 @@
              "dataType":"int16"
           },
           {
-             "name":"A3",
+             "name":"A18",
              "displayName":"Light Sensor",
              "dataType":"int16"
           }

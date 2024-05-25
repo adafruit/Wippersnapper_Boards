@@ -1,0 +1,122 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2023-11-10T21:46:02.003Z",
+  "exportedFromDevice": {
+    "board": "funhouse",
+    "firmwareVersion": "1.0.0-beta.69"
+  },
+  "components": [
+    {
+      "name": "AHT20: Humidity",
+      "isI2C": true,
+      "type": "aht20:humidity",
+      "period": 30,
+      "i2cAddress": 56,
+      "sensorType": "humidity"
+    },
+    {
+      "name": "AHT20: Temperature (°F)",
+      "isI2C": true,
+      "type": "aht20:ambient-temp-fahrenheit",
+      "period": 30,
+      "i2cAddress": 56,
+      "sensorType": "ambient-temp-fahrenheit"
+    },
+    {
+      "name": "AHT20: Temperature Sensor (°C)",
+      "isI2C": true,
+      "type": "aht20:ambient-temp",
+      "period": 30,
+      "i2cAddress": 56,
+      "sensorType": "ambient-temp",
+      "selected": false
+    },
+    {
+      "name": "Button Down",
+      "pinName": "D3",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "DOWN"
+    },
+    {
+      "name": "Button Select",
+      "pinName": "D4",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "DOWN"
+    },
+    {
+      "name": "Button Up",
+      "pinName": "D5",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "DOWN"
+    },
+    {
+      "name": "DotStar",
+      "pixelNumber": 5,
+      "pixelsOrder": "BGR",
+      "pixelBrightness": 100,
+      "dataPinName": "D14",
+      "clockPinName": "D15",
+      "type": "dotstar",
+      "pixelsType": "DOTSTAR",
+      "isPixel": true
+    },
+    {
+      "name": "DPS310: Pressure Sensor",
+      "isI2C": true,
+      "type": "dps310:pressure",
+      "period": 30,
+      "i2cAddress": 119,
+      "sensorType": "pressure"
+    },
+    {
+      "name": "DPS310: Temperature Sensor (°C)",
+      "isI2C": true,
+      "type": "dps310:ambient-temp",
+      "period": 30,
+      "i2cAddress": 119,
+      "sensorType": "ambient-temp",
+      "selected": false
+    },
+    {
+      "name": "DPS310: Temperature Sensor (°F)",
+      "isI2C": true,
+      "type": "dps310:ambient-temp-fahrenheit",
+      "period": 30,
+      "i2cAddress": 119,
+      "sensorType": "ambient-temp-fahrenheit",
+      "selected": false
+    },
+    {
+      "name": "Light Sensor",
+      "pinName": "A18",
+      "type": "light_sensor",
+      "mode": "ANALOG",
+      "direction": "INPUT",
+      "analogReadMode": "PIN_VALUE",
+      "period": 30,
+      "isPin": true
+    },
+    {
+      "name": "Piezo Buzzer",
+      "pinName": "D42",
+      "type": "piezo_buzzer",
+      "pwmSetting": "variableFrequency",
+      "frequency": 146,
+      "resolution": 10,
+      "isPWM": true
+    }
+  ]
+}

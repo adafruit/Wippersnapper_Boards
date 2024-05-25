@@ -1,0 +1,19 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2023-11-13T19:26:40.834Z",
+  "exportedFromDevice": {
+    "board": "rpi-pico-w",
+    "firmwareVersion": "1.0.0-beta.73"
+  },
+  "components": [
+    {
+      "name": "LED",
+      "pinName": "D32",
+      "type": "led",
+      "mode": "DIGITAL",
+      "direction": "OUTPUT",
+      "isPin": true
+    }
+  ]
+}
