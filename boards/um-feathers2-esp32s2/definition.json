@@ -1,10 +1,10 @@
 {
-    "boardName":"um_feathers2",
+    "boardName":"um-feathers2-esp32s2",
     "mcuName":"esp32s2",
     "mcuRefVoltage":2.6,
     "displayName":"Unexpected Maker FeatherS2",
     "vendor":"Unexpected Maker",
-    "productPageURL":"https://www.adafruit.com/product/4769",
+    "productURL":"https://www.adafruit.com/product/4769",
     "documentationURL":"https://feathers2.io",
     "installMethod":"uf2",
     "components":{
