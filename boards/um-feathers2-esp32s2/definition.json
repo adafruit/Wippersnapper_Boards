@@ -10,175 +10,165 @@
     "components":{
        "digitalPins":[
           {
-             "name":"D0",
-             "displayName":"D2",
+             "name":"D4",
+             "displayName":"D0",
              "dataType":"bool"
           },
           {
-            "name":"D17",
-            "displayName":"D14",
-            "dataType":"bool"
-         },
-         {
-            "name":"D18",
-            "displayName":"D15",
-            "dataType":"bool"
-         },
-         {
-            "name":"D14",
-            "displayName":"D16",
-            "dataType":"bool"
-         },
-         {
-            "name":"D12",
-            "displayName":"D17",
-            "dataType":"bool"
-         },
-         {
-            "name":"D6",
-            "displayName":"D18",
-            "dataType":"bool"
-         },
-         {
             "name":"D5",
-            "displayName":"D19",
-            "dataType":"bool"
-         },
-         {
-            "name":"D36",
-            "displayName":"D25",
-            "dataType":"bool"
-         },
-         {
-            "name":"D35",
-            "displayName":"D24",
-            "dataType":"bool"
-         },
-         {
-            "name":"D37",
-            "displayName":"D23",
-            "dataType":"bool"
-         },
-         {
-            "name":"D44",
-            "displayName":"D0",
-            "dataType":"bool"
-         },
-         {
-            "name":"D43",
             "displayName":"D1",
             "dataType":"bool"
          },
          {
-            "name":"D45",
-            "displayName":"D4",
+            "name":"D6",
+            "displayName":"D3",
             "dataType":"bool"
          },
          {
-            "name":"D8",
-            "displayName":"D21",
-            "dataType":"bool"
-         },
-         {
-            "name":"D9",
-            "displayName":"D22",
-            "dataType":"bool"
-         },
-         {
-            "name":"D33",
+            "name":"D19",
             "displayName":"D5",
             "dataType":"bool"
          },
          {
-            "name":"D38",
+            "name":"D18",
             "displayName":"D6",
             "dataType":"bool"
          },
          {
-            "name":"D1",
-            "displayName":"D9",
-            "dataType":"bool"
-         },
-         {
-            "name":"D3",
-            "displayName":"D10",
-            "dataType":"bool"
-         },
-         {
-            "name":"D7",
-            "displayName":"D11",
+            "name":"D9",
+            "displayName":"D7",
             "dataType":"bool"
          },
          {
             "name":"D10",
-            "displayName":"D12",
+            "displayName":"D8",
             "dataType":"bool"
          },
          {
             "name":"D11",
-            "displayName":"D13",
+            "displayName":"D9",
+            "dataType":"bool"
+         },
+         {
+            "name":"D12",
+            "displayName":"D10",
             "dataType":"bool"
          },
          {
             "name":"D13",
-            "displayName":"LED",
+            "displayName":"D11",
+            "dataType":"bool"
+         },
+         {
+            "name":"D17",
+            "displayName":"D12",
+            "dataType":"bool"
+         },
+         {
+            "name":"D16",
+            "displayName":"D14",
+            "dataType":"bool"
+         },
+         {
+            "name":"D14",
+            "displayName":"D17",
+            "dataType":"bool"
+         },
+         {
+            "name":"D15",
+            "displayName":"D18",
+            "dataType":"bool"
+         },
+         {
+            "name":"D20",
+            "displayName":"D33",
+            "dataType":"bool"
+         },
+         {
+            "name":"D24",
+            "displayName":"D35",
+            "dataType":"bool"
+         },
+         {
+            "name":"D25",
+            "displayName":"D36",
+            "dataType":"bool"
+         },
+         {
+            "name":"D23",
+            "displayName":"D37",
+            "dataType":"bool"
+         },
+         {
+            "name":"D21",
+            "displayName":"D38",
+            "dataType":"bool"
+         },
+         {
+            "name":"D1",
+            "displayName":"D43",
+            "dataType":"bool"
+         },
+         {
+            "name":"D0",
+            "displayName":"D44",
             "dataType":"bool"
          }
        ],
        "analogPins":[
           {
-             "name":"A17",
-             "displayName":"A0",
-             "dataType":"int16"
-          },
-          {
-             "name":"A18",
-             "displayName":"A1",
-             "dataType":"int16"
-          },
-          {
-             "name":"A14",
-             "displayName":"A2",
-             "dataType":"int16"
-          },
-          {
-             "name":"A12",
-             "displayName":"A3",
-             "dataType":"int16"
-          },
-          {
-             "name":"A6",
-             "displayName":"A4",
-             "dataType":"int16"
-          },
-          {
-             "name":"A5",
-             "displayName":"A5",
-             "dataType":"int16"
-          },
-          {
-            "name":"A1",
-            "displayName":"A10",
-            "dataType":"int16"
-          },
-          {
-            "name":"A3",
-            "displayName":"A9",
-            "dataType":"int16"
-          },
-          {
-            "name":"A7",
-            "displayName":"A8",
-            "dataType":"int16"
-          },
-          {
             "name":"A10",
+            "displayName":"A1",
+            "dataType":"int16"
+          },
+          {
+            "name":"A9",
+            "displayName":"A3",
+            "dataType":"int16"
+          },
+          {
+            "name":"A5",
+            "displayName":"A5",
+            "dataType":"int16"
+          },
+          {
+            "name":"A4",
+            "displayName":"A6",
+            "dataType":"int16"
+          },
+          {
+            "name":"A8",
             "displayName":"A7",
             "dataType":"int16"
           },
           {
-            "name":"A11",
-            "displayName":"A6",
+            "name":"A7",
+            "displayName":"A10",
+            "dataType":"int16"
+          },
+          {
+            "name":"A6",
+            "displayName":"A11",
+            "dataType":"int16"
+          },
+          {
+            "name":"A3",
+            "displayName":"A12",
+            "dataType":"int16"
+          },
+          {
+            "name":"A2",
+            "displayName":"A14",
+            "dataType":"int16"
+          },
+          {
+            "name":"A0",
+            "displayName":"A17",
+            "dataType":"int16"
+          },
+          {
+            "name":"A1",
+            "displayName":"A18",
             "dataType":"int16"
           }
        ],
