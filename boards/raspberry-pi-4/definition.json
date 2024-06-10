@@ -147,12 +147,6 @@
       }
     ],
     "analogPins": [],
-    "i2cPorts": [
-      {
-        "i2cPortId": 0,
-        "SDA": "SDA",
-        "SCL": "SCL"
-      }
-    ]
+    "i2cPorts": []
   }
 }
