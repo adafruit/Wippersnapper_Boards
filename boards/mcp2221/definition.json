@@ -5,7 +5,7 @@
   "displayName": "Adafruit MCP2221A Breakout",
   "vendor": "Adafruit",
   "productURL": "https://www.adafruit.com/product/4471",
-  "documentationURL": "https://learn.adafruit.com/circuitpython-libraries-on-any-computer-with-mcp2221/overview",
+  "documentationURL": "https://learn.adafruit.com/",
   "installMethod": "python",
   "components": {
     "digitalPins": [
