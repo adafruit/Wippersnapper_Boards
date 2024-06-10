@@ -157,12 +157,8 @@
             "additionalProperties": false,
             "properties": {
               "i2cPortId": { "type": "number" },
-              "SDA": {
-                "oneOf": [{ "type": "number" }, { "type": "string" }]
-              },
-              "SCL": {
-                "oneOf": [{ "type": "number" }, { "type": "string" }]
-              }
+              "SDA": { "type": "number" },
+              "SCL": { "type": "number" }
             }
           }
         }
