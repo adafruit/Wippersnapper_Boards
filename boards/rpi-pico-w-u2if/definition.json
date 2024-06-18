@@ -224,12 +224,6 @@
         "dataType": "int16"
       }
     ],
-    "i2cPorts": [
-      {
-        "i2cPortId": 0,
-        "SDA": "SDA0",
-        "SCL": "SCL0"
-      }
-    ]
+    "i2cPorts": []
   }
 }
