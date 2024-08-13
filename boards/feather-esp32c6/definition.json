@@ -1,0 +1,218 @@
+{
+  "boardName": "feather-esp32c6",
+  "mcuName": "esp32c6",
+  "mcuRefVoltage": 1.1,
+  "displayName": "Adafruit Feather ESP32-C6",
+  "vendor": "Adafruit",
+  "productURL": "https://www.adafruit.com/product/5933",
+  "documentationURL": "https://learn.adafruit.com/adafruit-qt-py-esp32-c3-wifi-dev-board",
+  "installBoardName": "wippersnapper_feather_esp32c6",
+  "installMethod": "web",
+  "esptool": {
+    "fileSystemSize": 131072,
+    "blockSize": 4096,
+    "offset": "0x3D0000",
+    "chip": "esp32c6",
+    "flashMode": "qio",
+    "flashFreq": "80m",
+    "flashSize": "4MB",
+    "structure": {
+      "0x0": "wippersnapper.wippersnapper_feather_esp32c6.littlefs.VERSION.combined.bin"
+    }
+  },
+  "components": {
+    "digitalPins": [
+      {
+        "name": "D1",
+        "displayName": "IO1 (A0)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D4",
+        "displayName": "IO4 (A1)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D3",
+        "displayName": "IO3 (A2)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D2",
+        "displayName": "D2 (A3)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D6",
+        "displayName": "IO6 (D24/A4/D6)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D5",
+        "displayName": "IO5 (D25/A5/D5)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D21",
+        "displayName": "IO21 (SCK)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D22",
+        "displayName": "IO22 (MO)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D23",
+        "displayName": "IO23 (MI)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D17",
+        "displayName": "D17 (UART RX)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "uartRx": true
+      },
+      {
+        "name": "D16",
+        "displayName": "D16 (UART TX)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "uartTx": true
+      },
+      {
+        "name": "D9",
+        "displayName": "Button (IO9/NeoPixel)",
+        "dataType": "bool"
+      },
+      {
+        "name": "D15",
+        "displayName": "IO15 (D13/LED)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D14",
+        "displayName": "IO14 (D12)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D0",
+        "displayName": "IO0 (D11)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D8",
+        "displayName": "IO8 (D10)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D7",
+        "displayName": "IO7 (D9)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D18",
+        "displayName": "IO18 (SCL)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D19",
+        "displayName": "IO19 (SDA)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D20",
+        "displayName": "IO20 (I2C Power)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      }
+    ],
+    "analogPins": [
+      {
+        "name": "D1",
+        "displayName": "A0",
+        "dataType": "int16",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D4",
+        "displayName": "A1",
+        "dataType": "int16",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D3",
+        "displayName": "A2",
+        "dataType": "int16",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D2",
+        "displayName": "A3",
+        "dataType": "int16",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D6",
+        "displayName": "A4",
+        "dataType": "int16",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D5",
+        "displayName": "A5",
+        "dataType": "int16",
+        "hasPWM": true,
+        "hasServo": true
+      }
+    ],
+    "i2cPorts": [
+      {
+        "i2cPortId": 0,
+        "SDA": 19,
+        "SCL": 18
+      }
+    ]
+  }
+}
