@@ -103,7 +103,7 @@
       },
       {
         "name": "D9",
-        "displayName": "Button (IO9/NeoPixel)",
+        "displayName": "IO9 (NeoPixel)",
         "dataType": "bool"
       },
       {
