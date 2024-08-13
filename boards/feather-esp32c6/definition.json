@@ -45,7 +45,7 @@
       },
       {
         "name": "D2",
-        "displayName": "D2 (A3)",
+        "displayName": "IO2 (A3)",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
@@ -87,7 +87,7 @@
       },
       {
         "name": "D17",
-        "displayName": "D17 (UART RX)",
+        "displayName": "IO17 (UART RX)",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true,
@@ -95,7 +95,7 @@
       },
       {
         "name": "D16",
-        "displayName": "D16 (UART TX)",
+        "displayName": "IO16 (UART TX)",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true,
