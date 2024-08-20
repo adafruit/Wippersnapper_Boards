@@ -51,8 +51,8 @@
         "hasServo": true
       },
       {
-        "name": "D4",
-        "displayName": "IO4 (A4)",
+        "name": "D3",
+        "displayName": "IO3 (A4)",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
