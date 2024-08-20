@@ -37,29 +37,29 @@
         "hasServo": true
       },
       {
-        "name": "D3",
-        "displayName": "IO3 (A2)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "D2",
-        "displayName": "IO2 (A3)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
         "name": "D6",
-        "displayName": "IO6 (D24/A4/D6)",
+        "displayName": "IO6 (A2/D6)",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
       },
       {
         "name": "D5",
-        "displayName": "IO5 (D25/A5/D5)",
+        "displayName": "IO5 (A3/D5)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D4",
+        "displayName": "IO4 (A4)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D2",
+        "displayName": "IO2 (A5)",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
@@ -165,42 +165,42 @@
     ],
     "analogPins": [
       {
-        "name": "D1",
+        "name": "A1",
         "displayName": "A0",
         "dataType": "int16",
         "hasPWM": true,
         "hasServo": true
       },
       {
-        "name": "D4",
+        "name": "A4",
         "displayName": "A1",
         "dataType": "int16",
         "hasPWM": true,
         "hasServo": true
       },
       {
-        "name": "D3",
+        "name": "A6",
         "displayName": "A2",
         "dataType": "int16",
         "hasPWM": true,
         "hasServo": true
       },
       {
-        "name": "D2",
+        "name": "A5",
         "displayName": "A3",
         "dataType": "int16",
         "hasPWM": true,
         "hasServo": true
       },
       {
-        "name": "D6",
+        "name": "A3",
         "displayName": "A4",
         "dataType": "int16",
         "hasPWM": true,
         "hasServo": true
       },
       {
-        "name": "D5",
+        "name": "A2",
         "displayName": "A5",
         "dataType": "int16",
         "hasPWM": true,
