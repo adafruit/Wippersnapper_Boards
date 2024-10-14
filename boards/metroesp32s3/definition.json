@@ -10,11 +10,20 @@
     "components":{
        "digitalPins":[
           {
-             "name":"D1",
-             "displayName":"D1",
+             "name":"D40",
+             "displayName":"D1 (UART TX)",
              "dataType":"bool",
              "hasPWM":true,
-             "hasServo":true
+             "hasServo":true,
+             "uartTx":true
+          },
+          {
+             "name":"D41",
+             "displayName":"D1 (UART RX)",
+             "dataType":"bool",
+             "hasPWM":true,
+             "hasServo":true,
+             "uartRx":true
           },
           {
             "name":"D2",
@@ -39,19 +48,17 @@
          },
          {
             "name":"D5",
-            "displayName":"D5 (UART TX)",
+            "displayName":"D5",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true,
-            "uartTx":true
+            "hasServo":true
          },
          {
             "name":"D6",
-            "displayName":"D6 (UART RX)",
+            "displayName":"D6",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true,
-            "uartRx":true
+            "hasServo":true
          },
          {
             "name":"D7",
@@ -97,48 +104,92 @@
          },
          {
             "name":"D13",
-            "displayName":"D13",
+            "displayName":"D13 (Built-in LED)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D47",
+            "displayName":"D47 (SDA)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D48",
+            "displayName":"D48 (SCL)",
             "dataType":"bool",
             "hasPWM":true,
             "hasServo":true
          },
          {
             "name":"D14",
-            "displayName":"D14",
+            "displayName":"A0 (GPIO14)",
             "dataType":"bool",
             "hasPWM":true,
             "hasServo":true
          },
          {
             "name":"D15",
-            "displayName":"D15",
+            "displayName":"A1 (GPIO15)",
             "dataType":"bool",
             "hasPWM":true,
             "hasServo":true
          },
          {
             "name":"D16",
-            "displayName":"D16",
+            "displayName":"A2 (GPIO16)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D17",
+            "displayName":"A3 (GPIO17)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D18",
+            "displayName":"A4 (GPIO18)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D1",
+            "displayName":"A5 (GPIO1)",
             "dataType":"bool",
             "hasPWM":true,
             "hasServo":true
          },
          {
             "name":"D21",
-            "displayName":"D21",
+            "displayName":"D21 (MISO)",
             "dataType":"bool",
             "hasPWM":true,
             "hasServo":true
          },
          {
             "name":"D42",
-            "displayName":"Built-in LED",
+            "displayName":"D42 (MOSI)",
             "dataType":"bool",
-            "hasPWM":true
+            "hasPWM":true,
+            "hasServo":true
+         },
+         
+         {
+            "name":"D39",
+            "displayName":"D39 (SCK)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
          },
          {
-            "name":"D45",
-            "displayName":"D45 (NeoPixel)",
+            "name":"D46",
+            "displayName":"D46 (NeoPixel)",
             "dataType":"bool"
          }
        ],
