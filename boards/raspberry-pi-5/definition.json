@@ -1,0 +1,152 @@
+{
+  "boardName": "raspberry-pi-5",
+  "mcuName": "bcm2712",
+  "mcuRefVoltage": 3.3,
+  "displayName": "Raspberry Pi 5",
+  "vendor": "Raspberry Pi",
+  "productURL": "https://www.adafruit.com/product/5813",
+  "documentationURL": "https://learn.adafruit.com/",
+  "installMethod": "python",
+  "components": {
+    "digitalPins": [
+      {
+        "name": "D0",
+        "displayName": "D0",
+        "dataType": "bool"
+      },
+      {
+        "name": "D1",
+        "displayName": "D1",
+        "dataType": "bool"
+      },
+      {
+        "name": "D4",
+        "displayName": "D4",
+        "dataType": "bool"
+      },
+      {
+        "name": "D5",
+        "displayName": "D5",
+        "dataType": "bool"
+      },
+      {
+        "name": "D6",
+        "displayName": "D6",
+        "dataType": "bool"
+      },
+      {
+        "name": "D7",
+        "displayName": "D7",
+        "dataType": "bool"
+      },
+      {
+        "name": "D8",
+        "displayName": "D8",
+        "dataType": "bool"
+      },
+      {
+        "name": "D9",
+        "displayName": "D9",
+        "dataType": "bool"
+      },
+      {
+        "name": "D10",
+        "displayName": "D10",
+        "dataType": "bool"
+      },
+      {
+        "name": "D11",
+        "displayName": "D11",
+        "dataType": "bool"
+      },
+      {
+        "name": "D12",
+        "displayName": "D12 (PWM Output 0)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D13",
+        "displayName": "D13 (PWM Output 1)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D14",
+        "displayName": "D14 (UART TX)",
+        "dataType": "bool",
+        "uartTx": true
+      },
+      {
+        "name": "D15",
+        "displayName": "D15 (UART RX)",
+        "dataType": "bool",
+        "uartRx": true
+      },
+      {
+        "name": "D16",
+        "displayName": "D16",
+        "dataType": "bool"
+      },
+      {
+        "name": "D17",
+        "displayName": "D17",
+        "dataType": "bool"
+      },
+      {
+        "name": "D18",
+        "displayName": "D18",
+        "dataType": "bool"
+      },
+      {
+        "name": "D19",
+        "displayName": "D19",
+        "dataType": "bool"
+      },
+      {
+        "name": "D20",
+        "displayName": "D20",
+        "dataType": "bool"
+      },
+      {
+        "name": "D21",
+        "displayName": "D21",
+        "dataType": "bool"
+      },
+      {
+        "name": "D22",
+        "displayName": "D22",
+        "dataType": "bool"
+      },
+      {
+        "name": "D23",
+        "displayName": "D23",
+        "dataType": "bool"
+      },
+      {
+        "name": "D24",
+        "displayName": "D24",
+        "dataType": "bool"
+      },
+      {
+        "name": "D25",
+        "displayName": "D25",
+        "dataType": "bool"
+      },
+      {
+        "name": "D26",
+        "displayName": "D26",
+        "dataType": "bool"
+      },
+      {
+        "name": "D27",
+        "displayName": "D27",
+        "dataType": "bool"
+      }
+    ],
+    "analogPins": [],
+    "i2cPorts": []
+  }
+}
