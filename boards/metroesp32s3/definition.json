@@ -10,7 +10,12 @@
     "published":true,
     "components":{
        "digitalPins":[
-          {
+         {
+            "name":"D0",
+            "displayName":"Built-in Button (Boot0)",
+            "dataType":"bool"
+         },
+         {
              "name":"D40",
              "displayName":"D1 (UART TX)",
              "dataType":"bool",
