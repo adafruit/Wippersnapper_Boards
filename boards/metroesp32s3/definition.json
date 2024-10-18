@@ -1,0 +1,338 @@
+{
+    "boardName":"metroesp32s3",
+    "mcuName":"esp32s3",
+    "mcuRefVoltage":2.6,
+    "displayName":"Adafruit Metro ESP32-S3",
+    "vendor":"Adafruit",
+    "productURL":"https://www.adafruit.com/product/5500",
+    "documentationURL":"https://learn.adafruit.com/adafruit-metro-esp32-s3",
+    "installMethod":"uf2",
+    "published":true,
+    "components":{
+       "digitalPins":[
+         {
+            "name":"D0",
+            "displayName":"Built-in Button (Boot0)",
+            "dataType":"bool"
+         },
+         {
+             "name":"D40",
+             "displayName":"D1 (UART TX)",
+             "dataType":"bool",
+             "hasPWM":true,
+             "hasServo":true,
+             "uartTx":true
+          },
+          {
+             "name":"D41",
+             "displayName":"D1 (UART RX)",
+             "dataType":"bool",
+             "hasPWM":true,
+             "hasServo":true,
+             "uartRx":true
+          },
+          {
+            "name":"D2",
+            "displayName":"D2",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D3",
+            "displayName":"D3",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D4",
+            "displayName":"D4",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D5",
+            "displayName":"D5",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D6",
+            "displayName":"D6",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D7",
+            "displayName":"D7",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D8",
+            "displayName":"D8",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D9",
+            "displayName":"D9",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D10",
+            "displayName":"D10",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D11",
+            "displayName":"D11",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D12",
+            "displayName":"D12",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D13",
+            "displayName":"D13 (Built-in LED)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D47",
+            "displayName":"D47 (SDA)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D48",
+            "displayName":"D48 (SCL)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D14",
+            "displayName":"A0 (GPIO14)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D15",
+            "displayName":"A1 (GPIO15)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D16",
+            "displayName":"A2 (GPIO16)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D17",
+            "displayName":"A3 (GPIO17)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D18",
+            "displayName":"A4 (GPIO18)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D1",
+            "displayName":"A5 (GPIO1)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D21",
+            "displayName":"D21 (MISO)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D42",
+            "displayName":"D42 (MOSI)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         
+         {
+            "name":"D39",
+            "displayName":"D39 (SCK)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"D46",
+            "displayName":"D46 (NeoPixel)",
+            "dataType":"bool"
+         }
+       ],
+       "analogPins":[
+          {
+             "name":"A14",
+             "displayName":"A0 (GPIO14)",
+             "dataType":"int16",
+             "hasPWM":true,
+             "hasServo":true
+          },
+          {
+            "name":"A15",
+            "displayName":"A1 (GPIO15)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A16",
+            "displayName":"A2 (GPIO16)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A17",
+            "displayName":"A3 (GPIO17)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A18",
+            "displayName":"A4 (GPIO18)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A1",
+            "displayName":"A5 (GPIO1)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A2",
+            "displayName":"D2 (GPIO2)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A3",
+            "displayName":"D3 (GPIO3)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A4",
+            "displayName":"D4 (GPIO4)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A5",
+            "displayName":"D5 (GPIO5)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A6",
+            "displayName":"D6 (GPIO6)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A7",
+            "displayName":"D7 (GPIO7)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A8",
+            "displayName":"D8 (GPIO8)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A9",
+            "displayName":"D9 (GPIO9)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A10",
+            "displayName":"D10 (GPIO10)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A11",
+            "displayName":"D11 (GPIO11)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A12",
+            "displayName":"D12 (GPIO12)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         },
+         {
+            "name":"A13",
+            "displayName":"D13 (GPIO13)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+         }
+       ],
+       "i2cPorts": [
+        {
+            "i2cPortId": 0,
+            "SDA": 47,
+            "SCL": 48
+        }
+      ]
+    }
+ }
