@@ -6,6 +6,7 @@
     "vendor":"Adafruit",
     "productURL":"https://www.adafruit.com/product/5500",
     "documentationURL":"https://learn.adafruit.com/adafruit-metro-esp32-s3",
+    "installBoardName": "metro_esp32s3",
     "installMethod":"uf2",
     "published":true,
     "components":{
