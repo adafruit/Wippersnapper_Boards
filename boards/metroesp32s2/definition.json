@@ -10,11 +10,17 @@
     "components":{
        "digitalPins":[
           {
-             "name":"D1",
-             "displayName":"D1",
-             "dataType":"bool",
-             "hasPWM":true,
-             "hasServo":true
+            "name":"D0",
+            "displayName":"D0 (Boot0 Push Button)",
+            "dataType":"bool",
+            "direction":"INPUT"
+          },
+          {
+            "name":"D1",
+            "displayName":"D1",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
           },
           {
             "name":"D2",
