@@ -7,7 +7,7 @@
     "productURL":"https://www.adafruit.com/product/6087",
     "documentationURL":"https://learn.adafruit.com/quick-start-the-pico-w-with-wippersnapper/overview",
     "installMethod":"uf2",
-    "installBoardName":"pico2w_rp2350_tinyusb",
+    "installBoardName":"picow_rp2350_tinyusb",
     "components":{
         "digitalPins":[
             {
