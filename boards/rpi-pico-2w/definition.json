@@ -1,13 +1,13 @@
 {
-    "boardName":"rpi-pico-w",
-    "mcuName":"rp2040",
+    "boardName":"rpi-pico-2w",
+    "mcuName":"rp2350",
     "mcuRefVoltage":3.3,
-    "displayName":"Raspberry Pi Pico W",
+    "displayName":"Raspberry Pi Pico 2W",
     "vendor":"Raspberry Pi",
-    "productURL":"https://www.raspberrypi.com/products/raspberry-pi-pico/",
-    "documentationURL":"https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#picow-technical-specification",
+    "productURL":"https://www.raspberrypi.com/products/raspberry-pi-pico-2/",
+    "documentationURL":"https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico2w-technical-specification",
     "installMethod":"uf2",
-    "installBoardName":"picow_rp2040_tinyusb",
+    "installBoardName":"pico2w_rp2350_tinyusb",
     "components":{
         "digitalPins":[
             {
