@@ -4,8 +4,8 @@
     "mcuRefVoltage":3.3,
     "displayName":"Raspberry Pi Pico W",
     "vendor":"Raspberry Pi",
-    "productURL":"https://www.raspberrypi.com/products/raspberry-pi-pico/",
-    "documentationURL":"https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#picow-technical-specification",
+    "productURL":"https://www.adafruit.com/product/5526",
+    "documentationURL":"https://learn.adafruit.com/quick-start-the-pico-w-with-wippersnapper/",
     "installMethod":"uf2",
     "installBoardName":"picow_rp2040_tinyusb",
     "components":{

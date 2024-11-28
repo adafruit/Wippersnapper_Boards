@@ -4,8 +4,8 @@
     "mcuRefVoltage":3.3,
     "displayName":"Raspberry Pi Pico 2W",
     "vendor":"Raspberry Pi",
-    "productURL":"https://www.raspberrypi.com/products/raspberry-pi-pico-2/",
-    "documentationURL":"https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico2w-technical-specification",
+    "productURL":"https://www.adafruit.com/product/6087",
+    "documentationURL":"https://learn.adafruit.com/quick-start-the-pico-w-with-wippersnapper/overview",
     "installMethod":"uf2",
     "installBoardName":"pico2w_rp2350_tinyusb",
     "components":{
