@@ -1,5 +1,6 @@
 {
     "boardName":"rpi-pico-2w",
+    "bootDiskName":"RP2350",
     "mcuName":"rp2350",
     "mcuRefVoltage":3.3,
     "displayName":"Raspberry Pi Pico 2W",

@@ -11,6 +11,12 @@
       "minLength": 3,
       "maxLength": 40
     },
+    "bootDiskName": {
+      "description": "The name of the disk that the board will appear as when connected in bootloader mode to a computer. e.g. RP2",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40
+    },
     "mcuName": {
       "description": "Microcontroller name.",
       "type": "string",
