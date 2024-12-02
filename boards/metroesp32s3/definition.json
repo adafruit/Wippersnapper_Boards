@@ -6,6 +6,7 @@
     "vendor":"Adafruit",
     "productURL":"https://www.adafruit.com/product/5500",
     "documentationURL":"https://learn.adafruit.com/adafruit-metro-esp32-s3",
+    "installBoardName": "metro_esp32s3",
     "installMethod":"uf2",
     "installBoardName": "metro_esp32s3",
     "published":true,
@@ -14,7 +15,8 @@
          {
             "name":"D0",
             "displayName":"Built-in Button (Boot0)",
-            "dataType":"bool"
+            "dataType":"bool",
+            "direction": "INPUT"
          },
          {
              "name":"D40",
