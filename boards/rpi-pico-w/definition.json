@@ -224,7 +224,7 @@
                 "hasServo":true
             },
             {
-                "name":"D32",
+                "name":"D64",
                 "displayName":"LED (BUILT-IN)",
                 "dataType":"bool"
             }
