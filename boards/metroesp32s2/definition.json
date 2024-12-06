@@ -1,5 +1,6 @@
 {
     "boardName":"metroesp32s2",
+    "bootDiskName": "METROS2BOOT",
     "mcuName":"esp32s2",
     "mcuRefVoltage":2.6,
     "displayName":"Adafruit Metro ESP32-S2",

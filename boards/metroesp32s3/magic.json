@@ -1,0 +1,46 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2024-11-13T19:26:40.834Z",
+  "exportedFromDevice": {
+    "board": "metroesp32s3",
+    "firmwareVersion": "1.0.0-beta.93"
+  },
+  "components": [
+    {
+      "name": "Dimmable LED",
+      "type": "dimmable_led",
+      "pwmSetting": "fixedFrequency",
+      "frequency": 5000,
+      "resolution": 12,
+      "pinName": "D13",
+      "isPWM": true
+    },
+    {
+      "name": "MAX17048/MAX17049: Battery Cell Percent",
+      "isI2C": true,
+      "type": "max17048:unitless-percent",
+      "period": 30,
+      "i2cAddress": 54,
+      "sensorType": "unitless-percent"
+    },
+    {
+      "name": "MAX17048/MAX17049: Battery Cell Voltage",
+      "isI2C": true,
+      "type": "max17048:voltage",
+      "period": 30,
+      "i2cAddress": 54,
+      "sensorType": "voltage"
+    },
+    {
+      "name": "NeoPixel",
+      "pixelNumber": 1,
+      "pixelsOrder": "GRB",
+      "pixelBrightness": 255,
+      "pinName": "D46",
+      "type": "neopixel",
+      "pixelsType": "NEOPIXEL",
+      "isPixel": true
+    }
+  ]
+}
