@@ -1,5 +1,6 @@
 {
     "boardName":"rpi-pico-w",
+    "bootDiskName":"RP2",
     "mcuName":"rp2040",
     "mcuRefVoltage":3.3,
     "displayName":"Raspberry Pi Pico W",
@@ -223,7 +224,7 @@
                 "hasServo":true
             },
             {
-                "name":"D32",
+                "name":"D64",
                 "displayName":"LED (BUILT-IN)",
                 "dataType":"bool"
             }

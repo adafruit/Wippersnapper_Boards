@@ -9,7 +9,7 @@
   "components": [
     {
       "name": "LED",
-      "pinName": "D32",
+      "pinName": "D64",
       "type": "led",
       "mode": "DIGITAL",
       "direction": "OUTPUT",
