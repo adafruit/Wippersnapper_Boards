@@ -1,0 +1,229 @@
+{
+  "boardName": "rpi-pico-w-u2if",
+  "mcuName": "rp2040",
+  "mcuRefVoltage": 3.3,
+  "displayName": "Raspberry Pi Pico W (U2IF Blinka)",
+  "vendor": "Raspberry Pi",
+  "productURL": "https://www.raspberrypi.com/products/raspberry-pi-pico/",
+  "documentationURL": "https://learn.adafruit.com/",
+  "installMethod": "python",
+  "components": {
+    "digitalPins": [
+      {
+        "name": "GP0",
+        "displayName": "GP0",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP1",
+        "displayName": "GP1",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP2",
+        "displayName": "GP2",
+        "dataType": "bool",
+        "hasPWM": true
+      },
+      {
+        "name": "GP3",
+        "displayName": "GP3",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP4",
+        "displayName": "GP4 (SDA0)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP5",
+        "displayName": "GP5 (SCL0)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP6",
+        "displayName": "GP6",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP7",
+        "displayName": "GP7",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP8",
+        "displayName": "GP8",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP9",
+        "displayName": "GP9",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP10",
+        "displayName": "GP10 (SCLK1",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP11",
+        "displayName": "GP11 (MOSI1)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP12",
+        "displayName": "GP12 (MISO1)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP13",
+        "displayName": "GP13",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP14",
+        "displayName": "GP14 (SDA1)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP15",
+        "displayName": "GP15 (SCL1)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP16",
+        "displayName": "GP16 (MISO0)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP17",
+        "displayName": "GP17",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP18",
+        "displayName": "GP18 (SCLK0)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP19",
+        "displayName": "GP19 (MOSI0)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP20",
+        "displayName": "GP20",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP21",
+        "displayName": "GP21",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP22",
+        "displayName": "GP22",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP23",
+        "displayName": "GP23",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP24",
+        "displayName": "GP24",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D25",
+        "displayName": "GP25",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP26",
+        "displayName": "GP26",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP27",
+        "displayName": "GP27 (ADC1)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "GP28",
+        "displayName": "GP28 (ADC0)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      }
+    ],
+    "analogPins": [
+      {
+        "name": "ADC0",
+        "displayName": "ADC 0",
+        "dataType": "int16"
+      },
+      {
+        "name": "ADC1",
+        "displayName": "ADC 1",
+        "dataType": "int16"
+      }
+    ],
+    "i2cPorts": []
+  }
+}
