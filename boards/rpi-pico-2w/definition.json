@@ -7,7 +7,7 @@
     "vendor":"Raspberry Pi",
     "productURL":"https://www.adafruit.com/product/6087",
     "documentationURL":"https://learn.adafruit.com/quick-start-the-pico-w-with-wippersnapper/overview",
-    "published": false,
+    "published": true,
     "installMethod":"uf2",
     "installBoardName":"picow_rp2350_tinyusb",
     "components":{
