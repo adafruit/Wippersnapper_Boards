@@ -176,7 +176,7 @@ jobs:
             fi
 
             # use imagemagick for the width
-            WIDTH=`identify -ping -format "%w" ${FILE}[0]`
+            WIDTH=`magick identify -ping -format "%w" ${FILE}[0]`
             BAD_WIDTH=false
             if [[ "$WIDTH" -gt "$MAX_WIDTH" ]]; then
               EXIT_VALUE=1
@@ -184,7 +184,7 @@ jobs:
             fi
 
             # use imagemagick for the height
-            HEIGHT=`identify -ping -format "%h" ${FILE}[0]`
+            HEIGHT=`magick identify -ping -format "%h" ${FILE}[0]`
             BAD_HEIGHT=false
             if [[ "$HEIGHT" -gt "$MAX_HEIGHT" ]]; then
               EXIT_VALUE=1
