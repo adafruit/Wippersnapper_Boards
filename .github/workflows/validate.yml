@@ -162,7 +162,7 @@ jobs:
       FILES: ${{ needs.changed-files.outputs.files }}
     steps:
       - uses: actions/checkout@v3
-      - uses: mfinelli/setup-imagemagick@v2
+      - uses: mfinelli/setup-imagemagick@v6
       - name: Validate Image Dimensions
         run: |
           EXIT_VALUE=0
