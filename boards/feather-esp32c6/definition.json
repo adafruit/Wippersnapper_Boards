@@ -106,6 +106,7 @@
         "displayName": "IO9 (NeoPixel)",
         "dataType": "bool",
         "hasPWM": true,
+        "hasServo": true
       },
       {
         "name": "D15",
