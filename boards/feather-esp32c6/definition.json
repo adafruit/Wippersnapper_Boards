@@ -104,39 +104,41 @@
       {
         "name": "D9",
         "displayName": "IO9 (NeoPixel)",
-        "dataType": "bool"
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
       },
       {
         "name": "D15",
-        "displayName": "IO15 (D13/LED)",
+        "displayName": "IO15 (LED)",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
       },
       {
         "name": "D14",
-        "displayName": "IO14 (D12)",
+        "displayName": "IO14",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
       },
       {
         "name": "D0",
-        "displayName": "IO0 (D11)",
+        "displayName": "IO0",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
       },
       {
         "name": "D8",
-        "displayName": "IO8 (D10)",
+        "displayName": "IO8",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
       },
       {
         "name": "D7",
-        "displayName": "IO7 (D9)",
+        "displayName": "IO7",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
