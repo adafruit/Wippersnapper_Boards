@@ -58,6 +58,11 @@
              "hasServo":true
           },
           {
+             "name":"D7",
+             "displayName":"D7 (I2C Power)",
+             "dataType":"bool"
+          },
+          {
              "name":"D9",
              "displayName":"D9",
              "dataType":"bool",
