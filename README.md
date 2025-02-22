@@ -79,4 +79,4 @@ The following HDM snippet defines an I2C interface on port 0 with a `SDA` GPIO p
 Example hardware descriptions can be found in the `boards/` directory.
 
 # Limitations
-* The Adafruit IO WipperSnapper Firmware currently supports the following microcontrollers with a WiFi network interface: ESP8266, ESP32, ESP32-S2, ESP32-S3, SAMD51, SAMD21.
+* The Adafruit IO WipperSnapper Firmware currently supports the following microcontrollers with a WiFi network interface: ESP8266, ESP32, ESP32-S2, ESP32-S3, SAMD51, SAMD21, Raspverry Pi RP2040/RP2350 (not RM2 yet).
