@@ -51,7 +51,8 @@ jobs:
       - uses: actions/checkout@v3
       - name: List Changed Board Files
         id: list-changed-files
-        uses: tj-actions/changed-files@v41
+        outputs:
+          all_changed_files: git diff main --name-only --diff-filter=AMCR | xargs
 
   validate-expected-filenames:
     name: Validate Filenames
