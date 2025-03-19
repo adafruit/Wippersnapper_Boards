@@ -7,17 +7,17 @@ jobs:
     name: Validate JSON Schemas
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5
 
       # Schema Docs: https://ajv.js.org/json-schema.html#json-data-type
       - name: Validate Board JSON
-        uses: lorennorman/validate-json-action@master
+        uses: lorennorman/validate-json-action@ec27636
         with:
           schema: /boards/schema.json
           jsons: boards/*/definition.json
 
       - name: Validate Magic JSON
-        uses: lorennorman/validate-json-action@master
+        uses: lorennorman/validate-json-action@ec27636
         with:
           schema: /boards/magic_schema.json
           jsons: boards/*/magic.json
@@ -29,7 +29,7 @@ jobs:
       # Extract the permission for later jobs to use
       has-write-permission: ${{ steps.set-permission.outputs.has-permission }}
     steps:
-      - uses: octokit/request-action@v2.x
+      - uses: octokit/request-action@05a2312
         id: fetch-permissions
         with:
           route: GET /repos/${{ github.repository }}/collaborators/${{ github.actor }}/permission
@@ -48,10 +48,11 @@ jobs:
       files: ${{ steps.list-changed-files.outputs.all_changed_files }}
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5
       - name: List Changed Board Files
         id: list-changed-files
-        uses: tj-actions/changed-files@v41
+        outputs:
+          all_changed_files: git diff main --name-only --diff-filter=AMCR | xargs
 
   validate-expected-filenames:
     name: Validate Filenames
@@ -64,7 +65,7 @@ jobs:
       CAN_WRITE_TO_REPO: ${{ needs.check-user-permissions.outputs.has-write-permission }}
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5
       - name: Validate Only Expected Filenames
         run: |
           EXIT_VALUE=0
@@ -105,7 +106,7 @@ jobs:
     env:
       FILES: ${{ needs.changed-files.outputs.files }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5
       - name: Validate Image File Extension<->Mimetype Agreement
         run: |
           EXIT_VALUE=0
@@ -161,8 +162,8 @@ jobs:
     env:
       FILES: ${{ needs.changed-files.outputs.files }}
     steps:
-      - uses: actions/checkout@v3
-      - uses: mfinelli/setup-imagemagick@v6
+      - uses: actions/checkout@f43a0e5
+      - uses: mfinelli/setup-imagemagick@9b725c2
       - name: Validate Image Dimensions
         run: |
           EXIT_VALUE=0
@@ -221,7 +222,7 @@ jobs:
     env:
       FILES: ${{ needs.changed-files.outputs.files }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5
       - name: Validate Image File Sizes
         run: |
           EXIT_VALUE=0
