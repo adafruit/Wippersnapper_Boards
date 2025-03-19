@@ -51,7 +51,7 @@ jobs:
       - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744
       - name: List Changed Board Files
         id: list-changed-files
-        run: echo "all_changed_files=`git diff main --name-only --diff-filter=ACMR | xargs`" >> "$GITHUB_OUTPUT"
+        run: echo "all_changed_files=`git diff origin/main --name-only --diff-filter=ACMR | xargs`" >> "$GITHUB_OUTPUT"
 
   validate-expected-filenames:
     name: Validate Filenames
