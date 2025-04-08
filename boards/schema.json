@@ -81,7 +81,7 @@
       "description": "Whether this board supports online mode, or is offline only.",
       "type": "boolean"
     },
-    "sd_cs_pin": {
+    "sdCardCS": {
       "description": "Information about the default SD Card Chip Select pin present on this board.",
       "type": "number"
     },
