@@ -7,6 +7,7 @@
     "productURL":"https://www.adafruit.com/product/5000",
     "documentationURL":"https://learn.adafruit.com/adafruit-esp32-s3-feather",
     "installMethod":"uf2",
+    "onlineModeSupported": true,
     "components":{
       "digitalPins":[
         {

@@ -8,6 +8,7 @@
     "productURL":"https://www.adafruit.com/product/4775",
     "documentationURL":"https://learn.adafruit.com/adafruit-metro-esp32-s2",
     "installMethod":"uf2",
+    "onlineModeSupported": true,
     "components":{
        "digitalPins":[
           {

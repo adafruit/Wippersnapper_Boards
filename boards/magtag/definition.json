@@ -7,6 +7,7 @@
     "productURL":"https://www.adafruit.com/product/4800",
     "documentationURL":"https://learn.adafruit.com/adafruit-magtag",
     "installMethod":"uf2",
+    "onlineModeSupported": true,
     "components":{
        "digitalPins":[
         {
