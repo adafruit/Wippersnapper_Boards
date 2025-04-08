@@ -79,8 +79,7 @@
     },
     "onlineModeSupported": {
       "description": "Whether this board supports online mode, or is offline only.",
-      "type": "boolean",
-      "default": true
+      "type": "boolean"
     },
     "sd_cs_pin": {
       "description": "Information about the default SD Card Chip Select pin present on this board.",
