@@ -8,6 +8,7 @@
     "productURL":"https://www.adafruit.com/product/4444",
     "documentationURL":"https://learn.adafruit.com/adafruit-pyportal-titano",
     "installMethod":"uf2",
+    "onlineModeSupported": true,
     "components":
     {
       "digitalPins": [
