@@ -9,7 +9,7 @@
   "documentationURL": "https://learn.adafruit.com/adafruit-metro-rp2040",
   "installMethod": "uf2",
   "onlineModeSupported": false,
-  "sdCardCS": 34,
+  "sdCardCS": 23,
   "published": false,
   "components": {
     "digitalPins": [
@@ -163,8 +163,8 @@
         "hasServo": true
       },
       {
-        "name": "D34",
-        "displayName": "D34 (GP34, SD Card CS)",
+        "name": "D23",
+        "displayName": "D23 (GP23, SD Card CS)",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
