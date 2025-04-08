@@ -9,6 +9,8 @@
   "documentationURL": "https://learn.adafruit.com/adafruit-feather-rp2040-adalogger",
   "installMethod": "uf2",
   "onlineModeSupported": true,
+  "sd_cs_pin": 45,
+  "rtc": "PCF8523",
   "components": {
       "digitalPins": [
           {
