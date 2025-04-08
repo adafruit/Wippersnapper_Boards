@@ -1,12 +1,12 @@
 {
-  "boardName": "metro-rp2350",
+  "boardName": "metro-rp2040",
   "bootDiskName": "RPI-RP2",
-  "mcuName": "rp2350",
+  "mcuName": "rp2040",
   "mcuRefVoltage": 3.3,
-  "displayName": "Adafruit Metro RP2350",
+  "displayName": "Adafruit Metro RP2040",
   "vendor": "Adafruit",
-  "productURL": "https://www.adafruit.com/product/5786",
-  "documentationURL": "https://learn.adafruit.com/adafruit-metro-rp2350",
+  "productURL": "https://www.adafruit.com/product/5043",
+  "documentationURL": "https://learn.adafruit.com/adafruit-metro-rp2040",
   "installMethod": "uf2",
   "onlineModeSupported": false,
   "sdCardCS": 34,
@@ -66,7 +66,7 @@
       },
       {
         "name": "D7",
-        "displayName": "D7 (GP7)",
+        "displayName": "D7 (GP7, BOOT)",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
@@ -108,49 +108,7 @@
       },
       {
         "name": "D13",
-        "displayName": "D13 (GP13)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "D14",
-        "displayName": "D14 (GP14)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "D15",
-        "displayName": "D15 (GP15)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "D16",
-        "displayName": "D16 (GP16)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "D17",
-        "displayName": "D17 (GP17)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "D18",
-        "displayName": "D18 (GP18)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "D19",
-        "displayName": "D19 (GP19)",
+        "displayName": "D13 (GP13, LED)",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
@@ -170,22 +128,8 @@
         "hasServo": true
       },
       {
-        "name": "D22",
-        "displayName": "D22 (GP22, SPI0 SCK)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
-        "name": "D23",
-        "displayName": "D23 (GP23, RED LED)",
-        "dataType": "bool",
-        "hasPWM": true,
-        "hasServo": true
-      },
-      {
         "name": "D24",
-        "displayName": "D24 (GP24, BOOT)",
+        "displayName": "D24 (GP24)",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": true
@@ -228,33 +172,23 @@
     ],
     "analogPins": [
       {
-        "name": "A41",
-        "displayName": "A0 (GP41)",
+        "name": "A26",
+        "displayName": "A0 (GP26)",
         "dataType": "int16"
       },
       {
-        "name": "A42",
-        "displayName": "A1 (GP42)",
+        "name": "A27",
+        "displayName": "A1 (GP27)",
         "dataType": "int16"
       },
       {
-        "name": "A43", 
-        "displayName": "A2 (GP43)",
+        "name": "A28", 
+        "displayName": "A2 (GP28)",
         "dataType": "int16"
       },
       {
-        "name": "A44",
-        "displayName": "A3 (GP44)",
-        "dataType": "int16"
-      },
-      {
-        "name": "A45",
-        "displayName": "A4 (GP45)",
-        "dataType": "int16"
-      },
-      {
-        "name": "A46",
-        "displayName": "A5 (GP46)",
+        "name": "A29",
+        "displayName": "A3 (GP29)",
         "dataType": "int16"
       }
     ],
