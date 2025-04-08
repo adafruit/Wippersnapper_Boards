@@ -9,6 +9,7 @@
     "documentationURL":"https://learn.adafruit.com/adafruit-pyportal",
     "installMethod":"uf2",
     "onlineModeSupported": true,
+    "sdCardCS": 32,
     "components":
     {
       "digitalPins": [
