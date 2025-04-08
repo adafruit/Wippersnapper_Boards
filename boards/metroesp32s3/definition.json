@@ -10,6 +10,7 @@
     "installMethod":"uf2",
     "installBoardName": "metro_esp32s3",
     "published":true,
+    "sd_cs_pin": 45,
     "components":{
        "digitalPins":[
          {
