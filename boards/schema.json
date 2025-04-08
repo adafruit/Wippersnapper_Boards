@@ -77,6 +77,15 @@
       "description": "Whether this board is officially published. When false, it won't appear in the firmware installer, for instance.",
       "type": "boolean"
     },
+    "onlineModeSupported": {
+      "description": "Whether this board supports online mode, or is offline only.",
+      "type": "boolean",
+      "default": true
+    },
+    "sd_cs_pin": {
+      "description": "Information about the default SD Card Chip Select pin present on this board.",
+      "type": "number"
+    },
     "components": {
       "description": "List of available pins and I2C ports for this board.",
       "type": "object",
