@@ -9,6 +9,7 @@
   "documentationURL": "https://learn.adafruit.com/adafruit-feather-rp2040-adalogger",
   "installMethod": "uf2",
   "onlineModeSupported": false,
+  "published": true,
   "sdCardCS": 45,
   "rtc": "PCF8523",
   "components": {
