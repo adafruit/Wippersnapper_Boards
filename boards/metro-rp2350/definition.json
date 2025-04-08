@@ -10,7 +10,7 @@
   "installMethod": "uf2",
   "onlineModeSupported": false,
   "sdCardCS": 34,
-  "published": true,
+  "published": false,
   "components": {
     "digitalPins": [
       {
