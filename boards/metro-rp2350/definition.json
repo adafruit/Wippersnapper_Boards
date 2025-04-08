@@ -1,0 +1,277 @@
+{
+  "boardName": "metro-rp2350",
+  "bootDiskName": "RPI-RP2",
+  "mcuName": "rp2350",
+  "mcuRefVoltage": 3.3,
+  "displayName": "Adafruit Metro RP2350",
+  "vendor": "Adafruit",
+  "productURL": "https://www.adafruit.com/product/5786",
+  "documentationURL": "https://learn.adafruit.com/adafruit-metro-rp2350",
+  "installMethod": "uf2",
+  "onlineModeSupported": false,
+  "sdCardCS": 34,
+  "published": true,
+  "components": {
+    "digitalPins": [
+      {
+        "name": "D0",
+        "displayName": "D0 (GP0, UART TX)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "uartTx": true
+      },
+      {
+        "name": "D1",
+        "displayName": "D1 (GP1, UART RX)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "uartRx": true
+      },
+      {
+        "name": "D2",
+        "displayName": "D2 (GP2)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D3",
+        "displayName": "D3 (GP3)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D4",
+        "displayName": "D4 (GP4)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D5",
+        "displayName": "D5 (GP5)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D6",
+        "displayName": "D6 (GP6)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D7",
+        "displayName": "D7 (GP7)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D8",
+        "displayName": "D8 (GP8)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D9",
+        "displayName": "D9 (GP9)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D10",
+        "displayName": "D10 (GP10)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D11",
+        "displayName": "D11 (GP11)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D12",
+        "displayName": "D12 (GP12)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D13",
+        "displayName": "D13 (GP13)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D14",
+        "displayName": "D14 (GP14)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D15",
+        "displayName": "D15 (GP15)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D16",
+        "displayName": "D16 (GP16)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D17",
+        "displayName": "D17 (GP17)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D18",
+        "displayName": "D18 (GP18)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D19",
+        "displayName": "D19 (GP19)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D20",
+        "displayName": "D20 (GP20, SDA)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D21",
+        "displayName": "D21 (GP21, SCL)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D22",
+        "displayName": "D22 (GP22, SPI0 SCK)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D23",
+        "displayName": "D23 (GP23, RED LED)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D24",
+        "displayName": "D24 (GP24, BOOT)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D25",
+        "displayName": "D25 (GP25, NeoPixel)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D28",
+        "displayName": "D28 (GP28, SPI MISO)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D30",
+        "displayName": "D30 (GP30, SPI SCK)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D31",
+        "displayName": "D31 (GP31, SPI MOSI)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D34",
+        "displayName": "D34 (GP34, SD Card CS)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      }
+    ],
+    "analogPins": [
+      {
+        "name": "A41",
+        "displayName": "A0 (GP41)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A42",
+        "displayName": "A1 (GP42)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A43", 
+        "displayName": "A2 (GP43)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A44",
+        "displayName": "A3 (GP44)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A45",
+        "displayName": "A4 (GP45)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A46",
+        "displayName": "A5 (GP46)",
+        "dataType": "int16"
+      }
+    ],
+    "i2cPorts": [
+      {
+        "i2cPortId": 0,
+        "SDA": 20,
+        "SCL": 21
+      }
+    ],
+    "spiPorts": [
+      {
+        "spiPortId": 0,
+        "MISO": 28,
+        "MOSI": 31,
+        "SCK": 30
+      }
+    ]
+  }
+}
