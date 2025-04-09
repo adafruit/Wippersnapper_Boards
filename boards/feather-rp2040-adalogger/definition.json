@@ -12,7 +12,6 @@
   "onlineModeSupported": false,
   "published": true,
   "sdCardCS": 45,
-  "rtc": "PCF8523",
   "components": {
       "digitalPins": [
           {
