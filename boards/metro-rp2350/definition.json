@@ -8,6 +8,7 @@
   "productURL": "https://www.adafruit.com/product/5786",
   "documentationURL": "https://learn.adafruit.com/adafruit-metro-rp2350",
   "installMethod": "uf2",
+  "installBoardName": "metro_rp2350_tinyusb",
   "onlineModeSupported": false,
   "sdCardCS": 34,
   "published": false,
