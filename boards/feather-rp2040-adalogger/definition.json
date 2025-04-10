@@ -11,7 +11,7 @@
   "installBoardName": "feather_rp2040_adalogger_tinyusb",
   "onlineModeSupported": false,
   "published": true,
-  "sdCardCS": 45,
+  "sdCardCS": 23,
   "components": {
       "digitalPins": [
           {
