@@ -1,0 +1,68 @@
+{
+  "boardName":"sparklemotionstick-esp32",
+  "mcuName":"ESP32",
+  "mcuRefVoltage": 3.3,
+  "displayName":"Adafruit Sparkle Motion Stick",
+  "vendor":"Adafruit",
+  "productURL":"https://www.adafruit.com/product/6333",
+  "documentationURL":"https://learn.adafruit.com/adafruit-sparkle-motion-stick/",
+  "published": true,
+  "installMethod":"web",
+  "esptool": {
+    "fileSystemSize": 131072,
+    "blockSize": 4096,
+    "offset": "0x3D0000",
+    "chip": "esp32",
+    "flashMode" : "dio",
+    "flashFreq" : "80m",
+    "flashSize" : "4MB",
+    "structure": {
+        "0x0": "wippersnapper.sparklemotionstick_esp32.littlefs.VERSION.combined.bin"
+    }
+  },
+  "components": {
+    "digitalPins": [
+      {
+        "name":"D0",
+        "displayName":"D0 (Button)",
+        "dataType":"bool"
+      },
+      {
+        "name":"D4",
+        "displayName":"D4 (LED BUILT-IN)",
+        "dataType":"bool",
+        "hasPWM":true
+      },
+      {
+        "name":"D10",
+        "displayName":"D10 (IR)",
+        "dataType":"bool",
+        "hasPWM":false,
+        "hasServo":false,
+        "direction":"INPUT"
+      },
+      {
+        "name":"D18",
+        "displayName":"D18 (NEOPIXEL)",
+        "dataType":"bool",
+        "hasPWM":true
+      },
+      {
+        "name":"D21",
+        "displayName":"D21 (5V Output)",
+        "dataType":"bool",
+        "hasPWM":true,
+        "hasServo":true
+      },
+      {
+        "name":"D22",
+        "displayName":"D22 (5V Output)",
+        "dataType":"bool",
+        "hasPWM":true,
+        "hasServo":true
+      }
+    ],
+    "analogPins": [],
+    "i2cPorts": []
+  }
+}
