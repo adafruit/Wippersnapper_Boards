@@ -6,7 +6,7 @@
   "vendor":"Adafruit",
   "productURL":"https://www.adafruit.com/product/6333",
   "documentationURL":"https://learn.adafruit.com/adafruit-sparkle-motion-stick/",
-  "published": false,
+  "published": true,
   "installMethod":"web",
   "esptool": {
     "fileSystemSize": 131072,
