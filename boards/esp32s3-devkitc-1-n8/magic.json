@@ -1,0 +1,31 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2023-11-13T19:41:29.465Z",
+  "exportedFromDevice": {
+    "board": "esp32s3-devkitc-1-n8",
+    "firmwareVersion": "1.0.0-beta.103"
+  },
+  "components": [
+    {
+      "name": "Button (D0/Boot)",
+      "pinName": "D0",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    },
+    {
+      "name": "NeoPixel (D48)",
+      "type": "neopixel",
+      "pixelNumber": 1,
+      "pixelsOrder": "GRB",
+      "pixelBrightness": 255,
+      "pinName": "D48",
+      "pixelsType": "NEOPIXEL",
+      "isPixel": true
+    }
+  ]
+}
