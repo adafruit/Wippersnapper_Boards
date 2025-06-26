@@ -2,7 +2,7 @@
     "boardName":"esp32s3-devkitc-1-n8",
     "mcuName":"esp32s3",
     "mcuRefVoltage":3.3,
-    "displayName":"Espressif ESP32-S3-DevKitC-1-N8 (8MB Flash, No PSRAM)",
+    "displayName":"ESP32-S3-DevKitC-1-N8 (8MB Flash, No PSRAM)",
     "vendor":"Espressif",
     "productURL":"https://www.adafruit.com/product/5312",
     "documentationURL":"https://learn.adafruit.com/adafruit-metro-esp32-s3/wippersnapper-setup",
