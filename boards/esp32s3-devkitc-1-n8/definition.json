@@ -8,6 +8,7 @@
     "documentationURL":"https://learn.adafruit.com/adafruit-metro-esp32-s3/wippersnapper-setup",
     "installMethod":"web-native-usb",
     "installBoardName": "esp32s3-devkitc-1-n8",
+    "bootDiskName": "S3DKC1BOOT",
     "esptool": {
       "fileSystemSize": 983040,
       "blockSize": 4096,
