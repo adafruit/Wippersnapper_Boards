@@ -14,7 +14,7 @@
       "blockSize": 4096,
       "offset": "0x310000",
       "chip": "esp32s3",
-      "flashMode": "dio",
+      "flashMode": "qio",
       "flashFreq": "80m",
       "flashSize": "8MB",
       "structure": {
