@@ -1,0 +1,21 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2025-06-03T19:41:28.465Z",
+  "exportedFromDevice": {
+    "board": "seeed-xiao-esp32s3",
+    "firmwareVersion": "1.0.0-beta.103"
+  },
+  "components": [
+    {
+      "name": "Button (D0/Boot)",
+      "pinName": "D0",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    }
+  ]
+}
