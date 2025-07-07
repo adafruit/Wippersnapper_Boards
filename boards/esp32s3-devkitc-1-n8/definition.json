@@ -18,7 +18,7 @@
       "flashFreq": "80m",
       "flashSize": "8MB",
       "structure": {
-        "0x0": "wippersnapper.esp32s3-devkitc-1-n8.fatfs.VERSION.combined.bin"
+        "0x0": "wippersnapper.esp32s3_devkitc_1_n8.fatfs.VERSION.combined.bin"
       }
     },
     "components":{
