@@ -86,21 +86,21 @@
                 "displayName":"D10/A10 (MOSI - GPIO9)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true,
+                "hasServo":true
             },
             {
                 "name":"D42",
                 "displayName":"D11/A11 (Cam Brd - GPIO42)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true,
+                "hasServo":true
             },
             {
                 "name":"D13",
                 "displayName":"D12/A12 (Cam Brd - GPIO13)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true,
+                "hasServo":true
             },
             {
                 "name":"D0",
@@ -171,21 +171,21 @@
                 "displayName":"A10/D10 (MOSI - GPIO9)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true,
+                "hasServo":true
             },
             {
                 "name":"A42",
                 "displayName":"A11/D11 (Cam Brd - GPIO42)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true,
+                "hasServo":true
             },
             {
                 "name":"A13",
                 "displayName":"D12/A12 (Cam Brd - GPIO13)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true,
+                "hasServo":true
             }
         ],
         "i2cPorts":[
