@@ -12,7 +12,7 @@
     "esptool": {
       "fileSystemSize": 983040,
       "blockSize": 4096,
-      "offset": "0x310000",
+      "offset": "0x450000",
       "chip": "esp32s3",
       "flashMode": "qio",
       "flashFreq": "80m",
