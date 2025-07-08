@@ -64,7 +64,8 @@
                 "displayName":"D7 (UART RX - GPIO44)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "uartRx":true
             },
             {
                 "name":"D7",
@@ -86,7 +87,6 @@
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true,
-                "uartRx":true
             },
             {
                 "name":"D42",
@@ -94,7 +94,6 @@
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true,
-                "uartRx":true
             },
             {
                 "name":"D13",
@@ -102,7 +101,6 @@
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true,
-                "uartRx":true
             },
             {
                 "name":"D0",
@@ -174,7 +172,6 @@
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true,
-                "uartRx":true
             },
             {
                 "name":"A42",
@@ -182,7 +179,6 @@
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true,
-                "uartRx":true
             },
             {
                 "name":"A13",
@@ -190,7 +186,6 @@
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true,
-                "uartRx":true
             }
         ],
         "i2cPorts":[
