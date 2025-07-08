@@ -10,7 +10,7 @@
     "installBoardName": "esp32s3-devkitc-1-n8",
     "bootDiskName": "S3DKC1BOOT",
     "esptool": {
-      "fileSystemSize": 983040,
+      "fileSystemSize": 1572864,
       "blockSize": 4096,
       "offset": "0x450000",
       "chip": "esp32s3",
