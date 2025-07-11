@@ -1,8 +1,8 @@
 {
-    "boardName":"seeed-xiao-esp32s3",
+    "boardName":"xiao-esp32s3",
     "mcuName":"esp32s3",
     "mcuRefVoltage":2.6,
-    "displayName":"Xiao ESP32-S3 (+Sense/Plus)",
+    "displayName":"Xiao ESP32-S3 (or Sense/Plus)",
     "vendor":"Seeed Studio",
     "productURL":"https://www.digikey.com/short/fbbqfjz5",
     "documentationURL":"https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/",
