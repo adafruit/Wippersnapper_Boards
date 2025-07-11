@@ -7,8 +7,20 @@
     "productURL":"https://www.digikey.com/short/fbbqfjz5",
     "documentationURL":"https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/",
     "published": false,
-    "installMethod":"uf2",
-    "components":{
+    "installMethod":"web-native-usb",
+    "bootDiskName": "XIAOS3BOOT",
+    "esptool": {
+      "fileSystemSize": 1572864,
+      "blockSize": 4096,
+      "offset": "0x450000",
+      "chip": "esp32s3",
+      "flashMode": "dio",
+      "flashFreq": "80m",
+      "flashSize": "8MB",
+      "structure": {
+        "0x0": "wippersnapper.xiao_esp32s3.fatfs.VERSION.combined.bin"
+      }
+    },"components":{
         "digitalPins":[
             {
                 "name":"D1",
