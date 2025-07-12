@@ -6,7 +6,7 @@
     "vendor":"Seeed Studio",
     "productURL":"https://www.digikey.com/short/fbbqfjz5",
     "documentationURL":"https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/",
-    "published": true,
+    "published": false,
     "installMethod":"web-native-usb",
     "bootDiskName": "XIAOS3BOOT",
     "esptool": {
