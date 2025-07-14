@@ -14,6 +14,16 @@
       "mode": "DIGITAL",
       "direction": "OUTPUT",
       "isPin": true
+    },
+    {
+      "name": "Button (D9/Boot)",
+      "pinName": "D9",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
     }
   ]
 }

@@ -6,7 +6,8 @@
     "vendor":"DFRobot",
     "productURL":"https://www.dfrobot.com/product-2566.html",
     "documentationURL":"https://wiki.dfrobot.com/SKU_DFR0868_Beetle_ESP32_C3",
-    "installBoardName": "wippersnapper_dfrobot_beetle_esp32c3",
+    "published": false,
+    "installBoardName": "dfrobot_beetle_esp32c3",
     "installMethod":"web",
     "esptool": {
       "fileSystemSize": 131072,
@@ -17,7 +18,7 @@
       "flashFreq" : "80m",
       "flashSize" : "4MB",
       "structure": {
-          "0x0": "wippersnapper.wippersnapper_dfrobot_beetle_esp32c3.littlefs.VERSION.combined.bin"
+          "0x0": "wippersnapper.dfrobot_beetle_esp32c3.littlefs.VERSION.combined.bin"
         }
     },
     "components":{
@@ -94,7 +95,7 @@
             },
             {
                 "name":"D9",
-                "displayName":"9 (SCL)",
+                "displayName":"9 (SCL) Boot Pushbutton",
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true
@@ -108,7 +109,7 @@
             },
             {
                 "name":"D20",
-                "displayName":"20 (UART RX)"
+                "displayName":"20 (UART RX)",
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true
@@ -119,7 +120,7 @@
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true
-            },
+            }
         ],
         "analogPins":[
             {
@@ -163,7 +164,7 @@
                 "dataType":"int16",
                 "hasPWM":true,
                 "hasServo":true
-            },
+            }
         ],
         "i2cPorts":[
             {
