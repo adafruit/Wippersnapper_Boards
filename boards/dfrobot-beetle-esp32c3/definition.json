@@ -88,14 +88,14 @@
             },
             {
                 "name":"D9",
-                "displayName":"9 (SCL) Boot Pushbutton",
+                "displayName":"9 (SCL / Button)",
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true
             },
             {
                 "name":"D10",
-                "displayName":"10 (LED BUILT-IN)/Pad on back",
+                "displayName":"10 (LED)/Pad on back",
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true
