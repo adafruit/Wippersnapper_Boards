@@ -1,0 +1,29 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2025-07-03T19:41:28.465Z",
+  "exportedFromDevice": {
+    "board": "dfrobot-beetle-esp32c3",
+    "firmwareVersion": "1.0.0-beta.103"
+  },
+  "components": [
+    {
+      "name": "LED",
+      "pinName": "D10",
+      "type": "led",
+      "mode": "DIGITAL",
+      "direction": "OUTPUT",
+      "isPin": true
+    },
+    {
+      "name": "Button (D9/Boot)",
+      "pinName": "D9",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    }
+  ]
+}
