@@ -102,6 +102,13 @@
                 "hasServo":true
             },
             {
+                "name":"D10",
+                "displayName":"LED (GPIO10)",
+                "dataType":"bool",
+                "hasPWM":true,
+                "direction": "OUTPUT"
+            },
+            {
                 "name":"D42",
                 "displayName":"D11/A11 (Cam Brd - GPIO42)",
                 "dataType":"bool",
