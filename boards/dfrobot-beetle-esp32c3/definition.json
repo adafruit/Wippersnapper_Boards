@@ -45,13 +45,6 @@
                 "hasServo":true
             },
             {
-                "name":"D2",
-                "displayName":"2",
-                "dataType":"bool",
-                "hasPWM":true,
-                "hasServo":true
-            },
-            {
                 "name":"D3",
                 "displayName":"3 (Pad on back)",
                 "dataType":"bool",
