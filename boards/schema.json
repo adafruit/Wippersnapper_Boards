@@ -17,6 +17,12 @@
       "minLength": 1,
       "maxLength": 40
     },
+    "bootloaderDeviceName": {
+      "description": "The name of the board as it appears in tinyuf2 release files. e.g. adafruit_feather_esp32s3",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 60
+    },
     "mcuName": {
       "description": "Microcontroller name.",
       "type": "string",
