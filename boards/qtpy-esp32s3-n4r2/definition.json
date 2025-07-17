@@ -7,6 +7,7 @@
     "productURL":"https://www.adafruit.com/product/5700",
     "documentationURL":"https://learn.adafruit.com/adafruit-qt-py-esp32-s3",
     "installMethod":"uf2",
+    "bootloaderBoardName": "adafruit_qtpy_esp32s3_n4r2",
     "components":{
         "digitalPins":[
             {
