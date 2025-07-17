@@ -9,6 +9,7 @@
     "bootDiskName": "METROS3BOOT",
     "installMethod":"uf2",
     "installBoardName": "metro_esp32s3",
+    "bootloaderBoardName": "adafruit_metro_esp32s3",
     "published":true,
     "components":{
        "digitalPins":[
@@ -188,7 +189,7 @@
             "hasPWM":true,
             "hasServo":true
          },
-         
+
          {
             "name":"D39",
             "displayName":"D39 (SCK)",
