@@ -8,6 +8,7 @@
     "documentationURL":"https://learn.adafruit.com/adafruit-funhouse",
     "installMethod":"web-native-usb",
     "installBoardName": "funhouse_noota",
+    "bootloaderBoardName": "adafruit_funhouse_esp32s2",
     "esptool": {
       "fileSystemSize": 983040,
       "blockSize": 4096,

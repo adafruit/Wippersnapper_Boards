@@ -9,6 +9,7 @@
     "installMethod":"web-native-usb",
     "installBoardName": "esp32s3-devkitc-1-n8",
     "bootDiskName": "S3DKC1BOOT",
+    "bootloaderBoardName": "espressif_esp32s3_devkitc_1",
     "esptool": {
       "fileSystemSize": 1572864,
       "blockSize": 4096,
