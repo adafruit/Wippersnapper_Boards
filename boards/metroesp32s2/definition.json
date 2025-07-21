@@ -7,6 +7,7 @@
     "vendor":"Adafruit",
     "productURL":"https://www.adafruit.com/product/4775",
     "documentationURL":"https://learn.adafruit.com/adafruit-metro-esp32-s2",
+    "bootloaderBoardName": "adafruit_metro_esp32s2",
     "installMethod":"uf2",
     "components":{
        "digitalPins":[

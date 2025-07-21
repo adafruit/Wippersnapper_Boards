@@ -8,6 +8,7 @@
     "documentationURL":"https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/",
     "published": false,
     "installMethod":"web-native-usb",
+    "bootloaderBoardName": "seeed_xiao_esp32s3",
     "bootDiskName": "XIAOS3BOOT",
     "esptool": {
       "fileSystemSize": 1572864,
