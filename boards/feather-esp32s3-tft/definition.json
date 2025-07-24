@@ -6,8 +6,20 @@
     "vendor":"Adafruit",
     "productURL":"https://www.adafruit.com/product/5483",
     "documentationURL":"https://learn.adafruit.com/adafruit-esp32-s3-tft-feather",
-    "installMethod":"uf2",
+    "installMethod": "web-native-usb",
     "bootloaderBoardName": "adafruit_feather_esp32s3_tft",
+    "esptool": {
+      "fileSystemSize": 983040,
+      "blockSize": 4096,
+      "offset": "0x310000",
+      "chip": "esp32s3",
+      "flashMode": "dio",
+      "flashFreq": "80m",
+      "flashSize": "4MB",
+      "structure": {
+        "0x0": "wippersnapper.feather_esp32s3_tft.fatfs.VERSION.combined.bin"
+      }
+    },
     "components":{
         "digitalPins":[
           {
