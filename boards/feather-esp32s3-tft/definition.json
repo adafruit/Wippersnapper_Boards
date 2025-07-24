@@ -6,7 +6,7 @@
     "vendor":"Adafruit",
     "productURL":"https://www.adafruit.com/product/5483",
     "documentationURL":"https://learn.adafruit.com/adafruit-esp32-s3-tft-feather",
-    "installMethod": "web-native-usb",
+    "installMethod": "uf2",
     "bootloaderBoardName": "adafruit_feather_esp32s3_tft",
     "esptool": {
       "fileSystemSize": 983040,
