@@ -7,6 +7,7 @@
     "productURL":"https://www.adafruit.com/product/5325",
     "documentationURL":"https://learn.adafruit.com/adafruit-qt-py-esp32-s2",
     "installMethod": "web-native-usb",
+    "bootloaderBoardName": "adafruit_qtpy_esp32s2",
     "esptool": {
       "fileSystemSize": 983040,
       "blockSize": 4096,
@@ -19,7 +20,6 @@
         "0x0": "wippersnapper.qtpy_esp32s2.fatfs.VERSION.combined.bin"
       }
     },
-    "bootloaderBoardName": "adafruit_qtpy_esp32s2",
     "components":{
         "digitalPins":[
             {
