@@ -64,9 +64,7 @@
       "frequency": 5000,
       "resolution": 12,
       "pinName": "D13",
-      "isPWM": true,
-      "isServo": false,
-      "selected": false
+      "isPWM": true
     },
     {
       "name": "Disable NeoPixel + Light Sensor",
