@@ -20,106 +20,126 @@
         "0x0": "wippersnapper.magtag.fatfs.VERSION.combined.bin"
       }
     },
-    "components":{
-       "digitalPins":[
-        {
-             "name":"D1",
-             "displayName":"D1 (NeoPixel)",
-             "dataType":"bool"
-        },
-        {
-             "name":"D15",
-             "displayName":"Button A",
-             "dataType":"bool"
-          },
-          {
-             "name":"D14",
-             "displayName":"Button B",
-             "dataType":"bool"
-          },
-          {
-             "name":"D12",
-             "displayName":"Button C",
-             "dataType":"bool"
-          },
-          {
-             "name":"D11",
-             "displayName":"Button D",
-             "dataType":"bool"
-          },
-          {
-             "name":"D10",
-             "displayName":"D10",
-             "dataType":"bool",
-             "hasPWM":true,
-             "hasServo":true
-          },
-          {
-             "name":"D18",
-             "displayName":"D18 (A1)",
-             "dataType":"bool",
-             "hasPWM":true,
-             "hasServo":true
-          },
-          {
-             "name":"D13",
-             "displayName":"Built-in LED",
-             "dataType":"bool",
-             "hasPWM":true
-          },
-          {
-             "name":"D43",
-             "displayName":"D43 (UART TX)",
-             "dataType":"bool",
-             "hasPWM":false,
-             "uartTx":true
-          },
-          {
-            "name":"D44",
-            "displayName":"D44 (UART RX)",
-            "dataType":"bool",
-            "hasPWM":false,
-            "uartRx":true
+    "components": {
+      "digitalPins": [
+         {
+            "name": "D0",
+            "displayName": "D0 (Boot Button)",
+            "dataType": "bool",
+            "direction": "INPUT"
+         },
+         {
+            "name": "D1",
+            "displayName": "D1 (NeoPixel)",
+            "dataType": "bool"
+         },
+         {
+            "name": "D15",
+            "displayName": "Button A",
+            "dataType": "bool"
+         },
+         {
+            "name": "D14",
+            "displayName": "Button B",
+            "dataType": "bool"
+         },
+         {
+            "name": "D12",
+            "displayName": "Button C",
+            "dataType": "bool"
+         },
+         {
+            "name": "D11",
+            "displayName": "Button D",
+            "dataType": "bool"
+         },
+         {
+            "name": "D10",
+            "displayName": "D10",
+            "dataType": "bool",
+            "hasPWM": true,
+            "hasServo": true
+         },
+         {
+            "name": "D18",
+            "displayName": "D18 (A1)",
+            "dataType": "bool",
+            "hasPWM": true,
+            "hasServo": true
+         },
+         {
+            "name": "D13",
+            "displayName": "Built-in LED",
+            "dataType": "bool",
+            "hasPWM": true
+         },
+         {
+            "name": "D43",
+            "displayName": "D43 (UART TX)",
+            "dataType": "bool",
+            "hasPWM": false,
+            "uartTx": true
+         },
+         {
+            "name": "D44",
+            "displayName": "D44 (UART RX)",
+            "dataType": "bool",
+            "hasPWM": false,
+            "uartRx": true
+         },
+         {
+            "name": "D21",
+            "displayName": "Disable NeoPixel/Light sensor",
+            "dataType": "bool",
+            "hasPWM": false,
+            "direction": "OUTPUT"
+         },
+         {
+            "name": "D16",
+            "displayName": "Enable Speaker",
+            "dataType": "bool",
+            "hasPWM": false,
+            "direction": "OUTPUT"
          }
-       ],
-       "analogPins":[
-           {
-             "name":"A17",
-             "displayName":"Piezo Speaker (A0)",
-             "hasPWM":true,
-             "dataType":"int16"
-           },
-           {
-             "name":"A10",
-             "displayName":"D10",
-             "dataType":"int16",
-             "hasPWM":true,
-             "hasServo":true
-          },
-          {
-             "name":"A18",
-             "displayName":"A1 (D18)",
-             "dataType":"int16",
-             "hasPWM":true,
-             "hasServo":true
-          },
-          {
-             "name":"A3",
-             "displayName":"Light Sensor (A3)",
-             "dataType":"int16"
-          },
-          {
-             "name":"A4",
-             "displayName":"Voltage Monitor (A4)",
-             "dataType":"int16"
-          }
-       ],
-       "i2cPorts": [
-        {
+      ],
+      "analogPins": [
+         {
+            "name": "A17",
+            "displayName": "Piezo Speaker (A0)",
+            "hasPWM": true,
+            "dataType": "int16"
+         },
+         {
+            "name": "A10",
+            "displayName": "D10",
+            "dataType": "int16",
+            "hasPWM": true,
+            "hasServo": true
+         },
+         {
+            "name": "A18",
+            "displayName": "A1 (D18)",
+            "dataType": "int16",
+            "hasPWM": true,
+            "hasServo": true
+         },
+         {
+            "name": "A3",
+            "displayName": "Light Sensor (A3)",
+            "dataType": "int16"
+         },
+         {
+            "name": "A4",
+            "displayName": "Voltage Monitor (A4)",
+            "dataType": "int16"
+         }
+      ],
+      "i2cPorts": [
+         {
             "i2cPortId": 0,
             "SDA": 33,
             "SCL": 34
-        }
+         }
       ]
-    }
+   }
 }

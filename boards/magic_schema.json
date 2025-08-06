@@ -81,7 +81,17 @@
           "uartTx": { "type": "string" },
           "isServo": { "type": "boolean", "const": true },
           "minPulseWidth": { "type": "number" },
-          "maxPulseWidth": { "type": "number" }
+          "maxPulseWidth": { "type": "number" },
+          "visualization": {
+            "type": "object",
+            "properties": {
+              "offLabel": { "type": "string" },
+              "onLabel": { "type": "string" },
+              "offIcon": { "type": "string" },
+              "onIcon": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
         },
         "oneOf": [
           { "required": [ "isPin" ],
@@ -95,7 +105,8 @@
               "analogReadMode": {},
               "direction": {},
               "period": {},
-              "pull": {}
+              "pull": {},
+              "visualization": {}
             },
             "additionalProperties": false
           },
