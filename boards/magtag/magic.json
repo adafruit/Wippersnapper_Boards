@@ -65,15 +65,22 @@
       "resolution": 12,
       "pinName": "D13",
       "isPWM": true,
+      "isServo": false,
       "selected": false
     },
     {
-      "name": "Enable NeoPixel + Light Sensor",
+      "name": "Disable NeoPixel + Light Sensor",
       "pinName": "D21",
       "type": "mosfet_driver",
       "mode": "DIGITAL",
       "direction": "OUTPUT",
-      "isPin": true
+      "isPin": true,
+      "visualization": {
+        "offLabel": "Enabled",
+        "onLabel": "Disabled",
+        "offIcon": "fa6:regular:plug-circle-bolt",
+        "onIcon": "fa6:solid:plug-circle-xmark"
+      }
     },
     {
       "name": "NeoPixel",
