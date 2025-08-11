@@ -83,12 +83,15 @@
           "minPulseWidth": { "type": "number" },
           "maxPulseWidth": { "type": "number" },
           "visualization": {
+            "description": "Allows overriding the default visualization settings for this component type.",
             "type": "object",
             "properties": {
               "offLabel": { "type": "string" },
-              "onLabel": { "type": "string" },
               "offIcon": { "type": "string" },
-              "onIcon": { "type": "string" }
+              "onLabel": { "type": "string" },
+              "onIcon": { "type": "string" },
+              "pressedLabel": { "type": "string" },
+              "unpressedLabel": { "type": "string" }
             },
             "additionalProperties": false
           }
