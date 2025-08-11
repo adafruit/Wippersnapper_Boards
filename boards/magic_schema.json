@@ -83,15 +83,15 @@
           "minPulseWidth": { "type": "number" },
           "maxPulseWidth": { "type": "number" },
           "visualization": {
-            "description": "Specifies which visual component to use in the WipperSnapper interface and how to configure it",
+            "description": "Allows overriding the default visualization settings for this component type.",
             "type": "object",
             "properties": {
-                "offLabel": { "type": "string" },
-                "offIcon": { "type": "string" },
-                "onLabel": { "type": "string" },
-                "onIcon": { "type": "string" },
-                "pressedLabel": { "type": "string" },
-                "unpressedLabel": { "type": "string" }
+              "offLabel": { "type": "string" },
+              "offIcon": { "type": "string" },
+              "onLabel": { "type": "string" },
+              "onIcon": { "type": "string" },
+              "pressedLabel": { "type": "string" },
+              "unpressedLabel": { "type": "string" }
             },
             "additionalProperties": false
           }
