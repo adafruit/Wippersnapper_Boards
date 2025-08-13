@@ -1,0 +1,83 @@
+{
+    "boardName":"fruitjam",
+    "bootDiskName":"RP2350",
+    "mcuName":"rp2350",
+    "mcuRefVoltage":3.3,
+    "displayName":"Fruit Jam RP2350",
+    "vendor":"Adafruit",
+    "productURL":"https://www.adafruit.com/product/6200",
+    "documentationURL":"https://www.adafruit.com/product/6200",
+    "published": false,
+    "installMethod":"uf2",
+    "installBoardName":"fruitjam_tinyusb",
+    "components":{
+        "digitalPins":[
+            {
+                "name":"D29",
+                "displayName":"LED (BUILT-IN)",
+                "dataType":"bool",
+                "hasPWM":true
+            },
+            {
+                "name":"D32",
+                "displayName":"NeoPixel",
+                "dataType":"bool",
+                "hasPWM":true
+            },
+            {
+                "name":"D0",
+                "displayName":"Button 1",
+                "dataType":"bool"
+            },
+            {
+                "name":"D4",
+                "displayName":"Button 2",
+                "dataType":"bool"
+            },
+            {
+                "name":"D5",
+                "displayName":"Button 3",
+                "dataType":"bool"
+            }
+        ],
+        "analogPins":[
+            {
+                "name":"A40",
+                "displayName":"A0",
+                "dataType":"int16"
+            },
+            {
+                "name":"A41",
+                "displayName":"A1",
+                "dataType":"int16"
+            },
+            {
+                "name":"A42",
+                "displayName":"A2",
+                "dataType":"int16"
+            },
+            {
+                "name":"A43",
+                "displayName":"A3",
+                "dataType":"int16"
+            },
+            {
+                "name":"A44",
+                "displayName":"A4",
+                "dataType":"int16"
+            },
+            {
+                "name":"A45",
+                "displayName":"A5",
+                "dataType":"int16"
+            }
+        ],
+        "i2cPorts":[
+            {
+                "i2cPortId":0,
+                "SDA":20,
+                "SCL":21
+            }
+        ]
+    }
+}
