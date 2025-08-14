@@ -121,6 +121,11 @@
                 "displayName":"Boot Pushbutton",
                 "dataType":"bool",
                 "direction":"INPUT"
+            },
+            {
+                "name":"D21",
+                "displayName":"GPIO21 SD CS",
+                "dataType":"bool"
             }
         ],
         "analogPins":[
