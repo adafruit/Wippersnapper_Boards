@@ -1,0 +1,203 @@
+{
+  "boardName": "metro-rp2040",
+  "bootDiskName": "RPI-RP2",
+  "mcuName": "rp2040",
+  "mcuRefVoltage": 3.3,
+  "displayName": "Adafruit Metro RP2040",
+  "vendor": "Adafruit",
+  "productURL": "https://www.adafruit.com/product/5786",
+  "documentationURL": "https://learn.adafruit.com/adafruit-metro-rp2040",
+  "installMethod": "uf2",
+  "onlineModeSupported": false,
+  "sdCardCS": 23,
+  "published": false,
+  "components": {
+    "digitalPins": [
+      {
+        "name": "D0",
+        "displayName": "D0 (GP0, UART TX)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "uartTx": true
+      },
+      {
+        "name": "D1",
+        "displayName": "D1 (GP1, UART RX)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "uartRx": true
+      },
+      {
+        "name": "D2",
+        "displayName": "D2 (GP2)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D3",
+        "displayName": "D3 (GP3)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D4",
+        "displayName": "D4 (GP4)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D5",
+        "displayName": "D5 (GP5)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D6",
+        "displayName": "D6 (GP6)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D7",
+        "displayName": "D7 (GP7, BOOT)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D8",
+        "displayName": "D8 (GP8)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D9",
+        "displayName": "D9 (GP9)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D10",
+        "displayName": "D10 (GP10)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D11",
+        "displayName": "D11 (GP11)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D12",
+        "displayName": "D12 (GP12)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D13",
+        "displayName": "D13 (GP13, LED)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D20",
+        "displayName": "D20 (GP20, SDA)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D21",
+        "displayName": "D21 (GP21, SCL)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D24",
+        "displayName": "D24 (GP24)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D25",
+        "displayName": "D25 (GP25, NeoPixel)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D28",
+        "displayName": "D28 (GP28, SPI MISO)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D30",
+        "displayName": "D30 (GP30, SPI SCK)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D31",
+        "displayName": "D31 (GP31, SPI MOSI)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D23",
+        "displayName": "D23 (GP23, SD Card CS)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      }
+    ],
+    "analogPins": [
+      {
+        "name": "A26",
+        "displayName": "A0 (GP26)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A27",
+        "displayName": "A1 (GP27)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A28", 
+        "displayName": "A2 (GP28)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A29",
+        "displayName": "A3 (GP29)",
+        "dataType": "int16"
+      }
+    ],
+    "i2cPorts": [
+      {
+        "i2cPortId": 0,
+        "SDA": 20,
+        "SCL": 21
+      }
+    ]
+  }
+}

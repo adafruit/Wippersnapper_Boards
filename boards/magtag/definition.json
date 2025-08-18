@@ -20,6 +20,7 @@
         "0x0": "wippersnapper.magtag.fatfs.VERSION.combined.bin"
       }
     },
+    "onlineModeSupported": true,
     "components":{
        "digitalPins":[
         {

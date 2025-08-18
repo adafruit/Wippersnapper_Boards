@@ -12,6 +12,7 @@
     "bootloaderBoardName": "adafruit_metro_esp32s3",
     "published":true,
     "sdCardCS": 45,
+    "onlineModeSupported": true,
     "components":{
        "digitalPins":[
          {

@@ -85,6 +85,11 @@
       "description": "Information about the default SD Card Chip Select pin present on this board.",
       "type": "number"
     },
+    "rtc": {
+      "description": "Information about the RTC model present on this board.",
+      "type": "string",
+      "pattern": "^(DS3231|DS1307|PCF8523|PCF8563|SOFT)$"
+    },
     "components": {
       "description": "List of available pins and I2C ports for this board.",
       "type": "object",

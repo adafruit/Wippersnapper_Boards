@@ -8,6 +8,8 @@
     "productURL":"https://www.adafruit.com/product/4116",
     "documentationURL":"https://learn.adafruit.com/adafruit-pyportal",
     "installMethod":"uf2",
+    "onlineModeSupported": true,
+    "sdCardCS": 32,
     "components":
     {
       "digitalPins": [

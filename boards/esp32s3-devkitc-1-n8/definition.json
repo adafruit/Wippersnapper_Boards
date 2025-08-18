@@ -6,6 +6,7 @@
     "vendor":"Espressif",
     "productURL":"https://www.adafruit.com/product/5312",
     "documentationURL":"https://learn.adafruit.com/adafruit-metro-esp32-s3/wippersnapper-setup",
+    "onlineModeSupported": true,
     "installMethod":"web-native-usb",
     "installBoardName": "esp32s3-devkitc-1-n8",
     "bootDiskName": "S3DKC1BOOT",

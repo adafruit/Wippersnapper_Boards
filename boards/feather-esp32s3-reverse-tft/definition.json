@@ -21,6 +21,7 @@
         "0x0": "wippersnapper.feather_esp32s3_reverse_tft.fatfs.VERSION.combined.bin"
       }
     },
+    "onlineModeSupported": true,
     "components":{
         "digitalPins":[
           {

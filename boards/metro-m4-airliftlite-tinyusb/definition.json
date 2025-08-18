@@ -8,6 +8,7 @@
     "productURL":"https://www.adafruit.com/product/4000",
     "documentationURL":"https://learn.adafruit.com/adafruit-metro-m4-express-airlift-wifi",
     "installMethod":"uf2",
+    "onlineModeSupported": true,
     "components": {
       "digitalPins": [
         {

@@ -8,6 +8,7 @@
     "documentationURL":"https://learn.adafruit.com/adafruit-qt-py-esp32-s3",
     "installMethod":"uf2",
     "bootloaderBoardName": "adafruit_qtpy_esp32s3",
+    "onlineModeSupported": true,
     "components":{
         "digitalPins":[
             {

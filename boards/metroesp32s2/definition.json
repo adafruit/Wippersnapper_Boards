@@ -21,6 +21,7 @@
         "0x0": "wippersnapper.metroesp32s2.fatfs.VERSION.combined.bin"
       }
     },
+    "onlineModeSupported": true,
     "components":{
        "digitalPins":[
           {

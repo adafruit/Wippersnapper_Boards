@@ -20,6 +20,7 @@
         "0x0": "wippersnapper.feather_esp32s3_4mbflash_2mbpsram.fatfs.VERSION.combined.bin"
       }
     },
+    "onlineModeSupported": true,
     "components":{
         "digitalPins":[
           {

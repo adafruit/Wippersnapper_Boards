@@ -8,6 +8,7 @@
   "documentationURL": "https://learn.adafruit.com/adafruit-esp32-c6-feather",
   "installBoardName": "wippersnapper_feather_esp32c6",
   "installMethod": "web",
+    "onlineModeSupported": true,
   "esptool": {
     "fileSystemSize": 131072,
     "blockSize": 4096,

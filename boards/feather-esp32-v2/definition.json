@@ -7,6 +7,7 @@
     "productURL":"https://www.adafruit.com/product/5400",
     "documentationURL":"https://learn.adafruit.com/adafruit-esp32-feather-v2",
     "installMethod":"web",
+    "onlineModeSupported": true,
     "esptool": {
         "fileSystemSize": 1572864,
         "blockSize": 4096,

@@ -1,0 +1,49 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2025-04-08T00:00:00.000Z",
+  "exportedFromDevice": {
+    "board": "metro-rp2040",
+    "firmwareVersion": "1.0.0-beta.73"
+  },
+  "components": [
+    {
+      "name": "Red LED",
+      "pinName": "D13",
+      "type": "digital_led",
+      "mode": "DIGITAL",
+      "direction": "OUTPUT",
+      "period": 0,
+      "isPin": true
+    },
+    {
+      "name": "NeoPixel",
+      "pixelNumber": 1,
+      "pixelsOrder": "GRB",
+      "pixelBrightness": 255,
+      "pinName": "D25",
+      "type": "neopixel",
+      "pixelsType": "NEOPIXEL",
+      "isPixel": true
+    },
+    {
+      "name": "BOOT Button",
+      "pinName": "D7",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    },
+    {
+      "name": "Dimmable LED",
+      "type": "dimmable_led",
+      "pwmSetting": "fixedFrequency",
+      "frequency": 5000,
+      "resolution": 12,
+      "pinName": "D13",
+      "isPWM": true,
+      "selected": false
+    }  ]
+}
