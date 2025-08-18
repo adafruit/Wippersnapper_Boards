@@ -8,6 +8,7 @@
     "documentationURL":"https://wiki.dfrobot.com/SKU_DFR0868_Beetle_ESP32_C3",
     "published": false,
     "installBoardName": "dfrobot_beetle_esp32c3",
+    "onlineModeSupported": true,
     "installMethod":"web",
     "esptool": {
       "fileSystemSize": 131072,
