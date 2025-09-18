@@ -9,7 +9,7 @@
     "documentationURL":"https://www.adafruit.com/product/6200",
     "published": true,
     "installMethod":"uf2",
-    "installBoardName":"fruitjam_tinyusb",
+    "installBoardName":"fruit_jam_tinyusb",
     "components":{
         "digitalPins":[
             {
