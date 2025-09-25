@@ -117,25 +117,7 @@
          },
          {
             "name": "D8",
-            "displayName": "SS (EPD CS)",
-            "dataType": "bool",
-            "direction": "OUTPUT"
-         },
-         {
-            "name": "D35",
-            "displayName": "MOSI",
-            "dataType": "bool",
-            "direction": "OUTPUT"
-         },
-         {
-            "name": "D37",
-            "displayName": "MISO",
-            "dataType": "bool",
-            "direction": "OUTPUT"
-         },
-         {
-            "name": "D36",
-            "displayName": "SCK",
+            "displayName": "EPD CS",
             "dataType": "bool",
             "direction": "OUTPUT"
          }
