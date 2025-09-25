@@ -1,7 +1,7 @@
 {
   "exportVersion": "1.0.0",
-  "exportedBy": "Adafruit",
-  "exportedAt": "2025-01-23T19:10:27.205Z",
+  "exportedBy": "adafruit",
+  "exportedAt": "2025-09-25T21:04:50.909Z",
   "exportedFromDevice": {
     "board": "sparklemotion-esp32",
     "firmwareVersion": "1.0.0-beta.116"
@@ -18,32 +18,12 @@
       "isPin": true
     },
     {
-      "name": "D32 5Volt NeoPixels",
-      "pixelNumber": 1,
-      "pixelsOrder": "GRB",
-      "pixelBrightness": 255,
-      "pinName": "D32",
-      "type": "neopixel",
-      "pixelsType": "NEOPIXEL",
-      "isPixel": true
-    },
-    {
-      "name": "D33 5Volt NeoPixels",
-      "pixelNumber": 1,
-      "pixelsOrder": "GRB",
-      "pixelBrightness": 255,
-      "pinName": "D33",
-      "type": "neopixel",
-      "pixelsType": "NEOPIXEL",
-      "isPixel": true
-    },
-    {
-      "name": "Dimmable Onboard LED",
+      "name": "Dimmable LED",
       "type": "dimmable_led",
       "pwmSetting": "fixedFrequency",
       "frequency": 5000,
       "resolution": 12,
-      "pinName": "D12",
+      "pinName": "D4",
       "isPWM": true
     },
     {
@@ -51,7 +31,37 @@
       "pixelNumber": 1,
       "pixelsOrder": "GRB",
       "pixelBrightness": 255,
-      "pinName": "D18",
+      "pinName": "D2",
+      "type": "neopixel",
+      "pixelsType": "NEOPIXEL",
+      "isPixel": true
+    },
+    {
+      "name": "Vcc-level NeoPixels SIG1 (Pin 21)",
+      "pixelNumber": 640,
+      "pixelsOrder": "GRB",
+      "pixelBrightness": 255,
+      "pinName": "D21",
+      "type": "neopixel",
+      "pixelsType": "NEOPIXEL",
+      "isPixel": true
+    },
+    {
+      "name": "Vcc-level NeoPixels SIG2 (Pin 22)",
+      "pixelNumber": 640,
+      "pixelsOrder": "GRB",
+      "pixelBrightness": 255,
+      "pinName": "D22",
+      "type": "neopixel",
+      "pixelsType": "NEOPIXEL",
+      "isPixel": true
+    },
+    {
+      "name": "Vcc-level NeoPixels SIG3 (Pin 19)",
+      "pixelNumber": 640,
+      "pixelsOrder": "GRB",
+      "pixelBrightness": 255,
+      "pinName": "D19",
       "type": "neopixel",
       "pixelsType": "NEOPIXEL",
       "isPixel": true
