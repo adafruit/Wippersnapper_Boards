@@ -131,6 +131,41 @@
             "displayName":"D43 (UART TX)",
             "dataType":"bool",
             "uartTx": true
+         },
+         {
+            "name":"D40",
+            "displayName":"SS (TFT CS)",
+            "dataType":"bool"
+         },
+         {
+            "name":"D35",
+            "displayName":"MOSI",
+            "dataType":"bool"
+         },
+         {
+            "name":"D36",
+            "displayName":"SCK",
+            "dataType":"bool"
+         },
+         {
+            "name":"D37",
+            "displayName":"MISO",
+            "dataType":"bool"
+         },
+         {
+            "name":"D21",
+            "displayName":"TFT Backlight",
+            "dataType":"bool"
+         },
+         {
+            "name":"D39",
+            "displayName":"TFT DC",
+            "dataType":"bool"
+         },
+         {
+            "name":"D41",
+            "displayName":"TFT Reset",
+            "dataType":"bool"
          }
        ],
        "analogPins":[

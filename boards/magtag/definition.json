@@ -100,6 +100,55 @@
             "dataType": "bool",
             "hasPWM": false,
             "direction": "OUTPUT"
+         },
+         {
+            "name": "D5",
+            "displayName": "EPD BUSY",
+            "dataType": "bool",
+            "hasPWM": false,
+            "direction": "OUTPUT"
+         },
+         {
+            "name": "D6",
+            "displayName": "EPD RESET",
+            "dataType": "bool",
+            "hasPWM": false,
+            "direction": "OUTPUT"
+         },
+         {
+            "name": "D7",
+            "displayName": "EPD DC",
+            "dataType": "bool",
+            "hasPWM": false,
+            "direction": "OUTPUT"
+         },
+         {
+            "name": "D8",
+            "displayName": "SS (EPD CS)",
+            "dataType": "bool",
+            "hasPWM": false,
+            "direction": "OUTPUT"
+         },
+         {
+            "name": "D35",
+            "displayName": "MOSI",
+            "dataType": "bool",
+            "hasPWM": false,
+            "direction": "OUTPUT"
+         },
+         {
+            "name": "D37",
+            "displayName": "MISO",
+            "dataType": "bool",
+            "hasPWM": false,
+            "direction": "OUTPUT"
+         },
+         {
+            "name": "D36",
+            "displayName": "SCK",
+            "dataType": "bool",
+            "hasPWM": false,
+            "direction": "OUTPUT"
          }
       ],
       "analogPins": [
