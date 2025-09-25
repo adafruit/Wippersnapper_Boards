@@ -120,7 +120,8 @@
          {
             "name": "D39",
             "displayName": "D39 (TFT DC, UART TX)",
-            "dataType": "bool"
+            "dataType": "bool",
+            "uartTx": true
          },
          {
             "name": "D21",
