@@ -43,7 +43,7 @@
       },
       {
         "name":"D23",
-        "displayName":"D23 (Pin Header)",
+        "displayName":"D23/S4 (Pin Header 5V)",
         "dataType":"bool",
         "hasPWM":true,
         "hasServo":true
@@ -78,21 +78,21 @@
       },
       {
         "name":"D21",
-        "displayName":"D21 (SIG1)",
+        "displayName":"D21 (SIG1 5V)",
         "dataType":"bool",
         "hasPWM":true,
         "hasServo":true
       },
       {
         "name":"D22",
-        "displayName":"D22 (SIG2)",
+        "displayName":"D22 (SIG2 5V)",
         "dataType":"bool",
         "hasPWM":true,
         "hasServo":true
       },
       {
         "name":"D19",
-        "displayName":"D19 (SIG3)",
+        "displayName":"D19 (SIG3 5V)",
         "dataType":"bool",
         "hasPWM":true,
         "hasServo":true
