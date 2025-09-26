@@ -37,7 +37,7 @@
       "isPixel": true
     },
     {
-      "name": "Vcc-level NeoPixels SIG1 (Pin 21)",
+      "name": "NeoPixels SIG1 (Pin 21 5V)",
       "pixelNumber": 640,
       "pixelsOrder": "GRB",
       "pixelBrightness": 255,
@@ -47,7 +47,7 @@
       "isPixel": true
     },
     {
-      "name": "Vcc-level NeoPixels SIG2 (Pin 22)",
+      "name": "NeoPixels SIG2 (Pin 22 5V)",
       "pixelNumber": 640,
       "pixelsOrder": "GRB",
       "pixelBrightness": 255,
@@ -57,7 +57,7 @@
       "isPixel": true
     },
     {
-      "name": "Vcc-level NeoPixels SIG3 (Pin 19)",
+      "name": "NeoPixels SIG3 (Pin 19 5V)",
       "pixelNumber": 640,
       "pixelsOrder": "GRB",
       "pixelBrightness": 255,
