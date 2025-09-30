@@ -6,7 +6,7 @@
   "vendor":"Adafruit",
   "productURL":"https://www.adafruit.com/product/6100",
   "documentationURL":"https://learn.adafruit.com/adafruit-sparkle-motion/",
-  "published": true,
+  "published": false,
   "installMethod":"web",
   "esptool": {
     "fileSystemSize": 131072,
