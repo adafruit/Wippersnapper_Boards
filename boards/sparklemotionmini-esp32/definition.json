@@ -105,48 +105,7 @@
         "hasServo":true
       }
     ],
-    "analogPins": [
-      {
-        "name":"A13",
-        "displayName":"A0 (D13)",
-        "dataType":"int16",
-        "hasPWM":true
-      },
-      {
-        "name":"A14",
-        "displayName":"D14",
-        "dataType":"int16",
-        "hasPWM":true
-      },
-      {
-        "name":"A27",
-        "displayName":"D27",
-        "dataType":"int16",
-        "hasPWM":true
-      },
-      {
-        "name":"A25",
-        "displayName":"D25",
-        "dataType":"int16",
-        "hasPWM":true
-      },
-      {
-        "name":"A26",
-        "displayName":"D26",
-        "dataType":"int16",
-        "hasPWM":true
-      },
-      {
-        "name":"A32",
-        "displayName":"A32",
-        "dataType":"int16"
-      },
-      {
-        "name":"A33",
-        "displayName":"A33",
-        "dataType":"int16"
-      }
-    ],
+    "analogPins": [],
     "i2cPorts": [
       {
           "i2cPortId": 0,
