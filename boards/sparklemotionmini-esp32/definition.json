@@ -2,7 +2,7 @@
   "boardName":"sparklemotionmini-esp32",
   "mcuName":"ESP32",
   "mcuRefVoltage": 3.3,
-  "displayName":"Adafruit Mini Sparkle Motion",
+  "displayName":"Sparkle Motion Mini",
   "vendor":"Adafruit",
   "productURL":"https://www.adafruit.com/product/6160",
   "documentationURL":"https://learn.adafruit.com/adafruit-sparkle-motion-mini/",
