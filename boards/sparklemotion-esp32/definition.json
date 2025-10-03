@@ -1,0 +1,143 @@
+{
+  "boardName":"sparklemotion-esp32",
+  "mcuName":"ESP32",
+  "mcuRefVoltage": 3.3,
+  "displayName":"Adafruit Sparkle Motion",
+  "vendor":"Adafruit",
+  "productURL":"https://www.adafruit.com/product/6100",
+  "documentationURL":"https://learn.adafruit.com/adafruit-sparkle-motion/",
+  "published": true,
+  "installMethod":"web",
+  "esptool": {
+    "fileSystemSize": 131072,
+    "blockSize": 4096,
+    "offset": "0x3D0000",
+    "chip": "esp32",
+    "flashMode" : "dio",
+    "flashFreq" : "80m",
+    "flashSize" : "4MB",
+    "structure": {
+        "0x0": "wippersnapper.sparklemotion_esp32.littlefs.VERSION.combined.bin"
+    }
+  },
+  "components": {
+    "digitalPins": [
+      {
+        "name":"D0",
+        "displayName":"D0 (Button)",
+        "dataType":"bool"
+      },
+      {
+        "name":"D4",
+        "displayName":"D4 (LED BUILT-IN)",
+        "dataType":"bool",
+        "hasPWM":true
+      },
+      {
+        "name":"D10",
+        "displayName":"D10 (UART RX)",
+        "dataType":"bool",
+        "uartRx": true,
+        "hasPWM":true,
+        "hasServo":true
+      },
+      {
+        "name":"D23",
+        "displayName":"D23/S4 (Pin Header 5V)",
+        "dataType":"bool",
+        "hasPWM":true,
+        "hasServo":true
+      },
+      {
+        "name":"D18",
+        "displayName":"D18 (Pin Header)",
+        "dataType":"bool",
+        "hasPWM":true,
+        "hasServo":true
+      },
+      {
+        "name":"D9",
+        "displayName":"D9 (UART TX)",
+        "dataType":"bool",
+        "uartTx": true,
+        "hasPWM":true,
+        "hasServo":true
+      },
+      {
+        "name":"D27",
+        "displayName":"D27 (3-Pin JST)",
+        "dataType":"bool",
+        "hasPWM":true,
+        "hasServo":true
+      },
+      {
+        "name":"D2",
+        "displayName":"D2 (NEOPIXEL)",
+        "dataType":"bool",
+        "hasPWM":true
+      },
+      {
+        "name":"D21",
+        "displayName":"D21 (SIG1 5V)",
+        "dataType":"bool",
+        "hasPWM":true,
+        "hasServo":true
+      },
+      {
+        "name":"D22",
+        "displayName":"D22 (SIG2 5V)",
+        "dataType":"bool",
+        "hasPWM":true,
+        "hasServo":true
+      },
+      {
+        "name":"D19",
+        "displayName":"D19 (SIG3 5V)",
+        "dataType":"bool",
+        "hasPWM":true,
+        "hasServo":true
+      },
+      {
+        "name":"D14",
+        "displayName":"D14 (SDA)",
+        "dataType":"bool",
+        "hasPWM":true,
+        "hasServo":true
+      },
+      {
+        "name":"D13",
+        "displayName":"D13 (SCL)",
+        "dataType":"bool",
+        "hasPWM":true,
+        "hasServo":true
+      }
+    ],
+    "analogPins": [
+      {
+        "name":"A27",
+        "displayName":"D27 (3-Pin JST)",
+        "dataType":"int16",
+        "hasPWM":true
+      },
+      {
+        "name":"A13",
+        "displayName":"D13 (I2C SCL)",
+        "dataType":"int16",
+        "hasPWM":true
+      },
+      {
+        "name":"A14",
+        "displayName":"D14 (I2C SDA)",
+        "dataType":"int16",
+        "hasPWM":true
+      }
+    ],
+    "i2cPorts": [
+      {
+          "i2cPortId": 0,
+          "SDA": 14,
+          "SCL": 13
+      }
+    ]
+  }
+}
