@@ -112,26 +112,7 @@
         "hasServo":true
       }
     ],
-    "analogPins": [
-      {
-        "name":"A27",
-        "displayName":"D27 (3-Pin JST)",
-        "dataType":"int16",
-        "hasPWM":true
-      },
-      {
-        "name":"A13",
-        "displayName":"D13 (I2C SCL)",
-        "dataType":"int16",
-        "hasPWM":true
-      },
-      {
-        "name":"A14",
-        "displayName":"D14 (I2C SDA)",
-        "dataType":"int16",
-        "hasPWM":true
-      }
-    ],
+    "analogPins": [],
     "i2cPorts": [
       {
           "i2cPortId": 0,
