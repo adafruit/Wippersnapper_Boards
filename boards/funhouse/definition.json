@@ -135,7 +135,8 @@
          {
             "name":"D40",
             "displayName":"SS (TFT CS)",
-            "dataType":"bool"
+            "dataType":"bool",
+            "isHardwired": true
          },
          {
             "name":"D35",
@@ -155,17 +156,20 @@
          {
             "name":"D21",
             "displayName":"TFT Backlight",
-            "dataType":"bool"
+            "dataType":"bool",
+            "isHardwired": true
          },
          {
             "name":"D39",
             "displayName":"TFT DC",
-            "dataType":"bool"
+            "dataType":"bool",
+            "isHardwired": true
          },
          {
             "name":"D41",
             "displayName":"TFT Reset",
-            "dataType":"bool"
+            "dataType":"bool",
+            "isHardwired": true
          }
        ],
        "analogPins":[

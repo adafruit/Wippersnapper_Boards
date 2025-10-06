@@ -107,27 +107,32 @@
           {
             "name": "D7",
             "displayName": "TFT I2C Power",
-            "dataType": "bool"
+            "dataType": "bool",
+            "isHardwired": true
           },
           {
             "name": "D40",
             "displayName": "TFT DC",
-            "dataType": "bool"
+            "dataType": "bool",
+            "isHardwired": true
           },
           {
             "name": "D41",
             "displayName": "TFT Reset",
-            "dataType": "bool"
+            "dataType": "bool",
+            "isHardwired": true
           },
           {
             "name": "D45",
             "displayName": "TFT Backlight",
-            "dataType": "bool"
+            "dataType": "bool",
+            "isHardwired": true
           },
           {
             "name": "D42",
             "displayName": "SS (TFT CS)",
-            "dataType": "bool"
+            "dataType": "bool",
+            "isHardwired": true
           },
           {
             "name": "D35",

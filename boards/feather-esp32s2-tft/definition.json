@@ -121,27 +121,31 @@
             "name": "D39",
             "displayName": "D39 (TFT DC, UART TX)",
             "dataType": "bool",
-            "uartTx": true
+            "uartTx": true,
+            "isHardwired": true
          },
          {
             "name": "D21",
-            "displayName": "TFT I2C Power",
+            "displayName": "D21 (TFT I2C Power)",
             "dataType": "bool"
          },
          {
             "name": "D40",
             "displayName": "TFT Reset",
-            "dataType": "bool"
+            "dataType": "bool",
+            "isHardwired": true
          },
          {
             "name": "D45",
             "displayName": "TFT Backlight",
-            "dataType": "bool"
+            "dataType": "bool",
+            "isHardwired": true
          },
          {
             "name": "D7",
             "displayName": "SS (TFT CS)",
-            "dataType": "bool"
+            "dataType": "bool",
+            "isHardwired": true
          },
          {
             "name": "D35",
