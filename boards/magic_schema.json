@@ -80,6 +80,7 @@
           "uartRx": { "type": "string" },
           "uartTx": { "type": "string" },
           "isServo": { "type": "boolean", "const": true },
+          "isDisplay": { "type": "boolean", "const": true },
           "minPulseWidth": { "type": "number" },
           "maxPulseWidth": { "type": "number" },
           "visualization": {
@@ -191,6 +192,30 @@
               "frequency": {},
               "minPulseWidth": {},
               "maxPulseWidth": {}
+            },
+            "additionalProperties": false
+          },
+          { "required": [ "isDisplay" ],
+            "properties": {
+              "isDisplay": {},
+              "name": {},
+              "type": {},
+              "displayType": {},
+              "driver": {},
+              "spiBus": {},
+              "width": {},
+              "height": {},
+              "rotation": {},
+              "textSize": {},
+              "dcPinName": {},
+              "rstPinName": {},
+              "csPinName": {},
+              "sramPinName": {},
+              "busyPinName": {},
+              "mosiPinName": {},
+              "misoPinName": {},
+              "sckPinName": {},
+              "epdMode": {},
             },
             "additionalProperties": false
           }
