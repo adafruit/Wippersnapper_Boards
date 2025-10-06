@@ -215,7 +215,7 @@
               "mosiPinName": {},
               "misoPinName": {},
               "sckPinName": {},
-              "epdMode": {},
+              "epdMode": {}
             },
             "additionalProperties": false
           }
