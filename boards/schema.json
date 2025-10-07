@@ -151,6 +151,10 @@
               "hasServo": {
                 "description": "If true, hasPWM should also be true, and this PWM-enabled pin also supports servo components.",
                 "type": "boolean"
+              },
+              "isHardwired": {
+                "description": "If true, this pin is wired directly to a built-in component. It will only be available to be selected when adding a component of that type.",
+                "type": "boolean"
               }
             }
           }
