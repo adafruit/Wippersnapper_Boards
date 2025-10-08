@@ -107,7 +107,7 @@
             "hasPWM": true,
             "dataType": "bool",
             "direction": "OUTPUT"
-         },
+         }
       ],
       "analogPins": [
          {
