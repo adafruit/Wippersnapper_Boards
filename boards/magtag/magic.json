@@ -8,6 +8,22 @@
   },
   "components": [
     {
+      "name": "2.9\" Grayscale eInk (SSD1680)",
+      "type": "eink-29-grayscale-ssd1680",
+      "displayType": "epd",
+      "driver": "epd_ssd1680",
+      "textSize": 3,
+      "spiBus": 0,
+      "epdMode": "mono",
+      "width": 296,
+      "height": 128,
+      "dcPinName": "D7",
+      "rstPinName": "D6",
+      "csPinName": "D8",
+      "busyPinName": "D5",
+      "isDisplay": true
+    },
+    {
       "name": "Button (D0/Boot)",
       "pinName": "D0",
       "type": "push_button",

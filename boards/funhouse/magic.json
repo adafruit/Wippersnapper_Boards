@@ -8,6 +8,24 @@
   },
   "components": [
     {
+      "name": "1.54\" TFT LCD Display",
+      "type": "tft-154-wide-angle",
+      "displayType": "tft",
+      "driver": "tft_st7789",
+      "spiBus": 0,
+      "width": 240,
+      "height": 240,
+      "rotation": 0,
+      "dcPinName": "D39",
+      "rstPinName": "D41",
+      "csPinName": "D40",
+      "mosiPinName": "D35",
+      "sckPinName": "D36",
+      "misoPinName": "D37",
+      "textSize": 3,
+      "isDisplay": true
+    },
+    {
       "name": "AHT20: Humidity",
       "isI2C": true,
       "type": "aht20:humidity",

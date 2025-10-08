@@ -8,6 +8,24 @@
   },
   "components": [
     {
+      "name": "1.14\" TFT LCD Display",
+      "type": "tft-114",
+      "displayType": "tft",
+      "driver": "tft_st7789",
+      "spiBus": 0,
+      "width": 135,
+      "height": 240,
+      "rotation": 3,
+      "dcPinName": "D39",
+      "rstPinName": "D40",
+      "csPinName": "D7",
+      "mosiPinName": "D35",
+      "sckPinName": "D36",
+      "misoPinName": "D37",
+      "textSize": 3,
+      "isDisplay": true
+    },
+    {
       "name": "Button (D0/Boot)",
       "pinName": "D0",
       "type": "push_button",

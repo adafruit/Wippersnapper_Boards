@@ -107,6 +107,51 @@
             "displayName": "D39 (UART TX)",
             "dataType": "bool",
             "uartTx": true
+          },
+          {
+            "name": "D7",
+            "displayName": "TFT I2C Power",
+            "dataType": "bool",
+            "isHardwired": true
+          },
+          {
+            "name": "D40",
+            "displayName": "TFT DC",
+            "dataType": "bool",
+            "isHardwired": true
+          },
+          {
+            "name": "D41",
+            "displayName": "TFT Reset",
+            "dataType": "bool",
+            "isHardwired": true
+          },
+          {
+            "name": "D45",
+            "displayName": "TFT Backlight",
+            "dataType": "bool",
+            "isHardwired": true
+          },
+          {
+            "name": "D42",
+            "displayName": "SS (TFT CS)",
+            "dataType": "bool",
+            "isHardwired": true
+          },
+          {
+            "name": "D35",
+            "displayName": "MOSI",
+            "dataType": "bool"
+          },
+          {
+            "name": "D36",
+            "displayName": "SCK",
+            "dataType": "bool"
+          },
+          {
+            "name": "D37",
+            "displayName": "MISO",
+            "dataType": "bool"
           }
         ],
         "analogPins":[

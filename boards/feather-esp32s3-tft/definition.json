@@ -74,7 +74,7 @@
           },
           {
             "name":"D7",
-            "displayName":"D7",
+            "displayName":"SS (TFT CS)",
             "dataType":"bool",
             "hasPWM":true,
             "hasServo":true
@@ -130,6 +130,45 @@
           {
             "name":"D33",
             "displayName":"D33 (NeoPixel)",
+            "dataType":"bool"
+          },
+          {
+            "name":"D21",
+            "displayName":"TFT I2C Power",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D39",
+            "displayName":"TFT DC",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D40",
+            "displayName":"TFT Reset",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D45",
+            "displayName":"TFT Backlight",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D35",
+            "displayName":"MOSI",
+            "dataType":"bool"
+          },
+          {
+            "name":"D36",
+            "displayName":"SCK",
+            "dataType":"bool"
+          },
+          {
+            "name":"D37",
+            "displayName":"MISO",
             "dataType":"bool"
           }
         ],
