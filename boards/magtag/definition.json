@@ -100,12 +100,19 @@
             "dataType": "bool",
             "hasPWM": false,
             "direction": "OUTPUT"
+         },
+         {
+            "name": "D17",
+            "displayName": "Piezo Speaker (D17)",
+            "hasPWM": true,
+            "dataType": "bool",
+            "direction": "OUTPUT"
          }
       ],
       "analogPins": [
          {
             "name": "A17",
-            "displayName": "Piezo Speaker (A0)",
+            "displayName": "Piezo Speaker (D17)",
             "hasPWM": true,
             "dataType": "int16"
          },
