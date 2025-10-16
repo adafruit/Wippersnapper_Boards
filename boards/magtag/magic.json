@@ -8,19 +8,19 @@
   },
   "components": [
     {
-      "name": "2.9\" Grayscale eInk (SSD1680)",
-      "type": "eink-29-grayscale-ssd1680",
+      "name": "MagTag - 2.9\" E-Ink Display",
+      "type": "eink-magtag",
       "displayType": "epd",
-      "driver": "epd_ssd1680",
+      "driver": "unspecified",
       "textSize": 3,
-      "spiBus": 0,
-      "epdMode": "mono",
-      "width": 296,
-      "height": 128,
-      "dcPinName": "D7",
       "rstPinName": "D6",
       "csPinName": "D8",
       "busyPinName": "D5",
+      "dcPinName": "D7",
+      "spiBus": 0,
+      "epdMode": "unspecified",
+      "width": 296,
+      "height": 128,
       "isDisplay": true
     },
     {
