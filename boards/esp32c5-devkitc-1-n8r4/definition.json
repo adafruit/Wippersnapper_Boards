@@ -279,6 +279,11 @@
           "i2cPortId":0,
           "SDA":0,
           "SCL":1
+        },
+        {
+          "i2cPortId":1,
+          "SDA":2,
+          "SCL":3
         }
       ]
     }
