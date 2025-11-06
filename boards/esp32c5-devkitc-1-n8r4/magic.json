@@ -18,12 +18,12 @@
       "pull": "UP"
     },
     {
-      "name": "NeoPixel (D48)",
+      "name": "NeoPixel (D27)",
       "type": "neopixel",
       "pixelNumber": 1,
       "pixelsOrder": "GRB",
       "pixelBrightness": 255,
-      "pinName": "D48",
+      "pinName": "D27",
       "pixelsType": "NEOPIXEL",
       "isPixel": true
     }
