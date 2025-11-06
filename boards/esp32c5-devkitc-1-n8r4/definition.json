@@ -8,12 +8,10 @@
     "documentationURL":"https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c5/esp-dev-kits-en-master-esp32c5.pdf",
     "installMethod":"web",
     "installBoardName": "esp32c5-devkitc-1-n8r4",
-    "bootDiskName": "S3DKC1BOOT",
-    "bootloaderBoardName": "espressif_esp32c5_devkitc_1",
     "esptool": {
       "fileSystemSize": 1572864,
       "blockSize": 4096,
-      "offset": "0x450000",
+      "offset": "0x3D0000",
       "chip": "esp32c5",
       "flashMode": "qio",
       "flashFreq": "80m",
