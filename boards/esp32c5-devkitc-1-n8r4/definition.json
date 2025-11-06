@@ -26,7 +26,7 @@
       "digitalPins":[
         {
           "name":"D0",
-          "displayName":"0 (Boot)",
+          "displayName":"0",
           "dataType":"bool",
           "direction":"INPUT"
         },

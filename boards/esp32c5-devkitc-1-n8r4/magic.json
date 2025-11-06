@@ -8,8 +8,8 @@
   },
   "components": [
     {
-      "name": "Button (D0/Boot)",
-      "pinName": "D0",
+      "name": "Button (Boot)",
+      "pinName": "D28",
       "type": "push_button",
       "mode": "DIGITAL",
       "direction": "INPUT",
