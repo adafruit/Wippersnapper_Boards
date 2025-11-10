@@ -9,7 +9,7 @@
     "installMethod":"web",
     "installBoardName": "espressif_esp32c5_devkitc_1_n8r4",
     "esptool": {
-      "fileSystemSize": 1572864,
+      "fileSystemSize": 131072,
       "blockSize": 4096,
       "baudRate": 115200,
       "offset": "0x3D0000",
