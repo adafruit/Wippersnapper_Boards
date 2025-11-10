@@ -7,7 +7,7 @@
     "productURL":"https://www.digikey.com/en/products/detail/espressif-systems/ESP32-C5-DEVKITC-1-N8R4/26658349",
     "documentationURL":"https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c5/esp-dev-kits-en-master-esp32c5.pdf",
     "installMethod":"web",
-    "installBoardName": "esp32c5-devkitc-1-n8r4",
+    "installBoardName": "espressif_esp32c5-devkitc-1-n8r4",
     "esptool": {
       "fileSystemSize": 1572864,
       "blockSize": 4096,
@@ -17,7 +17,7 @@
       "flashFreq": "80m",
       "flashSize": "8MB",
       "structure": {
-        "0x0": "wippersnapper.esp32c5_devkitc_1_n8r4.littlefs.VERSION.combined.bin"
+        "0x0": "wippersnapper.espressif_esp32c5_devkitc_1_n8r4.littlefs.VERSION.combined.bin"
       }
     },
     "components":{
