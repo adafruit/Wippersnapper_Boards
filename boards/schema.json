@@ -202,7 +202,11 @@
           "type": "string"
         },
         "fileSystemSize": {
-          "description": "",
+          "description": "Size of the user file system partition (where secrets.json lives)",
+          "type": "number"
+        },
+        "baudRate": {
+          "description": "Avoid auto detection and use a fixed baud rate for the web-serial installer",
           "type": "number"
         },
         "blockSize": {
