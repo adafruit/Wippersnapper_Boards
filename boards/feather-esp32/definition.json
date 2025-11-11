@@ -10,6 +10,7 @@
     "installMethod":"web",
     "esptool": {
       "fileSystemSize": 131072,
+      "baudRate": 115200,
       "blockSize": 4096,
       "offset": "0x3D0000",
       "chip": "esp32",
