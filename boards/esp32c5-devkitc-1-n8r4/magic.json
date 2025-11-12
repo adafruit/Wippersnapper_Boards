@@ -1,0 +1,31 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2023-11-13T19:41:29.465Z",
+  "exportedFromDevice": {
+    "board": "esp32s3-devkitc-1-n8",
+    "firmwareVersion": "1.0.0-beta.103"
+  },
+  "components": [
+    {
+      "name": "Button (Boot)",
+      "pinName": "D28",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    },
+    {
+      "name": "NeoPixel (D27)",
+      "type": "neopixel",
+      "pixelNumber": 1,
+      "pixelsOrder": "GRB",
+      "pixelBrightness": 255,
+      "pinName": "D27",
+      "pixelsType": "NEOPIXEL",
+      "isPixel": true
+    }
+  ]
+}
