@@ -101,6 +101,20 @@
         "hasServo": true
       },
       {
+        "name": "D17",
+        "displayName": "LCD CS",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D16",
+        "displayName": "LCD DC",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
         "name": "D11",
         "displayName": "Buzzer",
         "dataType": "bool",
