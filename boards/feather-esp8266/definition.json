@@ -14,7 +14,7 @@
         "baudRate": 115200,
         "fileSystemSize": 2072576,
         "blockSize": 8192,
-        "flashMode" : "qio",
+        "flashMode" : "dio",
         "flashFreq" : "40m",
         "flashSize" : "4MB",
         "structure": {
