@@ -7,7 +7,7 @@
     "vendor":"Adafruit",
     "productURL":"https://www.adafruit.com/product/6200",
     "documentationURL":"https://www.adafruit.com/product/6200",
-    "published": false,
+    "published": true,
     "installMethod":"uf2",
     "installBoardName":"fruit_jam_tinyusb",
     "components":{
