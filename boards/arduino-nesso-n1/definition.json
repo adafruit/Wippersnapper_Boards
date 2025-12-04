@@ -129,42 +129,42 @@
         "hasServo": true
       },
       {
-        "name": "E4407",
+        "name": "D263",
         "displayName": "Green LED (inverted)",
         "dataType": "bool",
         "hasPWM": false,
         "hasServo": false
       },
       {
-        "name": "E4406",
+        "name": "D262",
         "displayName": "LCD Backlight",
         "dataType": "bool",
         "hasPWM": true,
         "hasServo": false
       },
       {
-        "name": "E4402",
+        "name": "D258",
         "displayName": "Grove Power Enable",
         "dataType": "bool",
         "hasPWM": false,
         "hasServo": false
       },
       {
-        "name": "E4401",
+        "name": "D257",
         "displayName": "LCD Reset",
         "dataType": "bool",
         "hasPWM": false,
         "hasServo": false
       },
       {
-        "name": "E4300",
+        "name": "D512",
         "displayName": "Button KEY1",
         "dataType": "bool",
         "hasPWM": false,
         "hasServo": false
       },
       {
-        "name": "E4301",
+        "name": "D513",
         "displayName": "Button KEY2",
         "dataType": "bool",
         "hasPWM": false,
