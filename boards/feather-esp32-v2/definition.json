@@ -12,6 +12,7 @@
         "blockSize": 4096,
         "offset": "0x670000",
         "chip": "esp32",
+        "baudRate": 115200,
         "flashMode" : "dio",
         "flashFreq" : "80m",
         "flashSize" : "8MB",
