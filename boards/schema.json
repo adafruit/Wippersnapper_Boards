@@ -2,7 +2,16 @@
   "title": "Board Definition",
   "description": "A WipperSnapper-compatible Board for use in Adafruit IO",
   "type": "object",
-  "required": [ "boardName", "mcuName", "mcuRefVoltage", "installMethod", "displayName", "productURL", "documentationURL", "components" ],
+  "required": [
+    "boardName",
+    "mcuName",
+    "mcuRefVoltage",
+    "installMethod",
+    "displayName",
+    "productURL",
+    "documentationURL",
+    "components"
+  ],
   "additionalProperties": false,
   "properties": {
     "boardName": {
@@ -80,7 +89,7 @@
     "components": {
       "description": "List of available pins and I2C ports for this board.",
       "type": "object",
-      "required": [ "digitalPins", "analogPins", "i2cPorts" ],
+      "required": ["digitalPins", "analogPins", "i2cPorts"],
       "additionalProperties": false,
       "properties": {
         "digitalPins": {
@@ -88,7 +97,7 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": [ "name", "displayName", "dataType" ],
+            "required": ["name", "displayName", "dataType"],
             "additionalProperties": false,
             "properties": {
               "name": { "type": "string" },
@@ -120,9 +129,9 @@
                 "type": "boolean"
               }
             },
-            "if": { "required": [ "uartRx" ] },
+            "if": { "required": ["uartRx"] },
             "then": {
-              "not": { "required": [ "uartTx" ] },
+              "not": { "required": ["uartTx"] },
               "errorMessage": "Cannot specify uartTx and uartRx on same pin!"
             }
           }
@@ -132,7 +141,7 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": [ "name", "displayName", "dataType" ],
+            "required": ["name", "displayName", "dataType"],
             "additionalProperties": false,
             "properties": {
               "name": { "type": "string" },
@@ -164,7 +173,7 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": [ "i2cPortId", "SDA", "SCL" ],
+            "required": ["i2cPortId", "SDA", "SCL"],
             "additionalProperties": false,
             "properties": {
               "i2cPortId": { "type": "number" },
@@ -178,7 +187,13 @@
     "esptool": {
       "description": "Installation metadata for boards that use the web-based WipperSnapper firmware installer",
       "type": "object",
-      "required": [ "offset", "chip", "fileSystemSize", "blockSize", "structure" ],
+      "required": [
+        "offset",
+        "chip",
+        "fileSystemSize",
+        "blockSize",
+        "structure"
+      ],
       "additionalProperties": false,
       "properties": {
         "offset": {
