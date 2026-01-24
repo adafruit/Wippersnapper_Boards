@@ -12,6 +12,12 @@
   "components": {
     "digitalPins": [
       {
+        "name": "D35",
+        "displayName": "BOOT BUTTON",
+        "dataType": "bool",
+        "direction": "INPUT"
+      },
+      {
         "name": "D52",
         "displayName": "GPIO52",
         "dataType": "bool",
