@@ -1,0 +1,60 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2025-07-03T19:41:28.465Z",
+  "exportedFromDevice": {
+    "board": "dfrobot-beetle-esp32c3",
+    "firmwareVersion": "1.0.0-beta.103"
+  },
+  "components": [
+    /* 
+    Type-C: USB interface
+Charge: Charging indicator light
+Off: No power connected or fully charged
+Steady on: Charging in progress
+15/D13: On-board LED pin
+RST: Reset button
+28/BOOT: IO28 pin/BOOT button
+BAT: Lithium battery interface, supporting 3.7~4.2V
+IO1: Battery voltage detection pin
+3V3_C: IO0 controls 3.3V power output, default off, can be turned on with high level.
+GDI: GDI display interface
+ESP32-C5: Module model is ESP32-WROOM-1-N4
+    */
+    {
+      "name": "LED (D13 / IO15)",
+      "pinName": "D15",
+      "type": "led",
+      "mode": "DIGITAL",
+      "direction": "OUTPUT",
+      "isPin": true
+    },
+    {
+      "name": "Button (IO28/Boot)",
+      "pinName": "D28",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    },
+    {
+      "name": "Battery Voltage (IO1)",
+      "pinName": "D1",
+      "type": "voltage_sensor",
+      "mode": "ANALOG",
+      "direction": "INPUT",
+      "period": 60000,
+      "isPin": true
+    },
+    {
+      "name": "3.3V Power Control (IO0)",
+      "pinName": "D0",
+      "type": "digital_output",
+      "mode": "DIGITAL",
+      "direction": "OUTPUT",
+      "isPin": true
+    }
+  ]
+}
