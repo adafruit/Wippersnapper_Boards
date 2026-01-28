@@ -1,0 +1,459 @@
+{
+  "boardName": "waveshare-p4-wifi6",
+  "mcuName": "esp32p4",
+  "mcuRefVoltage": 3.3,
+  "displayName": "Waveshare ESP32-P4-WIFI6",
+  "vendor": "Waveshare",
+  "productURL": "https://www.waveshare.com/esp32-p4-wifi6.htm",
+  "documentationURL": "https://www.waveshare.com/wiki/ESP32-P4-WIFI6",
+  "published": false,
+  "installMethod": "web",
+  "installBoardName": "waveshare_p4_wifi6",
+  "components": {
+    "digitalPins": [
+      {
+        "name": "D35",
+        "displayName": "BOOT BUTTON",
+        "dataType": "bool",
+        "direction": "INPUT"
+      },
+      {
+        "name": "D52",
+        "displayName": "GPIO52",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D51",
+        "displayName": "GPIO51 (MIC)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D31",
+        "displayName": "GPIO31",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D30",
+        "displayName": "GPIO30",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D29",
+        "displayName": "GPIO29",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D28",
+        "displayName": "GPIO28",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D50",
+        "displayName": "GPIO50 (DISPLAY)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "isHardwired": true
+      },
+      {
+        "name": "D49",
+        "displayName": "GPIO49",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D5",
+        "displayName": "GPIO5",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D4",
+        "displayName": "GPIO4",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D3",
+        "displayName": "GPIO3",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D2",
+        "displayName": "GPIO2",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D8",
+        "displayName": "SCL (GPIO8)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D7",
+        "displayName": "SDA (GPIO7)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D24",
+        "displayName": "USB DM (GPIO24)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "isHardwired": true
+      },
+      {
+        "name": "D25",
+        "displayName": "USB DP (GPIO25)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "isHardwired": true
+      },
+      {
+        "name": "D20",
+        "displayName": "GPIO20",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D21",
+        "displayName": "GPIO21",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D22",
+        "displayName": "GPIO22",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D23",
+        "displayName": "GPIO23",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D26",
+        "displayName": "GPIO26",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D27",
+        "displayName": "GPIO27",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D32",
+        "displayName": "GPIO32",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D33",
+        "displayName": "GPIO33",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+
+      {
+        "name": "D46",
+        "displayName": "GPIO46",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D47",
+        "displayName": "GPIO47",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D48",
+        "displayName": "GPIO48",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D39",
+        "displayName": "GPIO39 (SD D0)",
+        "dataType": "bool",
+        "isHardwired": true
+      },
+      {
+        "name": "D40",
+        "displayName": "GPIO40 (SD D1)",
+        "dataType": "bool",
+        "isHardwired": true
+      },
+      {
+        "name": "D41",
+        "displayName": "GPIO41 (SD D2)",
+        "dataType": "bool",
+        "isHardwired": true
+      },
+      {
+        "name": "D42",
+        "displayName": "GPIO42 (SD D3/CD)",
+        "dataType": "bool",
+        "isHardwired": true
+      },
+      {
+        "name": "D43",
+        "displayName": "GPIO43 (SD CLK)",
+        "dataType": "bool",
+        "isHardwired": true
+      },
+      {
+        "name": "D44",
+        "displayName": "GPIO44 (SD CMD)",
+        "dataType": "bool",
+        "isHardwired": true
+      },
+      {
+        "name": "D45",
+        "displayName": "GPIO45 (SD VDD)",
+        "dataType": "bool",
+        "isHardwired": true
+      }
+    ],
+    "analogPins": [
+      {
+        "name": "A52",
+        "displayName": "GPIO52",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A51",
+        "displayName": "GPIO51 (MIC)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A31",
+        "displayName": "GPIO31",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A30",
+        "displayName": "GPIO30",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A29",
+        "displayName": "GPIO29",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A28",
+        "displayName": "GPIO28",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A50",
+        "displayName": "GPIO50 (DISPLAY)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "isHardwired": true
+      },
+      {
+        "name": "A49",
+        "displayName": "GPIO49",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A5",
+        "displayName": "GPIO5",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A4",
+        "displayName": "GPIO4",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A3",
+        "displayName": "GPIO3",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A2",
+        "displayName": "GPIO2",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A8",
+        "displayName": "SCL (GPIO8)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A7",
+        "displayName": "SDA (GPIO7)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A24",
+        "displayName": "USB DM (GPIO24)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "isHardwired": true
+      },
+      {
+        "name": "A25",
+        "displayName": "USB DP (GPIO25)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "isHardwired": true
+      },
+      {
+        "name": "A20",
+        "displayName": "GPIO20",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A21",
+        "displayName": "GPIO21",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A22",
+        "displayName": "GPIO22",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A23",
+        "displayName": "GPIO23",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A26",
+        "displayName": "GPIO26",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A27",
+        "displayName": "GPIO27",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A32",
+        "displayName": "GPIO32",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A33",
+        "displayName": "GPIO33",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+
+      {
+        "name": "A46",
+        "displayName": "GPIO46",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A47",
+        "displayName": "GPIO47",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A48",
+        "displayName": "GPIO48",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      }
+    ],
+    "i2cPorts": [
+      {
+        "i2cPortId": 0,
+        "SDA": 7,
+        "SCL": 8
+      }
+    ]
+  }
+}
