@@ -1,0 +1,228 @@
+{
+    "boardName":"dfrobot-firebeetle2-esp32c5",
+    "published": true,
+    "mcuName":"esp32c5",
+    "mcuRefVoltage":3.3,
+    "displayName":"DFRobot FireBeetle 2 ESP32-C5",
+    "vendor":"DFRobot",
+    "productURL":"https://www.dfrobot.com/product-2965.html",
+    "documentationURL":"https://wiki.dfrobot.com/SKU_DFR1222_Firebeetle_2_ESP32_C5_Development_Board",
+    "installMethod":"web",
+    "installBoardName": "dfrobot_firebeetle2_esp32c5",
+    "esptool": {
+      "fileSystemSize": 131072,
+      "blockSize": 4096,
+      "baudRate": 115200,
+      "offset": "0x3D0000",
+      "chip": "esp32c5",
+      "flashMode": "qio",
+      "flashFreq": "80m",
+      "flashSize": "4MB",
+      "structure": {
+        "0x0": "wippersnapper.dfrobot_firebeetle2_esp32c5.littlefs.VERSION.combined.bin"
+      }
+    },
+    "components":{
+      "digitalPins":[
+        {
+          "name":"D0",
+          "displayName":"0 (3V3_C Enable)",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true
+        },
+        {
+          "name":"D2",
+          "displayName":"A1 (GPIO2)",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true
+        },
+        {
+          "name":"D3",
+          "displayName":"A2 (GPIO3) - GDI#10 SD_CS",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        },
+        {
+          "name":"D4",
+          "displayName":"A3 (GPIO4)",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true
+        },
+        {
+          "name":"D5",
+          "displayName":"A4 (GPIO5)",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true
+        },
+        {
+          "name":"D6",
+          "displayName":"D12/A5 (GPIO6) - GDI#12 TCS",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        },
+        {
+          "name":"D7",
+          "displayName":"D11 (GPIO7) - GDI#15 INT",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        },
+        {
+          "name":"D8",
+          "displayName":"D2 (GPIO8) - GDI#7 LCD_DC",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        },
+        {
+          "name":"D9",
+          "displayName":"SDA (GPIO9) - GDI#14 SDA",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        },
+        {
+          "name":"D10",
+          "displayName":"SCL (GPIO10) - GDI#13 SCL",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        },
+        {
+          "name":"D11",
+          "displayName":"TX (GPIO11)",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "uartTx":true
+        },
+        {
+          "name":"D12",
+          "displayName":"RX (GPIO12)",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "uartRx":true
+        },
+        {
+          "name":"D15",
+          "displayName":"D13 (GPIO15) - LED/GDI#2 LCD_BL",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        },
+        {
+          "name":"D23",
+          "displayName":"SCK (GPIO23) - GDI#4 SCLK",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        },
+        {
+          "name":"D24",
+          "displayName":"MOSI (GPIO24) - GDI#5 MOSI",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        },
+        {
+          "name":"D25",
+          "displayName":"MISO (GPIO25) - GDI#6 MISO",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        },
+        {
+          "name":"D26",
+          "displayName":"D3 (GPIO26) - GDI#8 LCD_RST",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        },
+        {
+          "name":"D27",
+          "displayName":"D6 (GPIO27) - GDI#9 LCD_CS",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        },
+        {
+          "name":"D28",
+          "displayName":"D9/Boot (GPIO28)",
+          "dataType":"bool",
+          "direction":"INPUT"
+        }
+      ],
+      "analogPins":[
+        {
+          "name":"A1",
+          "displayName":"GPIO1 (Battery Voltage)",
+          "dataType":"int16",
+          "hasPWM":true,
+          "hasServo":true
+        },
+        {
+          "name":"A2",
+          "displayName":"A1 (GPIO2)",
+          "dataType":"int16",
+          "hasPWM":true,
+          "hasServo":true
+        },
+        {
+          "name":"A3",
+          "displayName":"A2 (GPIO3) - GDI#10 SD_CS",
+          "dataType":"int16",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        },
+        {
+          "name":"A4",
+          "displayName":"A3 (GPIO4)",
+          "dataType":"int16",
+          "hasPWM":true,
+          "hasServo":true
+        },
+        {
+          "name":"A5",
+          "displayName":"A4 (GPIO5)",
+          "dataType":"int16",
+          "hasPWM":true,
+          "hasServo":true
+        },
+        {
+          "name":"A6",
+          "displayName":"D12/A5 (GPIO6) - GDI#12 TCS",
+          "dataType":"int16",
+          "hasPWM":true,
+          "hasServo":true,
+          "isHardwired":true
+        }
+      ],
+      "i2cPorts":[
+        {
+          "i2cPortId":0,
+          "SDA":9,
+          "SCL":10
+        }
+      ]
+    }
+  }
