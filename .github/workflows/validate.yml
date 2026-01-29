@@ -203,51 +203,6 @@ jobs:
               BAD_ASPECT=true
             fi
 
-            # Suggest a concrete trim/resize size that avoids increasing dimensions when possible.
-            # - If too tall for 4:3, reduce height (keep width).
-            # - If too wide/short for 4:3, reduce width (keep height).
-            SUGGEST_NOTE=""
-            SUGGEST_W=$WIDTH
-            SUGGEST_H=$HEIGHT
-
-            if [[ "$WIDTH" -lt "$MIN_WIDTH" ]]; then
-              # Only way to satisfy min width is upscaling.
-              SUGGEST_W=$MIN_WIDTH
-              SUGGEST_H=$(( (SUGGEST_W * 3 + 2) / 4 ))
-              SUGGEST_NOTE=" (requires upscaling)"
-
-            else
-              if [[ "$HEIGHT" -gt $((EXPECTED_HEIGHT + ASPECT_TOLERANCE_PX)) ]]; then
-                # too tall -> trim height
-                if [[ "$SUGGEST_W" -gt "$MAX_WIDTH" ]]; then
-                  SUGGEST_W=$MAX_WIDTH
-                fi
-                SUGGEST_H=$(( (SUGGEST_W * 3 + 2) / 4 ))
-
-              elif [[ "$HEIGHT" -lt $((EXPECTED_HEIGHT - ASPECT_TOLERANCE_PX)) ]]; then
-                # too wide/short -> trim width
-                SUGGEST_H=$HEIGHT
-                SUGGEST_W=$EXPECTED_WIDTH
-
-                if [[ "$SUGGEST_W" -gt "$MAX_WIDTH" ]]; then
-                  # if even the height-implied width is too big, clamp width and trim height instead
-                  SUGGEST_W=$MAX_WIDTH
-                  SUGGEST_H=$(( (SUGGEST_W * 3 + 2) / 4 ))
-
-                elif [[ "$SUGGEST_W" -lt "$MIN_WIDTH" ]]; then
-                  # can't keep height and stay >= MIN_WIDTH without upscaling
-                  SUGGEST_W=$MIN_WIDTH
-                  SUGGEST_H=$(( (SUGGEST_W * 3 + 2) / 4 ))
-                  SUGGEST_NOTE=" (requires upscaling)"
-                fi
-
-              elif [[ "$WIDTH" -gt "$MAX_WIDTH" ]]; then
-                # aspect is ok, but width is too large -> downscale to max while keeping 4:3
-                SUGGEST_W=$MAX_WIDTH
-                SUGGEST_H=$(( (SUGGEST_W * 3 + 2) / 4 ))
-              fi
-            fi
-
             if [[ $BAD_WIDTH = true || $BAD_ASPECT = true ]]; then
               echo "❌ $FILE  (${WIDTH}x${HEIGHT})"
               if [[ $BAD_WIDTH = true ]]; then
@@ -257,30 +212,12 @@ jobs:
               if [[ $BAD_ASPECT = true ]]; then
                 if [[ "$HEIGHT" -gt $((EXPECTED_HEIGHT + ASPECT_TOLERANCE_PX)) ]]; then
                   echo "  ↕️ image is too tall for 4:3"
-                  echo "    - at ${WIDTH}px width, expected ~${EXPECTED_HEIGHT}px height"
-                  echo "    - at ${HEIGHT}px height, expected ~${EXPECTED_WIDTH}px width"
                 else
                   echo "  ↔️ image is too wide for 4:3"
-                  echo "    - at ${HEIGHT}px height, expected ~${EXPECTED_WIDTH}px width"
-                  echo "    - at ${WIDTH}px width, expected ~${EXPECTED_HEIGHT}px height"
                 fi
-              fi
 
-              if [[ "$SUGGEST_W" != "$WIDTH" || "$SUGGEST_H" != "$HEIGHT" ]]; then
-                echo "  💡 suggested resize: ${SUGGEST_W}x${SUGGEST_H}${SUGGEST_NOTE}"
-              fi
-
-              # If contributor prefers padding/resizing canvas instead of cropping, offer an alternative.
-              if [[ $BAD_ASPECT = true && "$WIDTH" -ge "$MIN_WIDTH" && "$WIDTH" -le "$MAX_WIDTH" ]]; then
-                if [[ "$HEIGHT" -gt $((EXPECTED_HEIGHT + ASPECT_TOLERANCE_PX)) ]]; then
-                  # too tall: keep height, pad width (if within allowed width range)
-                  if [[ "$EXPECTED_WIDTH" -ge "$MIN_WIDTH" && "$EXPECTED_WIDTH" -le "$MAX_WIDTH" ]]; then
-                    echo "  💡 alternate canvas: ${EXPECTED_WIDTH}x${HEIGHT} (keep height, pad width to 4:3)"
-                  fi
-                else
-                  # too wide: keep width, pad height
-                  echo "  💡 alternate canvas: ${WIDTH}x${EXPECTED_HEIGHT} (keep width, pad height to 4:3)"
-                fi
+                echo "    - keep ${WIDTH}px width  → height ~${EXPECTED_HEIGHT}px"
+                echo "    - keep ${HEIGHT}px height → width ~${EXPECTED_WIDTH}px"
               fi
 
             else
