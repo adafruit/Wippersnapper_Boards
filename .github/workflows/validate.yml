@@ -256,14 +256,31 @@ jobs:
 
               if [[ $BAD_ASPECT = true ]]; then
                 if [[ "$HEIGHT" -gt $((EXPECTED_HEIGHT + ASPECT_TOLERANCE_PX)) ]]; then
-                  echo "  ↕️ image is too tall for 4:3 (expected ~${EXPECTED_HEIGHT}px tall at ${WIDTH}px width)"
+                  echo "  ↕️ image is too tall for 4:3"
+                  echo "    - at ${WIDTH}px width, expected ~${EXPECTED_HEIGHT}px height"
+                  echo "    - at ${HEIGHT}px height, expected ~${EXPECTED_WIDTH}px width"
                 else
-                  echo "  ↔️ image is too wide for 4:3 (expected ~${EXPECTED_WIDTH}px wide at ${HEIGHT}px height)"
+                  echo "  ↔️ image is too wide for 4:3"
+                  echo "    - at ${HEIGHT}px height, expected ~${EXPECTED_WIDTH}px width"
+                  echo "    - at ${WIDTH}px width, expected ~${EXPECTED_HEIGHT}px height"
                 fi
               fi
 
               if [[ "$SUGGEST_W" != "$WIDTH" || "$SUGGEST_H" != "$HEIGHT" ]]; then
                 echo "  💡 suggested resize: ${SUGGEST_W}x${SUGGEST_H}${SUGGEST_NOTE}"
+              fi
+
+              # If contributor prefers padding/resizing canvas instead of cropping, offer an alternative.
+              if [[ $BAD_ASPECT = true && "$WIDTH" -ge "$MIN_WIDTH" && "$WIDTH" -le "$MAX_WIDTH" ]]; then
+                if [[ "$HEIGHT" -gt $((EXPECTED_HEIGHT + ASPECT_TOLERANCE_PX)) ]]; then
+                  # too tall: keep height, pad width (if within allowed width range)
+                  if [[ "$EXPECTED_WIDTH" -ge "$MIN_WIDTH" && "$EXPECTED_WIDTH" -le "$MAX_WIDTH" ]]; then
+                    echo "  💡 alternate canvas: ${EXPECTED_WIDTH}x${HEIGHT} (keep height, pad width to 4:3)"
+                  fi
+                else
+                  # too wide: keep width, pad height
+                  echo "  💡 alternate canvas: ${WIDTH}x${EXPECTED_HEIGHT} (keep width, pad height to 4:3)"
+                fi
               fi
 
             else
