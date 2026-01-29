@@ -196,10 +196,56 @@ jobs:
 
             # 4:3 aspect ratio check (height ~= width * 3 / 4)
             EXPECTED_HEIGHT=$(( (WIDTH * 3 + 2) / 4 ))
+            EXPECTED_WIDTH=$(( (HEIGHT * 4 + 1) / 3 ))
             BAD_ASPECT=false
             if [[ "$HEIGHT" -lt $((EXPECTED_HEIGHT - ASPECT_TOLERANCE_PX)) || "$HEIGHT" -gt $((EXPECTED_HEIGHT + ASPECT_TOLERANCE_PX)) ]]; then
               EXIT_VALUE=1
               BAD_ASPECT=true
+            fi
+
+            # Suggest a concrete trim/resize size that avoids increasing dimensions when possible.
+            # - If too tall for 4:3, reduce height (keep width).
+            # - If too wide/short for 4:3, reduce width (keep height).
+            SUGGEST_NOTE=""
+            SUGGEST_W=$WIDTH
+            SUGGEST_H=$HEIGHT
+
+            if [[ "$WIDTH" -lt "$MIN_WIDTH" ]]; then
+              # Only way to satisfy min width is upscaling.
+              SUGGEST_W=$MIN_WIDTH
+              SUGGEST_H=$(( (SUGGEST_W * 3 + 2) / 4 ))
+              SUGGEST_NOTE=" (requires upscaling)"
+
+            else
+              if [[ "$HEIGHT" -gt $((EXPECTED_HEIGHT + ASPECT_TOLERANCE_PX)) ]]; then
+                # too tall -> trim height
+                if [[ "$SUGGEST_W" -gt "$MAX_WIDTH" ]]; then
+                  SUGGEST_W=$MAX_WIDTH
+                fi
+                SUGGEST_H=$(( (SUGGEST_W * 3 + 2) / 4 ))
+
+              elif [[ "$HEIGHT" -lt $((EXPECTED_HEIGHT - ASPECT_TOLERANCE_PX)) ]]; then
+                # too wide/short -> trim width
+                SUGGEST_H=$HEIGHT
+                SUGGEST_W=$EXPECTED_WIDTH
+
+                if [[ "$SUGGEST_W" -gt "$MAX_WIDTH" ]]; then
+                  # if even the height-implied width is too big, clamp width and trim height instead
+                  SUGGEST_W=$MAX_WIDTH
+                  SUGGEST_H=$(( (SUGGEST_W * 3 + 2) / 4 ))
+
+                elif [[ "$SUGGEST_W" -lt "$MIN_WIDTH" ]]; then
+                  # can't keep height and stay >= MIN_WIDTH without upscaling
+                  SUGGEST_W=$MIN_WIDTH
+                  SUGGEST_H=$(( (SUGGEST_W * 3 + 2) / 4 ))
+                  SUGGEST_NOTE=" (requires upscaling)"
+                fi
+
+              elif [[ "$WIDTH" -gt "$MAX_WIDTH" ]]; then
+                # aspect is ok, but width is too large -> downscale to max while keeping 4:3
+                SUGGEST_W=$MAX_WIDTH
+                SUGGEST_H=$(( (SUGGEST_W * 3 + 2) / 4 ))
+              fi
             fi
 
             if [[ $BAD_WIDTH = true || $BAD_ASPECT = true ]]; then
@@ -209,7 +255,15 @@ jobs:
               fi
 
               if [[ $BAD_ASPECT = true ]]; then
-                echo "  ↕️ height must match 4:3 aspect ratio (expected ~${EXPECTED_HEIGHT}px for ${WIDTH}px width)"
+                if [[ "$HEIGHT" -gt $((EXPECTED_HEIGHT + ASPECT_TOLERANCE_PX)) ]]; then
+                  echo "  ↕️ image is too tall for 4:3 (expected ~${EXPECTED_HEIGHT}px tall at ${WIDTH}px width)"
+                else
+                  echo "  ↔️ image is too wide for 4:3 (expected ~${EXPECTED_WIDTH}px wide at ${HEIGHT}px height)"
+                fi
+              fi
+
+              if [[ "$SUGGEST_W" != "$WIDTH" || "$SUGGEST_H" != "$HEIGHT" ]]; then
+                echo "  💡 suggested resize: ${SUGGEST_W}x${SUGGEST_H}${SUGGEST_NOTE}"
               fi
 
             else
