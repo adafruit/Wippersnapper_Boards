@@ -43,8 +43,7 @@
           "displayName":"A2 (GPIO3) - GDI#10 SD_CS",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         },
         {
           "name":"D4",
@@ -65,40 +64,35 @@
           "displayName":"D12/A5 (GPIO6) - GDI#12 TCS",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         },
         {
           "name":"D7",
           "displayName":"D11 (GPIO7) - GDI#15 INT",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         },
         {
           "name":"D8",
           "displayName":"D2 (GPIO8) - GDI#7 LCD_DC",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         },
         {
           "name":"D9",
           "displayName":"SDA (GPIO9) - GDI#14 SDA",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         },
         {
           "name":"D10",
           "displayName":"SCL (GPIO10) - GDI#13 SCL",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         },
         {
           "name":"D11",
@@ -121,48 +115,42 @@
           "displayName":"D13 (GPIO15) - LED/GDI#2 LCD_BL",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         },
         {
           "name":"D23",
           "displayName":"SCK (GPIO23) - GDI#4 SCLK",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         },
         {
           "name":"D24",
           "displayName":"MOSI (GPIO24) - GDI#5 MOSI",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         },
         {
           "name":"D25",
           "displayName":"MISO (GPIO25) - GDI#6 MISO",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         },
         {
           "name":"D26",
           "displayName":"D3 (GPIO26) - GDI#8 LCD_RST",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         },
         {
           "name":"D27",
           "displayName":"D6 (GPIO27) - GDI#9 LCD_CS",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         },
         {
           "name":"D28",
@@ -191,8 +179,7 @@
           "displayName":"A2 (GPIO3) - GDI#10 SD_CS",
           "dataType":"int16",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         },
         {
           "name":"A4",
@@ -213,8 +200,7 @@
           "displayName":"D12/A5 (GPIO6) - GDI#12 TCS",
           "dataType":"int16",
           "hasPWM":true,
-          "hasServo":true,
-          "isHardwired":true
+          "hasServo":true
         }
       ],
       "i2cPorts":[
