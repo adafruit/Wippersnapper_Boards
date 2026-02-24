@@ -3,7 +3,7 @@
   "exportedBy": "Adafruit",
   "exportedAt": "2026-02-24T22:30:00.000Z",
   "exportedFromDevice": {
-    "board": "esp32s2-devkitc-1-n8",
+    "board": "esp32s2-devkitc-1-n8r2",
     "firmwareVersion": "1.0.0-beta.121"
   },
   "components": [
