@@ -1,5 +1,5 @@
 {
-  "boardName": "raspberry-pi-5",
+  "boardName": "raspi-5",
   "mcuName": "bcm2712",
   "mcuRefVoltage": 3.3,
   "displayName": "Raspberry Pi 5",
