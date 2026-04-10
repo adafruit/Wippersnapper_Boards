@@ -7,7 +7,8 @@ if len(sys.argv) != 2:
     print("Usage: python3 boards/validate.py <path/to/definition.json>")
     sys.exit(1)
 
-schema_path = pathlib.Path(__file__).parent / "schema.json"
+repo_root = pathlib.Path(__file__).resolve().parents[4]
+schema_path = repo_root / "boards" / "schema.json"
 schema = json.loads(schema_path.read_text())
 definition = json.loads(pathlib.Path(sys.argv[1]).read_text())
 

@@ -56,13 +56,13 @@ Run exactly this sequence of commands:
 1) Before validating, install the `jsonschema` Python package. This is required because the validation script uses it to check the board definition against the JSON schema (the same schema used by CI). This is a setup step - the validation script will not work without this package installed.:
 
 ```
-pip install jsonschema
+.venv-1/bin/python -m pip install jsonschema
 ```
 
 2) To validate the .json file you just created, run exactly this command:
 
 ```
-python3 scripts/validate.py boards/<board-name>/definition.json
+python3 .claude/skills/add-board/scripts/validate.py boards/<board-name>/definition.json
 ```
 
 Replace `<board-name>` with the name of the board folder you created. Do not modify the command or add additional flags.
