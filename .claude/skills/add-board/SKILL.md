@@ -48,3 +48,22 @@ Do not attempt to prettify the JSON file. Focus on ensuring that all required pr
 
 ## If you are stuck, prompt the user for the necessary information
 If you encounter any difficulties or have questions while creating the hardware description model, do not hesitate to prompt the user for the necessary information. This may include asking for specific details about the board's hardware capabilities, vendor name, URLs, pin configurations, or any other relevant information that is required to accurately define the hardware description model.
+
+## Validate the hardware description model
+
+Run exactly this sequence of commands:
+
+1) Before validating, install the `jsonschema` Python package. This is required because the validation script uses it to check the board definition against the JSON schema (the same schema used by CI). This is a setup step - the validation script will not work without this package installed.:
+
+```
+pip install jsonschema
+```
+
+2) To validate the .json file you just created, run exactly this command:
+
+```
+python3 scripts/validate.py boards/<board-name>/definition.json
+```
+
+Replace `<board-name>` with the name of the board folder you created. Do not modify the command or add additional flags.
+
