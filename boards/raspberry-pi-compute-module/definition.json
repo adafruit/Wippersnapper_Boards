@@ -51,7 +51,7 @@
             { "name": "D40", "displayName": "GPIO40 (MISO_2)", "dataType": "bool" },
             { "name": "D41", "displayName": "GPIO41 (MOSI_2)", "dataType": "bool" },
             { "name": "D42", "displayName": "GPIO42 (SCLK_2)", "dataType": "bool" },
-            { "name": "D43", "displayName": "GPIO43 (SCK_2 alias in Blinka)", "dataType": "bool" },
+            { "name": "D43", "displayName": "GPIO43 (SCLK_2 alias)", "dataType": "bool" },
             { "name": "D44", "displayName": "GPIO44", "dataType": "bool" },
             { "name": "D45", "displayName": "GPIO45", "dataType": "bool" }
         ],
