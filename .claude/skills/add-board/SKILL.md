@@ -49,6 +49,30 @@ Do not attempt to prettify the JSON file. Focus on ensuring that all required pr
 ## If you are stuck, prompt the user for the necessary information
 If you encounter any difficulties or have questions while creating the hardware description model, do not hesitate to prompt the user for the necessary information. This may include asking for specific details about the board's hardware capabilities, vendor name, URLs, pin configurations, or any other relevant information that is required to accurately define the hardware description model.
 
+## Add an image of the board
+
+Next, you'll need to add an image of your board.
+
+First, check the vendor's name (`vendor` property in the hardware description model) to determine who the manufacturer of the board is.
+
+If the vendor is Adafruit, you should use an image from the [Adafruit Fritzing Library](https://github.com/adafruit/Fritzing-Library). This library provides vectorized illustrations of Adafruit boards, which are preferred for consistency and quality. Individual part files are `.fzpz` files located in the [`/parts` directory](https://github.com/adafruit/Fritzing-Library/tree/master/parts). Search that directory for the board you are adding.
+
+Once you find the corresponding `.fzpz` file, download it and place it in the board's folder in this repository.
+
+Then, run the extraction script. It opens the `.fzpz` file (a ZIP archive), finds the breadboard SVG (`svg.breadboard.*.svg`) inside it, saves it as `image.svg` in the same directory, and deletes the original `.fzpz` file:
+```
+python3 .claude/skills/add-board/scripts/extract_svg_fzz.py boards/<board-name>/<image-file>.fzpz
+```
+
+If the vendor is not Adafruit, you should use an image from the manufacturer's website or from a reputable distributor such as Digi-Key or Mouser. The image should be a clear representation of the board, ideally showing a top-down view. Download the image and save it as `image` with the appropriate file extension (e.g., `image.jpg`, `image.png`) in the board's folder in this repository.
+
+
+## Validate the image file
+Next, make sure the image adheres to the following specifications: 
+
+* The image file's extension can be any one of: JPG, JPEG, GIF, PNG, SVG
+* The image file's size must be at least 3kb and must not exceed 100kb
+
 ## Validate the hardware description model
 
 Run exactly this sequence of commands:
