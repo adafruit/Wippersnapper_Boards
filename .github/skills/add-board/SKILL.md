@@ -53,6 +53,8 @@ If you encounter any difficulties or have questions while creating the hardware 
 
 Next, you'll need to add an image of your board.
 
+**IMPORTANT: Do NOT generate, create, or synthesize an image. You MUST download a real image from an external source (Fritzing Library, manufacturer website, or distributor). If you cannot find or download an image, ask the user to provide one. Never use AI-generated or hand-coded SVG/images.**
+
 First, check the vendor's name (`vendor` property in the hardware description model) to determine who the manufacturer of the board is.
 
 If the vendor is Adafruit, you should use an image from the [Adafruit Fritzing Library](https://github.com/adafruit/Fritzing-Library). This library provides vectorized illustrations of Adafruit boards, which are preferred for consistency and quality. Individual part files are `.fzpz` files located in the [`/parts` directory](https://github.com/adafruit/Fritzing-Library/tree/master/parts). Search that directory for the board you are adding.
