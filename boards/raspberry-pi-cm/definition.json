@@ -1,0 +1,173 @@
+{
+    "boardName": "raspberry-pi-cm",
+    "mcuName": "bcm2711",
+    "mcuRefVoltage": 3.3,
+    "displayName": "Raspberry Pi Compute Module",
+    "vendor": "Raspberry Pi",
+    "productURL": "https://www.raspberrypi.com/products/compute-module-4/",
+    "documentationURL": "https://www.raspberrypi.com/documentation/computers/compute-module.html",
+    "published": true,
+    "installMethod": "python",
+    "components": {
+        "digitalPins": [
+            {
+                "name": "D2",
+                "displayName": "GPIO2 (SDA1)",
+                "dataType": "bool"
+            },
+            {
+                "name": "D3",
+                "displayName": "GPIO3 (SCL1)",
+                "dataType": "bool"
+            },
+            {
+                "name": "D4",
+                "displayName": "GPIO4",
+                "dataType": "bool"
+            },
+            {
+                "name": "D14",
+                "displayName": "GPIO14 (UART TX)",
+                "dataType": "bool",
+                "uartTx": true
+            },
+            {
+                "name": "D15",
+                "displayName": "GPIO15 (UART RX)",
+                "dataType": "bool",
+                "uartRx": true
+            },
+            {
+                "name": "D17",
+                "displayName": "GPIO17",
+                "dataType": "bool"
+            },
+            {
+                "name": "D18",
+                "displayName": "GPIO18 (PWM)",
+                "dataType": "bool",
+                "hasPWM": true,
+                "hasServo": true
+            },
+            {
+                "name": "D27",
+                "displayName": "GPIO27",
+                "dataType": "bool"
+            },
+            {
+                "name": "D22",
+                "displayName": "GPIO22",
+                "dataType": "bool"
+            },
+            {
+                "name": "D23",
+                "displayName": "GPIO23",
+                "dataType": "bool"
+            },
+            {
+                "name": "D24",
+                "displayName": "GPIO24",
+                "dataType": "bool"
+            },
+            {
+                "name": "D10",
+                "displayName": "GPIO10 (SPI MOSI)",
+                "dataType": "bool"
+            },
+            {
+                "name": "D9",
+                "displayName": "GPIO9 (SPI MISO)",
+                "dataType": "bool"
+            },
+            {
+                "name": "D25",
+                "displayName": "GPIO25",
+                "dataType": "bool"
+            },
+            {
+                "name": "D11",
+                "displayName": "GPIO11 (SPI SCLK)",
+                "dataType": "bool"
+            },
+            {
+                "name": "D8",
+                "displayName": "GPIO8 (SPI CE0)",
+                "dataType": "bool"
+            },
+            {
+                "name": "D7",
+                "displayName": "GPIO7 (SPI CE1)",
+                "dataType": "bool"
+            },
+            {
+                "name": "D0",
+                "displayName": "GPIO0 (ID_SD)",
+                "dataType": "bool"
+            },
+            {
+                "name": "D1",
+                "displayName": "GPIO1 (ID_SC)",
+                "dataType": "bool"
+            },
+            {
+                "name": "D5",
+                "displayName": "GPIO5",
+                "dataType": "bool"
+            },
+            {
+                "name": "D6",
+                "displayName": "GPIO6",
+                "dataType": "bool"
+            },
+            {
+                "name": "D12",
+                "displayName": "GPIO12 (PWM)",
+                "dataType": "bool",
+                "hasPWM": true,
+                "hasServo": true
+            },
+            {
+                "name": "D13",
+                "displayName": "GPIO13 (PWM)",
+                "dataType": "bool",
+                "hasPWM": true,
+                "hasServo": true
+            },
+            {
+                "name": "D19",
+                "displayName": "GPIO19 (PWM)",
+                "dataType": "bool",
+                "hasPWM": true,
+                "hasServo": true
+            },
+            {
+                "name": "D16",
+                "displayName": "GPIO16",
+                "dataType": "bool"
+            },
+            {
+                "name": "D26",
+                "displayName": "GPIO26",
+                "dataType": "bool"
+            },
+            {
+                "name": "D20",
+                "displayName": "GPIO20",
+                "dataType": "bool"
+            },
+            {
+                "name": "D21",
+                "displayName": "GPIO21",
+                "dataType": "bool"
+            }
+        ],
+        "analogPins": [],
+        "i2cPorts": [
+            {
+                "i2cPortId": 1,
+                "SDA": 2,
+                "SCL": 3
+            }
+        ]
+    }
+}
