@@ -1,0 +1,10 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2026-04-13T15:37:27.866Z",
+  "exportedFromDevice": {
+    "board": "rpi-cm",
+    "firmwareVersion": "1.0.0-beta.73"
+  },
+  "components": []
+}
