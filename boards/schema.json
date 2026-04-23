@@ -95,28 +95,36 @@
               "displayName": { "type": "string" },
               "dataType": { "type": "string" },
               "direction": {
-                "description": "This pin's direction, either INPUT or OUTPUT. For pins that are input or output ONLY, leave blank if it supports both.",
+                "description": "For pins that have a fixed direction, the pin's direction. Leave blank if it supports both.",
                 "type": "string",
                 "pattern": "^(INPUT|OUTPUT)$"
               },
+              "hasPullup": {
+                "description": "If set, this pin has an internal pull-up resistor that can be activated.",
+                "type": "boolean"
+              },
+              "hasPulldown": {
+                "description": "If set, this pin has an internal pull-down resistor that can be activated.",
+                "type": "boolean"
+              },
               "hasPWM": {
-                "description": "If true, this digital pin supports general PWM output, and thus PWM components.",
+                "description": "If set, this pin supports PWM output.",
                 "type": "boolean"
               },
               "hasServo": {
-                "description": "If true, hasPWM should also be true, and this PWM-enabled pin also supports servo components.",
+                "description": "If set, this pin supports servo output in addition to standard PWM output.",
                 "type": "boolean"
               },
               "uartTx": {
-                "description": "If true, this pin will be used as the UART transmit pin. There should also be a 'uartRx' property on another pin.",
+                "description": "If set, this pin will be used as the UART transmit pin. There should also be a 'uartRx' property on another pin.",
                 "type": "boolean"
               },
               "uartRx": {
-                "description": "If true, this pin will be used as the UART receive pin. There should also be a 'uartTx' property on another pin.",
+                "description": "If set, this pin will be used as the UART receive pin. There should also be a 'uartTx' property on another pin.",
                 "type": "boolean"
               },
               "isHardwired": {
-                "description": "If true, this pin is wired directly to a built-in component. It will only be available to be selected when adding a component of that type.",
+                "description": "If set, this pin is wired directly to a built-in component. It will only be available to be selected when adding a component of that type.",
                 "type": "boolean"
               }
             },
@@ -139,21 +147,25 @@
               "displayName": { "type": "string" },
               "dataType": { "type": "string" },
               "direction": {
-                "description": "This pin's direction, either INPUT or OUTPUT. For pins that are input or output ONLY, leave blank if it supports both.",
+                "description": "For pins that have a fixed direction, the pin's direction. Leave blank if it supports both.",
                 "type": "string",
                 "pattern": "^(INPUT|OUTPUT)$"
               },
               "maxResolution": { "type": "number" },
               "hasPWM": {
-                "description": "If true, this digital pin supports general PWM output, and thus PWM components.",
+                "description": "If set, this pin supports PWM output.",
                 "type": "boolean"
               },
               "hasServo": {
-                "description": "If true, hasPWM should also be true, and this PWM-enabled pin also supports servo components.",
+                "description": "If set, this pin supports servo output in addition to standard PWM output.",
                 "type": "boolean"
               },
               "isHardwired": {
-                "description": "If true, this pin is wired directly to a built-in component. It will only be available to be selected when adding a component of that type.",
+                "description": "If set, this pin is wired directly to a built-in component. It will only be available to be selected when adding a component of that type.",
+                "type": "boolean"
+              },
+              "hasADC": {
+                "description": "If set, this pin can be used as an ADC input.",
                 "type": "boolean"
               }
             }
