@@ -39,7 +39,7 @@
       "isI2C": true,
       "type": "adt7410:ambient-temp",
       "period": 30,
-      "i2cAddress": 118,
+      "i2cAddress": 72,
       "sensorType": "ambient-temp"
     },
     {
@@ -47,7 +47,7 @@
       "isI2C": true,
       "type": "adt7410:ambient-temp-fahrenheit",
       "period": 30,
-      "i2cAddress": 118,
+      "i2cAddress": 72,
       "sensorType": "ambient-temp-fahrenheit"
     },
     {
