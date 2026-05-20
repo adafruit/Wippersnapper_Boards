@@ -8,6 +8,7 @@
     "productURL":"https://www.adafruit.com/product/4471",
     "documentationURL":"https://learn.adafruit.com/circuitpython-libraries-on-any-computer-with-mcp2221",
     "installMethod":"python",
+    "minVersion": "1.0.0-beta.23",
     "components": {
       "digitalPins": [
         {
