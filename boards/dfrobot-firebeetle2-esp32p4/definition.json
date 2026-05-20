@@ -1,0 +1,239 @@
+{
+  "boardName": "dfrobot-firebeetle2-esp32p4",
+  "published": true,
+  "mcuName": "esp32p4",
+  "mcuRefVoltage": 3.3,
+  "displayName": "DFRobot FireBeetle 2 ESP32-P4",
+  "vendor": "DFRobot",
+  "productURL": "https://www.dfrobot.com/product-2915.html",
+  "documentationURL": "https://wiki.dfrobot.com/SKU_DFR1172_FireBeetle_2_Board_ESP32_P4",
+  "installMethod": "web",
+  "installBoardName": "dfrobot_firebeetle2_esp32p4",
+  "esptool": {
+    "fileSystemSize": 131072,
+    "blockSize": 4096,
+    "offset": "0x3D0000",
+    "chip": "esp32p4",
+    "flashMode": "qio",
+    "flashFreq": "80m",
+    "flashSize": "16MB",
+    "structure": {
+      "0x0": "wippersnapper.dfrobot_firebeetle2_esp32p4.fatfs.VERSION.combined.bin"
+    }
+  },
+  "components": {
+    "digitalPins": [
+      {
+        "name": "D0",
+        "displayName": "D0 (GPIO0) - 3V3_C Enable",
+        "dataType": "bool",
+        "direction": "OUTPUT"
+      },
+      {
+        "name": "D1",
+        "displayName": "D1 (GPIO1) - Battery Voltage",
+        "dataType": "bool",
+        "direction": "INPUT"
+      },
+      {
+        "name": "D2",
+        "displayName": "D2 (GPIO2)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D3",
+        "displayName": "D3 (GPIO3) - Onboard LED",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D4",
+        "displayName": "D4 (GPIO4)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D5",
+        "displayName": "D5 (GPIO5)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D6",
+        "displayName": "D6 (GPIO6) - TCS",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D7",
+        "displayName": "D7 (GPIO7) - INT",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D8",
+        "displayName": "D8 (GPIO8) - LCD_DC",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D9",
+        "displayName": "D9 (GPIO9) - SDA",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D10",
+        "displayName": "D10 (GPIO10) - SCL",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D11",
+        "displayName": "D11 (GPIO11) - TX",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "uartTx": true
+      },
+      {
+        "name": "D12",
+        "displayName": "D12 (GPIO12) - RX",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "uartRx": true
+      },
+      {
+        "name": "D13",
+        "displayName": "D13 (GPIO13)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D20",
+        "displayName": "D20 (GPIO20) - A0",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D21",
+        "displayName": "D21 (GPIO21) - A1",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D22",
+        "displayName": "D22 (GPIO22) - A2",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D23",
+        "displayName": "D23 (GPIO23) - SCLK",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D24",
+        "displayName": "D24 (GPIO24) - MOSI",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D25",
+        "displayName": "D25 (GPIO25) - MISO",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D26",
+        "displayName": "D26 (GPIO26) - LCD_RST",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D27",
+        "displayName": "D27 (GPIO27) - LCD_CS",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D28",
+        "displayName": "D28 (GPIO28)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D35",
+        "displayName": "D35 (GPIO35) - Boot",
+        "dataType": "bool",
+        "direction": "INPUT"
+      }
+    ],
+    "analogPins": [
+      {
+        "name": "A0",
+        "displayName": "A0 (GPIO20)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A1",
+        "displayName": "A1 (GPIO21)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A2",
+        "displayName": "A2 (GPIO22)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A3",
+        "displayName": "A3 (GPIO23)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A4",
+        "displayName": "A4 (GPIO24)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A5",
+        "displayName": "A5 (GPIO25)",
+        "dataType": "int16"
+      },
+      {
+        "name": "A_BAT",
+        "displayName": "Battery Voltage (GPIO1)",
+        "dataType": "int16"
+      }
+    ],
+    "i2cPorts": [
+      {
+        "i2cPortId": 0,
+        "SDA": 9,
+        "SCL": 10
+      }
+    ]
+  }
+}
