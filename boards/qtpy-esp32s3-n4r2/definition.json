@@ -176,6 +176,12 @@
                 "i2cPortId":0,
                 "SDA":41,
                 "SCL":40
+            },
+            {
+                "i2cPortId":1,
+                "SDA":41,
+                "SCL":40,
+                "default":true
             }
         ]
     }
