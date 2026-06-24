@@ -1,0 +1,47 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2026-06-24T00:00:00.000Z",
+  "exportedFromDevice": {
+    "board": "lilygo-t-display-s3",
+    "firmwareVersion": "1.0.0-beta.131"
+  },
+  "components": [
+    {
+      "name": "1.9\" TFT LCD Display (ST7789, i8080 8-bit)",
+      "type": "tft-19-i8080",
+      "displayType": "i8080",
+      "driver": "ST7789",
+      "width": 320,
+      "height": 170,
+      "rotation": 1,
+      "d0PinName": "D39",
+      "d1PinName": "D40",
+      "d2PinName": "D41",
+      "d3PinName": "D42",
+      "d4PinName": "D45",
+      "d5PinName": "D46",
+      "d6PinName": "D47",
+      "d7PinName": "D48",
+      "csPinName": "D6",
+      "dcPinName": "D7",
+      "wrPinName": "D8",
+      "rdPinName": "D9",
+      "rstPinName": "D5",
+      "backlightPinName": "D38",
+      "powerOnPinName": "D15",
+      "textSize": 2,
+      "isDisplay": true
+    },
+    {
+      "name": "Button (D0/Boot)",
+      "pinName": "D0",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    }
+  ]
+}
