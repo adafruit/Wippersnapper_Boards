@@ -5,7 +5,7 @@
     "displayName":"LilyGo T-Display-S3",
     "vendor":"LilyGo",
     "productURL":"https://lilygo.cc/products/t-display-s3",
-    "documentationURL":"https://github.com/Xinyuan-LilyGO/T-Display-S3",
+    "documentationURL":"https://wiki.lilygo.cc/products/t-display-series/t-display-s3/",
     "published": false,
     "installMethod":"web-native-usb",
     "bootloaderBoardName": "lilygo_t_display_s3",
@@ -132,6 +132,96 @@
           {
             "name":"D4",
             "displayName":"Battery Voltage (GPIO4)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D5",
+            "displayName":"TFT Reset (GPIO5)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D6",
+            "displayName":"TFT Chip Select (GPIO6)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D7",
+            "displayName":"TFT Data/Command (GPIO7)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D8",
+            "displayName":"TFT i8080 Write Strobe (GPIO8)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D9",
+            "displayName":"TFT i8080 Read Strobe (GPIO9)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D15",
+            "displayName":"TFT Power On (GPIO15)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D38",
+            "displayName":"TFT Backlight (GPIO38)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D39",
+            "displayName":"TFT i8080 Data D0 (GPIO39)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D40",
+            "displayName":"TFT i8080 Data D1 (GPIO40)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D41",
+            "displayName":"TFT i8080 Data D2 (GPIO41)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D42",
+            "displayName":"TFT i8080 Data D3 (GPIO42)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D45",
+            "displayName":"TFT i8080 Data D4 (GPIO45)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D46",
+            "displayName":"TFT i8080 Data D5 (GPIO46)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D47",
+            "displayName":"TFT i8080 Data D6 (GPIO47)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D48",
+            "displayName":"TFT i8080 Data D7 (GPIO48)",
             "dataType":"bool",
             "isHardwired": true
           }
