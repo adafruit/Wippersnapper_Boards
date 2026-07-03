@@ -73,6 +73,24 @@ The following HDM snippet defines an I2C interface on port 0 with a `SDA` GPIO p
 ],
 ```
 
+Each `i2cPorts` entry may also include an optional `default` boolean (defaults to `true`) marking the port that is enabled/selected by default. Boards with more than one I2C port (for example, a STEMMA QT connector on a second port) should flag the default port explicitly:
+
+```
+"i2cPorts": [
+    {
+        "i2cPortId": 0,
+        "SDA": 41,
+        "SCL": 40
+    },
+    {
+        "i2cPortId": 1,
+        "SDA": 41,
+        "SCL": 40,
+        "default": true
+    }
+],
+```
+
 # Examples
 
 Example hardware descriptions can be found in the `boards/` directory.
