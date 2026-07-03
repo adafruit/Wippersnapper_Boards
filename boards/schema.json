@@ -183,7 +183,7 @@
               "SDA": { "type": "number" },
               "SCL": { "type": "number" },
               "default": {
-                "description": "Whether this I2C port is enabled/selected by default. Optional; defaults to false. If no port is flagged, the default falls back to index ordering (the first entry).",
+                "description": "Whether this I2C port is enabled/selected by default. Optional; defaults to false. If no port is flagged, the port with the lowest i2cPortId is the default.",
                 "type": "boolean",
                 "default": false
               }
