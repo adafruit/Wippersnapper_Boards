@@ -9,6 +9,19 @@
     "documentationURL":"https://github.com/Xinyuan-LilyGO/T-Dongle-C5",
     "installMethod":"web",
     "installBoardName":"lilygo_t_dongle_c5",
+    "esptool": {
+      "fileSystemSize": 1572864,
+      "blockSize": 4096,
+      "baudRate": 115200,
+      "offset": "0x670000",
+      "chip": "esp32c5",
+      "flashMode": "qio",
+      "flashFreq": "80m",
+      "flashSize": "16MB",
+      "structure": {
+        "0x0": "wippersnapper.lilygo_t_dongle_c5.littlefs.VERSION.combined.bin"
+      }
+    },
     "components":{
       "digitalPins":[
         {
