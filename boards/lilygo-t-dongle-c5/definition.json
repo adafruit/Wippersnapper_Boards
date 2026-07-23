@@ -1,0 +1,107 @@
+{
+    "boardName":"lilygo-t-dongle-c5",
+    "published": false,
+    "mcuName":"esp32c5",
+    "mcuRefVoltage":3.3,
+    "displayName":"LilyGO T-Dongle-C5 (16MB Flash, 8MB PSRAM)",
+    "vendor":"LilyGO",
+    "productURL":"https://www.lilygo.cc/products/t-dongle-c5",
+    "documentationURL":"https://github.com/Xinyuan-LilyGO/T-Dongle-C5",
+    "installMethod":"web",
+    "installBoardName":"lilygo_t_dongle_c5",
+    "components":{
+      "digitalPins":[
+        {
+          "name":"D0",
+          "displayName":"0 (LCD Backlight)",
+          "dataType":"bool",
+          "isHardwired":true
+        },
+        {
+          "name":"D1",
+          "displayName":"1 (LCD RST)",
+          "dataType":"bool",
+          "isHardwired":true
+        },
+        {
+          "name":"D2",
+          "displayName":"2 (LCD MOSI / SD CMD)",
+          "dataType":"bool",
+          "isHardwired":true
+        },
+        {
+          "name":"D3",
+          "displayName":"3 (LCD DC)",
+          "dataType":"bool",
+          "isHardwired":true
+        },
+        {
+          "name":"D4",
+          "displayName":"4 (RGB LED Clock)",
+          "dataType":"bool",
+          "isHardwired":true
+        },
+        {
+          "name":"D5",
+          "displayName":"5 (RGB LED Data)",
+          "dataType":"bool",
+          "isHardwired":true
+        },
+        {
+          "name":"D6",
+          "displayName":"6 (LCD SCK / SD CLK)",
+          "dataType":"bool",
+          "isHardwired":true
+        },
+        {
+          "name":"D7",
+          "displayName":"7 (LCD MISO / SD D0)",
+          "dataType":"bool",
+          "isHardwired":true
+        },
+        {
+          "name":"D10",
+          "displayName":"10 (LCD CS)",
+          "dataType":"bool",
+          "isHardwired":true
+        },
+        {
+          "name":"D11",
+          "displayName":"11 (JST TX / I2C SDA)",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "uartTx":true
+        },
+        {
+          "name":"D12",
+          "displayName":"12 (JST RX / I2C SCL)",
+          "dataType":"bool",
+          "hasPWM":true,
+          "hasServo":true,
+          "uartRx":true
+        },
+        {
+          "name":"D23",
+          "displayName":"23 (SD CS)",
+          "dataType":"bool",
+          "isHardwired":true
+        },
+        {
+          "name":"D28",
+          "displayName":"28 (Boot Button)",
+          "dataType":"bool",
+          "direction":"INPUT",
+          "isHardwired":true
+        }
+      ],
+      "analogPins":[],
+      "i2cPorts":[
+        {
+          "i2cPortId":0,
+          "SDA":11,
+          "SCL":12
+        }
+      ]
+    }
+  }

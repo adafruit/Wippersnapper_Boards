@@ -1,0 +1,51 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2026-07-14T00:00:00.000Z",
+  "exportedFromDevice": {
+    "board": "lilygo-t-dongle-c5",
+    "firmwareVersion": "1.0.0-alpha.1"
+  },
+  "components": [
+    {
+      "name": "0.96\" TFT LCD Display (ST7735)",
+      "type": "tft-096",
+      "displayType": "tft",
+      "driver": "ST7735",
+      "spiBus": 0,
+      "width": 160,
+      "height": 80,
+      "rotation": 3,
+      "textSize": 1,
+      "csPinName": "D10",
+      "dcPinName": "D3",
+      "rstPinName": "D1",
+      "mosiPinName": "D2",
+      "sckPinName": "D6",
+      "misoPinName": "D7",
+      "backlightPinName": "D0",
+      "isDisplay": true
+    },
+    {
+      "name": "Button (Boot)",
+      "pinName": "D28",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    },
+    {
+      "name": "RGB LED (APA102)",
+      "type": "dotstar",
+      "pixelNumber": 1,
+      "pixelsOrder": "BGR",
+      "pixelBrightness": 80,
+      "dataPinName": "D5",
+      "clockPinName": "D4",
+      "pixelsType": "DOTSTAR",
+      "isPixel": true
+    }
+  ]
+}
