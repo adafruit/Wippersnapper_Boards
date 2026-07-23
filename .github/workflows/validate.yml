@@ -1,6 +1,10 @@
 name: Validate Board Files
 
-on: [pull_request]
+# 'edited' is included so retargeting a PR to a different base branch
+# re-runs validation (the changed-file diff depends on the base branch).
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
 
 jobs:
   validate-definition-files:
