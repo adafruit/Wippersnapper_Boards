@@ -1,0 +1,273 @@
+{
+    "boardName":"lilygo-t-display-s3",
+    "mcuName":"esp32s3",
+    "mcuRefVoltage":3.3,
+    "displayName":"LilyGo T-Display-S3",
+    "vendor":"LilyGo",
+    "productURL":"https://lilygo.cc/products/t-display-s3",
+    "documentationURL":"https://wiki.lilygo.cc/products/t-display-series/t-display-s3/",
+    "published": false,
+    "installMethod":"web-native-usb",
+    "bootloaderBoardName": "lilygo_t_display_s3",
+    "esptool": {
+      "fileSystemSize": 12255232,
+      "blockSize": 4096,
+      "offset": "0x450000",
+      "chip": "esp32s3",
+      "flashMode": "qio",
+      "flashFreq": "80m",
+      "flashSize": "16MB",
+      "structure": {
+        "0x0": "wippersnapper.lilygo_t_display_s3.fatfs.VERSION.combined.bin"
+      }
+    },
+    "components":{
+        "digitalPins":[
+          {
+            "name":"D0",
+            "displayName":"Boot Button (GPIO0)",
+            "dataType":"bool",
+            "direction":"INPUT"
+          },
+          {
+            "name":"D14",
+            "displayName":"Button 2 / IO14",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"D1",
+            "displayName":"GPIO1 (A0/Touch)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"D2",
+            "displayName":"GPIO2 (A1/Touch)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"D3",
+            "displayName":"GPIO3 (A2/Touch)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"D10",
+            "displayName":"GPIO10 (SS/Touch)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"D11",
+            "displayName":"GPIO11 (MOSI/Touch)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"D12",
+            "displayName":"GPIO12 (SCK/Touch)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"D13",
+            "displayName":"GPIO13 (MISO/Touch)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"D43",
+            "displayName":"GPIO43 (UART TX)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true,
+            "uartTx":true
+          },
+          {
+            "name":"D44",
+            "displayName":"GPIO44 (UART RX)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true,
+            "uartRx":true
+          },
+          {
+            "name":"D18",
+            "displayName":"GPIO18 (SDA)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"D17",
+            "displayName":"GPIO17 (SCL)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"D21",
+            "displayName":"GPIO21",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"D16",
+            "displayName":"GPIO16 (A5)",
+            "dataType":"bool",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"D4",
+            "displayName":"Battery Voltage (GPIO4)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D5",
+            "displayName":"TFT Reset (GPIO5)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D6",
+            "displayName":"TFT Chip Select (GPIO6)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D7",
+            "displayName":"TFT Data/Command (GPIO7)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D8",
+            "displayName":"TFT i8080 Write Strobe (GPIO8)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D9",
+            "displayName":"TFT i8080 Read Strobe (GPIO9)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D15",
+            "displayName":"TFT Power On (GPIO15)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D38",
+            "displayName":"TFT Backlight (GPIO38)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D39",
+            "displayName":"TFT i8080 Data D0 (GPIO39)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D40",
+            "displayName":"TFT i8080 Data D1 (GPIO40)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D41",
+            "displayName":"TFT i8080 Data D2 (GPIO41)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D42",
+            "displayName":"TFT i8080 Data D3 (GPIO42)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D45",
+            "displayName":"TFT i8080 Data D4 (GPIO45)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D46",
+            "displayName":"TFT i8080 Data D5 (GPIO46)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D47",
+            "displayName":"TFT i8080 Data D6 (GPIO47)",
+            "dataType":"bool",
+            "isHardwired": true
+          },
+          {
+            "name":"D48",
+            "displayName":"TFT i8080 Data D7 (GPIO48)",
+            "dataType":"bool",
+            "isHardwired": true
+          }
+        ],
+        "analogPins":[
+          {
+            "name":"A1",
+            "displayName":"A0 (GPIO1)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"A2",
+            "displayName":"A1 (GPIO2)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"A3",
+            "displayName":"A2 (GPIO3)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"A10",
+            "displayName":"A9 (GPIO10)",
+            "dataType":"int16",
+            "hasPWM":true,
+            "hasServo":true
+          },
+          {
+            "name":"A4",
+            "displayName":"Battery Voltage (GPIO4)",
+            "dataType":"int16",
+            "isHardwired": true
+          }
+        ],
+        "i2cPorts":[
+          {
+            "i2cPortId":0,
+            "SDA":18,
+            "SCL":17
+          }
+        ]
+      }
+}
