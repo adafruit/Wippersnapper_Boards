@@ -10,10 +10,10 @@
     "installMethod":"web",
     "installBoardName":"lilygo_t_dongle_c5",
     "esptool": {
-      "fileSystemSize": 3538944,
+      "fileSystemSize": 1572864,
       "blockSize": 4096,
       "baudRate": 115200,
-      "offset": "0xC90000",
+      "offset": "0x670000",
       "chip": "esp32c5",
       "flashMode": "qio",
       "flashFreq": "80m",
