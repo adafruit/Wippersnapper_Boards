@@ -126,6 +126,10 @@
               "isHardwired": {
                 "description": "If set, this pin is wired directly to a built-in component. It will only be available to be selected when adding a component of that type.",
                 "type": "boolean"
+              },
+              "isInverted": {
+                "description": "If set, this pin's logic is active-low (inverted): driving it LOW turns the attached component on. Maps to the digitalio/pwm Add `is_inverted` proto field, e.g. an LCD backlight that lights when driven LOW.",
+                "type": "boolean"
               }
             },
             "if": { "required": [ "uartRx" ] },

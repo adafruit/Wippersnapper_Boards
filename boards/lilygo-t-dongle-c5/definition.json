@@ -28,7 +28,8 @@
           "name":"D0",
           "displayName":"0 (LCD Backlight)",
           "dataType":"bool",
-          "isHardwired":true
+          "isHardwired":true,
+          "isInverted":true
         },
         {
           "name":"D1",

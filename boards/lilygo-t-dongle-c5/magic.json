@@ -24,6 +24,7 @@
       "sckPinName": "D6",
       "misoPinName": "D7",
       "backlightPinName": "D0",
+      "backlightInverted": true,
       "isDisplay": true
     },
     {
