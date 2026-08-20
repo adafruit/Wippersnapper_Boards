@@ -1,0 +1,34 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2026-08-20T15:53:20.512Z",
+  "exportedFromDevice": {
+    "board": "feather-esp32c6",
+    "firmwareVersion": "1.0.0-beta.131"
+  },
+  "components": [
+    {
+      "name": "Dimmable Red LED",
+      "type": "dimmable_led",
+      "pwmSetting": "fixedFrequency",
+      "frequency": 5000,
+      "resolution": 12,
+      "pinName": "D15",
+      "isPWM": true
+    },
+    {
+      "name": "Push Button (BOOT)",
+      "pinName": "D9",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "pull": "UP",
+      "isPin": true,
+      "visualization": {
+        "pressedLabel": "Pressed",
+        "unpressedLabel": "Unpressed"
+      }
+    }
+  ]
+}
