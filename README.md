@@ -24,6 +24,8 @@ Information related to the hardware including the hardware's name, description a
 | description  | No      | String    | Device description                                       |
 | productURL | Yes      | String      | Link to board's homepage. |
 | documentationURL | Yes      | String      | Link to board's documentation. |
+| minVersion | No       | String      | Minimum WipperSnapper firmware version that supports this board (e.g. `1.0.0-beta.37`). |
+| maxVersion | No       | String      | Maximum WipperSnapper firmware version that supports this board. |
 
 
 ### Naming Scheme, boardName

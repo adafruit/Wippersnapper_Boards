@@ -8,6 +8,7 @@
     "productURL":"https://www.adafruit.com/product/6200",
     "documentationURL":"https://www.adafruit.com/product/6200",
     "published": true,
+    "minVersion": "1.0.0-beta.110",
     "installMethod":"uf2",
     "installBoardName":"fruit_jam_tinyusb",
     "components":{

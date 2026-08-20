@@ -77,6 +77,16 @@
       "description": "Whether this board is officially published. When false, it won't appear in the firmware installer, for instance.",
       "type": "boolean"
     },
+    "minVersion": {
+      "description": "The minimum WipperSnapper firmware version that supports this board. Boards were not available in releases before this version.",
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[a-zA-Z0-9.+]+)?$"
+    },
+    "maxVersion": {
+      "description": "The maximum WipperSnapper firmware version that supports this board. Boards should not be used with releases after this version.",
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[a-zA-Z0-9.+]+)?$"
+    },
     "components": {
       "description": "List of available pins and I2C ports for this board.",
       "type": "object",

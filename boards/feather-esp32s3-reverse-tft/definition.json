@@ -9,6 +9,7 @@
     "documentationURL": "https://learn.adafruit.com/esp32-s3-reverse-tft-feather",
     "bootloaderBoardName": "adafruit_feather_esp32s3_reverse_tft",
     "installMethod": "web-native-usb",
+    "minVersion": "1.0.0-beta.63",
     "esptool": {
       "fileSystemSize": 983040,
       "blockSize": 4096,

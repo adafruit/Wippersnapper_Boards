@@ -8,6 +8,7 @@
     "productURL":"https://www.adafruit.com/product/2821",
     "documentationURL":"https://learn.adafruit.com/adafruit-feather-huzzah-esp8266",
     "installMethod":"web",
+    "minVersion": "1.0.0-beta.28",
     "esptool": {
         "offset": "0x200000",
         "chip": "esp8266",

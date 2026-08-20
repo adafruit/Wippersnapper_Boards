@@ -7,6 +7,7 @@
     "productURL":"https://www.adafruit.com/product/4985",
     "documentationURL":"https://learn.adafruit.com/adafruit-funhouse",
     "installMethod":"web-native-usb",
+    "minVersion": "1.0.0-beta.32",
     "installBoardName": "funhouse_noota",
     "bootloaderBoardName": "adafruit_funhouse_esp32s2",
     "esptool": {
