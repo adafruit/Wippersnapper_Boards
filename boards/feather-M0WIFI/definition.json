@@ -1,0 +1,105 @@
+{
+    "boardName":"adafruit-feather-M0wifi",
+    "mcuName":"CORTEXM0+",
+    "mcuRefVoltage": 3.3,
+    "displayName":"Adafruit Feather M0 WiFi with ATWINC1500",
+    "vendor":"Adafruit",
+    "productURL":"https://www.adafruit.com/product/3405",
+    "documentationURL":"https://learn.adafruit.com/adafruit-huzzah32-esp32-feather",
+    "installMethod":"web",
+    "components": {
+      "digitalPins": [
+       {
+         "name":"D13",
+         "displayName":"D13 (LED BUILT-IN)",
+         "dataType":"bool",
+         "hasPWM":false
+       },
+       {
+        "name":"D12",
+        "displayName":"D12",
+        "dataType":"bool",
+        "hasPWM":false
+      },
+      {
+        "name":"D11",
+        "displayName":"D11~",
+        "dataType":"bool",
+        "hasPWM":true
+      },
+      {
+        "name":"D10",
+        "displayName":"D10~",
+        "dataType":"bool",
+        "hasPWM":true
+      },
+      {
+        "name":"D9",
+        "displayName":"D9 ~ A7 half of LiPoly battery voltage ",
+        "dataType":"bool",
+        "hasPWM":true
+      },
+      {
+        "name":"D6",
+        "displayName":"D6~",
+        "dataType":"bool",
+        "hasPWM":true
+      },
+      {
+        "name":"D5",
+        "displayName":"D5~",
+        "dataType":"bool",
+        "hasPWM":true
+      }
+      ],
+      "analogPins": [
+       {
+          "name":"A14",
+          "displayName":"A0",
+          "dataType":"int16",
+          "hasPWM":false
+       },
+       {
+        "name":"A15",
+        "displayName":"A1",
+        "dataType":"int16",
+        "hasPWM":false
+       },
+        {
+         "name":"A16",
+         "displayName":"A2",
+         "dataType":"int16",
+         "hasPWM":false
+       },
+       {
+        "name":"A17",
+        "displayName":"A3~",
+        "dataType":"int16",
+        "hasPWM":true
+       },
+        {
+         "name":"A18",
+         "displayName":"A4~",
+         "dataType":"int16",
+         "hasPWM":true
+       }
+       {
+        "name":"A19",
+        "displayName":"A5",
+        "dataType":"int16",
+        "hasPWM":false
+       }
+
+
+
+
+      ],
+      "i2cPorts": [
+        {
+            "i2cPortId": 0,
+            "SDA": 20,
+            "SCL": 21
+        }
+      ]
+    }
+}
