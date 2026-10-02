@@ -1,6 +1,6 @@
 {
   "boardName": "dfrobot-firebeetle2-esp32p4",
-  "published": true,
+  "published": false,
   "mcuName": "esp32p4",
   "mcuRefVoltage": 3.3,
   "displayName": "DFRobot FireBeetle 2 ESP32-P4",
@@ -10,15 +10,15 @@
   "installMethod": "web",
   "installBoardName": "dfrobot_firebeetle2_esp32p4",
   "esptool": {
-    "fileSystemSize": 131072,
+    "fileSystemSize": 917504,
     "blockSize": 4096,
-    "offset": "0x3D0000",
+    "offset": "0x310000",
     "chip": "esp32p4",
     "flashMode": "qio",
     "flashFreq": "80m",
     "flashSize": "16MB",
     "structure": {
-      "0x0": "wippersnapper.dfrobot_firebeetle2_esp32p4.fatfs.VERSION.combined.bin"
+      "0x0": "wippersnapper.dfrobot_firebeetle2_esp32p4.littlefs.VERSION.combined.bin"
     }
   },
   "components": {
