@@ -10,9 +10,9 @@
   "installMethod": "web",
   "installBoardName": "adafruit_metro_esp32p4",
   "esptool": {
-    "fileSystemSize": 131072,
+    "fileSystemSize": 23986176,
     "blockSize": 4096,
-    "offset": "0x3D0000",
+    "offset": "0x910000",
     "chip": "esp32p4",
     "flashMode": "qio",
     "flashFreq": "80m",
