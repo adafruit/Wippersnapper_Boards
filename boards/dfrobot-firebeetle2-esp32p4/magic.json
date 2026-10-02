@@ -1,15 +1,15 @@
 {
   "exportVersion": "1.0.0",
   "exportedBy": "Adafruit",
-  "exportedAt": "2026-01-29T00:00:00.000Z",
+  "exportedAt": "2026-10-02T00:00:00.000Z",
   "exportedFromDevice": {
-    "board": "dfrobot-firebeetle2-esp32c5",
-    "firmwareVersion": "1.0.0-beta.103"
+    "board": "dfrobot-firebeetle2-esp32p4",
+    "firmwareVersion": "1.0.0-beta.128"
   },
   "components": [
     {
       "name": "Button (Boot)",
-      "pinName": "D28",
+      "pinName": "D35",
       "type": "push_button",
       "mode": "DIGITAL",
       "direction": "INPUT",
@@ -18,8 +18,8 @@
       "pull": "UP"
     },
     {
-      "name": "LED (D15)",
-      "pinName": "D15",
+      "name": "LED (D3)",
+      "pinName": "D3",
       "type": "led",
       "mode": "DIGITAL",
       "direction": "OUTPUT",
