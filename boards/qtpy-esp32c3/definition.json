@@ -27,35 +27,40 @@
                 "displayName":"D0 (A3)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D1",
                 "displayName":"D1 (A2)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D3",
                 "displayName":"D3 (A1)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D4",
                 "displayName":"D0 (A0)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D5",
                 "displayName":"D5 (SDA)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D6",
@@ -109,7 +114,8 @@
             {
                 "name":"D2",
                 "displayName":"D2 (NeoPixel)",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasDeepSleep":true
             }
         ],
         "analogPins":[

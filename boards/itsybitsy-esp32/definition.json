@@ -26,48 +26,55 @@
         "displayName": "D0 (NeoPixel)",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D35",
         "displayName": "D35 (User BUTTON)",
         "dataType": "bool",
-        "direction": "INPUT"
+        "direction": "INPUT",
+        "hasDeepSleep": true
       },
       {
         "name": "D13",
         "displayName": "D13 (LED BUILT-IN)",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D12",
         "displayName": "D12",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D14",
         "displayName": "D14",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D33",
         "displayName": "D33",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D32",
         "displayName": "D32",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D7",
@@ -89,14 +96,16 @@
         "displayName": "SCL",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D15",
         "displayName": "SDA",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D8",
@@ -119,39 +128,45 @@
         "displayName": "A0",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D26",
         "displayName": "A1",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D4",
         "displayName": "A2",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D38",
         "displayName": "A3",
         "dataType": "bool",
-        "direction": "INPUT"
+        "direction": "INPUT",
+        "hasDeepSleep": true
       },
       {
         "name": "D37",
         "displayName": "A4",
         "dataType": "bool",
-        "direction": "INPUT"
+        "direction": "INPUT",
+        "hasDeepSleep": true
       },
       {
         "name": "D36",
         "displayName": "A5",
         "dataType": "bool",
-        "direction": "INPUT"
+        "direction": "INPUT",
+        "hasDeepSleep": true
       },
       {
         "name": "D19",

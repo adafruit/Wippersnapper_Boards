@@ -28,49 +28,56 @@
           "name":"D0",
           "displayName":"0",
           "dataType":"bool",
-          "direction":"INPUT"
+          "direction":"INPUT",
+          "hasDeepSleep":true
         },
         {
           "name":"D1",
           "displayName":"1",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true
+          "hasServo":true,
+          "hasDeepSleep":true
         },
         {
           "name":"D2",
           "displayName":"2 (MISO)",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true
+          "hasServo":true,
+          "hasDeepSleep":true
         },
         {
           "name":"D3",
           "displayName":"3",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true
+          "hasServo":true,
+          "hasDeepSleep":true
         },
         {
           "name":"D4",
           "displayName":"4",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true
+          "hasServo":true,
+          "hasDeepSleep":true
         },
         {
           "name":"D5",
           "displayName":"5",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true
+          "hasServo":true,
+          "hasDeepSleep":true
         },
         {
           "name":"D6",
           "displayName":"6 (SPI CLK)",
           "dataType":"bool",
           "hasPWM":true,
-          "hasServo":true
+          "hasServo":true,
+          "hasDeepSleep":true
         },
         {
           "name":"D7",

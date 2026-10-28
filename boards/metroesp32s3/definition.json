@@ -17,7 +17,8 @@
             "name":"D0",
             "displayName":"Built-in Button (Boot0)",
             "dataType":"bool",
-            "direction": "INPUT"
+            "direction": "INPUT",
+            "hasDeepSleep":true
          },
          {
              "name":"D40",
@@ -40,84 +41,96 @@
             "displayName":"D2",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D3",
             "displayName":"D3",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D4",
             "displayName":"D4",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D5",
             "displayName":"D5",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D6",
             "displayName":"D6",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D7",
             "displayName":"D7",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D8",
             "displayName":"D8",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D9",
             "displayName":"D9",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D10",
             "displayName":"D10",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D11",
             "displayName":"D11",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D12",
             "displayName":"D12",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D13",
             "displayName":"D13 (Built-in LED)",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D47",
@@ -138,49 +151,56 @@
             "displayName":"A0 (GPIO14)",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D15",
             "displayName":"A1 (GPIO15)",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D16",
             "displayName":"A2 (GPIO16)",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D17",
             "displayName":"A3 (GPIO17)",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D18",
             "displayName":"A4 (GPIO18)",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D1",
             "displayName":"A5 (GPIO1)",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D21",
             "displayName":"D21 (MISO)",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D42",
