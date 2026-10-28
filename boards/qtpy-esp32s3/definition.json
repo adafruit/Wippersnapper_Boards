@@ -15,42 +15,48 @@
                 "displayName":"A0",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D17",
                 "displayName":"A1",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D9",
                 "displayName":"A2",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D8",
                 "displayName":"A3",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D7",
                 "displayName":"SDA",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D6",
                 "displayName":"SCL",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D5",
@@ -58,7 +64,8 @@
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true,
-                "uartTx":true
+                "uartTx":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D35",
@@ -87,13 +94,15 @@
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true,
-                "uartRx":true
+                "uartRx":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D0",
                 "displayName":"Boot Pushbutton",
                 "dataType":"bool",
-                "direction":"INPUT"
+                "direction":"INPUT",
+                "hasDeepSleep":true
             },
             {
                 "name":"D39",

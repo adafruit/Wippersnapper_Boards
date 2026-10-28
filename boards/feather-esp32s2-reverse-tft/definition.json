@@ -26,65 +26,75 @@
             "name":"D0",
             "displayName":"D0 (Boot Push Button)",
             "dataType":"bool",
-            "direction":"INPUT"
+            "direction":"INPUT",
+            "hasDeepSleep":true
           },
           {
             "name":"D1",
             "displayName":"D1 Push Button",
-            "dataType":"bool"
+            "dataType":"bool",
+            "hasDeepSleep":true
           },
           {
             "name":"D2",
             "displayName":"D2 Push Button",
-            "dataType":"bool"
+            "dataType":"bool",
+            "hasDeepSleep":true
           },
           {
             "name":"D5",
             "displayName":"D5",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
           },
           {
             "name":"D6",
             "displayName":"D6",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
           },
           {
             "name":"D9",
             "displayName":"D9",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
           },
           {
             "name":"D10",
             "displayName":"D10",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
           },
           {
             "name":"D11",
             "displayName":"D11",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
           },
           {
             "name":"D12",
             "displayName":"D12",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
           },
           {
             "name":"D13",
             "displayName":"D13 (LED)",
             "dataType":"bool",
-            "hasPWM":true
+            "hasPWM":true,
+            "hasDeepSleep":true
           },
           {
             "name":"D33",
@@ -94,7 +104,8 @@
           {
             "name":"D21",
             "displayName":"D21 (NeoPixel Power Pin)",
-            "dataType":"bool"
+            "dataType":"bool",
+            "hasDeepSleep":true
           },
           {
             "name": "D38",

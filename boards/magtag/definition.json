@@ -26,52 +26,61 @@
             "name": "D0",
             "displayName": "D0 (Boot Button)",
             "dataType": "bool",
-            "direction": "INPUT"
+            "direction": "INPUT",
+            "hasDeepSleep": true
          },
          {
             "name": "D1",
             "displayName": "D1 (NeoPixel)",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasDeepSleep": true
          },
          {
             "name": "D15",
             "displayName": "Button A",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasDeepSleep": true
          },
          {
             "name": "D14",
             "displayName": "Button B",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasDeepSleep": true
          },
          {
             "name": "D12",
             "displayName": "Button C",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasDeepSleep": true
          },
          {
             "name": "D11",
             "displayName": "Button D",
-            "dataType": "bool"
+            "dataType": "bool",
+            "hasDeepSleep": true
          },
          {
             "name": "D10",
             "displayName": "D10",
             "dataType": "bool",
             "hasPWM": true,
-            "hasServo": true
+            "hasServo": true,
+            "hasDeepSleep": true
          },
          {
             "name": "D18",
             "displayName": "D18 (A1)",
             "dataType": "bool",
             "hasPWM": true,
-            "hasServo": true
+            "hasServo": true,
+            "hasDeepSleep": true
          },
          {
             "name": "D13",
             "displayName": "Built-in LED",
             "dataType": "bool",
-            "hasPWM": true
+            "hasPWM": true,
+            "hasDeepSleep": true
          },
          {
             "name": "D43",
