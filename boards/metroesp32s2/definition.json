@@ -27,35 +27,40 @@
             "name":"D0",
             "displayName":"D0 (Boot0 Push Button)",
             "dataType":"bool",
-            "direction":"INPUT"
+            "direction":"INPUT",
+            "hasDeepSleep":true
           },
           {
             "name":"D1",
             "displayName":"D1",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
           },
           {
             "name":"D2",
             "displayName":"D2",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D3",
             "displayName":"D3",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D4",
             "displayName":"D4",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D5",
@@ -63,7 +68,8 @@
             "dataType":"bool",
             "hasPWM":true,
             "hasServo":true,
-            "uartTx":true
+            "uartTx":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D6",
@@ -71,84 +77,96 @@
             "dataType":"bool",
             "hasPWM":true,
             "hasServo":true,
-            "uartRx":true
+            "uartRx":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D7",
             "displayName":"D7",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D8",
             "displayName":"D8",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D9",
             "displayName":"D9",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D10",
             "displayName":"D10",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D11",
             "displayName":"D11",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D12",
             "displayName":"D12",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D13",
             "displayName":"D13",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D14",
             "displayName":"D14",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D15",
             "displayName":"D15",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D16",
             "displayName":"D16",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D21",
             "displayName":"D21",
             "dataType":"bool",
             "hasPWM":true,
-            "hasServo":true
+            "hasServo":true,
+            "hasDeepSleep":true
          },
          {
             "name":"D42",

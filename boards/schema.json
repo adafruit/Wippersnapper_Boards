@@ -118,6 +118,11 @@
               "isHardwired": {
                 "description": "If true, this pin is wired directly to a built-in component. It will only be available to be selected when adding a component of that type.",
                 "type": "boolean"
+              },
+              "hasDeepSleep": {
+                "description": "If true, this digital input pin is an RTC / LP GPIO that can wake the board from deep sleep. On ESP32-C3/C5/C6/P4 other pins can only wake from light sleep; on ESP32/S2/S3 only these pins can be used as a sleep wakeup source.",
+                "type": "boolean",
+                "default": false
               }
             },
             "if": { "required": [ "uartRx" ] },

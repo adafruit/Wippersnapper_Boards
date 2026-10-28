@@ -91,42 +91,48 @@
         "displayName": "GPIO5",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D4",
         "displayName": "GPIO4",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D3",
         "displayName": "GPIO3",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D2",
         "displayName": "GPIO2",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D8",
         "displayName": "SCL (GPIO8)",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D7",
         "displayName": "SDA (GPIO7)",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D24",
