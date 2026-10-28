@@ -7,18 +7,20 @@
   "productURL": "https://www.adafruit.com/product/6536",
   "documentationURL": "https://learn.adafruit.com/adafruit-metro-esp32-p4-hydra",
   "published": false,
-  "installMethod": "web",
+  "bootDiskName": "METROP4BOOT",
+  "installMethod": "uf2",
   "installBoardName": "adafruit_metro_esp32p4",
+  "bootloaderBoardName": "adafruit_metro_esp32p4",
   "esptool": {
-    "fileSystemSize": 7208960,
+    "fileSystemSize": 8060928,
     "blockSize": 4096,
-    "offset": "0x910000",
+    "offset": "0x850000",
     "chip": "esp32p4",
-    "flashMode": "qio",
+    "flashMode": "dio",
     "flashFreq": "80m",
     "flashSize": "16MB",
     "structure": {
-      "0x0": "wippersnapper.adafruit_metro_esp32p4.littlefs.VERSION.combined.bin"
+      "0x0": "wippersnapper.adafruit_metro_esp32p4.fatfs.VERSION.combined.bin"
     }
   },
   "components": {
