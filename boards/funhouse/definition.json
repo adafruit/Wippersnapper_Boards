@@ -26,93 +26,110 @@
           {
              "name":"D5",
              "displayName":"Button Up",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasDeepSleep":true
           },
           {
              "name":"D3",
              "displayName":"Button Down",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasDeepSleep":true
           },
           {
              "name":"D4",
              "displayName":"Button Select",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasDeepSleep":true
           },
           {
              "name":"D17",
              "displayName":"D17 (A0)",
              "dataType":"bool",
              "hasPWM":true,
-             "hasServo":true
+             "hasServo":true,
+             "hasDeepSleep":true
           },
           {
              "name":"D2",
              "displayName":"D2 (A1)",
              "dataType":"bool",
              "hasPWM":true,
-             "hasServo":true
+             "hasServo":true,
+             "hasDeepSleep":true
           },
           {
              "name":"D1",
              "displayName":"D1 (A2)",
              "dataType":"bool",
              "hasPWM":true,
-             "hasServo":true
+             "hasServo":true,
+             "hasDeepSleep":true
           },
           {
              "name":"D6",
              "displayName":"D6",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasDeepSleep":true
           },
           {
              "name":"D7",
              "displayName":"D7",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasDeepSleep":true
           },
           {
              "name":"D8",
              "displayName":"D8",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasDeepSleep":true
           },
           {
              "name":"D9",
              "displayName":"D9",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasDeepSleep":true
           },
           {
              "name":"D10",
              "displayName":"D10",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasDeepSleep":true
           },
           {
              "name":"D11",
              "displayName":"D11",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasDeepSleep":true
           },
           {
              "name":"D12",
              "displayName":"D12",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasDeepSleep":true
           },
           {
              "name":"D13",
              "displayName":"D13",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasDeepSleep":true
           },
           {
              "name":"D14",
              "displayName":"D14 (DotStar Data)",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasDeepSleep":true
           },
           {
             "name":"D15",
             "displayName":"D15 (DotStar Clock)",
-            "dataType":"bool"
+            "dataType":"bool",
+            "hasDeepSleep":true
           },
           {
              "name":"D16",
              "displayName":"PIR Sensor",
-             "dataType":"bool"
+             "dataType":"bool",
+             "hasDeepSleep":true
           },
           {
              "name":"D42",

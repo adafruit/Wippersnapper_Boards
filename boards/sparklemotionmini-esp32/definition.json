@@ -25,13 +25,15 @@
       {
         "name":"D0",
         "displayName":"D0 (Button)",
-        "dataType":"bool"
+        "dataType":"bool",
+        "hasDeepSleep":true
       },
       {
         "name":"D12",
         "displayName":"D12 (LED BUILT-IN)",
         "dataType":"bool",
-        "hasPWM":true
+        "hasPWM":true,
+        "hasDeepSleep":true
       },
       {
         "name":"D26",
@@ -39,7 +41,8 @@
         "dataType":"bool",
         "uartRx": true,
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
       },
       {
         "name":"D25",
@@ -47,14 +50,16 @@
         "dataType":"bool",
         "uartTx": true,
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
       },
       {
         "name":"D14",
         "displayName":"D14",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
       },
       {
         "name":"D18",
@@ -67,28 +72,32 @@
         "displayName":"D27",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
       },
       {
         "name":"D13",
         "displayName":"D13 (A0)",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
       },
       {
       "name":"D33",
       "displayName":"D33",
       "dataType":"bool",
       "hasPWM":true,
-      "hasServo":true
+      "hasServo":true,
+      "hasDeepSleep":true
       },
       {
       "name":"D32",
       "displayName":"D32",
       "dataType":"bool",
       "hasPWM":true,
-      "hasServo":true
+      "hasServo":true,
+      "hasDeepSleep":true
       },
       {
         "name":"D19",

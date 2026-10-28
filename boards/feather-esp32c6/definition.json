@@ -27,42 +27,48 @@
         "displayName": "IO1 (A0)",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D4",
         "displayName": "IO4 (A1)",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D6",
         "displayName": "IO6 (A2/D6)",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D5",
         "displayName": "IO5 (A3/D5)",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D3",
         "displayName": "IO3 (A4)",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D2",
         "displayName": "IO2 (A5)",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D21",
@@ -127,7 +133,8 @@
         "displayName": "IO0",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D8",
@@ -141,7 +148,8 @@
         "displayName": "IO7",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true
+        "hasServo": true,
+        "hasDeepSleep": true
       },
       {
         "name": "D18",
