@@ -1,5 +1,5 @@
 {
-  "boardName": "adafruit_metro_esp32p4",
+  "boardName": "adafruit-metro-esp32p4",
   "mcuName": "esp32p4",
   "mcuRefVoltage": 3.3,
   "displayName": "Adafruit Metro ESP32-P4 Hydra",
