@@ -3,7 +3,7 @@
   "exportedBy": "Adafruit",
   "exportedAt": "2026-10-28T00:00:00.000Z",
   "exportedFromDevice": {
-    "board": "adafruit_metro_esp32p4",
+    "board": "adafruit-metro-esp32p4",
     "firmwareVersion": "1.0.0-beta.128"
   },
   "components": [
