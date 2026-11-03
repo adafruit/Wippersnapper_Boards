@@ -8,6 +8,18 @@
   },
   "components": [
     {
+      "name": "4.3\" RGB LCD Display (ST7262E43, 800x480)",
+      "type": "esp32-s3-lcd-ev-board-sub3",
+      "displayType": "ttl_rgb666",
+      "driver": "ST7262E43",
+      "width": 800,
+      "height": 480,
+      "rotation": 0,
+      "textSize": 3,
+      "powerOnPinName": "D38",
+      "isDisplay": true
+    },
+    {
       "name": "Button (Boot)",
       "pinName": "D61",
       "type": "push_button",

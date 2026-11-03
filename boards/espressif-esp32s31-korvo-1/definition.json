@@ -40,6 +40,13 @@
         "isHardwired": true
       },
       {
+        "name": "D38",
+        "displayName": "38 (LCD Enable)",
+        "dataType": "bool",
+        "direction": "OUTPUT",
+        "isHardwired": true
+      },
+      {
         "name": "D61",
         "displayName": "61 (Boot Button)",
         "dataType": "bool",
