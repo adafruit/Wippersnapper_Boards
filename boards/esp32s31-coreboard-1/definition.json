@@ -1,5 +1,5 @@
 {
-  "boardName": "espressif-esp32s31-coreboard-1",
+  "boardName": "esp32s31-coreboard-1",
   "published": false,
   "mcuName": "esp32s31",
   "mcuRefVoltage": 3.3,
