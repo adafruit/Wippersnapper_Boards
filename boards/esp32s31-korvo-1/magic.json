@@ -3,7 +3,7 @@
   "exportedBy": "Adafruit",
   "exportedAt": "2026-11-03T12:00:00.000Z",
   "exportedFromDevice": {
-    "board": "espressif-esp32s31-korvo-1",
+    "board": "esp32s31-korvo-1",
     "firmwareVersion": "2.0.0-alpha.1"
   },
   "components": [
