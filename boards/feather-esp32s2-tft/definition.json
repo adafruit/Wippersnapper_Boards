@@ -158,7 +158,8 @@
             "name": "D7",
             "displayName": "SS (TFT CS)",
             "dataType": "bool",
-            "isHardwired": true
+            "isHardwired": true,
+            "hasDeepSleep": true
          },
          {
             "name": "D35",
