@@ -151,7 +151,8 @@
             "name":"D21",
             "displayName":"TFT I2C Power",
             "dataType":"bool",
-            "isHardwired": true
+            "isHardwired": true,
+            "hasDeepSleep":true
           },
           {
             "name":"D39",

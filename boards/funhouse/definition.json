@@ -174,7 +174,8 @@
             "name":"D21",
             "displayName":"TFT Backlight",
             "dataType":"bool",
-            "isHardwired": true
+            "isHardwired": true,
+            "hasDeepSleep":true
          },
          {
             "name":"D39",
