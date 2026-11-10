@@ -28,42 +28,48 @@
                 "displayName":"0",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D1",
                 "displayName":"1",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D2",
                 "displayName":"2",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D3",
                 "displayName":"3 (Pad on back)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D4",
                 "displayName":"4",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D5",
                 "displayName":"5",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D6",

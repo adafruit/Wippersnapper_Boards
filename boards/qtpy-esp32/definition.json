@@ -25,42 +25,48 @@
                 "name":"D26",
                 "displayName":"A0",
                 "dataType":"bool",
-                "hasPWM":true
+                "hasPWM":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D25",
                 "displayName":"A1",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D27",
                 "displayName":"A2",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D15",
                 "displayName":"A3",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D4",
                 "displayName":"SDA",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D33",
                 "displayName":"SCL",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D32",
@@ -68,28 +74,32 @@
                 "dataType":"bool",
                 "hasPWM":true,
                 "hasServo":true,
-                "uartTx":true
+                "uartTx":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D13",
                 "displayName":"MOSI",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D12",
                 "displayName":"MISO",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D14",
                 "displayName":"SCK",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D7",
@@ -102,7 +112,8 @@
             {
                 "name":"D0",
                 "displayName":"Boot Pushbutton",
-                "dataType":"bool"
+                "dataType":"bool",
+                "hasDeepSleep":true
             },
             {
                 "name":"D5",

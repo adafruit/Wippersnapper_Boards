@@ -28,42 +28,48 @@
                 "displayName":"D0/A0 (GPIO1)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D2",
                 "displayName":"D1/A1 (GPIO2)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D3",
                 "displayName":"D2/A2 (GPIO3)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D4",
                 "displayName":"D3/A3 (GPIO4)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D5",
                 "displayName":"D4/A4 (SDA - GPIO5)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D6",
                 "displayName":"D5/A5 (SCL - GPIO6)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D43",
@@ -86,21 +92,24 @@
                 "displayName":"D8/A8 (SCK - GPIO7)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D8",
                 "displayName":"D9/A9 (MISO - GPIO8)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D9",
                 "displayName":"D10/A10 (MOSI - GPIO9)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D42",
@@ -114,13 +123,15 @@
                 "displayName":"D12/A12 (Cam Brd - GPIO13)",
                 "dataType":"bool",
                 "hasPWM":true,
-                "hasServo":true
+                "hasServo":true,
+                "hasDeepSleep":true
             },
             {
                 "name":"D0",
                 "displayName":"Boot Pushbutton",
                 "dataType":"bool",
-                "direction":"INPUT"
+                "direction":"INPUT",
+                "hasDeepSleep":true
             }
         ],
         "analogPins":[
