@@ -55,15 +55,15 @@ jobs:
       - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744
       - name: List Changed Board Files
         id: list-changed-files
+        env:
+          # The PR's actual target branch (main, api-v2, or the branch of the
+          # PR below it in a stack), passed via env rather than interpolated
+          # into the script.
+          DIFF_BASE: ${{ github.base_ref }}
         run: |
           # Diff against the PR's target branch so we only consider files this
-          # PR actually changed: api-v2 PRs diff against api-v2; anything else
-          # diffs against main.
-          if [ "${{ github.base_ref }}" = "api-v2" ]; then
-            DIFF_BASE=api-v2
-          else
-            DIFF_BASE=main
-          fi
+          # PR actually changed. Stacked PRs target the branch of the PR below
+          # them, so they must diff against that branch rather than main/api-v2.
           git fetch --depth=1 origin "$DIFF_BASE"
           # list Added, Copied, Modified, and Renamed files
           ACMR_FILES=`git diff "origin/$DIFF_BASE" --name-only --diff-filter=ACMR | xargs`
