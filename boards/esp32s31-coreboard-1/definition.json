@@ -158,8 +158,7 @@
         "displayName": "60 (NeoPixel)",
         "dataType": "bool",
         "hasPWM": true,
-        "hasServo": true,
-        "isHardwired": true
+        "hasServo": true
       },
       {
         "name": "D61",
