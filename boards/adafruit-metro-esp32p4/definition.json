@@ -1,0 +1,282 @@
+{
+  "boardName": "adafruit-metro-esp32p4",
+  "mcuName": "esp32p4",
+  "mcuRefVoltage": 3.3,
+  "displayName": "Adafruit Metro ESP32-P4 Hydra",
+  "vendor": "Adafruit",
+  "productURL": "https://www.adafruit.com/product/6536",
+  "documentationURL": "https://learn.adafruit.com/adafruit-metro-esp32-p4-hydra",
+  "published": false,
+  "bootDiskName": "METROP4BOOT",
+  "installMethod": "uf2",
+  "installBoardName": "adafruit_metro_esp32p4",
+  "bootloaderBoardName": "adafruit_metro_esp32p4",
+  "esptool": {
+    "fileSystemSize": 8060928,
+    "blockSize": 4096,
+    "offset": "0x850000",
+    "chip": "esp32p4",
+    "flashMode": "dio",
+    "flashFreq": "80m",
+    "flashSize": "16MB",
+    "structure": {
+      "0x0": "wippersnapper.adafruit_metro_esp32p4.fatfs.VERSION.combined.bin"
+    }
+  },
+  "components": {
+    "digitalPins": [
+      {
+        "name": "D35",
+        "displayName": "Built-in Button (Boot)",
+        "dataType": "bool",
+        "direction": "INPUT"
+      },
+      {
+        "name": "D0",
+        "displayName": "D0 (UART RX)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "uartRx": true
+      },
+      {
+        "name": "D1",
+        "displayName": "D1 (UART TX)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true,
+        "uartTx": true
+      },
+      {
+        "name": "D2",
+        "displayName": "D2",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D3",
+        "displayName": "D3",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D4",
+        "displayName": "D4",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D5",
+        "displayName": "D5",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D6",
+        "displayName": "D6",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D7",
+        "displayName": "D7",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D8",
+        "displayName": "D8",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D9",
+        "displayName": "D9",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D10",
+        "displayName": "D10",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D11",
+        "displayName": "D11",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D12",
+        "displayName": "D12",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D13",
+        "displayName": "D13 (Built-in LED)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D33",
+        "displayName": "D33 (SDA)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D32",
+        "displayName": "D32 (SCL)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D49",
+        "displayName": "A0 (GPIO49)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D50",
+        "displayName": "A1 (GPIO50)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D51",
+        "displayName": "A2 (GPIO51)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D52",
+        "displayName": "A3 (GPIO52)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D53",
+        "displayName": "A4 (GPIO53)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D54",
+        "displayName": "A5 (GPIO54)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D17",
+        "displayName": "D17 (MISO)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D16",
+        "displayName": "D16 (MOSI)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D15",
+        "displayName": "D15 (SCK)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D14",
+        "displayName": "D14 (USB Host Power)",
+        "dataType": "bool",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "D23",
+        "displayName": "D23 (NeoPixel)",
+        "dataType": "bool"
+      }
+    ],
+    "analogPins": [
+      {
+        "name": "A49",
+        "displayName": "A0 (GPIO49)",
+        "dataType": "int16",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A50",
+        "displayName": "A1 (GPIO50)",
+        "dataType": "int16",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A51",
+        "displayName": "A2 (GPIO51)",
+        "dataType": "int16",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A52",
+        "displayName": "A3 (GPIO52)",
+        "dataType": "int16",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A53",
+        "displayName": "A4 (GPIO53)",
+        "dataType": "int16",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A54",
+        "displayName": "A5 (GPIO54)",
+        "dataType": "int16",
+        "hasPWM": true,
+        "hasServo": true
+      },
+      {
+        "name": "A18",
+        "displayName": "Battery Voltage Monitor (GPIO18)",
+        "dataType": "int16",
+        "direction": "INPUT"
+      }
+    ],
+    "i2cPorts": [
+      {
+        "i2cPortId": 0,
+        "SDA": 33,
+        "SCL": 32
+      }
+    ]
+  }
+}
