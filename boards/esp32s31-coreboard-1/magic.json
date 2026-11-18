@@ -1,0 +1,31 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2026-11-03T12:00:00.000Z",
+  "exportedFromDevice": {
+    "board": "esp32s31-coreboard-1",
+    "firmwareVersion": "2.0.0-alpha.1"
+  },
+  "components": [
+    {
+      "name": "Button (Boot)",
+      "pinName": "D61",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    },
+    {
+      "name": "NeoPixel (D60)",
+      "type": "neopixel",
+      "pixelNumber": 1,
+      "pixelsOrder": "GRB",
+      "pixelBrightness": 255,
+      "pinName": "D60",
+      "pixelsType": "NEOPIXEL",
+      "isPixel": true
+    }
+  ]
+}
