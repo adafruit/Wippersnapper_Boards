@@ -110,7 +110,9 @@
           "wrPinName": { "type": "string" },
           "rdPinName": { "type": "string" },
           "backlightPinName": { "type": "string" },
+          "backlightInverted": { "type": "boolean" },
           "powerOnPinName": { "type": "string" },
+          "powerOnInverted": { "type": "boolean" },
           "visualization": {
             "description": "Allows overriding the default visualization settings for this component type.",
             "type": "object",
@@ -138,6 +140,7 @@
               "direction": {},
               "period": {},
               "pull": {},
+              "inverted": {},
               "visualization": {}
             },
             "additionalProperties": false
@@ -255,7 +258,9 @@
               "wrPinName": {},
               "rdPinName": {},
               "backlightPinName": {},
-              "powerOnPinName": {}
+              "backlightInverted": {},
+              "powerOnPinName": {},
+              "powerOnInverted": {}
             },
             "additionalProperties": false
           }
