@@ -1,0 +1,43 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2026-11-03T12:00:00.000Z",
+  "exportedFromDevice": {
+    "board": "esp32s31-korvo-1",
+    "firmwareVersion": "2.0.0-alpha.1"
+  },
+  "components": [
+    {
+      "name": "4.3\" RGB LCD Display (ST7262E43, 800x480)",
+      "type": "esp32-s3-lcd-ev-board-sub3",
+      "displayType": "ttl_rgb666",
+      "driver": "ST7262E43",
+      "width": 800,
+      "height": 480,
+      "rotation": 0,
+      "textSize": 3,
+      "powerOnPinName": "D38",
+      "isDisplay": true
+    },
+    {
+      "name": "Button (Boot)",
+      "pinName": "D61",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    },
+    {
+      "name": "NeoPixel (D37)",
+      "type": "neopixel",
+      "pixelNumber": 1,
+      "pixelsOrder": "GRB",
+      "pixelBrightness": 255,
+      "pinName": "D37",
+      "pixelsType": "NEOPIXEL",
+      "isPixel": true
+    }
+  ]
+}
