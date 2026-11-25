@@ -1,0 +1,37 @@
+{
+  "exportVersion": "1.0.0",
+  "exportedBy": "Adafruit",
+  "exportedAt": "2026-11-25T00:00:00.000Z",
+  "exportedFromDevice": {
+    "board": "qualia-s3-rgb666",
+    "firmwareVersion": "2.0.0-alpha.1"
+  },
+  "components": [
+    {
+      "name": "PCA9554A I/O Expander (UP/DN buttons)",
+      "type": "pca9554",
+      "isI2C": true,
+      "i2cAddress": 63
+    },
+    {
+      "name": "Button (UP)",
+      "pinName": "EXP_0x3F_5",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    },
+    {
+      "name": "Button (DN)",
+      "pinName": "EXP_0x3F_6",
+      "type": "push_button",
+      "mode": "DIGITAL",
+      "direction": "INPUT",
+      "period": 0,
+      "isPin": true,
+      "pull": "UP"
+    }
+  ]
+}
