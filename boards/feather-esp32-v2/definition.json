@@ -25,7 +25,8 @@
         {
           "name":"D0",
           "displayName":"D0 (NeoPixel)",
-          "dataType":"bool"
+          "dataType":"bool",
+          "hasDeepSleep":true
         },
         {
             "name":"D7",
@@ -43,91 +44,104 @@
           "name":"D13",
           "displayName":"D13 (LED BUILT-IN)",
           "dataType":"bool",
-          "hasPWM":true
+          "hasPWM":true,
+          "hasDeepSleep":true
        },
        {
         "name":"D12",
         "displayName":"D12",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
        },
        {
         "name":"D27",
         "displayName":"D27",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
        },
        {
         "name":"D33",
         "displayName":"D33",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
        },
        {
         "name":"D15",
         "displayName":"D15",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
        },
        {
         "name":"D32",
         "displayName":"D32",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
        },
        {
         "name":"D14",
         "displayName":"D14",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
        },
        {
         "name":"D26",
         "displayName":"D26 (A0)",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
        },
        {
         "name":"D25",
         "displayName":"D25 (A1)",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
        },
        {
          "name":"D34",
          "displayName":"D34 (A2)",
          "dataType":"bool",
          "hasPWM":true,
-         "hasServo":true
+         "hasServo":true,
+         "hasDeepSleep":true
        },
        {
          "name":"D39",
          "displayName":"D39 (A3)",
          "dataType":"bool",
          "hasPWM":true,
-         "hasServo":true
+         "hasServo":true,
+         "hasDeepSleep":true
        },
        {
          "name":"D36",
          "displayName":"D36 (A4)",
          "dataType":"bool",
          "hasPWM":true,
-         "hasServo":true
+         "hasServo":true,
+         "hasDeepSleep":true
        },
        {
          "name":"D4",
          "displayName":"D4 (A5)",
          "dataType":"bool",
          "hasPWM":true,
-         "hasServo":true
+         "hasServo":true,
+         "hasDeepSleep":true
        },
        {
          "name":"D5",
@@ -153,13 +167,15 @@
        {
         "name":"D37",
         "displayName":"D37",
-        "dataType":"bool"
+        "dataType":"bool",
+        "hasDeepSleep":true
        },
        {
         "name":"D38",
         "displayName":"Button Switch (SW38)",
         "dataType":"bool",
-        "direction": "INPUT"
+        "direction": "INPUT",
+        "hasDeepSleep":true
        }
       ],
       "analogPins": [

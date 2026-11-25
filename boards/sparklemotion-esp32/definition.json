@@ -25,13 +25,15 @@
       {
         "name":"D0",
         "displayName":"D0 (Button)",
-        "dataType":"bool"
+        "dataType":"bool",
+        "hasDeepSleep":true
       },
       {
         "name":"D4",
         "displayName":"D4 (LED BUILT-IN)",
         "dataType":"bool",
-        "hasPWM":true
+        "hasPWM":true,
+        "hasDeepSleep":true
       },
       {
         "name":"D10",
@@ -68,13 +70,15 @@
         "displayName":"D27 (3-Pin JST)",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
       },
       {
         "name":"D2",
         "displayName":"D2 (NEOPIXEL)",
         "dataType":"bool",
-        "hasPWM":true
+        "hasPWM":true,
+        "hasDeepSleep":true
       },
       {
         "name":"D21",
@@ -102,14 +106,16 @@
         "displayName":"D14 (SDA)",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
       },
       {
         "name":"D13",
         "displayName":"D13 (SCL)",
         "dataType":"bool",
         "hasPWM":true,
-        "hasServo":true
+        "hasServo":true,
+        "hasDeepSleep":true
       }
     ],
     "analogPins": [],

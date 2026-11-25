@@ -25,13 +25,15 @@
       {
         "name":"D0",
         "displayName":"D0 (Button)",
-        "dataType":"bool"
+        "dataType":"bool",
+        "hasDeepSleep":true
       },
       {
         "name":"D4",
         "displayName":"D4 (LED BUILT-IN)",
         "dataType":"bool",
-        "hasPWM":true
+        "hasPWM":true,
+        "hasDeepSleep":true
       },
       {
         "name":"D10",
