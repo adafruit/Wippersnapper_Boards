@@ -1,0 +1,96 @@
+{
+    "boardName":"qualia-s3-rgb666",
+    "mcuName":"esp32s3",
+    "mcuRefVoltage":2.6,
+    "displayName":"Adafruit Qualia ESP32-S3 RGB666",
+    "vendor":"Adafruit",
+    "productURL":"https://www.adafruit.com/product/5800",
+    "documentationURL":"https://learn.adafruit.com/adafruit-qualia-esp32-s3-for-rgb666-displays",
+    "published": false,
+    "installMethod": "web-native-usb",
+    "bootloaderBoardName": "adafruit_qualia_s3_rgb666",
+    "bootDiskName": "TFT_S3BOOT",
+    "esptool": {
+      "fileSystemSize": 12255232,
+      "blockSize": 4096,
+      "offset": "0x450000",
+      "chip": "esp32s3",
+      "flashMode": "dio",
+      "flashFreq": "80m",
+      "flashSize": "16MB",
+      "structure": {
+        "0x0": "wippersnapper.qualia_s3_rgb666.fatfs.VERSION.combined.bin"
+      }
+    },
+    "components":{
+        "digitalPins":[
+            {
+                "name":"D17",
+                "displayName":"A0 (UART RX)",
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true,
+                "uartRx":true
+            },
+            {
+                "name":"D16",
+                "displayName":"A1 (UART TX)",
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true,
+                "uartTx":true
+            },
+            {
+                "name":"D5",
+                "displayName":"SCK",
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"D6",
+                "displayName":"MISO",
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"D7",
+                "displayName":"MOSI",
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"D15",
+                "displayName":"CS",
+                "dataType":"bool",
+                "hasPWM":true,
+                "hasServo":true
+            }
+        ],
+        "analogPins":[
+            {
+                "name":"A17",
+                "displayName":"A0 (UART RX)",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
+            },
+            {
+                "name":"A16",
+                "displayName":"A1 (UART TX)",
+                "dataType":"int16",
+                "hasPWM":true,
+                "hasServo":true
+            }
+        ],
+        "i2cPorts":[
+            {
+                "i2cPortId":0,
+                "SDA":8,
+                "SCL":18
+            }
+        ]
+    }
+}
