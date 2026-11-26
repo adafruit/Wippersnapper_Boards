@@ -9,7 +9,7 @@
   "components": [
     {
       "name": "1.9\" TFT LCD Display (ST7789, i8080 8-bit)",
-      "type": "tft-19-i8080",
+      "type": "tft-1i9-170x320-st7789-lilygo-t-display-s3",
       "displayType": "i8080",
       "driver": "ST7789",
       "width": 320,
