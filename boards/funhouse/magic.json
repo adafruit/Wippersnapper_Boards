@@ -9,7 +9,7 @@
   "components": [
     {
       "name": "1.54\" TFT LCD Display",
-      "type": "tft-154-wide-angle",
+      "type": "tft-1i54-240x240-st7789-funhouse-ada4985",
       "displayType": "tft",
       "driver": "tft_st7789",
       "spiBus": 0,

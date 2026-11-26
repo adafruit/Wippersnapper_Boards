@@ -9,7 +9,7 @@
   "components": [
     {
       "name": "0.96\" TFT LCD Display (ST7735)",
-      "type": "tft-096",
+      "type": "tft-0i96-80x160-st7735-lilygo-t-dongle-c5",
       "displayType": "tft",
       "driver": "ST7735",
       "spiBus": 0,

@@ -9,7 +9,7 @@
   "components": [
     {
       "name": "MagTag - 2.9\" E-Ink Display",
-      "type": "eink-magtag",
+      "type": "epd-2i9-296x128-gray-auto-magtag-ada4800",
       "displayType": "epd",
       "driver": "unspecified",
       "textSize": 3,

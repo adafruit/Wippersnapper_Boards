@@ -9,7 +9,7 @@
   "components": [
     {
       "name": "1.14\" TFT LCD Display",
-      "type": "tft-114",
+      "type": "tft-1i14-240x135-st7789-feather-esp32s2-tft-ada5300",
       "displayType": "tft",
       "driver": "tft_st7789",
       "spiBus": 0,
