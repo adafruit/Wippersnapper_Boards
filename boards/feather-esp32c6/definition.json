@@ -9,9 +9,9 @@
   "installBoardName": "wippersnapper_feather_esp32c6",
   "installMethod": "web",
   "esptool": {
-    "fileSystemSize": 131072,
+    "fileSystemSize": 917504,
     "blockSize": 4096,
-    "offset": "0x3D0000",
+    "offset": "0x310000",
     "chip": "esp32c6",
     "flashMode": "qio",
     "flashFreq": "80m",
